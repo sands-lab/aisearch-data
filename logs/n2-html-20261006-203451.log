@@ -1,0 +1,200 @@
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+[truncprobe] run run20261006-203451-wfn95: providers [or:openai-gpt-5-mini, or:anthropic-claude-sonnet-5, or:x-ai-grok-4.3], 10 sizes, gap 3m0s
+[truncprobe] about to make ~60 API calls across 3 provider(s) — Ctrl-C within 5s to abort
+[truncprobe] Part A — locating the cut (scan each size) …
+  4k       or:openai     deepest marker: 95%
+  4k       or:openai     deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:openai] 8192B in=24497 out=2809 (kept full answer for forensics)
+  8k       or:openai     deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:openai] 8192B in=27923 out=2304 (kept full answer for forensics)
+  8k       or:openai     deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:openai] 16384B in=45967 out=4287 (kept full answer for forensics)
+  16k      or:openai     deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:openai] 16384B in=41383 out=3088 (kept full answer for forensics)
+  16k      or:openai     deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:openai] 32768B in=74862 out=5300 (kept full answer for forensics)
+  32k      or:openai     deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:openai] 32768B in=64981 out=3793 (kept full answer for forensics)
+  32k      or:openai     deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:openai] 65536B in=55635 out=2589 (kept full answer for forensics)
+  64k      or:openai     deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:openai] 65536B in=72407 out=3521 (kept full answer for forensics)
+  64k      or:openai     deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:openai] 131072B in=38602 out=2499 (kept full answer for forensics)
+  128k     or:openai     deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:openai] 131072B in=58184 out=4612 (kept full answer for forensics)
+  128k     or:openai     deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:openai] 262144B in=90829 out=5765 (kept full answer for forensics)
+  256k     or:openai     deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:openai] 262144B in=52483 out=4115 (kept full answer for forensics)
+  256k     or:openai     deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:openai] 524288B in=73107 out=4405 (kept full answer for forensics)
+  512k     or:openai     deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:openai] 524288B in=52354 out=4115 (kept full answer for forensics)
+  512k     or:openai     deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:openai] 1048576B in=49094 out=3611 (kept full answer for forensics)
+  1m       or:openai     deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:openai] 1048576B in=98565 out=5244 (kept full answer for forensics)
+  1m       or:openai     deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:openai] 2097152B in=29959 out=2160 (kept full answer for forensics)
+  2m       or:openai     deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:openai] 2097152B in=47506 out=3201 (kept full answer for forensics)
+  2m       or:openai     deepest marker: 95%
+  4k       or:anthropic  deepest marker: 95%
+  4k       or:anthropic  deepest marker: 95%
+  8k       or:anthropic  deepest marker: 95%
+  8k       or:anthropic  deepest marker: 95%
+  16k      or:anthropic  deepest marker: 95%
+  16k      or:anthropic  deepest marker: 95%
+  32k      or:anthropic  deepest marker: 95%
+  32k      or:anthropic  deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:anthropic] 65536B in=27377 out=682 (kept full answer for forensics)
+  64k      or:anthropic  deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:anthropic] 65536B in=27381 out=255 (kept full answer for forensics)
+  64k      or:anthropic  deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:anthropic] 131072B in=51782 out=216 (kept full answer for forensics)
+  128k     or:anthropic  deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:anthropic] 131072B in=51781 out=313 (kept full answer for forensics)
+  128k     or:anthropic  deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:anthropic] 262144B in=100645 out=383 (kept full answer for forensics)
+  256k     or:anthropic  deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:anthropic] 262144B in=100644 out=353 (kept full answer for forensics)
+  256k     or:anthropic  deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:anthropic] 524288B in=198781 out=1749 (kept full answer for forensics)
+  512k     or:anthropic  deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:anthropic] 524288B in=198782 out=263 (kept full answer for forensics)
+  512k     or:anthropic  deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:anthropic] 1048576B in=394648 out=1164 (kept full answer for forensics)
+  1m       or:anthropic  deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:anthropic] 1048576B in=394653 out=1868 (kept full answer for forensics)
+  1m       or:anthropic  deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:anthropic] 2097152B in=759369 out=1404 (kept full answer for forensics)
+  2m       or:anthropic  deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:anthropic] 2097152B in=759377 out=1440 (kept full answer for forensics)
+  2m       or:anthropic  deepest marker: 95%
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-4k-r1 logged 6 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  4k       or:x-ai       deepest marker: 95%
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-4k-r2 logged 6 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  4k       or:x-ai       deepest marker: 95%
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-8k-r1 logged 7 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  8k       or:x-ai       deepest marker: 95%
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-8k-r2 logged 7 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  8k       or:x-ai       deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:x-ai] 16384B in=22095 out=1594 (kept full answer for forensics)
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-16k-r1 logged 6 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  16k      or:x-ai       deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:x-ai] 16384B in=22047 out=1688 (kept full answer for forensics)
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-16k-r2 logged 4 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  16k      or:x-ai       deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:x-ai] 32768B in=41881 out=1823 (kept full answer for forensics)
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-32k-r1 logged 4 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  32k      or:x-ai       deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:x-ai] 32768B in=93006 out=2321 (kept full answer for forensics)
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-32k-r2 logged 5 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  32k      or:x-ai       deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:x-ai] 65536B in=41367 out=1745 (kept full answer for forensics)
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-64k-r1 logged 6 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  64k      or:x-ai       deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:x-ai] 65536B in=34967 out=1916 (kept full answer for forensics)
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-64k-r2 logged 7 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  64k      or:x-ai       deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:x-ai] 131072B in=42603 out=2107 (kept full answer for forensics)
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-128k-r1 logged 7 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  128k     or:x-ai       deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:x-ai] 131072B in=42666 out=2017 (kept full answer for forensics)
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-128k-r2 logged 6 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  128k     or:x-ai       deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:x-ai] 262144B in=24246 out=1382 (kept full answer for forensics)
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-256k-r1 logged 7 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  256k     or:x-ai       deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:x-ai] 262144B in=44332 out=2158 (kept full answer for forensics)
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-256k-r2 logged 6 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  256k     or:x-ai       deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:x-ai] 524288B in=69238 out=2333 (kept full answer for forensics)
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-512k-r1 logged 6 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  512k     or:x-ai       deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:x-ai] 524288B in=36538 out=1758 (kept full answer for forensics)
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-512k-r2 logged 5 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  512k     or:x-ai       deepest marker: 95%
+WARN anomalous token cost: truncprobe A [or:x-ai] 1048576B in=39381 out=2040 (kept full answer for forensics)
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-1m-r1 logged 4 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  1m       or:x-ai       deepest marker: 50%
+WARN anomalous token cost: truncprobe A [or:x-ai] 1048576B in=42961 out=1604 (kept full answer for forensics)
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-1m-r2 logged 6 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  1m       or:x-ai       deepest marker: 50%
+WARN anomalous token cost: truncprobe A [or:x-ai] 2097152B in=31816 out=1506 (kept full answer for forensics)
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-2m-r1 logged 5 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  2m       or:x-ai       deepest marker: 25%
+WARN anomalous token cost: truncprobe A [or:x-ai] 2097152B in=44553 out=2125 (kept full answer for forensics)
+  [watch] or:x-ai-grok-4.3-run20261006-203451-wfn95-a-2m-r2 logged 5 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  2m       or:x-ai       deepest marker: 25%
+
+==========================================================================
+  TRUNCATION-DEPTH PROBE — how far down the page does each fetcher read?
+==========================================================================
+  Part A: deepest marker quoted = the cut for a live fetch.
+  Part B: is that cut baked into the STORED copy (bottom blank + no re-fetch)?
+
+  Part A — cut per size:
+    4k       or:anthropic  deepest=95% (fetches=1)
+    4k       or:anthropic  deepest=95% (fetches=1)
+    4k       or:openai     deepest=95% (fetches=1)
+    4k       or:openai     deepest=95% (fetches=1)
+    4k       or:x-ai       deepest=95% (fetches=6)
+    4k       or:x-ai       deepest=95% (fetches=6)
+    8k       or:anthropic  deepest=95% (fetches=1)
+    8k       or:anthropic  deepest=95% (fetches=1)
+    8k       or:openai     deepest=95% (fetches=1)
+    8k       or:openai     deepest=95% (fetches=1)
+    8k       or:x-ai       deepest=95% (fetches=7)
+    8k       or:x-ai       deepest=95% (fetches=7)
+    16k      or:anthropic  deepest=95% (fetches=1)
+    16k      or:anthropic  deepest=95% (fetches=1)
+    16k      or:openai     deepest=95% (fetches=1)
+    16k      or:openai     deepest=95% (fetches=1)
+    16k      or:x-ai       deepest=95% (fetches=6)
+    16k      or:x-ai       deepest=95% (fetches=4)
+    32k      or:anthropic  deepest=95% (fetches=1)
+    32k      or:anthropic  deepest=95% (fetches=1)
+    32k      or:openai     deepest=95% (fetches=1)
+    32k      or:openai     deepest=95% (fetches=1)
+    32k      or:x-ai       deepest=95% (fetches=4)
+    32k      or:x-ai       deepest=95% (fetches=5)
+    64k      or:anthropic  deepest=95% (fetches=1)
+    64k      or:anthropic  deepest=95% (fetches=1)
+    64k      or:openai     deepest=95% (fetches=1)
+    64k      or:openai     deepest=95% (fetches=1)
+    64k      or:x-ai       deepest=95% (fetches=6)
+    64k      or:x-ai       deepest=95% (fetches=7)
+    128k     or:anthropic  deepest=95% (fetches=1)
+    128k     or:anthropic  deepest=95% (fetches=1)
+    128k     or:openai     deepest=95% (fetches=1)
+    128k     or:openai     deepest=95% (fetches=1)
+    128k     or:x-ai       deepest=95% (fetches=7)
+    128k     or:x-ai       deepest=95% (fetches=6)
+    256k     or:anthropic  deepest=95% (fetches=1)
+    256k     or:anthropic  deepest=95% (fetches=1)
+    256k     or:openai     deepest=95% (fetches=1)
+    256k     or:openai     deepest=95% (fetches=1)
+    256k     or:x-ai       deepest=95% (fetches=7)
+    256k     or:x-ai       deepest=95% (fetches=6)
+    512k     or:anthropic  deepest=95% (fetches=1)
+    512k     or:anthropic  deepest=95% (fetches=1)
+    512k     or:openai     deepest=95% (fetches=1)
+    512k     or:openai     deepest=95% (fetches=1)
+    512k     or:x-ai       deepest=95% (fetches=6)
+    512k     or:x-ai       deepest=95% (fetches=5)
+    1m       or:anthropic  deepest=95% (fetches=1)
+    1m       or:anthropic  deepest=95% (fetches=1)
+    1m       or:openai     deepest=95% (fetches=1)
+    1m       or:openai     deepest=95% (fetches=1)
+    1m       or:x-ai       deepest=50% (fetches=4)
+    1m       or:x-ai       deepest=50% (fetches=6)
+    2m       or:anthropic  deepest=95% (fetches=1)
+    2m       or:anthropic  deepest=95% (fetches=1)
+    2m       or:openai     deepest=95% (fetches=1)
+    2m       or:openai     deepest=95% (fetches=1)
+    2m       or:x-ai       deepest=25% (fetches=5)
+    2m       or:x-ai       deepest=25% (fetches=5)
+  Part B — stored-copy read (bottom marker on the reask):
