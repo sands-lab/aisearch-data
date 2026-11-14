@@ -1,0 +1,200 @@
+== ctype depthtxtpage ==
+[truncprobe] run run20261101-150106-zazkt: providers [or:openai-gpt-5-mini, or:anthropic-claude-sonnet-5, or:x-ai-grok-4.3], 1 sizes, gap 3m0s
+[truncprobe] about to make ~3 API calls across 3 provider(s) — Ctrl-C within 5s to abort
+[truncprobe] Part A — locating the cut (scan each size) …
+  4k       or:openai     deepest marker: 95%
+  4k       or:anthropic  deepest marker: 95%
+  [watch] or:x-ai-grok-4.3-run20261101-150106-zazkt-a-4k-r1 logged 7 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  4k       or:x-ai       deepest marker: 95%
+
+==========================================================================
+  TRUNCATION-DEPTH PROBE — how far down the page does each fetcher read?
+==========================================================================
+  Part A: deepest marker quoted = the cut for a live fetch.
+  Part B: is that cut baked into the STORED copy (bottom blank + no re-fetch)?
+
+  Part A — cut per size:
+    4k       or:anthropic  deepest=95% (fetches=1)
+    4k       or:openai     deepest=95% (fetches=1)
+    4k       or:x-ai       deepest=95% (fetches=7)
+  Part B — stored-copy read (bottom marker on the reask):
+== ctype depthhtmlpage ==
+[truncprobe] run run20261101-150249-cgf9c: providers [or:openai-gpt-5-mini, or:anthropic-claude-sonnet-5, or:x-ai-grok-4.3], 1 sizes, gap 3m0s
+[truncprobe] about to make ~3 API calls across 3 provider(s) — Ctrl-C within 5s to abort
+[truncprobe] Part A — locating the cut (scan each size) …
+  4k       or:openai     deepest marker: 95%
+  4k       or:anthropic  deepest marker: 95%
+  [watch] or:x-ai-grok-4.3-run20261101-150249-cgf9c-a-4k-r1 logged 7 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  4k       or:x-ai       deepest marker: 95%
+
+==========================================================================
+  TRUNCATION-DEPTH PROBE — how far down the page does each fetcher read?
+==========================================================================
+  Part A: deepest marker quoted = the cut for a live fetch.
+  Part B: is that cut baked into the STORED copy (bottom blank + no re-fetch)?
+
+  Part A — cut per size:
+    4k       or:anthropic  deepest=95% (fetches=1)
+    4k       or:openai     deepest=95% (fetches=1)
+    4k       or:x-ai       deepest=95% (fetches=7)
+  Part B — stored-copy read (bottom marker on the reask):
+== ctype depthmdpage ==
+[truncprobe] run run20261101-150433-aie48: providers [or:openai-gpt-5-mini, or:anthropic-claude-sonnet-5, or:x-ai-grok-4.3], 1 sizes, gap 3m0s
+[truncprobe] about to make ~3 API calls across 3 provider(s) — Ctrl-C within 5s to abort
+[truncprobe] Part A — locating the cut (scan each size) …
+  4k       or:openai     deepest marker: none
+  4k       or:anthropic  deepest marker: 95%
+  [watch] or:x-ai-grok-4.3-run20261101-150433-aie48-a-4k-r1 logged 6 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  4k       or:x-ai       deepest marker: 95%
+
+==========================================================================
+  TRUNCATION-DEPTH PROBE — how far down the page does each fetcher read?
+==========================================================================
+  Part A: deepest marker quoted = the cut for a live fetch.
+  Part B: is that cut baked into the STORED copy (bottom blank + no re-fetch)?
+
+  Part A — cut per size:
+    4k       or:anthropic  deepest=95% (fetches=1)
+    4k       or:openai     deepest=none (fetches=1)
+    4k       or:x-ai       deepest=95% (fetches=6)
+  Part B — stored-copy read (bottom marker on the reask):
+== ctype depthjsonpage ==
+[truncprobe] run run20261101-150610-zf38w: providers [or:openai-gpt-5-mini, or:anthropic-claude-sonnet-5, or:x-ai-grok-4.3], 1 sizes, gap 3m0s
+[truncprobe] about to make ~3 API calls across 3 provider(s) — Ctrl-C within 5s to abort
+[truncprobe] Part A — locating the cut (scan each size) …
+  4k       or:openai     deepest marker: 95%
+  4k       or:anthropic  deepest marker: 95%
+  [watch] or:x-ai-grok-4.3-run20261101-150610-zf38w-a-4k-r1 logged 7 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  4k       or:x-ai       deepest marker: 95%
+
+==========================================================================
+  TRUNCATION-DEPTH PROBE — how far down the page does each fetcher read?
+==========================================================================
+  Part A: deepest marker quoted = the cut for a live fetch.
+  Part B: is that cut baked into the STORED copy (bottom blank + no re-fetch)?
+
+  Part A — cut per size:
+    4k       or:anthropic  deepest=95% (fetches=1)
+    4k       or:openai     deepest=95% (fetches=1)
+    4k       or:x-ai       deepest=95% (fetches=7)
+  Part B — stored-copy read (bottom marker on the reask):
+== ctype depthxmlpage ==
+[truncprobe] run run20261101-150755-vqswi: providers [or:openai-gpt-5-mini, or:anthropic-claude-sonnet-5, or:x-ai-grok-4.3], 1 sizes, gap 3m0s
+[truncprobe] about to make ~3 API calls across 3 provider(s) — Ctrl-C within 5s to abort
+[truncprobe] Part A — locating the cut (scan each size) …
+  4k       or:openai     deepest marker: none
+  4k       or:anthropic  deepest marker: 95%
+  [watch] or:x-ai-grok-4.3-run20261101-150755-vqswi-a-4k-r1 logged 7 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  4k       or:x-ai       deepest marker: 95%
+
+==========================================================================
+  TRUNCATION-DEPTH PROBE — how far down the page does each fetcher read?
+==========================================================================
+  Part A: deepest marker quoted = the cut for a live fetch.
+  Part B: is that cut baked into the STORED copy (bottom blank + no re-fetch)?
+
+  Part A — cut per size:
+    4k       or:anthropic  deepest=95% (fetches=1)
+    4k       or:openai     deepest=none (fetches=1)
+    4k       or:x-ai       deepest=95% (fetches=7)
+  Part B — stored-copy read (bottom marker on the reask):
+== ctype depthcsvpage ==
+[truncprobe] run run20261101-150951-tbcts: providers [or:openai-gpt-5-mini, or:anthropic-claude-sonnet-5, or:x-ai-grok-4.3], 1 sizes, gap 3m0s
+[truncprobe] about to make ~3 API calls across 3 provider(s) — Ctrl-C within 5s to abort
+[truncprobe] Part A — locating the cut (scan each size) …
+  4k       or:openai     deepest marker: none
+  4k       or:anthropic  deepest marker: 95%
+  [watch] or:x-ai-grok-4.3-run20261101-150951-tbcts-a-4k-r1 logged 6 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  4k       or:x-ai       deepest marker: 95%
+
+==========================================================================
+  TRUNCATION-DEPTH PROBE — how far down the page does each fetcher read?
+==========================================================================
+  Part A: deepest marker quoted = the cut for a live fetch.
+  Part B: is that cut baked into the STORED copy (bottom blank + no re-fetch)?
+
+  Part A — cut per size:
+    4k       or:anthropic  deepest=95% (fetches=1)
+    4k       or:openai     deepest=none (fetches=1)
+    4k       or:x-ai       deepest=95% (fetches=6)
+  Part B — stored-copy read (bottom marker on the reask):
+== ctype depthpdfpage ==
+[truncprobe] run run20261101-151136-efti2: providers [or:openai-gpt-5-mini, or:anthropic-claude-sonnet-5, or:x-ai-grok-4.3], 1 sizes, gap 3m0s
+[truncprobe] about to make ~3 API calls across 3 provider(s) — Ctrl-C within 5s to abort
+[truncprobe] Part A — locating the cut (scan each size) …
+  [watch] or:openai-gpt-5-mini-run20261101-151136-efti2-a-4k-r1 logged 2 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  4k       or:openai     deepest marker: 95%
+  4k       or:anthropic  deepest marker: 95%
+  [watch] or:x-ai-grok-4.3-run20261101-151136-efti2-a-4k-r1 logged 7 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  4k       or:x-ai       deepest marker: 95%
+
+==========================================================================
+  TRUNCATION-DEPTH PROBE — how far down the page does each fetcher read?
+==========================================================================
+  Part A: deepest marker quoted = the cut for a live fetch.
+  Part B: is that cut baked into the STORED copy (bottom blank + no re-fetch)?
+
+  Part A — cut per size:
+    4k       or:anthropic  deepest=95% (fetches=1)
+    4k       or:openai     deepest=95% (fetches=2)
+    4k       or:x-ai       deepest=95% (fetches=7)
+  Part B — stored-copy read (bottom marker on the reask):
+== ctype depthdocxpage ==
+[truncprobe] run run20261101-151323-dpxgw: providers [or:openai-gpt-5-mini, or:anthropic-claude-sonnet-5, or:x-ai-grok-4.3], 1 sizes, gap 3m0s
+[truncprobe] about to make ~3 API calls across 3 provider(s) — Ctrl-C within 5s to abort
+[truncprobe] Part A — locating the cut (scan each size) …
+  4k       or:openai     deepest marker: none
+WARN anomalous token cost: truncprobe A [or:anthropic] 4096B in=13787 out=6883 (kept full answer for forensics)
+  4k       or:anthropic  deepest marker: 95%
+  [watch] or:x-ai-grok-4.3-run20261101-151323-dpxgw-a-4k-r1 logged 7 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  4k       or:x-ai       deepest marker: 95%
+
+==========================================================================
+  TRUNCATION-DEPTH PROBE — how far down the page does each fetcher read?
+==========================================================================
+  Part A: deepest marker quoted = the cut for a live fetch.
+  Part B: is that cut baked into the STORED copy (bottom blank + no re-fetch)?
+
+  Part A — cut per size:
+    4k       or:anthropic  deepest=95% (fetches=1)
+    4k       or:openai     deepest=none (fetches=1)
+    4k       or:x-ai       deepest=95% (fetches=7)
+  Part B — stored-copy read (bottom marker on the reask):
+== readdepth 1m all3 ==
+[truncprobe] run run20261101-151556-rmvir: providers [or:openai-gpt-5-mini, or:anthropic-claude-sonnet-5, or:x-ai-grok-4.3], 1 sizes, gap 3m0s
+[truncprobe] about to make ~3 API calls across 3 provider(s) — Ctrl-C within 5s to abort
+[truncprobe] Part A — locating the cut (scan each size) …
+  1m       or:openai     deepest marker: none
+WARN anomalous token cost: truncprobe A [or:anthropic] 1048576B in=394606 out=579 (kept full answer for forensics)
+  1m       or:anthropic  deepest marker: 95%
+  [watch] or:x-ai-grok-4.3-run20261101-151556-rmvir-a-1m-r1 logged 6 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  1m       or:x-ai       deepest marker: 50%
+
+==========================================================================
+  TRUNCATION-DEPTH PROBE — how far down the page does each fetcher read?
+==========================================================================
+  Part A: deepest marker quoted = the cut for a live fetch.
+  Part B: is that cut baked into the STORED copy (bottom blank + no re-fetch)?
+
+  Part A — cut per size:
+    1m       or:anthropic  deepest=95% (fetches=1)
+    1m       or:openai     deepest=none (fetches=1)
+    1m       or:x-ai       deepest=50% (fetches=6)
+  Part B — stored-copy read (bottom marker on the reask):
+== readdepth 2m xai ==
+[truncprobe] run run20261101-151744-cvv3i: providers [or:x-ai-grok-4.3], 1 sizes, gap 3m0s
+[truncprobe] about to make ~1 API calls across 1 provider(s) — Ctrl-C within 5s to abort
+[truncprobe] Part A — locating the cut (scan each size) …
+  [watch] or:x-ai-grok-4.3-run20261101-151744-cvv3i-a-2m-r1 logged 14 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  2m       or:x-ai       deepest marker: 25%
+
+==========================================================================
+  TRUNCATION-DEPTH PROBE — how far down the page does each fetcher read?
+==========================================================================
+  Part A: deepest marker quoted = the cut for a live fetch.
+  Part B: is that cut baked into the STORED copy (bottom blank + no re-fetch)?
+
+  Part A — cut per size:
+    2m       or:x-ai       deepest=25% (fetches=14)
+  Part B — stored-copy read (bottom marker on the reask):
+DONE_ORIGIN_A
