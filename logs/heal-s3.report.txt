@@ -1,0 +1,91 @@
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+==============================================================================
+  REMEMBERED-FAILURE RUN run20261025-144842-nqbxk — after the fix, does the vendor go back?
+  Anthropic fetch tool: web_fetch_20250910
+==============================================================================
+anthropic     fail=503 check=5m   (asked at fix + 6m12s)  fetch no, code no
+anthropic     fail=503 check=10m  (asked at fix + 8m0s)  fetch no, code no
+anthropic     fail=503 check=20m  (asked at fix + 25m51s)  fetch no, code no
+anthropic     fail=503 check=40m  (asked at fix + 54m40s)  fetch no, code no
+anthropic     fail=503 check=1h20m (asked at fix + 1h19m0s)  fetch no, code no
+anthropic     fail=503 check=2h40m (asked at fix + 2h44m54s)  fetch no, code no
+anthropic     fail=503 check=5h20m (asked at fix + 5h57m0s)  fetch no, code no
+anthropic     fail=503 check=10h40m (asked at fix + 9h27m0s)  fetch no, code no
+anthropic     fail=404 check=5m   (asked at fix + 6m20s)  fetch no, code no
+anthropic     fail=404 check=10m  (asked at fix + 10m59s)  fetch yes, code yes
+      note: no request reached us during the first ask, so the vendor never saw the failure
+anthropic     fail=404 check=20m  (asked at fix + 14m29s)  fetch no, code no
+anthropic     fail=404 check=40m  (asked at fix + 46m34s)  fetch no, code no
+anthropic     fail=404 check=1h20m (asked at fix + 1h27m51s)  fetch no, code no
+anthropic     fail=404 check=2h40m (asked at fix + 1h56m0s)  fetch no, code no
+anthropic     fail=404 check=5h20m (asked at fix + 6h18m35s)  fetch no, code no
+anthropic     fail=404 check=10h40m (asked at fix + 8h1m1s)  fetch no, code no
+anthropic     fail=403 check=5m   (asked at fix + 7m0s)  fetch no, code no
+anthropic     fail=403 check=10m  (asked at fix + 14m0s)  fetch no, code no
+anthropic     fail=403 check=20m  (asked at fix + 20m59s)  fetch no, code no
+anthropic     fail=403 check=40m  (asked at fix + 45m33s)  fetch no, code no
+anthropic     fail=403 check=1h20m (asked at fix + 1h12m59s)  fetch no, code no
+anthropic     fail=403 check=2h40m (asked at fix + 3h6m33s)  fetch no, code no
+anthropic     fail=403 check=5h20m (asked at fix + 7h19m44s)  fetch no, code no
+anthropic     fail=403 check=10h40m (asked at fix + 12h49m1s)  fetch no, code no
+or:openai     fail=503 check=5m   (asked at fix + 7m0s)  fetch no, code no
+or:openai     fail=503 check=10m  (asked at fix + 9m0s)  fetch no, code no
+or:openai     fail=503 check=20m  (asked at fix + 15m0s)  fetch no, code no
+or:openai     fail=503 check=40m  (asked at fix + 47m0s)  fetch yes, code no
+or:openai     fail=503 check=1h20m (asked at fix + 1h17m0s)  fetch yes, code yes
+or:openai     fail=503 check=2h40m (asked at fix + 2h55m1s)  fetch yes, code yes
+or:openai     fail=503 check=5h20m (asked at fix + 7h8m0s)  fetch yes, code yes
+or:openai     fail=503 check=10h40m (asked at fix + 11h34m59s)  fetch yes, code no
+or:openai     fail=404 check=5m   (asked at fix + 4m5s)  fetch no, code no
+or:openai     fail=404 check=10m  (asked at fix + 10m0s)  fetch no, code no
+or:openai     fail=404 check=20m  (asked at fix + 15m48s)  fetch no, code no
+or:openai     fail=404 check=40m  (asked at fix + 31m0s)  fetch yes, code no
+or:openai     fail=404 check=1h20m (asked at fix + 1h10m0s)  fetch yes, code no
+or:openai     fail=404 check=2h40m (asked at fix + 2h45m0s)  fetch yes, code no
+or:openai     fail=404 check=5h20m (asked at fix + 6h52m6s)  fetch yes, code no
+or:openai     fail=404 check=10h40m (asked at fix + 9h43m0s)  fetch yes, code no
+or:openai     fail=403 check=5m   (asked at fix + 6m8s)  fetch no, code no
+or:openai     fail=403 check=10m  (asked at fix + 13m28s)  fetch no, code no
+or:openai     fail=403 check=20m  (asked at fix + 26m57s)  fetch yes, code no
+or:openai     fail=403 check=40m  (asked at fix + 46m0s)  fetch yes, code no
+or:openai     fail=403 check=1h20m (asked at fix + 1h4m0s)  fetch yes, code no
+or:openai     fail=403 check=2h40m (asked at fix + 2h38m59s)  fetch yes, code no
+or:openai     fail=403 check=5h20m (asked at fix + 6h57m0s)  fetch yes, code no
+or:openai     fail=403 check=10h40m (asked at fix + 9h19m0s)  fetch yes, code no
+or:x-ai       fail=503 check=5m   (asked at fix + 5m1s)  fetch yes, code yes
+or:x-ai       fail=503 check=10m  (asked at fix + 8m56s)  fetch yes, code yes
+or:x-ai       fail=503 check=20m  (asked at fix + 16m0s)  fetch yes, code yes
+or:x-ai       fail=503 check=40m  (asked at fix + 55m59s)  fetch yes, code yes
+or:x-ai       fail=503 check=1h20m (asked at fix + 1h27m0s)  fetch yes, code no
+or:x-ai       fail=503 check=2h40m (asked at fix + 2h3m59s)  fetch yes, code yes
+or:x-ai       fail=503 check=5h20m (asked at fix + 6h3m1s)  fetch yes, code yes
+or:x-ai       fail=503 check=10h40m (asked at fix + 11h29m0s)  fetch yes, code yes
+or:x-ai       fail=404 check=5m   (asked at fix + 5m53s)  fetch no, code no
+or:x-ai       fail=404 check=10m  (asked at fix + 13m0s)  fetch no, code no
+or:x-ai       fail=404 check=20m  (asked at fix + 21m37s)  fetch no, code no
+or:x-ai       fail=404 check=40m  (asked at fix + 34m0s)  fetch no, code no
+or:x-ai       fail=404 check=1h20m (asked at fix + 1h49m1s)  fetch no, code no
+or:x-ai       fail=404 check=2h40m (asked at fix + 2h11m11s)  fetch no, code no
+or:x-ai       fail=404 check=5h20m (asked at fix + 5h29m37s)  fetch no, code no
+or:x-ai       fail=404 check=10h40m (asked at fix + 7h51m7s)  fetch no, code no
+or:x-ai       fail=403 check=5m   (asked at fix + 4m32s)  fetch yes, code yes
+or:x-ai       fail=403 check=10m  (asked at fix + 7m9s)  fetch yes, code yes
+or:x-ai       fail=403 check=20m  (asked at fix + 15m1s)  fetch yes, code yes
+or:x-ai       fail=403 check=40m  (asked at fix + 50m12s)  fetch yes, code yes
+or:x-ai       fail=403 check=1h20m (asked at fix + 1h10m0s)  fetch yes, code yes
+or:x-ai       fail=403 check=2h40m (asked at fix + 2h14m0s)  fetch yes, code yes
+or:x-ai       fail=403 check=5h20m (asked at fix + 5h16m44s)  fetch yes, code yes
+or:x-ai       fail=403 check=10h40m (asked at fix + 8h57m59s)  fetch yes, code yes
+
+------------------------------------------------------------------------------
+  Re-asks by vendor and failure (count)
+  anthropic     503  [fetch no, code no] x8
+  anthropic     404  [fetch no, code no] x7  [fetch yes, code yes] x1
+  anthropic     403  [fetch no, code no] x8
+  or:openai     503  [fetch no, code no] x3  [fetch yes, code no] x2  [fetch yes, code yes] x3
+  or:openai     404  [fetch no, code no] x3  [fetch yes, code no] x5
+  or:openai     403  [fetch no, code no] x2  [fetch yes, code no] x6
+  or:x-ai       503  [fetch yes, code no] x1  [fetch yes, code yes] x7
+  or:x-ai       404  [fetch no, code no] x8
+  or:x-ai       403  [fetch yes, code yes] x8
