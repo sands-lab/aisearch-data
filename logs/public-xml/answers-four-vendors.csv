@@ -1,0 +1,1197 @@
+file_id,vendor,model,outcome,openai_refusal_class
+file-001,anthropic,claude-sonnet-5,refused,
+file-001,google,gemini-3.1-flash-lite,read,
+file-001,openai,openai/gpt-5-mini,read,read in full
+file-001,xai,x-ai/grok-4.3,read,
+file-002,anthropic,claude-sonnet-5,refused,
+file-002,google,gemini-3.1-flash-lite,read,
+file-002,openai,openai/gpt-5-mini,read,read in full
+file-002,xai,x-ai/grok-4.3,read,
+file-003,anthropic,claude-sonnet-5,refused,
+file-003,google,gemini-3.1-flash-lite,read,
+file-003,openai,openai/gpt-5-mini,read,read in full
+file-003,xai,x-ai/grok-4.3,read,
+file-004,anthropic,claude-sonnet-5,boilerplate only,
+file-004,google,gemini-3.1-flash-lite,refused,
+file-004,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-004,xai,x-ai/grok-4.3,boilerplate only,
+file-005,anthropic,claude-sonnet-5,read,
+file-005,google,gemini-3.1-flash-lite,read,
+file-005,openai,openai/gpt-5-mini,read,read in full
+file-005,xai,x-ai/grok-4.3,read,
+file-006,anthropic,claude-sonnet-5,boilerplate only,
+file-006,google,gemini-3.1-flash-lite,refused,
+file-006,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-006,xai,x-ai/grok-4.3,boilerplate only,
+file-007,anthropic,claude-sonnet-5,boilerplate only,
+file-007,google,gemini-3.1-flash-lite,refused,
+file-007,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-007,xai,x-ai/grok-4.3,boilerplate only,
+file-008,anthropic,claude-sonnet-5,refused,
+file-008,google,gemini-3.1-flash-lite,refused,
+file-008,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-008,xai,x-ai/grok-4.3,refused,
+file-009,anthropic,claude-sonnet-5,read,
+file-009,google,gemini-3.1-flash-lite,refused,
+file-009,openai,openai/gpt-5-mini,refused,refused: site's error
+file-009,xai,x-ai/grok-4.3,inconclusive,
+file-010,anthropic,claude-sonnet-5,boilerplate only,
+file-010,google,gemini-3.1-flash-lite,refused,
+file-010,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-010,xai,x-ai/grok-4.3,boilerplate only,
+file-011,anthropic,claude-sonnet-5,boilerplate only,
+file-011,google,gemini-3.1-flash-lite,refused,
+file-011,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-011,xai,x-ai/grok-4.3,boilerplate only,
+file-012,anthropic,claude-sonnet-5,read,
+file-012,google,gemini-3.1-flash-lite,read,
+file-012,openai,openai/gpt-5-mini,read,read in full
+file-012,xai,x-ai/grok-4.3,read,
+file-013,anthropic,claude-sonnet-5,read,
+file-013,google,gemini-3.1-flash-lite,read,
+file-013,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-013,xai,x-ai/grok-4.3,refused,
+file-014,anthropic,claude-sonnet-5,refused,
+file-014,google,gemini-3.1-flash-lite,refused,
+file-014,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-014,xai,x-ai/grok-4.3,read,
+file-015,anthropic,claude-sonnet-5,read,
+file-015,google,gemini-3.1-flash-lite,read,
+file-015,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-015,xai,x-ai/grok-4.3,"fetched, one line",
+file-016,anthropic,claude-sonnet-5,read,
+file-016,google,gemini-3.1-flash-lite,refused,
+file-016,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-016,xai,x-ai/grok-4.3,read,
+file-017,anthropic,claude-sonnet-5,refused,
+file-017,google,gemini-3.1-flash-lite,read,
+file-017,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-017,xai,x-ai/grok-4.3,"fetched, one line",
+file-018,anthropic,claude-sonnet-5,boilerplate only,
+file-018,google,gemini-3.1-flash-lite,refused,
+file-018,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-018,xai,x-ai/grok-4.3,boilerplate only,
+file-019,anthropic,claude-sonnet-5,read,
+file-019,google,gemini-3.1-flash-lite,refused,
+file-019,openai,openai/gpt-5-mini,refused,refused: no reason given
+file-019,xai,x-ai/grok-4.3,read,
+file-020,anthropic,claude-sonnet-5,read,
+file-020,google,gemini-3.1-flash-lite,read,
+file-020,openai,openai/gpt-5-mini,read,read in full
+file-020,xai,x-ai/grok-4.3,read,
+file-021,anthropic,claude-sonnet-5,refused,
+file-021,google,gemini-3.1-flash-lite,refused,
+file-021,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-021,xai,x-ai/grok-4.3,read,
+file-022,anthropic,claude-sonnet-5,read,
+file-022,google,gemini-3.1-flash-lite,read,
+file-022,openai,openai/gpt-5-mini,read,read in full
+file-022,xai,x-ai/grok-4.3,read,
+file-023,anthropic,claude-sonnet-5,read,
+file-023,google,gemini-3.1-flash-lite,read,
+file-023,openai,openai/gpt-5-mini,read,read in full
+file-023,xai,x-ai/grok-4.3,read,
+file-024,anthropic,claude-sonnet-5,boilerplate only,
+file-024,google,gemini-3.1-flash-lite,refused,
+file-024,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-024,xai,x-ai/grok-4.3,boilerplate only,
+file-025,anthropic,claude-sonnet-5,boilerplate only,
+file-025,google,gemini-3.1-flash-lite,refused,
+file-025,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-025,xai,x-ai/grok-4.3,boilerplate only,
+file-026,anthropic,claude-sonnet-5,read,
+file-026,google,gemini-3.1-flash-lite,read,
+file-026,openai,openai/gpt-5-mini,read,read in full
+file-026,xai,x-ai/grok-4.3,read,
+file-027,anthropic,claude-sonnet-5,refused,
+file-027,google,gemini-3.1-flash-lite,refused,
+file-027,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-027,xai,x-ai/grok-4.3,boilerplate only,
+file-028,anthropic,claude-sonnet-5,boilerplate only,
+file-028,google,gemini-3.1-flash-lite,boilerplate only,
+file-028,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-028,xai,x-ai/grok-4.3,refused,
+file-029,anthropic,claude-sonnet-5,refused,
+file-029,google,gemini-3.1-flash-lite,refused,
+file-029,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-029,xai,x-ai/grok-4.3,"fetched, one line",
+file-030,anthropic,claude-sonnet-5,read,
+file-030,google,gemini-3.1-flash-lite,refused,
+file-030,openai,openai/gpt-5-mini,read,read in full
+file-030,xai,x-ai/grok-4.3,read,
+file-031,anthropic,claude-sonnet-5,read,
+file-031,google,gemini-3.1-flash-lite,read,
+file-031,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-031,xai,x-ai/grok-4.3,read,
+file-032,anthropic,claude-sonnet-5,boilerplate only,
+file-032,google,gemini-3.1-flash-lite,refused,
+file-032,openai,openai/gpt-5-mini,refused,refused: no reason given
+file-032,xai,x-ai/grok-4.3,boilerplate only,
+file-033,anthropic,claude-sonnet-5,read,
+file-033,google,gemini-3.1-flash-lite,read,
+file-033,openai,openai/gpt-5-mini,read,read in full
+file-033,xai,x-ai/grok-4.3,read,
+file-034,anthropic,claude-sonnet-5,boilerplate only,
+file-034,google,gemini-3.1-flash-lite,refused,
+file-034,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-034,xai,x-ai/grok-4.3,boilerplate only,
+file-035,anthropic,claude-sonnet-5,boilerplate only,
+file-035,google,gemini-3.1-flash-lite,boilerplate only,
+file-035,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-035,xai,x-ai/grok-4.3,"fetched, one line",
+file-036,anthropic,claude-sonnet-5,read,
+file-036,google,gemini-3.1-flash-lite,refused,
+file-036,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-036,xai,x-ai/grok-4.3,read,
+file-037,anthropic,claude-sonnet-5,read,
+file-037,google,gemini-3.1-flash-lite,read,
+file-037,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-037,xai,x-ai/grok-4.3,"fetched, one line",
+file-038,anthropic,claude-sonnet-5,refused,
+file-038,google,gemini-3.1-flash-lite,refused,
+file-038,openai,openai/gpt-5-mini,read,read in full
+file-038,xai,x-ai/grok-4.3,read,
+file-039,anthropic,claude-sonnet-5,refused,
+file-039,google,gemini-3.1-flash-lite,refused,
+file-039,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-039,xai,x-ai/grok-4.3,boilerplate only,
+file-040,anthropic,claude-sonnet-5,read,
+file-040,google,gemini-3.1-flash-lite,refused,
+file-040,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-040,xai,x-ai/grok-4.3,read,
+file-041,anthropic,claude-sonnet-5,boilerplate only,
+file-041,google,gemini-3.1-flash-lite,boilerplate only,
+file-041,openai,openai/gpt-5-mini,refused,refused: no reason given
+file-041,xai,x-ai/grok-4.3,refused,
+file-042,anthropic,claude-sonnet-5,boilerplate only,
+file-042,google,gemini-3.1-flash-lite,boilerplate only,
+file-042,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-042,xai,x-ai/grok-4.3,"fetched, one line",
+file-043,anthropic,claude-sonnet-5,read,
+file-043,google,gemini-3.1-flash-lite,refused,
+file-043,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-043,xai,x-ai/grok-4.3,read,
+file-044,anthropic,claude-sonnet-5,read,
+file-044,google,gemini-3.1-flash-lite,refused,
+file-044,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-044,xai,x-ai/grok-4.3,"fetched, one line",
+file-045,anthropic,claude-sonnet-5,read,
+file-045,google,gemini-3.1-flash-lite,refused,
+file-045,openai,openai/gpt-5-mini,read,read in full
+file-045,xai,x-ai/grok-4.3,read,
+file-046,anthropic,claude-sonnet-5,read,
+file-046,google,gemini-3.1-flash-lite,refused,
+file-046,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-046,xai,x-ai/grok-4.3,read,
+file-047,anthropic,claude-sonnet-5,read,
+file-047,google,gemini-3.1-flash-lite,read,
+file-047,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-047,xai,x-ai/grok-4.3,"fetched, one line",
+file-048,anthropic,claude-sonnet-5,read,
+file-048,google,gemini-3.1-flash-lite,refused,
+file-048,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-048,xai,x-ai/grok-4.3,read,
+file-049,anthropic,claude-sonnet-5,read,
+file-049,google,gemini-3.1-flash-lite,refused,
+file-049,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-049,xai,x-ai/grok-4.3,read,
+file-050,anthropic,claude-sonnet-5,read,
+file-050,google,gemini-3.1-flash-lite,read,
+file-050,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-050,xai,x-ai/grok-4.3,"fetched, one line",
+file-051,anthropic,claude-sonnet-5,read,
+file-051,google,gemini-3.1-flash-lite,read,
+file-051,openai,openai/gpt-5-mini,read,read in full
+file-051,xai,x-ai/grok-4.3,read,
+file-052,anthropic,claude-sonnet-5,boilerplate only,
+file-052,google,gemini-3.1-flash-lite,refused,
+file-052,openai,openai/gpt-5-mini,refused,refused: no reason given
+file-052,xai,x-ai/grok-4.3,boilerplate only,
+file-053,anthropic,claude-sonnet-5,read,
+file-053,google,gemini-3.1-flash-lite,refused,
+file-053,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-053,xai,x-ai/grok-4.3,read,
+file-054,anthropic,claude-sonnet-5,read,
+file-054,google,gemini-3.1-flash-lite,read,
+file-054,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-054,xai,x-ai/grok-4.3,"fetched, one line",
+file-055,anthropic,claude-sonnet-5,read,
+file-055,google,gemini-3.1-flash-lite,refused,
+file-055,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-055,xai,x-ai/grok-4.3,read,
+file-056,anthropic,claude-sonnet-5,boilerplate only,
+file-056,google,gemini-3.1-flash-lite,refused,
+file-056,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-056,xai,x-ai/grok-4.3,boilerplate only,
+file-057,anthropic,claude-sonnet-5,boilerplate only,
+file-057,google,gemini-3.1-flash-lite,refused,
+file-057,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-057,xai,x-ai/grok-4.3,boilerplate only,
+file-058,anthropic,claude-sonnet-5,read,
+file-058,google,gemini-3.1-flash-lite,read,
+file-058,openai,openai/gpt-5-mini,refused,refused: no reason given
+file-058,xai,x-ai/grok-4.3,"fetched, one line",
+file-059,anthropic,claude-sonnet-5,read,
+file-059,google,gemini-3.1-flash-lite,refused,
+file-059,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-059,xai,x-ai/grok-4.3,read,
+file-060,anthropic,claude-sonnet-5,boilerplate only,
+file-060,google,gemini-3.1-flash-lite,boilerplate only,
+file-060,openai,openai/gpt-5-mini,refused,refused: site's error
+file-060,xai,x-ai/grok-4.3,refused,
+file-061,anthropic,claude-sonnet-5,read,
+file-061,google,gemini-3.1-flash-lite,refused,
+file-061,openai,openai/gpt-5-mini,refused,refused: site's error
+file-061,xai,x-ai/grok-4.3,read,
+file-062,anthropic,claude-sonnet-5,refused,
+file-062,google,gemini-3.1-flash-lite,refused,
+file-062,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-062,xai,x-ai/grok-4.3,inconclusive,
+file-063,anthropic,claude-sonnet-5,refused,
+file-063,google,gemini-3.1-flash-lite,refused,
+file-063,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-063,xai,x-ai/grok-4.3,read,
+file-064,anthropic,claude-sonnet-5,read,
+file-064,google,gemini-3.1-flash-lite,refused,
+file-064,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-064,xai,x-ai/grok-4.3,read,
+file-065,anthropic,claude-sonnet-5,read,
+file-065,google,gemini-3.1-flash-lite,refused,
+file-065,openai,openai/gpt-5-mini,refused,refused: no reason given
+file-065,xai,x-ai/grok-4.3,"fetched, one line",
+file-066,anthropic,claude-sonnet-5,boilerplate only,
+file-066,google,gemini-3.1-flash-lite,refused,
+file-066,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-066,xai,x-ai/grok-4.3,boilerplate only,
+file-067,anthropic,claude-sonnet-5,read,
+file-067,google,gemini-3.1-flash-lite,read,
+file-067,openai,openai/gpt-5-mini,refused,refused: site's error
+file-067,xai,x-ai/grok-4.3,read,
+file-068,anthropic,claude-sonnet-5,refused,
+file-068,google,gemini-3.1-flash-lite,refused,
+file-068,openai,openai/gpt-5-mini,read,read in full
+file-068,xai,x-ai/grok-4.3,read,
+file-069,anthropic,claude-sonnet-5,read,
+file-069,google,gemini-3.1-flash-lite,read,
+file-069,openai,openai/gpt-5-mini,read,read in full
+file-069,xai,x-ai/grok-4.3,read,
+file-070,anthropic,claude-sonnet-5,refused,
+file-070,google,gemini-3.1-flash-lite,refused,
+file-070,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-070,xai,x-ai/grok-4.3,boilerplate only,
+file-071,anthropic,claude-sonnet-5,refused,
+file-071,google,gemini-3.1-flash-lite,refused,
+file-071,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-071,xai,x-ai/grok-4.3,read,
+file-072,anthropic,claude-sonnet-5,refused,
+file-072,google,gemini-3.1-flash-lite,refused,
+file-072,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-072,xai,x-ai/grok-4.3,read,
+file-073,anthropic,claude-sonnet-5,refused,
+file-073,google,gemini-3.1-flash-lite,refused,
+file-073,openai,openai/gpt-5-mini,refused,refused: no reason given
+file-073,xai,x-ai/grok-4.3,boilerplate only,
+file-074,anthropic,claude-sonnet-5,boilerplate only,
+file-074,google,gemini-3.1-flash-lite,boilerplate only,
+file-074,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-074,xai,x-ai/grok-4.3,"fetched, one line",
+file-075,anthropic,claude-sonnet-5,boilerplate only,
+file-075,google,gemini-3.1-flash-lite,refused,
+file-075,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-075,xai,x-ai/grok-4.3,boilerplate only,
+file-076,anthropic,claude-sonnet-5,boilerplate only,
+file-076,google,gemini-3.1-flash-lite,refused,
+file-076,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-076,xai,x-ai/grok-4.3,boilerplate only,
+file-077,anthropic,claude-sonnet-5,read,
+file-077,google,gemini-3.1-flash-lite,boilerplate only,
+file-077,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-077,xai,x-ai/grok-4.3,"fetched, one line",
+file-078,anthropic,claude-sonnet-5,read,
+file-078,google,gemini-3.1-flash-lite,refused,
+file-078,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-078,xai,x-ai/grok-4.3,read,
+file-079,anthropic,claude-sonnet-5,read,
+file-079,google,gemini-3.1-flash-lite,read,
+file-079,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-079,xai,x-ai/grok-4.3,"fetched, one line",
+file-080,anthropic,claude-sonnet-5,read,
+file-080,google,gemini-3.1-flash-lite,read,
+file-080,openai,openai/gpt-5-mini,read,read in full
+file-080,xai,x-ai/grok-4.3,read,
+file-081,anthropic,claude-sonnet-5,refused,
+file-081,google,gemini-3.1-flash-lite,read,
+file-081,openai,openai/gpt-5-mini,read,read in full
+file-081,xai,x-ai/grok-4.3,read,
+file-082,anthropic,claude-sonnet-5,read,
+file-082,google,gemini-3.1-flash-lite,refused,
+file-082,openai,openai/gpt-5-mini,read,read in full
+file-082,xai,x-ai/grok-4.3,read,
+file-083,anthropic,claude-sonnet-5,refused,
+file-083,google,gemini-3.1-flash-lite,refused,
+file-083,openai,openai/gpt-5-mini,refused,refused: site's error
+file-083,xai,x-ai/grok-4.3,read,
+file-084,anthropic,claude-sonnet-5,boilerplate only,
+file-084,google,gemini-3.1-flash-lite,refused,
+file-084,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-084,xai,x-ai/grok-4.3,"fetched, one line",
+file-085,anthropic,claude-sonnet-5,boilerplate only,
+file-085,google,gemini-3.1-flash-lite,refused,
+file-085,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-085,xai,x-ai/grok-4.3,boilerplate only,
+file-086,anthropic,claude-sonnet-5,refused,
+file-086,google,gemini-3.1-flash-lite,boilerplate only,
+file-086,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-086,xai,x-ai/grok-4.3,"fetched, one line",
+file-087,anthropic,claude-sonnet-5,read,
+file-087,google,gemini-3.1-flash-lite,read,
+file-087,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-087,xai,x-ai/grok-4.3,"fetched, one line",
+file-088,anthropic,claude-sonnet-5,read,
+file-088,google,gemini-3.1-flash-lite,refused,
+file-088,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-088,xai,x-ai/grok-4.3,"fetched, one line",
+file-089,anthropic,claude-sonnet-5,refused,
+file-089,google,gemini-3.1-flash-lite,read,
+file-089,openai,openai/gpt-5-mini,read,read in full
+file-089,xai,x-ai/grok-4.3,read,
+file-090,anthropic,claude-sonnet-5,read,
+file-090,google,gemini-3.1-flash-lite,read,
+file-090,openai,openai/gpt-5-mini,read,read in full
+file-090,xai,x-ai/grok-4.3,read,
+file-091,anthropic,claude-sonnet-5,read,
+file-091,google,gemini-3.1-flash-lite,read,
+file-091,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-091,xai,x-ai/grok-4.3,"fetched, one line",
+file-092,anthropic,claude-sonnet-5,read,
+file-092,google,gemini-3.1-flash-lite,read,
+file-092,openai,openai/gpt-5-mini,refused,refused: no reason given
+file-092,xai,x-ai/grok-4.3,refused,
+file-093,anthropic,claude-sonnet-5,read,
+file-093,google,gemini-3.1-flash-lite,read,
+file-093,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-093,xai,x-ai/grok-4.3,"fetched, one line",
+file-094,anthropic,claude-sonnet-5,refused,
+file-094,google,gemini-3.1-flash-lite,read,
+file-094,openai,openai/gpt-5-mini,read,read in full
+file-094,xai,x-ai/grok-4.3,read,
+file-095,anthropic,claude-sonnet-5,read,
+file-095,google,gemini-3.1-flash-lite,refused,
+file-095,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-095,xai,x-ai/grok-4.3,read,
+file-096,anthropic,claude-sonnet-5,boilerplate only,
+file-096,google,gemini-3.1-flash-lite,boilerplate only,
+file-096,openai,openai/gpt-5-mini,refused,refused: no reason given
+file-096,xai,x-ai/grok-4.3,"fetched, one line",
+file-097,anthropic,claude-sonnet-5,refused,
+file-097,google,gemini-3.1-flash-lite,read,
+file-097,openai,openai/gpt-5-mini,read,read in full
+file-097,xai,x-ai/grok-4.3,read,
+file-098,anthropic,claude-sonnet-5,read,
+file-098,google,gemini-3.1-flash-lite,read,
+file-098,openai,openai/gpt-5-mini,read,read in full
+file-098,xai,x-ai/grok-4.3,read,
+file-099,anthropic,claude-sonnet-5,read,
+file-099,google,gemini-3.1-flash-lite,read,
+file-099,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-099,xai,x-ai/grok-4.3,refused,
+file-100,anthropic,claude-sonnet-5,read,
+file-100,google,gemini-3.1-flash-lite,read,
+file-100,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-100,xai,x-ai/grok-4.3,"fetched, one line",
+file-101,anthropic,claude-sonnet-5,boilerplate only,
+file-101,google,gemini-3.1-flash-lite,boilerplate only,
+file-101,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-101,xai,x-ai/grok-4.3,refused,
+file-102,anthropic,claude-sonnet-5,boilerplate only,
+file-102,google,gemini-3.1-flash-lite,refused,
+file-102,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-102,xai,x-ai/grok-4.3,boilerplate only,
+file-103,anthropic,claude-sonnet-5,read,
+file-103,google,gemini-3.1-flash-lite,read,
+file-103,openai,openai/gpt-5-mini,read,read in full
+file-103,xai,x-ai/grok-4.3,read,
+file-104,anthropic,claude-sonnet-5,read,
+file-104,google,gemini-3.1-flash-lite,read,
+file-104,openai,openai/gpt-5-mini,read,read in full
+file-104,xai,x-ai/grok-4.3,read,
+file-105,anthropic,claude-sonnet-5,boilerplate only,
+file-105,google,gemini-3.1-flash-lite,refused,
+file-105,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-105,xai,x-ai/grok-4.3,boilerplate only,
+file-106,anthropic,claude-sonnet-5,read,
+file-106,google,gemini-3.1-flash-lite,refused,
+file-106,openai,openai/gpt-5-mini,refused,refused: no reason given
+file-106,xai,x-ai/grok-4.3,read,
+file-107,anthropic,claude-sonnet-5,boilerplate only,
+file-107,google,gemini-3.1-flash-lite,refused,
+file-107,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-107,xai,x-ai/grok-4.3,read,
+file-108,anthropic,claude-sonnet-5,read,
+file-108,google,gemini-3.1-flash-lite,read,
+file-108,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-108,xai,x-ai/grok-4.3,refused,
+file-109,anthropic,claude-sonnet-5,boilerplate only,
+file-109,google,gemini-3.1-flash-lite,refused,
+file-109,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-109,xai,x-ai/grok-4.3,boilerplate only,
+file-110,anthropic,claude-sonnet-5,read,
+file-110,google,gemini-3.1-flash-lite,refused,
+file-110,openai,openai/gpt-5-mini,read,read in full
+file-110,xai,x-ai/grok-4.3,read,
+file-111,anthropic,claude-sonnet-5,boilerplate only,
+file-111,google,gemini-3.1-flash-lite,refused,
+file-111,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-111,xai,x-ai/grok-4.3,boilerplate only,
+file-112,anthropic,claude-sonnet-5,boilerplate only,
+file-112,google,gemini-3.1-flash-lite,refused,
+file-112,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-112,xai,x-ai/grok-4.3,boilerplate only,
+file-113,anthropic,claude-sonnet-5,read,
+file-113,google,gemini-3.1-flash-lite,refused,
+file-113,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-113,xai,x-ai/grok-4.3,"fetched, one line",
+file-114,anthropic,claude-sonnet-5,read,
+file-114,google,gemini-3.1-flash-lite,read,
+file-114,openai,openai/gpt-5-mini,read,read in full
+file-114,xai,x-ai/grok-4.3,read,
+file-115,anthropic,claude-sonnet-5,refused,
+file-115,google,gemini-3.1-flash-lite,read,
+file-115,openai,openai/gpt-5-mini,read,read in full
+file-115,xai,x-ai/grok-4.3,read,
+file-116,anthropic,claude-sonnet-5,read,
+file-116,google,gemini-3.1-flash-lite,read,
+file-116,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-116,xai,x-ai/grok-4.3,"fetched, one line",
+file-117,anthropic,claude-sonnet-5,read,
+file-117,google,gemini-3.1-flash-lite,read,
+file-117,openai,openai/gpt-5-mini,read,read in full
+file-117,xai,x-ai/grok-4.3,read,
+file-118,anthropic,claude-sonnet-5,read,
+file-118,google,gemini-3.1-flash-lite,refused,
+file-118,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-118,xai,x-ai/grok-4.3,read,
+file-119,anthropic,claude-sonnet-5,boilerplate only,
+file-119,google,gemini-3.1-flash-lite,refused,
+file-119,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-119,xai,x-ai/grok-4.3,boilerplate only,
+file-120,anthropic,claude-sonnet-5,refused,
+file-120,google,gemini-3.1-flash-lite,refused,
+file-120,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-120,xai,x-ai/grok-4.3,read,
+file-121,anthropic,claude-sonnet-5,read,
+file-121,google,gemini-3.1-flash-lite,refused,
+file-121,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-121,xai,x-ai/grok-4.3,read,
+file-122,anthropic,claude-sonnet-5,boilerplate only,
+file-122,google,gemini-3.1-flash-lite,refused,
+file-122,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-122,xai,x-ai/grok-4.3,boilerplate only,
+file-123,anthropic,claude-sonnet-5,read,
+file-123,google,gemini-3.1-flash-lite,read,
+file-123,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-123,xai,x-ai/grok-4.3,refused,
+file-124,anthropic,claude-sonnet-5,read,
+file-124,google,gemini-3.1-flash-lite,refused,
+file-124,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-124,xai,x-ai/grok-4.3,read,
+file-125,anthropic,claude-sonnet-5,boilerplate only,
+file-125,google,gemini-3.1-flash-lite,boilerplate only,
+file-125,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-125,xai,x-ai/grok-4.3,"fetched, one line",
+file-126,anthropic,claude-sonnet-5,read,
+file-126,google,gemini-3.1-flash-lite,read,
+file-126,openai,openai/gpt-5-mini,read,read in full
+file-126,xai,x-ai/grok-4.3,read,
+file-127,anthropic,claude-sonnet-5,boilerplate only,
+file-127,google,gemini-3.1-flash-lite,refused,
+file-127,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-127,xai,x-ai/grok-4.3,boilerplate only,
+file-128,anthropic,claude-sonnet-5,boilerplate only,
+file-128,google,gemini-3.1-flash-lite,refused,
+file-128,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-128,xai,x-ai/grok-4.3,boilerplate only,
+file-129,anthropic,claude-sonnet-5,read,
+file-129,google,gemini-3.1-flash-lite,read,
+file-129,openai,openai/gpt-5-mini,read,read in full
+file-129,xai,x-ai/grok-4.3,read,
+file-130,anthropic,claude-sonnet-5,read,
+file-130,google,gemini-3.1-flash-lite,read,
+file-130,openai,openai/gpt-5-mini,read,read in full
+file-130,xai,x-ai/grok-4.3,read,
+file-131,anthropic,claude-sonnet-5,boilerplate only,
+file-131,google,gemini-3.1-flash-lite,refused,
+file-131,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-131,xai,x-ai/grok-4.3,"fetched, one line",
+file-132,anthropic,claude-sonnet-5,boilerplate only,
+file-132,google,gemini-3.1-flash-lite,refused,
+file-132,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-132,xai,x-ai/grok-4.3,boilerplate only,
+file-133,anthropic,claude-sonnet-5,boilerplate only,
+file-133,google,gemini-3.1-flash-lite,refused,
+file-133,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-133,xai,x-ai/grok-4.3,read,
+file-134,anthropic,claude-sonnet-5,read,
+file-134,google,gemini-3.1-flash-lite,read,
+file-134,openai,openai/gpt-5-mini,read,read in full
+file-134,xai,x-ai/grok-4.3,read,
+file-135,anthropic,claude-sonnet-5,read,
+file-135,google,gemini-3.1-flash-lite,refused,
+file-135,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-135,xai,x-ai/grok-4.3,read,
+file-136,anthropic,claude-sonnet-5,boilerplate only,
+file-136,google,gemini-3.1-flash-lite,boilerplate only,
+file-136,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-136,xai,x-ai/grok-4.3,"fetched, one line",
+file-137,anthropic,claude-sonnet-5,boilerplate only,
+file-137,google,gemini-3.1-flash-lite,boilerplate only,
+file-137,openai,openai/gpt-5-mini,refused,refused: site's error
+file-137,xai,x-ai/grok-4.3,refused,
+file-138,anthropic,claude-sonnet-5,boilerplate only,
+file-138,google,gemini-3.1-flash-lite,refused,
+file-138,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-138,xai,x-ai/grok-4.3,"fetched, one line",
+file-139,anthropic,claude-sonnet-5,boilerplate only,
+file-139,google,gemini-3.1-flash-lite,refused,
+file-139,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-139,xai,x-ai/grok-4.3,boilerplate only,
+file-140,anthropic,claude-sonnet-5,refused,
+file-140,google,gemini-3.1-flash-lite,boilerplate only,
+file-140,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-140,xai,x-ai/grok-4.3,refused,
+file-141,anthropic,claude-sonnet-5,boilerplate only,
+file-141,google,gemini-3.1-flash-lite,refused,
+file-141,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-141,xai,x-ai/grok-4.3,boilerplate only,
+file-142,anthropic,claude-sonnet-5,boilerplate only,
+file-142,google,gemini-3.1-flash-lite,refused,
+file-142,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-142,xai,x-ai/grok-4.3,boilerplate only,
+file-143,anthropic,claude-sonnet-5,read,
+file-143,google,gemini-3.1-flash-lite,refused,
+file-143,openai,openai/gpt-5-mini,read,read in full
+file-143,xai,x-ai/grok-4.3,read,
+file-144,anthropic,claude-sonnet-5,read,
+file-144,google,gemini-3.1-flash-lite,refused,
+file-144,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-144,xai,x-ai/grok-4.3,read,
+file-145,anthropic,claude-sonnet-5,refused,
+file-145,google,gemini-3.1-flash-lite,refused,
+file-145,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-145,xai,x-ai/grok-4.3,boilerplate only,
+file-146,anthropic,claude-sonnet-5,read,
+file-146,google,gemini-3.1-flash-lite,refused,
+file-146,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-146,xai,x-ai/grok-4.3,refused,
+file-147,anthropic,claude-sonnet-5,boilerplate only,
+file-147,google,gemini-3.1-flash-lite,refused,
+file-147,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-147,xai,x-ai/grok-4.3,read,
+file-148,anthropic,claude-sonnet-5,read,
+file-148,google,gemini-3.1-flash-lite,read,
+file-148,openai,openai/gpt-5-mini,read,read in full
+file-148,xai,x-ai/grok-4.3,read,
+file-149,anthropic,claude-sonnet-5,refused,
+file-149,google,gemini-3.1-flash-lite,refused,
+file-149,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-149,xai,x-ai/grok-4.3,read,
+file-150,anthropic,claude-sonnet-5,boilerplate only,
+file-150,google,gemini-3.1-flash-lite,refused,
+file-150,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-150,xai,x-ai/grok-4.3,boilerplate only,
+file-151,anthropic,claude-sonnet-5,read,
+file-151,google,gemini-3.1-flash-lite,read,
+file-151,openai,openai/gpt-5-mini,read,read in full
+file-151,xai,x-ai/grok-4.3,read,
+file-152,anthropic,claude-sonnet-5,read,
+file-152,google,gemini-3.1-flash-lite,refused,
+file-152,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-152,xai,x-ai/grok-4.3,read,
+file-153,anthropic,claude-sonnet-5,boilerplate only,
+file-153,google,gemini-3.1-flash-lite,refused,
+file-153,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-153,xai,x-ai/grok-4.3,boilerplate only,
+file-154,anthropic,claude-sonnet-5,read,
+file-154,google,gemini-3.1-flash-lite,refused,
+file-154,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-154,xai,x-ai/grok-4.3,read,
+file-155,anthropic,claude-sonnet-5,refused,
+file-155,google,gemini-3.1-flash-lite,refused,
+file-155,openai,openai/gpt-5-mini,refused,refused: no reason given
+file-155,xai,x-ai/grok-4.3,boilerplate only,
+file-156,anthropic,claude-sonnet-5,refused,
+file-156,google,gemini-3.1-flash-lite,refused,
+file-156,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-156,xai,x-ai/grok-4.3,"fetched, one line",
+file-157,anthropic,claude-sonnet-5,boilerplate only,
+file-157,google,gemini-3.1-flash-lite,refused,
+file-157,openai,openai/gpt-5-mini,refused,refused: no reason given
+file-157,xai,x-ai/grok-4.3,boilerplate only,
+file-158,anthropic,claude-sonnet-5,read,
+file-158,google,gemini-3.1-flash-lite,read,
+file-158,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-158,xai,x-ai/grok-4.3,refused,
+file-159,anthropic,claude-sonnet-5,read,
+file-159,google,gemini-3.1-flash-lite,read,
+file-159,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-159,xai,x-ai/grok-4.3,"fetched, one line",
+file-160,anthropic,claude-sonnet-5,boilerplate only,
+file-160,google,gemini-3.1-flash-lite,refused,
+file-160,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-160,xai,x-ai/grok-4.3,boilerplate only,
+file-161,anthropic,claude-sonnet-5,read,
+file-161,google,gemini-3.1-flash-lite,refused,
+file-161,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-161,xai,x-ai/grok-4.3,refused,
+file-162,anthropic,claude-sonnet-5,read,
+file-162,google,gemini-3.1-flash-lite,read,
+file-162,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-162,xai,x-ai/grok-4.3,read,
+file-163,anthropic,claude-sonnet-5,refused,
+file-163,google,gemini-3.1-flash-lite,refused,
+file-163,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-163,xai,x-ai/grok-4.3,boilerplate only,
+file-164,anthropic,claude-sonnet-5,read,
+file-164,google,gemini-3.1-flash-lite,read,
+file-164,openai,openai/gpt-5-mini,read,read in full
+file-164,xai,x-ai/grok-4.3,read,
+file-165,anthropic,claude-sonnet-5,read,
+file-165,google,gemini-3.1-flash-lite,refused,
+file-165,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-165,xai,x-ai/grok-4.3,read,
+file-166,anthropic,claude-sonnet-5,read,
+file-166,google,gemini-3.1-flash-lite,read,
+file-166,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-166,xai,x-ai/grok-4.3,"fetched, one line",
+file-167,anthropic,claude-sonnet-5,read,
+file-167,google,gemini-3.1-flash-lite,refused,
+file-167,openai,openai/gpt-5-mini,read,read in full
+file-167,xai,x-ai/grok-4.3,read,
+file-168,anthropic,claude-sonnet-5,read,
+file-168,google,gemini-3.1-flash-lite,refused,
+file-168,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-168,xai,x-ai/grok-4.3,refused,
+file-169,anthropic,claude-sonnet-5,read,
+file-169,google,gemini-3.1-flash-lite,refused,
+file-169,openai,openai/gpt-5-mini,read,read in full
+file-169,xai,x-ai/grok-4.3,read,
+file-170,anthropic,claude-sonnet-5,read,
+file-170,google,gemini-3.1-flash-lite,refused,
+file-170,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-170,xai,x-ai/grok-4.3,read,
+file-171,anthropic,claude-sonnet-5,boilerplate only,
+file-171,google,gemini-3.1-flash-lite,refused,
+file-171,openai,openai/gpt-5-mini,refused,refused: no reason given
+file-171,xai,x-ai/grok-4.3,refused,
+file-172,anthropic,claude-sonnet-5,boilerplate only,
+file-172,google,gemini-3.1-flash-lite,refused,
+file-172,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-172,xai,x-ai/grok-4.3,boilerplate only,
+file-173,anthropic,claude-sonnet-5,read,
+file-173,google,gemini-3.1-flash-lite,read,
+file-173,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-173,xai,x-ai/grok-4.3,read,
+file-174,anthropic,claude-sonnet-5,read,
+file-174,google,gemini-3.1-flash-lite,read,
+file-174,openai,openai/gpt-5-mini,read,read in full
+file-174,xai,x-ai/grok-4.3,read,
+file-175,anthropic,claude-sonnet-5,boilerplate only,
+file-175,google,gemini-3.1-flash-lite,refused,
+file-175,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-175,xai,x-ai/grok-4.3,refused,
+file-176,anthropic,claude-sonnet-5,read,
+file-176,google,gemini-3.1-flash-lite,refused,
+file-176,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-176,xai,x-ai/grok-4.3,read,
+file-177,anthropic,claude-sonnet-5,boilerplate only,
+file-177,google,gemini-3.1-flash-lite,refused,
+file-177,openai,openai/gpt-5-mini,refused,refused: no reason given
+file-177,xai,x-ai/grok-4.3,"fetched, one line",
+file-178,anthropic,claude-sonnet-5,refused,
+file-178,google,gemini-3.1-flash-lite,read,
+file-178,openai,openai/gpt-5-mini,refused,refused: site's error
+file-178,xai,x-ai/grok-4.3,"fetched, one line",
+file-179,anthropic,claude-sonnet-5,read,
+file-179,google,gemini-3.1-flash-lite,read,
+file-179,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-179,xai,x-ai/grok-4.3,"fetched, one line",
+file-180,anthropic,claude-sonnet-5,read,
+file-180,google,gemini-3.1-flash-lite,refused,
+file-180,openai,openai/gpt-5-mini,read,read in full
+file-180,xai,x-ai/grok-4.3,read,
+file-181,anthropic,claude-sonnet-5,read,
+file-181,google,gemini-3.1-flash-lite,refused,
+file-181,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-181,xai,x-ai/grok-4.3,read,
+file-182,anthropic,claude-sonnet-5,read,
+file-182,google,gemini-3.1-flash-lite,refused,
+file-182,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-182,xai,x-ai/grok-4.3,read,
+file-183,anthropic,claude-sonnet-5,refused,
+file-183,google,gemini-3.1-flash-lite,read,
+file-183,openai,openai/gpt-5-mini,read,read in full
+file-183,xai,x-ai/grok-4.3,read,
+file-184,anthropic,claude-sonnet-5,boilerplate only,
+file-184,google,gemini-3.1-flash-lite,refused,
+file-184,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-184,xai,x-ai/grok-4.3,boilerplate only,
+file-185,anthropic,claude-sonnet-5,read,
+file-185,google,gemini-3.1-flash-lite,read,
+file-185,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-185,xai,x-ai/grok-4.3,"fetched, one line",
+file-186,anthropic,claude-sonnet-5,boilerplate only,
+file-186,google,gemini-3.1-flash-lite,refused,
+file-186,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-186,xai,x-ai/grok-4.3,read,
+file-187,anthropic,claude-sonnet-5,read,
+file-187,google,gemini-3.1-flash-lite,refused,
+file-187,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-187,xai,x-ai/grok-4.3,read,
+file-188,anthropic,claude-sonnet-5,read,
+file-188,google,gemini-3.1-flash-lite,read,
+file-188,openai,openai/gpt-5-mini,read,read in full
+file-188,xai,x-ai/grok-4.3,read,
+file-189,anthropic,claude-sonnet-5,boilerplate only,
+file-189,google,gemini-3.1-flash-lite,refused,
+file-189,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-189,xai,x-ai/grok-4.3,read,
+file-190,anthropic,claude-sonnet-5,boilerplate only,
+file-190,google,gemini-3.1-flash-lite,refused,
+file-190,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-190,xai,x-ai/grok-4.3,boilerplate only,
+file-191,anthropic,claude-sonnet-5,read,
+file-191,google,gemini-3.1-flash-lite,boilerplate only,
+file-191,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-191,xai,x-ai/grok-4.3,refused,
+file-192,anthropic,claude-sonnet-5,read,
+file-192,google,gemini-3.1-flash-lite,refused,
+file-192,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-192,xai,x-ai/grok-4.3,read,
+file-193,anthropic,claude-sonnet-5,refused,
+file-193,google,gemini-3.1-flash-lite,read,
+file-193,openai,openai/gpt-5-mini,refused,refused: no reason given
+file-193,xai,x-ai/grok-4.3,read,
+file-194,anthropic,claude-sonnet-5,read,
+file-194,google,gemini-3.1-flash-lite,refused,
+file-194,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-194,xai,x-ai/grok-4.3,"fetched, one line",
+file-195,anthropic,claude-sonnet-5,refused,
+file-195,google,gemini-3.1-flash-lite,refused,
+file-195,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-195,xai,x-ai/grok-4.3,refused,
+file-196,anthropic,claude-sonnet-5,boilerplate only,
+file-196,google,gemini-3.1-flash-lite,refused,
+file-196,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-196,xai,x-ai/grok-4.3,boilerplate only,
+file-197,anthropic,claude-sonnet-5,read,
+file-197,google,gemini-3.1-flash-lite,read,
+file-197,openai,openai/gpt-5-mini,refused,refused: site's error
+file-197,xai,x-ai/grok-4.3,"fetched, one line",
+file-198,anthropic,claude-sonnet-5,boilerplate only,
+file-198,google,gemini-3.1-flash-lite,refused,
+file-198,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-198,xai,x-ai/grok-4.3,boilerplate only,
+file-199,anthropic,claude-sonnet-5,read,
+file-199,google,gemini-3.1-flash-lite,refused,
+file-199,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-199,xai,x-ai/grok-4.3,read,
+file-200,anthropic,claude-sonnet-5,boilerplate only,
+file-200,google,gemini-3.1-flash-lite,boilerplate only,
+file-200,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-200,xai,x-ai/grok-4.3,refused,
+file-201,anthropic,claude-sonnet-5,read,
+file-201,google,gemini-3.1-flash-lite,read,
+file-201,openai,openai/gpt-5-mini,refused,refused: site's error
+file-201,xai,x-ai/grok-4.3,read,
+file-202,anthropic,claude-sonnet-5,boilerplate only,
+file-202,google,gemini-3.1-flash-lite,refused,
+file-202,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-202,xai,x-ai/grok-4.3,inconclusive,
+file-203,anthropic,claude-sonnet-5,read,
+file-203,google,gemini-3.1-flash-lite,refused,
+file-203,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-203,xai,x-ai/grok-4.3,read,
+file-204,anthropic,claude-sonnet-5,boilerplate only,
+file-204,google,gemini-3.1-flash-lite,refused,
+file-204,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-204,xai,x-ai/grok-4.3,boilerplate only,
+file-205,anthropic,claude-sonnet-5,read,
+file-205,google,gemini-3.1-flash-lite,refused,
+file-205,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-205,xai,x-ai/grok-4.3,read,
+file-206,anthropic,claude-sonnet-5,refused,
+file-206,google,gemini-3.1-flash-lite,refused,
+file-206,openai,openai/gpt-5-mini,refused,refused: site's error
+file-206,xai,x-ai/grok-4.3,read,
+file-207,anthropic,claude-sonnet-5,boilerplate only,
+file-207,google,gemini-3.1-flash-lite,refused,
+file-207,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-207,xai,x-ai/grok-4.3,read,
+file-208,anthropic,claude-sonnet-5,read,
+file-208,google,gemini-3.1-flash-lite,refused,
+file-208,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-208,xai,x-ai/grok-4.3,read,
+file-209,anthropic,claude-sonnet-5,refused,
+file-209,google,gemini-3.1-flash-lite,boilerplate only,
+file-209,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-209,xai,x-ai/grok-4.3,read,
+file-210,anthropic,claude-sonnet-5,boilerplate only,
+file-210,google,gemini-3.1-flash-lite,refused,
+file-210,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-210,xai,x-ai/grok-4.3,boilerplate only,
+file-211,anthropic,claude-sonnet-5,boilerplate only,
+file-211,google,gemini-3.1-flash-lite,refused,
+file-211,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-211,xai,x-ai/grok-4.3,refused,
+file-212,anthropic,claude-sonnet-5,read,
+file-212,google,gemini-3.1-flash-lite,read,
+file-212,openai,openai/gpt-5-mini,inconclusive,refused: quote limit
+file-212,xai,x-ai/grok-4.3,read,
+file-213,anthropic,claude-sonnet-5,read,
+file-213,google,gemini-3.1-flash-lite,refused,
+file-213,openai,openai/gpt-5-mini,read,read in full
+file-213,xai,x-ai/grok-4.3,read,
+file-214,anthropic,claude-sonnet-5,refused,
+file-214,google,gemini-3.1-flash-lite,refused,
+file-214,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-214,xai,x-ai/grok-4.3,boilerplate only,
+file-215,anthropic,claude-sonnet-5,read,
+file-215,google,gemini-3.1-flash-lite,read,
+file-215,openai,openai/gpt-5-mini,read,read in full
+file-215,xai,x-ai/grok-4.3,read,
+file-216,anthropic,claude-sonnet-5,refused,
+file-216,google,gemini-3.1-flash-lite,refused,
+file-216,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-216,xai,x-ai/grok-4.3,read,
+file-217,anthropic,claude-sonnet-5,read,
+file-217,google,gemini-3.1-flash-lite,refused,
+file-217,openai,openai/gpt-5-mini,read,read in full
+file-217,xai,x-ai/grok-4.3,read,
+file-218,anthropic,claude-sonnet-5,read,
+file-218,google,gemini-3.1-flash-lite,refused,
+file-218,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-218,xai,x-ai/grok-4.3,read,
+file-219,anthropic,claude-sonnet-5,refused,
+file-219,google,gemini-3.1-flash-lite,read,
+file-219,openai,openai/gpt-5-mini,read,read in full
+file-219,xai,x-ai/grok-4.3,read,
+file-220,anthropic,claude-sonnet-5,boilerplate only,
+file-220,google,gemini-3.1-flash-lite,boilerplate only,
+file-220,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-220,xai,x-ai/grok-4.3,"fetched, one line",
+file-221,anthropic,claude-sonnet-5,boilerplate only,
+file-221,google,gemini-3.1-flash-lite,boilerplate only,
+file-221,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-221,xai,x-ai/grok-4.3,refused,
+file-222,anthropic,claude-sonnet-5,read,
+file-222,google,gemini-3.1-flash-lite,read,
+file-222,openai,openai/gpt-5-mini,read,read in full
+file-222,xai,x-ai/grok-4.3,read,
+file-223,anthropic,claude-sonnet-5,read,
+file-223,google,gemini-3.1-flash-lite,refused,
+file-223,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-223,xai,x-ai/grok-4.3,read,
+file-224,anthropic,claude-sonnet-5,boilerplate only,
+file-224,google,gemini-3.1-flash-lite,boilerplate only,
+file-224,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-224,xai,x-ai/grok-4.3,"fetched, one line",
+file-225,anthropic,claude-sonnet-5,boilerplate only,
+file-225,google,gemini-3.1-flash-lite,refused,
+file-225,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-225,xai,x-ai/grok-4.3,boilerplate only,
+file-226,anthropic,claude-sonnet-5,boilerplate only,
+file-226,google,gemini-3.1-flash-lite,boilerplate only,
+file-226,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-226,xai,x-ai/grok-4.3,"fetched, one line",
+file-227,anthropic,claude-sonnet-5,"fetched, one line",
+file-227,google,gemini-3.1-flash-lite,refused,
+file-227,openai,openai/gpt-5-mini,refused,refused: site's error
+file-227,xai,x-ai/grok-4.3,read,
+file-228,anthropic,claude-sonnet-5,read,
+file-228,google,gemini-3.1-flash-lite,refused,
+file-228,openai,openai/gpt-5-mini,read,read in full
+file-228,xai,x-ai/grok-4.3,read,
+file-229,anthropic,claude-sonnet-5,boilerplate only,
+file-229,google,gemini-3.1-flash-lite,refused,
+file-229,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-229,xai,x-ai/grok-4.3,boilerplate only,
+file-230,anthropic,claude-sonnet-5,boilerplate only,
+file-230,google,gemini-3.1-flash-lite,refused,
+file-230,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-230,xai,x-ai/grok-4.3,boilerplate only,
+file-231,anthropic,claude-sonnet-5,read,
+file-231,google,gemini-3.1-flash-lite,inconclusive,
+file-231,openai,openai/gpt-5-mini,read,read in full
+file-231,xai,x-ai/grok-4.3,read,
+file-232,anthropic,claude-sonnet-5,refused,
+file-232,google,gemini-3.1-flash-lite,read,
+file-232,openai,openai/gpt-5-mini,read,read in full
+file-232,xai,x-ai/grok-4.3,read,
+file-233,anthropic,claude-sonnet-5,read,
+file-233,google,gemini-3.1-flash-lite,read,
+file-233,openai,openai/gpt-5-mini,read,read in full
+file-233,xai,x-ai/grok-4.3,read,
+file-234,anthropic,claude-sonnet-5,refused,
+file-234,google,gemini-3.1-flash-lite,read,
+file-234,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-234,xai,x-ai/grok-4.3,refused,
+file-235,anthropic,claude-sonnet-5,read,
+file-235,google,gemini-3.1-flash-lite,read,
+file-235,openai,openai/gpt-5-mini,read,read in full
+file-235,xai,x-ai/grok-4.3,refused,
+file-236,anthropic,claude-sonnet-5,boilerplate only,
+file-236,google,gemini-3.1-flash-lite,boilerplate only,
+file-236,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-236,xai,x-ai/grok-4.3,"fetched, one line",
+file-237,anthropic,claude-sonnet-5,read,
+file-237,google,gemini-3.1-flash-lite,refused,
+file-237,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-237,xai,x-ai/grok-4.3,read,
+file-238,anthropic,claude-sonnet-5,read,
+file-238,google,gemini-3.1-flash-lite,refused,
+file-238,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-238,xai,x-ai/grok-4.3,read,
+file-239,anthropic,claude-sonnet-5,boilerplate only,
+file-239,google,gemini-3.1-flash-lite,boilerplate only,
+file-239,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-239,xai,x-ai/grok-4.3,"fetched, one line",
+file-240,anthropic,claude-sonnet-5,boilerplate only,
+file-240,google,gemini-3.1-flash-lite,refused,
+file-240,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-240,xai,x-ai/grok-4.3,read,
+file-241,anthropic,claude-sonnet-5,read,
+file-241,google,gemini-3.1-flash-lite,read,
+file-241,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-241,xai,x-ai/grok-4.3,"fetched, one line",
+file-242,anthropic,claude-sonnet-5,read,
+file-242,google,gemini-3.1-flash-lite,read,
+file-242,openai,openai/gpt-5-mini,read,read in full
+file-242,xai,x-ai/grok-4.3,read,
+file-243,anthropic,claude-sonnet-5,refused,
+file-243,google,gemini-3.1-flash-lite,refused,
+file-243,openai,openai/gpt-5-mini,refused,refused: no reason given
+file-243,xai,x-ai/grok-4.3,"fetched, one line",
+file-244,anthropic,claude-sonnet-5,read,
+file-244,google,gemini-3.1-flash-lite,refused,
+file-244,openai,openai/gpt-5-mini,refused,refused: site's error
+file-244,xai,x-ai/grok-4.3,read,
+file-245,anthropic,claude-sonnet-5,read,
+file-245,google,gemini-3.1-flash-lite,refused,
+file-245,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-245,xai,x-ai/grok-4.3,read,
+file-246,anthropic,claude-sonnet-5,read,
+file-246,google,gemini-3.1-flash-lite,refused,
+file-246,openai,openai/gpt-5-mini,read,read in full
+file-246,xai,x-ai/grok-4.3,read,
+file-247,anthropic,claude-sonnet-5,read,
+file-247,google,gemini-3.1-flash-lite,refused,
+file-247,openai,openai/gpt-5-mini,read,read in full
+file-247,xai,x-ai/grok-4.3,read,
+file-248,anthropic,claude-sonnet-5,read,
+file-248,google,gemini-3.1-flash-lite,read,
+file-248,openai,openai/gpt-5-mini,read,read in full
+file-248,xai,x-ai/grok-4.3,read,
+file-249,anthropic,claude-sonnet-5,refused,
+file-249,google,gemini-3.1-flash-lite,refused,
+file-249,openai,openai/gpt-5-mini,refused,refused: site's error
+file-249,xai,x-ai/grok-4.3,read,
+file-250,anthropic,claude-sonnet-5,read,
+file-250,google,gemini-3.1-flash-lite,refused,
+file-250,openai,openai/gpt-5-mini,read,read in full
+file-250,xai,x-ai/grok-4.3,read,
+file-251,anthropic,claude-sonnet-5,read,
+file-251,google,gemini-3.1-flash-lite,refused,
+file-251,openai,openai/gpt-5-mini,read,read in full
+file-251,xai,x-ai/grok-4.3,read,
+file-252,anthropic,claude-sonnet-5,refused,
+file-252,google,gemini-3.1-flash-lite,refused,
+file-252,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-252,xai,x-ai/grok-4.3,boilerplate only,
+file-253,anthropic,claude-sonnet-5,read,
+file-253,google,gemini-3.1-flash-lite,read,
+file-253,openai,openai/gpt-5-mini,read,read in full
+file-253,xai,x-ai/grok-4.3,read,
+file-254,anthropic,claude-sonnet-5,read,
+file-254,google,gemini-3.1-flash-lite,read,
+file-254,openai,openai/gpt-5-mini,read,read in full
+file-254,xai,x-ai/grok-4.3,read,
+file-255,anthropic,claude-sonnet-5,read,
+file-255,google,gemini-3.1-flash-lite,read,
+file-255,openai,openai/gpt-5-mini,read,read in full
+file-255,xai,x-ai/grok-4.3,read,
+file-256,anthropic,claude-sonnet-5,boilerplate only,
+file-256,google,gemini-3.1-flash-lite,boilerplate only,
+file-256,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-256,xai,x-ai/grok-4.3,refused,
+file-257,anthropic,claude-sonnet-5,read,
+file-257,google,gemini-3.1-flash-lite,read,
+file-257,openai,openai/gpt-5-mini,read,read in full
+file-257,xai,x-ai/grok-4.3,read,
+file-258,anthropic,claude-sonnet-5,boilerplate only,
+file-258,google,gemini-3.1-flash-lite,refused,
+file-258,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-258,xai,x-ai/grok-4.3,inconclusive,
+file-259,anthropic,claude-sonnet-5,read,
+file-259,google,gemini-3.1-flash-lite,refused,
+file-259,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-259,xai,x-ai/grok-4.3,refused,
+file-260,anthropic,claude-sonnet-5,boilerplate only,
+file-260,google,gemini-3.1-flash-lite,refused,
+file-260,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-260,xai,x-ai/grok-4.3,boilerplate only,
+file-261,anthropic,claude-sonnet-5,read,
+file-261,google,gemini-3.1-flash-lite,refused,
+file-261,openai,openai/gpt-5-mini,refused,refused: site's error
+file-261,xai,x-ai/grok-4.3,read,
+file-262,anthropic,claude-sonnet-5,read,
+file-262,google,gemini-3.1-flash-lite,refused,
+file-262,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-262,xai,x-ai/grok-4.3,read,
+file-263,anthropic,claude-sonnet-5,read,
+file-263,google,gemini-3.1-flash-lite,read,
+file-263,openai,openai/gpt-5-mini,read,read in full
+file-263,xai,x-ai/grok-4.3,read,
+file-264,anthropic,claude-sonnet-5,boilerplate only,
+file-264,google,gemini-3.1-flash-lite,refused,
+file-264,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-264,xai,x-ai/grok-4.3,boilerplate only,
+file-265,anthropic,claude-sonnet-5,read,
+file-265,google,gemini-3.1-flash-lite,read,
+file-265,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-265,xai,x-ai/grok-4.3,failed,
+file-266,anthropic,claude-sonnet-5,refused,
+file-266,google,gemini-3.1-flash-lite,refused,
+file-266,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-266,xai,x-ai/grok-4.3,boilerplate only,
+file-267,anthropic,claude-sonnet-5,read,
+file-267,google,gemini-3.1-flash-lite,read,
+file-267,openai,openai/gpt-5-mini,read,read in full
+file-267,xai,x-ai/grok-4.3,read,
+file-268,anthropic,claude-sonnet-5,read,
+file-268,google,gemini-3.1-flash-lite,read,
+file-268,openai,openai/gpt-5-mini,read,read in full
+file-268,xai,x-ai/grok-4.3,read,
+file-269,anthropic,claude-sonnet-5,read,
+file-269,google,gemini-3.1-flash-lite,read,
+file-269,openai,openai/gpt-5-mini,read,read in full
+file-269,xai,x-ai/grok-4.3,refused,
+file-270,anthropic,claude-sonnet-5,boilerplate only,
+file-270,google,gemini-3.1-flash-lite,refused,
+file-270,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-270,xai,x-ai/grok-4.3,boilerplate only,
+file-271,anthropic,claude-sonnet-5,refused,
+file-271,google,gemini-3.1-flash-lite,refused,
+file-271,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-271,xai,x-ai/grok-4.3,read,
+file-272,anthropic,claude-sonnet-5,read,
+file-272,google,gemini-3.1-flash-lite,read,
+file-272,openai,openai/gpt-5-mini,refused,refused: no reason given
+file-272,xai,x-ai/grok-4.3,refused,
+file-273,anthropic,claude-sonnet-5,boilerplate only,
+file-273,google,gemini-3.1-flash-lite,refused,
+file-273,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-273,xai,x-ai/grok-4.3,inconclusive,
+file-274,anthropic,claude-sonnet-5,boilerplate only,
+file-274,google,gemini-3.1-flash-lite,refused,
+file-274,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-274,xai,x-ai/grok-4.3,boilerplate only,
+file-275,anthropic,claude-sonnet-5,read,
+file-275,google,gemini-3.1-flash-lite,read,
+file-275,openai,openai/gpt-5-mini,read,read in full
+file-275,xai,x-ai/grok-4.3,read,
+file-276,anthropic,claude-sonnet-5,boilerplate only,
+file-276,google,gemini-3.1-flash-lite,refused,
+file-276,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-276,xai,x-ai/grok-4.3,boilerplate only,
+file-277,anthropic,claude-sonnet-5,refused,
+file-277,google,gemini-3.1-flash-lite,refused,
+file-277,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-277,xai,x-ai/grok-4.3,read,
+file-278,anthropic,claude-sonnet-5,boilerplate only,
+file-278,google,gemini-3.1-flash-lite,refused,
+file-278,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-278,xai,x-ai/grok-4.3,boilerplate only,
+file-279,anthropic,claude-sonnet-5,read,
+file-279,google,gemini-3.1-flash-lite,read,
+file-279,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-279,xai,x-ai/grok-4.3,read,
+file-280,anthropic,claude-sonnet-5,read,
+file-280,google,gemini-3.1-flash-lite,refused,
+file-280,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-280,xai,x-ai/grok-4.3,read,
+file-281,anthropic,claude-sonnet-5,boilerplate only,
+file-281,google,gemini-3.1-flash-lite,boilerplate only,
+file-281,openai,openai/gpt-5-mini,refused,refused: site's error
+file-281,xai,x-ai/grok-4.3,failed,
+file-282,anthropic,claude-sonnet-5,boilerplate only,
+file-282,google,gemini-3.1-flash-lite,boilerplate only,
+file-282,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-282,xai,x-ai/grok-4.3,refused,
+file-283,anthropic,claude-sonnet-5,read,
+file-283,google,gemini-3.1-flash-lite,read,
+file-283,openai,openai/gpt-5-mini,read,read in full
+file-283,xai,x-ai/grok-4.3,read,
+file-284,anthropic,claude-sonnet-5,read,
+file-284,google,gemini-3.1-flash-lite,read,
+file-284,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-284,xai,x-ai/grok-4.3,refused,
+file-285,anthropic,claude-sonnet-5,read,
+file-285,google,gemini-3.1-flash-lite,refused,
+file-285,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-285,xai,x-ai/grok-4.3,"fetched, one line",
+file-286,anthropic,claude-sonnet-5,refused,
+file-286,google,gemini-3.1-flash-lite,refused,
+file-286,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-286,xai,x-ai/grok-4.3,read,
+file-287,anthropic,claude-sonnet-5,read,
+file-287,google,gemini-3.1-flash-lite,refused,
+file-287,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-287,xai,x-ai/grok-4.3,read,
+file-288,anthropic,claude-sonnet-5,boilerplate only,
+file-288,google,gemini-3.1-flash-lite,refused,
+file-288,openai,openai/gpt-5-mini,inconclusive,unclear
+file-288,xai,x-ai/grok-4.3,boilerplate only,
+file-289,anthropic,claude-sonnet-5,read,
+file-289,google,gemini-3.1-flash-lite,refused,
+file-289,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-289,xai,x-ai/grok-4.3,read,
+file-290,anthropic,claude-sonnet-5,read,
+file-290,google,gemini-3.1-flash-lite,refused,
+file-290,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-290,xai,x-ai/grok-4.3,read,
+file-291,anthropic,claude-sonnet-5,read,
+file-291,google,gemini-3.1-flash-lite,read,
+file-291,openai,openai/gpt-5-mini,read,read in full
+file-291,xai,x-ai/grok-4.3,read,
+file-292,anthropic,claude-sonnet-5,boilerplate only,
+file-292,google,gemini-3.1-flash-lite,boilerplate only,
+file-292,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-292,xai,x-ai/grok-4.3,"fetched, one line",
+file-293,anthropic,claude-sonnet-5,refused,
+file-293,google,gemini-3.1-flash-lite,boilerplate only,
+file-293,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-293,xai,x-ai/grok-4.3,"fetched, one line",
+file-294,anthropic,claude-sonnet-5,boilerplate only,
+file-294,google,gemini-3.1-flash-lite,refused,
+file-294,openai,openai/gpt-5-mini,refused,refused: site's error
+file-294,xai,x-ai/grok-4.3,boilerplate only,
+file-295,anthropic,claude-sonnet-5,boilerplate only,
+file-295,google,gemini-3.1-flash-lite,refused,
+file-295,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-295,xai,x-ai/grok-4.3,boilerplate only,
+file-296,anthropic,claude-sonnet-5,read,
+file-296,google,gemini-3.1-flash-lite,read,
+file-296,openai,openai/gpt-5-mini,read,read in full
+file-296,xai,x-ai/grok-4.3,read,
+file-297,anthropic,claude-sonnet-5,boilerplate only,
+file-297,google,gemini-3.1-flash-lite,refused,
+file-297,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-297,xai,x-ai/grok-4.3,boilerplate only,
+file-298,anthropic,claude-sonnet-5,boilerplate only,
+file-298,google,gemini-3.1-flash-lite,refused,
+file-298,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-298,xai,x-ai/grok-4.3,boilerplate only,
+file-299,anthropic,claude-sonnet-5,read,
+file-299,google,gemini-3.1-flash-lite,read,
+file-299,openai,openai/gpt-5-mini,refused,refused: own fetch error
+file-299,xai,x-ai/grok-4.3,refused,

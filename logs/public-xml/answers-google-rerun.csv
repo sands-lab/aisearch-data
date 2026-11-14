@@ -1,0 +1,300 @@
+file_id,model,outcome,fetch_status,stop_reason,error_code,error_message,tool_text_tokens
+file-001,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,772
+file-002,gemini-3.1-flash-lite,no key,URL_RETRIEVAL_STATUS_ERROR,STOP,,,211
+file-003,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,429
+file-004,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-005,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,2984
+file-006,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,234
+file-007,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,223
+file-008,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,235
+file-009,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,216
+file-010,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,216
+file-011,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,223
+file-012,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,898
+file-013,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,167
+file-014,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,212
+file-015,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,7175
+file-016,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,265
+file-017,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,3409
+file-018,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,228
+file-019,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,202
+file-020,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-021,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,231
+file-022,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-023,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1212
+file-024,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,221
+file-025,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,213
+file-026,gemini-3.1-flash-lite,no key,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,2274
+file-027,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,223
+file-028,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,5293
+file-029,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,24358
+file-030,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-031,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,27829
+file-032,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,223
+file-033,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,2702
+file-034,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-035,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,6198
+file-036,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,214
+file-037,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1094
+file-038,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,213
+file-039,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,224
+file-040,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,250
+file-041,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1356
+file-042,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,29785
+file-043,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,200
+file-044,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,217
+file-045,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-046,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-047,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,6031
+file-048,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,213
+file-049,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,231
+file-050,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,2562
+file-051,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-052,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,210
+file-053,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,232
+file-054,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,706
+file-055,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,213
+file-056,gemini-3.1-flash-lite,no key,URL_RETRIEVAL_STATUS_ERROR,STOP,,,216
+file-057,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,209
+file-058,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,5220
+file-059,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,213
+file-060,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,22733
+file-061,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,208
+file-062,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,220
+file-063,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,216
+file-064,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,217
+file-065,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,191
+file-066,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-067,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1220
+file-068,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,177
+file-069,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,6559
+file-070,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,211
+file-071,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,235
+file-072,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,228
+file-073,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-074,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,7771
+file-075,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,213
+file-076,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,216
+file-077,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,2398
+file-078,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,255
+file-079,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,6483
+file-080,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,965
+file-081,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-082,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,214
+file-083,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,226
+file-084,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,226
+file-085,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,243
+file-086,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,183
+file-087,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-088,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-089,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1285
+file-090,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,3159
+file-091,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-092,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,5912
+file-093,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1488
+file-094,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1337
+file-095,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,225
+file-096,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,32894
+file-097,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1208
+file-098,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,5061
+file-099,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1334
+file-100,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-101,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,863
+file-102,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,662
+file-103,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,6556
+file-104,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-105,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,213
+file-106,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,207
+file-107,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,232
+file-108,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,7716
+file-109,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-110,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,227
+file-111,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,214
+file-112,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,217
+file-113,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,237
+file-114,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-115,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,10199
+file-116,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,33039
+file-117,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,808
+file-118,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,222
+file-119,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,210
+file-120,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-121,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,202
+file-122,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,222
+file-123,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,3103
+file-124,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,212
+file-125,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,15205
+file-126,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,181
+file-127,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,217
+file-128,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,223
+file-129,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,853
+file-130,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,6819
+file-131,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,225
+file-132,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,222
+file-133,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,228
+file-134,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1688
+file-135,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,218
+file-136,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,10739
+file-137,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,5411
+file-138,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,167
+file-139,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,225
+file-140,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-141,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,220
+file-142,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,217
+file-143,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,214
+file-144,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,233
+file-145,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,227
+file-146,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,223
+file-147,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,845
+file-148,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,3214
+file-149,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,202
+file-150,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,235
+file-151,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,13917
+file-152,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,232
+file-153,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,213
+file-154,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,225
+file-155,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,239
+file-156,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,176
+file-157,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,216
+file-158,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,30109
+file-159,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-160,gemini-3.1-flash-lite,no key,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-161,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-162,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,3928
+file-163,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-164,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1579
+file-165,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,216
+file-166,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,4350
+file-167,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1932
+file-168,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,214
+file-169,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,217
+file-170,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,221
+file-171,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,243
+file-172,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-173,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,8313
+file-174,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,765
+file-175,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,225
+file-176,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,226
+file-177,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,176
+file-178,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,27306
+file-179,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-180,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,222
+file-181,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,231
+file-182,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-183,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,13993
+file-184,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,213
+file-185,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1322
+file-186,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,225
+file-187,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,216
+file-188,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1671
+file-189,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,214
+file-190,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,219
+file-191,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,29302
+file-192,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,223
+file-193,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,2378
+file-194,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,216
+file-195,gemini-3.1-flash-lite,no key,URL_RETRIEVAL_STATUS_ERROR,STOP,,,212
+file-196,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,227
+file-197,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,8847
+file-198,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,226
+file-199,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,213
+file-200,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,741
+file-201,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,3961
+file-202,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,206
+file-203,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-204,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-205,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,210
+file-206,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,210
+file-207,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,211
+file-208,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,222
+file-209,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,838
+file-210,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,213
+file-211,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,177
+file-212,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-213,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,216
+file-214,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,223
+file-215,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1219
+file-216,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,215
+file-217,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,213
+file-218,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,216
+file-219,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-220,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-221,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,26934
+file-222,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,3285
+file-223,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,202
+file-224,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,10358
+file-225,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,217
+file-226,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,13251
+file-227,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,216
+file-228,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,207
+file-229,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-230,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,222
+file-231,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,23738
+file-232,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1291
+file-233,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,2203
+file-234,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,7705
+file-235,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,13805
+file-236,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-237,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,201
+file-238,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,227
+file-239,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-240,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-241,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,2348
+file-242,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-243,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,176
+file-244,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,228
+file-245,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-246,gemini-3.1-flash-lite,failed,,,,TimeoutError,
+file-247,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,205
+file-248,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1835
+file-249,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-250,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,213
+file-251,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,207
+file-252,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,219
+file-253,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,3420
+file-254,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1611
+file-255,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,2834
+file-256,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-257,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,7494
+file-258,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,226
+file-259,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-260,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,213
+file-261,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,217
+file-262,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,205
+file-263,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,800
+file-264,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,215
+file-265,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,735
+file-266,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-267,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,3665
+file-268,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,443
+file-269,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,2720
+file-270,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,228
+file-271,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,235
+file-272,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1904
+file-273,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,230
+file-274,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-275,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1011
+file-276,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,222
+file-277,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,210
+file-278,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,246
+file-279,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,2248
+file-280,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,175
+file-281,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,2215
+file-282,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,952
+file-283,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,1539
+file-284,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,16786
+file-285,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,213
+file-286,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,221
+file-287,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,219
+file-288,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,208
+file-289,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,221
+file-290,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,222
+file-291,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,5159
+file-292,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,5674
+file-293,gemini-3.1-flash-lite,boilerplate only,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,19294
+file-294,gemini-3.1-flash-lite,failed,,,503 UNAVAILABLE,This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.,
+file-295,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,224
+file-296,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,7463
+file-297,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,219
+file-298,gemini-3.1-flash-lite,refused,URL_RETRIEVAL_STATUS_ERROR,STOP,,,222
+file-299,gemini-3.1-flash-lite,read,URL_RETRIEVAL_STATUS_SUCCESS,STOP,,,10784
