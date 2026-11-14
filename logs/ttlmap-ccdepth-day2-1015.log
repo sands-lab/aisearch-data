@@ -1,0 +1,712 @@
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+[ttlmap] run run20261015-060022-firmp: providers [anthropic-claude-sonnet-5, or:openai-gpt-5-mini, or:x-ai-grok-4.3], arms [cc-nostore-tag, cc-nostore-notag, cc-private-tag, cc-private-notag, cc-nocache-tag, cc-nocache-notag, cc-maxage0-tag, cc-maxage0-notag, cc-combo-tag, cc-combo-notag, cc-expired-tag, cc-expired-notag, cc-max60-tag, cc-max60reval-tag, cc-smax60-tag, cc-max3600-tag, cc-none-tag, cc-none-recent, cc-none-notag], 57 pages (1 per arm/provider), cadence 3m0s, first poll 9m0s, window 45m0s (6 poll rounds)
+[ttlmap] about to make up to ~399 API calls (1 warm + up to 6 polls per page) — Ctrl-C within 5s to abort
+[ttlmap] warming all pages …
+WARN anomalous token cost: ttlmap warm cc-private-tag [anthropic] in=24469 out=712 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap warm cc-nostore-tag [anthropic] in=32009 out=698 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap warm cc-nocache-tag [anthropic] in=38613 out=996 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap warm cc-combo-tag [anthropic] in=24345 out=726 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap warm cc-maxage0-notag [anthropic] in=40225 out=1369 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap warm cc-nocache-notag [anthropic] in=86958 out=4273 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap warm cc-private-notag [anthropic] in=118012 out=5500 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap warm cc-expired-notag [anthropic] in=25064 out=615 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap warm cc-expired-tag [anthropic] in=54244 out=1715 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap warm cc-max60reval-tag [anthropic] in=31863 out=587 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap warm cc-smax60-tag [anthropic] in=38756 out=1089 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap warm cc-max3600-tag [anthropic] in=31219 out=738 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap warm cc-combo-notag [anthropic] in=134282 out=6136 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap warm cc-none-notag [anthropic] in=40792 out=1485 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap warm cc-none-tag [anthropic] in=58279 out=3100 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap warm cc-none-recent [anthropic] in=77426 out=4498 (kept full answer for forensics)
+  warm WARNING cc-nostore-notag-or:x-ai-grok-4.3-run20261015-060022-firmp-ttl-r1: no fetch reached us on warm — its held polls are not judgeable
+  warm WARNING cc-nocache-notag-or:x-ai-grok-4.3-run20261015-060022-firmp-ttl-r1: no fetch reached us on warm — its held polls are not judgeable
+  warm WARNING cc-maxage0-notag-or:x-ai-grok-4.3-run20261015-060022-firmp-ttl-r1: no fetch reached us on warm — its held polls are not judgeable
+[ttlmap] poll round nominal gap 2m30s — 57 live page(s) …
+WARN anomalous token cost: ttlmap poll cc-nostore-tag [anthropic] gap=4m in=32317 out=584 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nostore-notag [anthropic] gap=4m in=39686 out=934 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-private-tag [anthropic] gap=5m in=33416 out=1498 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-maxage0-tag [anthropic] gap=5m in=24382 out=576 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-maxage0-notag [anthropic] gap=5m in=24583 out=561 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-combo-tag [anthropic] gap=4m in=23983 out=591 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-private-notag [anthropic] gap=5m in=106517 out=3948 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-expired-tag [anthropic] gap=4m in=39131 out=760 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-combo-notag [anthropic] gap=4m in=40651 out=942 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-max60reval-tag [anthropic] gap=4m in=24315 out=521 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-max3600-tag [anthropic] gap=4m in=24497 out=517 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-smax60-tag [anthropic] gap=4m in=51308 out=1592 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-none-tag [anthropic] gap=4m in=32216 out=671 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-max60-tag [anthropic] gap=4m in=81770 out=4145 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-none-recent [anthropic] gap=4m in=200631 out=6994 (kept full answer for forensics)
+  cc-nostore-tag       r1  gap=  4.5m -> held (marker=true)
+  cc-nostore-tag       r1  gap=  4.5m -> held (marker=true)
+  cc-nostore-tag       r1  gap=  4.5m -> held (marker=true)
+  cc-nostore-notag     r1  gap=  4.5m -> held (marker=true)
+  cc-nostore-notag     r1  gap=  4.5m -> held (marker=true)
+  cc-nostore-notag     r1  gap=  4.5m -> RE-FETCHED (marker=true)
+  cc-private-tag       r1  gap=  4.7m -> held (marker=true)
+  cc-private-tag       r1  gap=  4.6m -> held (marker=true)
+  cc-private-tag       r1  gap=  4.5m -> held (marker=true)
+  cc-private-notag     r1  gap=  4.5m -> held (marker=true)
+  cc-private-notag     r1  gap=  4.5m -> held (marker=true)
+  cc-private-notag     r1  gap=  4.5m -> held (marker=true)
+  cc-nocache-tag       r1  gap=  4.6m -> held (marker=true)
+  cc-nocache-tag       r1  gap=  4.6m -> held (marker=true)
+  cc-nocache-tag       r1  gap=  4.6m -> held (marker=false)
+  cc-nocache-notag     r1  gap=  4.5m -> held (marker=true)
+  cc-nocache-notag     r1  gap=  4.5m -> held (marker=true)
+  cc-nocache-notag     r1  gap=  4.5m -> RE-FETCHED (marker=true)
+  cc-maxage0-tag       r1  gap=  4.5m -> held (marker=true)
+  cc-maxage0-tag       r1  gap=  4.5m -> held (marker=true)
+  cc-maxage0-tag       r1  gap=  4.6m -> held (marker=true)
+  cc-maxage0-notag     r1  gap=  4.5m -> held (marker=true)
+  cc-maxage0-notag     r1  gap=  4.5m -> held (marker=true)
+  cc-maxage0-notag     r1  gap=  4.5m -> RE-FETCHED (marker=true)
+  cc-combo-tag         r1  gap=  4.5m -> held (marker=true)
+  cc-combo-tag         r1  gap=  4.4m -> held (marker=true)
+  cc-combo-tag         r1  gap=  4.3m -> held (marker=true)
+  cc-combo-notag       r1  gap=  4.3m -> held (marker=true)
+  cc-combo-notag       r1  gap=  4.3m -> held (marker=true)
+  cc-combo-notag       r1  gap=  4.3m -> held (marker=false)
+  cc-expired-tag       r1  gap=  4.1m -> held (marker=true)
+  cc-expired-tag       r1  gap=  4.1m -> held (marker=true)
+  cc-expired-tag       r1  gap=  4.1m -> held (marker=true)
+  cc-expired-notag     r1  gap=  4.1m -> held (marker=true)
+  cc-expired-notag     r1  gap=  4.1m -> held (marker=true)
+  cc-expired-notag     r1  gap=  4.2m -> held (marker=true)
+  cc-max60-tag         r1  gap=  4.0m -> held (marker=true)
+  cc-max60-tag         r1  gap=  4.0m -> held (marker=true)
+  cc-max60-tag         r1  gap=  3.9m -> held (marker=true)
+  cc-max60reval-tag    r1  gap=  3.9m -> held (marker=true)
+  cc-max60reval-tag    r1  gap=  3.9m -> held (marker=true)
+  cc-max60reval-tag    r1  gap=  3.9m -> held (marker=true)
+  cc-smax60-tag        r1  gap=  3.8m -> held (marker=true)
+  cc-smax60-tag        r1  gap=  3.7m -> held (marker=true)
+  cc-smax60-tag        r1  gap=  3.7m -> held (marker=true)
+  cc-max3600-tag       r1  gap=  3.7m -> held (marker=true)
+  cc-max3600-tag       r1  gap=  3.7m -> held (marker=true)
+  cc-max3600-tag       r1  gap=  3.7m -> held (marker=true)
+  cc-none-tag          r1  gap=  3.6m -> held (marker=true)
+  cc-none-tag          r1  gap=  3.6m -> held (marker=true)
+  cc-none-tag          r1  gap=  3.6m -> held (marker=true)
+  cc-none-recent       r1  gap=  3.7m -> held (marker=true)
+  cc-none-recent       r1  gap=  3.7m -> held (marker=true)
+  cc-none-recent       r1  gap=  3.7m -> held (marker=true)
+  cc-none-notag        r1  gap=  3.6m -> held (marker=true)
+  cc-none-notag        r1  gap=  3.6m -> held (marker=true)
+  cc-none-notag        r1  gap=  3.6m -> held (marker=true)
+[ttlmap] poll round nominal gap 5m0s — 54 live page(s) …
+WARN anomalous token cost: ttlmap poll cc-nostore-notag [anthropic] gap=9m in=31965 out=845 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nostore-tag [anthropic] gap=9m in=39680 out=1111 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-private-tag [anthropic] gap=9m in=61005 out=1966 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nocache-tag [anthropic] gap=9m in=25186 out=849 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-expired-tag [anthropic] gap=9m in=24484 out=688 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-max60-tag [anthropic] gap=8m in=24469 out=412 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-combo-tag [anthropic] gap=9m in=78543 out=2929 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-smax60-tag [anthropic] gap=8m in=31494 out=805 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-combo-notag [anthropic] gap=9m in=92144 out=4307 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-none-tag [anthropic] gap=8m in=32240 out=660 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-none-recent [anthropic] gap=8m in=37603 out=741 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-none-notag [anthropic] gap=8m in=32281 out=658 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-max60reval-tag [anthropic] gap=8m in=131817 out=6467 (kept full answer for forensics)
+  cc-nostore-tag       r1  gap=  9.0m -> held (marker=true)
+  cc-nostore-tag       r1  gap=  9.0m -> held (marker=true)
+  cc-nostore-tag       r1  gap=  9.0m -> held (marker=true)
+  cc-nostore-notag     r1  gap=  9.0m -> held (marker=true)
+  cc-nostore-notag     r1  gap=  9.0m -> held (marker=true)
+  cc-private-tag       r1  gap=  9.0m -> held (marker=true)
+  cc-private-tag       r1  gap=  9.1m -> held (marker=true)
+  cc-private-tag       r1  gap=  9.0m -> held (marker=true)
+  cc-private-notag     r1  gap=  9.1m -> held (marker=true)
+  cc-private-notag     r1  gap=  9.1m -> held (marker=true)
+  cc-private-notag     r1  gap=  9.1m -> held (marker=true)
+  cc-nocache-tag       r1  gap=  9.1m -> held (marker=true)
+  cc-nocache-tag       r1  gap=  9.1m -> held (marker=true)
+  cc-nocache-tag       r1  gap=  9.1m -> held (marker=true)
+  cc-nocache-notag     r1  gap=  9.1m -> held (marker=true)
+  cc-nocache-notag     r1  gap=  9.1m -> held (marker=true)
+  cc-maxage0-tag       r1  gap=  9.1m -> held (marker=true)
+  cc-maxage0-tag       r1  gap=  9.1m -> held (marker=true)
+  cc-maxage0-tag       r1  gap=  9.0m -> held (marker=false)
+  cc-maxage0-notag     r1  gap=  8.9m -> held (marker=true)
+  cc-maxage0-notag     r1  gap=  9.0m -> held (marker=true)
+  cc-combo-tag         r1  gap=  8.9m -> held (marker=true)
+  cc-combo-tag         r1  gap=  8.8m -> held (marker=true)
+  cc-combo-tag         r1  gap=  8.6m -> held (marker=true)
+  cc-combo-notag       r1  gap=  8.6m -> held (marker=true)
+  cc-combo-notag       r1  gap=  8.6m -> held (marker=true)
+  cc-combo-notag       r1  gap=  8.7m -> held (marker=true)
+  cc-expired-tag       r1  gap=  8.6m -> held (marker=true)
+  cc-expired-tag       r1  gap=  8.6m -> held (marker=true)
+  cc-expired-tag       r1  gap=  8.5m -> held (marker=true)
+  cc-expired-notag     r1  gap=  8.5m -> held (marker=true)
+  cc-expired-notag     r1  gap=  8.6m -> held (marker=true)
+  cc-expired-notag     r1  gap=  8.5m -> held (marker=true)
+  cc-max60-tag         r1  gap=  8.4m -> held (marker=true)
+  cc-max60-tag         r1  gap=  8.4m -> held (marker=true)
+  cc-max60-tag         r1  gap=  8.4m -> held (marker=true)
+  cc-max60reval-tag    r1  gap=  8.5m -> held (marker=true)
+  cc-max60reval-tag    r1  gap=  8.3m -> held (marker=true)
+  cc-max60reval-tag    r1  gap=  8.3m -> held (marker=true)
+  cc-smax60-tag        r1  gap=  8.3m -> held (marker=true)
+  cc-smax60-tag        r1  gap=  8.3m -> held (marker=true)
+  cc-smax60-tag        r1  gap=  8.4m -> held (marker=true)
+  cc-max3600-tag       r1  gap=  8.2m -> held (marker=true)
+  cc-max3600-tag       r1  gap=  8.3m -> held (marker=true)
+  cc-max3600-tag       r1  gap=  8.3m -> held (marker=true)
+  cc-none-tag          r1  gap=  8.1m -> held (marker=true)
+  cc-none-tag          r1  gap=  8.1m -> held (marker=true)
+  cc-none-tag          r1  gap=  8.1m -> held (marker=true)
+  cc-none-recent       r1  gap=  8.2m -> held (marker=true)
+  cc-none-recent       r1  gap=  8.2m -> held (marker=true)
+  cc-none-recent       r1  gap=  8.2m -> held (marker=true)
+  cc-none-notag        r1  gap=  8.1m -> held (marker=true)
+  cc-none-notag        r1  gap=  8.1m -> held (marker=true)
+  cc-none-notag        r1  gap=  8.1m -> held (marker=true)
+[ttlmap] poll round nominal gap 10m0s — 54 live page(s) …
+WARN anomalous token cost: ttlmap poll cc-nostore-notag [anthropic] gap=13m in=32846 out=780 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nostore-tag [anthropic] gap=13m in=32512 out=793 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-private-notag [anthropic] gap=13m in=24522 out=568 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nocache-tag [anthropic] gap=13m in=31837 out=885 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-maxage0-tag [anthropic] gap=13m in=24542 out=566 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-maxage0-notag [anthropic] gap=13m in=32168 out=823 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-private-tag [anthropic] gap=13m in=93156 out=5280 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-combo-tag [anthropic] gap=13m in=45879 out=1419 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-combo-notag [anthropic] gap=12m in=24511 out=458 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-expired-notag [anthropic] gap=12m in=25135 out=716 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-max60reval-tag [anthropic] gap=12m in=32401 out=754 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-max60-tag [anthropic] gap=12m in=71542 out=2634 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-max3600-tag [anthropic] gap=12m in=32285 out=742 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-none-tag [anthropic] gap=12m in=33059 out=675 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-smax60-tag [anthropic] gap=12m in=69803 out=2664 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-none-notag [anthropic] gap=12m in=85376 out=4282 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nocache-notag [anthropic] gap=13m in=197483 out=13304 (kept full answer for forensics)
+  cc-nostore-tag       r1  gap= 12.6m -> held (marker=true)
+  cc-nostore-tag       r1  gap= 12.6m -> held (marker=true)
+  cc-nostore-tag       r1  gap= 12.6m -> held (marker=true)
+  cc-nostore-notag     r1  gap= 12.6m -> held (marker=true)
+  cc-nostore-notag     r1  gap= 12.6m -> held (marker=true)
+  cc-private-tag       r1  gap= 12.6m -> held (marker=true)
+  cc-private-tag       r1  gap= 12.6m -> held (marker=true)
+  cc-private-tag       r1  gap= 12.6m -> held (marker=true)
+  cc-private-notag     r1  gap= 12.6m -> held (marker=true)
+  cc-private-notag     r1  gap= 12.6m -> held (marker=true)
+  cc-private-notag     r1  gap= 12.6m -> held (marker=true)
+  cc-nocache-tag       r1  gap= 12.6m -> held (marker=true)
+  cc-nocache-tag       r1  gap= 12.6m -> held (marker=true)
+  cc-nocache-tag       r1  gap= 12.6m -> held (marker=true)
+  cc-nocache-notag     r1  gap= 12.5m -> held (marker=true)
+  cc-nocache-notag     r1  gap= 12.6m -> held (marker=true)
+  cc-maxage0-tag       r1  gap= 12.6m -> held (marker=true)
+  cc-maxage0-tag       r1  gap= 12.6m -> held (marker=true)
+  cc-maxage0-tag       r1  gap= 12.6m -> held (marker=true)
+  cc-maxage0-notag     r1  gap= 12.6m -> held (marker=true)
+  cc-maxage0-notag     r1  gap= 12.6m -> held (marker=true)
+  cc-combo-tag         r1  gap= 12.6m -> held (marker=true)
+  cc-combo-tag         r1  gap= 12.5m -> held (marker=true)
+  cc-combo-tag         r1  gap= 12.4m -> held (marker=true)
+  cc-combo-notag       r1  gap= 12.4m -> held (marker=true)
+  cc-combo-notag       r1  gap= 12.4m -> held (marker=true)
+  cc-combo-notag       r1  gap= 12.4m -> held (marker=true)
+  cc-expired-tag       r1  gap= 12.3m -> held (marker=true)
+  cc-expired-tag       r1  gap= 12.3m -> held (marker=true)
+  cc-expired-tag       r1  gap= 12.2m -> held (marker=true)
+  cc-expired-notag     r1  gap= 12.2m -> held (marker=true)
+  cc-expired-notag     r1  gap= 12.2m -> held (marker=true)
+  cc-expired-notag     r1  gap= 12.2m -> held (marker=true)
+  cc-max60-tag         r1  gap= 12.1m -> held (marker=true)
+  cc-max60-tag         r1  gap= 12.2m -> held (marker=true)
+  cc-max60-tag         r1  gap= 12.1m -> held (marker=true)
+  cc-max60reval-tag    r1  gap= 12.1m -> held (marker=true)
+  cc-max60reval-tag    r1  gap= 12.1m -> held (marker=true)
+  cc-max60reval-tag    r1  gap= 12.1m -> held (marker=true)
+  cc-smax60-tag        r1  gap= 12.1m -> held (marker=true)
+  cc-smax60-tag        r1  gap= 12.0m -> held (marker=true)
+  cc-smax60-tag        r1  gap= 12.1m -> held (marker=true)
+  cc-max3600-tag       r1  gap= 12.0m -> held (marker=true)
+  cc-max3600-tag       r1  gap= 12.0m -> held (marker=true)
+  cc-max3600-tag       r1  gap= 12.0m -> held (marker=true)
+  cc-none-tag          r1  gap= 11.9m -> held (marker=true)
+  cc-none-tag          r1  gap= 12.0m -> held (marker=true)
+  cc-none-tag          r1  gap= 12.0m -> held (marker=true)
+  cc-none-recent       r1  gap= 12.1m -> held (marker=true)
+  cc-none-recent       r1  gap= 12.1m -> held (marker=true)
+  cc-none-recent       r1  gap= 12.1m -> held (marker=true)
+  cc-none-notag        r1  gap= 12.0m -> held (marker=true)
+  cc-none-notag        r1  gap= 11.9m -> held (marker=true)
+  cc-none-notag        r1  gap= 11.9m -> held (marker=true)
+[ttlmap] poll round nominal gap 20m0s — 54 live page(s) …
+WARN anomalous token cost: ttlmap poll cc-nocache-tag [anthropic] gap=20m in=40168 out=855 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nocache-notag [anthropic] gap=20m in=33401 out=635 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-maxage0-notag [anthropic] gap=20m in=56737 out=1411 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nostore-tag [anthropic] gap=20m in=118929 out=4870 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-private-notag [anthropic] gap=20m in=61768 out=3533 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-expired-tag [anthropic] gap=20m in=42979 out=1043 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-combo-tag [anthropic] gap=20m in=99740 out=4610 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-combo-notag [anthropic] gap=20m in=97237 out=3325 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-expired-notag [anthropic] gap=20m in=74588 out=2068 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-max60-tag [anthropic] gap=20m in=62473 out=2299 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-max60reval-tag [anthropic] gap=20m in=58041 out=2063 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-max3600-tag [anthropic] gap=20m in=40314 out=885 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-smax60-tag [anthropic] gap=20m in=58404 out=1563 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-none-tag [anthropic] gap=20m in=38276 out=926 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-none-recent [anthropic] gap=20m in=31745 out=551 (kept full answer for forensics)
+  cc-nostore-tag       r1  gap= 20.0m -> held (marker=true)
+  cc-nostore-tag       r1  gap= 20.0m -> held (marker=true)
+  cc-nostore-tag       r1  gap= 20.0m -> held (marker=true)
+  cc-nostore-notag     r1  gap= 20.0m -> held (marker=true)
+  cc-nostore-notag     r1  gap= 20.0m -> held (marker=true)
+  cc-private-tag       r1  gap= 20.0m -> held (marker=true)
+  cc-private-tag       r1  gap= 20.0m -> held (marker=true)
+  cc-private-tag       r1  gap= 19.9m -> held (marker=true)
+  cc-private-notag     r1  gap= 19.9m -> held (marker=true)
+  cc-private-notag     r1  gap= 20.0m -> held (marker=true)
+  cc-private-notag     r1  gap= 20.0m -> held (marker=true)
+  cc-nocache-tag       r1  gap= 20.0m -> held (marker=true)
+  cc-nocache-tag       r1  gap= 20.0m -> held (marker=true)
+  cc-nocache-tag       r1  gap= 20.0m -> held (marker=true)
+  cc-nocache-notag     r1  gap= 20.0m -> held (marker=true)
+  cc-nocache-notag     r1  gap= 20.0m -> held (marker=true)
+  cc-maxage0-tag       r1  gap= 20.1m -> held (marker=true)
+  cc-maxage0-tag       r1  gap= 20.0m -> held (marker=true)
+  cc-maxage0-tag       r1  gap= 20.0m -> held (marker=true)
+  cc-maxage0-notag     r1  gap= 20.0m -> held (marker=true)
+  cc-maxage0-notag     r1  gap= 20.0m -> held (marker=true)
+  cc-combo-tag         r1  gap= 20.0m -> held (marker=true)
+  cc-combo-tag         r1  gap= 19.9m -> held (marker=true)
+  cc-combo-tag         r1  gap= 19.9m -> held (marker=true)
+  cc-combo-notag       r1  gap= 19.9m -> held (marker=true)
+  cc-combo-notag       r1  gap= 19.9m -> held (marker=true)
+  cc-combo-notag       r1  gap= 20.0m -> held (marker=true)
+  cc-expired-tag       r1  gap= 19.9m -> held (marker=true)
+  cc-expired-tag       r1  gap= 19.9m -> held (marker=true)
+  cc-expired-tag       r1  gap= 19.8m -> held (marker=true)
+  cc-expired-notag     r1  gap= 19.8m -> held (marker=true)
+  cc-expired-notag     r1  gap= 19.9m -> held (marker=true)
+  cc-expired-notag     r1  gap= 19.9m -> held (marker=true)
+  cc-max60-tag         r1  gap= 20.0m -> held (marker=true)
+  cc-max60-tag         r1  gap= 20.0m -> held (marker=true)
+  cc-max60-tag         r1  gap= 19.9m -> held (marker=true)
+  cc-max60reval-tag    r1  gap= 20.1m -> held (marker=true)
+  cc-max60reval-tag    r1  gap= 20.0m -> held (marker=true)
+  cc-max60reval-tag    r1  gap= 20.0m -> held (marker=true)
+  cc-smax60-tag        r1  gap= 20.0m -> held (marker=true)
+  cc-smax60-tag        r1  gap= 20.1m -> held (marker=true)
+  cc-smax60-tag        r1  gap= 20.1m -> held (marker=true)
+  cc-max3600-tag       r1  gap= 20.0m -> held (marker=true)
+  cc-max3600-tag       r1  gap= 20.1m -> held (marker=true)
+  cc-max3600-tag       r1  gap= 20.1m -> held (marker=true)
+  cc-none-tag          r1  gap= 19.9m -> held (marker=true)
+  cc-none-tag          r1  gap= 19.9m -> held (marker=true)
+  cc-none-tag          r1  gap= 20.0m -> held (marker=true)
+  cc-none-recent       r1  gap= 20.0m -> held (marker=true)
+  cc-none-recent       r1  gap= 20.0m -> held (marker=true)
+  cc-none-recent       r1  gap= 20.0m -> held (marker=true)
+  cc-none-notag        r1  gap= 19.9m -> held (marker=true)
+  cc-none-notag        r1  gap= 19.9m -> held (marker=true)
+  cc-none-notag        r1  gap= 19.9m -> held (marker=true)
+[ttlmap] poll round nominal gap 40m0s — 54 live page(s) …
+WARN anomalous token cost: ttlmap poll cc-nostore-notag [anthropic] gap=40m in=24334 out=469 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-maxage0-notag [anthropic] gap=40m in=24718 out=673 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-combo-tag [anthropic] gap=40m in=32262 out=665 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nocache-notag [anthropic] gap=40m in=51651 out=2642 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-combo-notag [anthropic] gap=40m in=31467 out=883 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-expired-tag [anthropic] gap=40m in=24852 out=749 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-max60-tag [anthropic] gap=39m in=41699 out=997 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-max60reval-tag [anthropic] gap=39m in=31902 out=724 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-private-tag [anthropic] gap=40m in=130254 out=6464 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-max3600-tag [anthropic] gap=39m in=42334 out=840 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-none-notag [anthropic] gap=39m in=24390 out=962 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-none-recent [anthropic] gap=39m in=48548 out=1336 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-smax60-tag [anthropic] gap=39m in=111409 out=5394 (kept full answer for forensics)
+  cc-nostore-tag       r1  gap= 40.0m -> held (marker=true)
+  cc-nostore-tag       r1  gap= 40.0m -> RE-FETCHED (marker=true)
+  cc-nostore-tag       r1  gap= 40.0m -> held (marker=true)
+  cc-nostore-notag     r1  gap= 40.0m -> held (marker=true)
+  cc-nostore-notag     r1  gap= 40.0m -> RE-FETCHED (marker=true)
+  cc-private-tag       r1  gap= 40.0m -> held (marker=true)
+  cc-private-tag       r1  gap= 40.0m -> RE-FETCHED (marker=true)
+  cc-private-tag       r1  gap= 39.9m -> held (marker=true)
+  cc-private-notag     r1  gap= 39.9m -> held (marker=true)
+  cc-private-notag     r1  gap= 39.9m -> RE-FETCHED (marker=true)
+  cc-private-notag     r1  gap= 39.9m -> held (marker=true)
+  cc-nocache-tag       r1  gap= 39.9m -> held (marker=true)
+  cc-nocache-tag       r1  gap= 39.9m -> RE-FETCHED (marker=true)
+  cc-nocache-tag       r1  gap= 39.9m -> held (marker=true)
+  cc-nocache-notag     r1  gap= 39.8m -> held (marker=true)
+  cc-nocache-notag     r1  gap= 39.9m -> RE-FETCHED (marker=true)
+  cc-maxage0-tag       r1  gap= 39.8m -> held (marker=true)
+  cc-maxage0-tag       r1  gap= 39.8m -> RE-FETCHED (marker=true)
+  cc-maxage0-tag       r1  gap= 39.9m -> held (marker=true)
+  cc-maxage0-notag     r1  gap= 39.8m -> held (marker=true)
+  cc-maxage0-notag     r1  gap= 39.8m -> RE-FETCHED (marker=true)
+  cc-combo-tag         r1  gap= 39.9m -> held (marker=true)
+  cc-combo-tag         r1  gap= 39.8m -> RE-FETCHED (marker=true)
+  cc-combo-tag         r1  gap= 39.7m -> held (marker=true)
+  cc-combo-notag       r1  gap= 39.7m -> held (marker=true)
+  cc-combo-notag       r1  gap= 39.7m -> RE-FETCHED (marker=true)
+  cc-combo-notag       r1  gap= 39.7m -> held (marker=true)
+  cc-expired-tag       r1  gap= 39.6m -> held (marker=true)
+  cc-expired-tag       r1  gap= 39.6m -> RE-FETCHED (marker=true)
+  cc-expired-tag       r1  gap= 39.6m -> held (marker=true)
+  cc-expired-notag     r1  gap= 39.5m -> held (marker=true)
+  cc-expired-notag     r1  gap= 39.6m -> RE-FETCHED (marker=true)
+  cc-expired-notag     r1  gap= 39.6m -> held (marker=true)
+  cc-max60-tag         r1  gap= 39.4m -> held (marker=true)
+  cc-max60-tag         r1  gap= 39.4m -> RE-FETCHED (marker=true)
+  cc-max60-tag         r1  gap= 39.4m -> held (marker=true)
+  cc-max60reval-tag    r1  gap= 39.5m -> held (marker=true)
+  cc-max60reval-tag    r1  gap= 39.4m -> RE-FETCHED (marker=true)
+  cc-max60reval-tag    r1  gap= 39.3m -> held (marker=true)
+  cc-smax60-tag        r1  gap= 39.4m -> held (marker=true)
+  cc-smax60-tag        r1  gap= 39.3m -> RE-FETCHED (marker=true)
+  cc-smax60-tag        r1  gap= 39.3m -> held (marker=true)
+  cc-max3600-tag       r1  gap= 39.3m -> held (marker=true)
+  cc-max3600-tag       r1  gap= 39.3m -> RE-FETCHED (marker=true)
+  cc-max3600-tag       r1  gap= 39.2m -> held (marker=true)
+  cc-none-tag          r1  gap= 39.1m -> held (marker=true)
+  cc-none-tag          r1  gap= 39.1m -> RE-FETCHED (marker=true)
+  cc-none-tag          r1  gap= 39.2m -> held (marker=true)
+  cc-none-recent       r1  gap= 39.2m -> held (marker=true)
+  cc-none-recent       r1  gap= 39.2m -> RE-FETCHED (marker=true)
+  cc-none-recent       r1  gap= 39.2m -> held (marker=true)
+  cc-none-notag        r1  gap= 39.2m -> held (marker=true)
+  cc-none-notag        r1  gap= 39.2m -> RE-FETCHED (marker=true)
+  cc-none-notag        r1  gap= 39.3m -> held (marker=true)
+[ttlmap] poll round nominal gap 1h20m0s — 35 live page(s) …
+WARN anomalous token cost: ttlmap poll cc-private-notag [anthropic] gap=80m in=31794 out=897 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nostore-tag [anthropic] gap=80m in=31794 out=725 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-private-tag [anthropic] gap=80m in=25332 out=1135 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-maxage0-tag [anthropic] gap=80m in=31862 out=1018 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-combo-notag [anthropic] gap=79m in=23983 out=542 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nocache-notag [anthropic] gap=80m in=40828 out=1463 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-expired-tag [anthropic] gap=79m in=32084 out=713 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-max60-tag [anthropic] gap=79m in=39367 out=722 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nostore-notag [anthropic] gap=80m in=100649 out=4797 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-smax60-tag [anthropic] gap=79m in=32506 out=846 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-max3600-tag [anthropic] gap=79m in=31972 out=666 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-max60reval-tag [anthropic] gap=79m in=60550 out=2296 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-expired-notag [anthropic] gap=79m in=99182 out=2748 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-none-recent [anthropic] gap=79m in=31817 out=771 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-none-notag [anthropic] gap=79m in=31785 out=774 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-maxage0-notag [anthropic] gap=80m in=163538 out=6733 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-none-tag [anthropic] gap=79m in=80608 out=4100 (kept full answer for forensics)
+  cc-nostore-tag       r1  gap= 80.0m -> held (marker=true)
+  cc-nostore-tag       r1  gap= 80.0m -> held (marker=true)
+  cc-nostore-notag     r1  gap= 80.0m -> held (marker=true)
+  cc-private-tag       r1  gap= 80.0m -> held (marker=true)
+  cc-private-tag       r1  gap= 79.7m -> held (marker=true)
+  cc-private-notag     r1  gap= 79.7m -> held (marker=true)
+  cc-private-notag     r1  gap= 79.8m -> held (marker=true)
+  cc-nocache-tag       r1  gap= 79.9m -> held (marker=true)
+  cc-nocache-tag       r1  gap= 79.8m -> held (marker=true)
+  cc-nocache-notag     r1  gap= 79.8m -> held (marker=true)
+  cc-maxage0-tag       r1  gap= 79.7m -> held (marker=true)
+  cc-maxage0-tag       r1  gap= 79.6m -> held (marker=true)
+  cc-maxage0-notag     r1  gap= 79.5m -> held (marker=true)
+  cc-combo-tag         r1  gap= 79.5m -> held (marker=true)
+  cc-combo-tag         r1  gap= 79.2m -> held (marker=true)
+  cc-combo-notag       r1  gap= 79.2m -> held (marker=true)
+  cc-combo-notag       r1  gap= 79.2m -> held (marker=true)
+  cc-expired-tag       r1  gap= 79.1m -> held (marker=true)
+  cc-expired-tag       r1  gap= 79.0m -> held (marker=true)
+  cc-expired-notag     r1  gap= 79.0m -> held (marker=true)
+  cc-expired-notag     r1  gap= 78.9m -> held (marker=true)
+  cc-max60-tag         r1  gap= 78.9m -> held (marker=true)
+  cc-max60-tag         r1  gap= 78.8m -> held (marker=true)
+  cc-max60reval-tag    r1  gap= 78.9m -> held (marker=true)
+  cc-max60reval-tag    r1  gap= 78.9m -> held (marker=true)
+  cc-smax60-tag        r1  gap= 78.8m -> held (marker=true)
+  cc-smax60-tag        r1  gap= 78.8m -> held (marker=true)
+  cc-max3600-tag       r1  gap= 78.8m -> held (marker=true)
+  cc-max3600-tag       r1  gap= 78.7m -> held (marker=true)
+  cc-none-tag          r1  gap= 78.6m -> held (marker=true)
+  cc-none-tag          r1  gap= 78.7m -> held (marker=true)
+  cc-none-recent       r1  gap= 78.8m -> held (marker=false)
+  cc-none-recent       r1  gap= 78.8m -> held (marker=true)
+  cc-none-notag        r1  gap= 78.7m -> held (marker=true)
+  cc-none-notag        r1  gap= 78.7m -> held (marker=true)
+
+==========================================================================
+  TTL MAP — how long each model's copy lives (gap of the first re-fetch)
+==========================================================================
+  (resolution = the poll cadence; a page whose warm never fetched is dropped)
+
+  cc-combo-notag  [anthropic-claude-sonnet-5]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — no-store: a cache must not store it at all
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 79.2 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-combo-notag  [or:openai-gpt-5-mini]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — no-store: a cache must not store it at all
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 19.9 min
+    copy lifetime (min): min 39.7  median 39.7  max 39.7  mean 39.7  (n=1 re-fetched)
+
+  cc-combo-notag  [or:x-ai-grok-4.3]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — no-store: a cache must not store it at all
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 79.2 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-combo-tag  [anthropic-claude-sonnet-5]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — no-store: a cache must not store it at all
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 79.5 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-combo-tag  [or:openai-gpt-5-mini]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — no-store: a cache must not store it at all
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 19.9 min
+    copy lifetime (min): min 39.8  median 39.8  max 39.8  mean 39.8  (n=1 re-fetched)
+
+  cc-combo-tag  [or:x-ai-grok-4.3]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — no-store: a cache must not store it at all
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 79.2 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-expired-notag  [anthropic-claude-sonnet-5]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — Expires is in the past: already out of date
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 79.0 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-expired-notag  [or:openai-gpt-5-mini]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — Expires is in the past: already out of date
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 19.9 min
+    copy lifetime (min): min 39.6  median 39.6  max 39.6  mean 39.6  (n=1 re-fetched)
+
+  cc-expired-notag  [or:x-ai-grok-4.3]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — Expires is in the past: already out of date
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 78.9 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-expired-tag  [anthropic-claude-sonnet-5]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — Expires is in the past: already out of date
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 79.1 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-expired-tag  [or:openai-gpt-5-mini]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — Expires is in the past: already out of date
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 19.9 min
+    copy lifetime (min): min 39.6  median 39.6  max 39.6  mean 39.6  (n=1 re-fetched)
+
+  cc-expired-tag  [or:x-ai-grok-4.3]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — Expires is in the past: already out of date
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 79.0 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-max3600-tag  [anthropic-claude-sonnet-5]
+    spec limit for a shared cache (must): reuse unchecked for at most 1h0m0s — max-age=3600: reuse for 1h0m0s, then check
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 78.8 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-max3600-tag  [or:openai-gpt-5-mini]
+    spec limit for a shared cache (must): reuse unchecked for at most 1h0m0s — max-age=3600: reuse for 1h0m0s, then check
+    answered from its copy past that limit: 0 of 1 pages; longest reuse without checking 20.1 min
+    copy lifetime (min): min 39.3  median 39.3  max 39.3  mean 39.3  (n=1 re-fetched)
+
+  cc-max3600-tag  [or:x-ai-grok-4.3]
+    spec limit for a shared cache (must): reuse unchecked for at most 1h0m0s — max-age=3600: reuse for 1h0m0s, then check
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 78.7 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-max60-tag  [anthropic-claude-sonnet-5]
+    spec limit for a shared cache (must): reuse unchecked for at most 1m0s — max-age=60: reuse for 1m0s, then check
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 78.9 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-max60-tag  [or:openai-gpt-5-mini]
+    spec limit for a shared cache (must): reuse unchecked for at most 1m0s — max-age=60: reuse for 1m0s, then check
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 20.0 min
+    copy lifetime (min): min 39.4  median 39.4  max 39.4  mean 39.4  (n=1 re-fetched)
+
+  cc-max60-tag  [or:x-ai-grok-4.3]
+    spec limit for a shared cache (must): reuse unchecked for at most 1m0s — max-age=60: reuse for 1m0s, then check
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 78.8 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-max60reval-tag  [anthropic-claude-sonnet-5]
+    spec limit for a shared cache (must): reuse unchecked for at most 1m0s — max-age=60: reuse for 1m0s, then check
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 78.9 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-max60reval-tag  [or:openai-gpt-5-mini]
+    spec limit for a shared cache (must): reuse unchecked for at most 1m0s — max-age=60: reuse for 1m0s, then check
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 20.0 min
+    copy lifetime (min): min 39.4  median 39.4  max 39.4  mean 39.4  (n=1 re-fetched)
+
+  cc-max60reval-tag  [or:x-ai-grok-4.3]
+    spec limit for a shared cache (must): reuse unchecked for at most 1m0s — max-age=60: reuse for 1m0s, then check
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 78.9 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-maxage0-notag  [anthropic-claude-sonnet-5]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — max-age=0: reuse for 0s, then check
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 79.5 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-maxage0-notag  [or:openai-gpt-5-mini]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — max-age=0: reuse for 0s, then check
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 20.0 min
+    copy lifetime (min): min 39.8  median 39.8  max 39.8  mean 39.8  (n=1 re-fetched)
+
+  cc-maxage0-notag  [or:x-ai-grok-4.3]
+    no page re-fetched inside the window (held=0, unjudgeable=1)
+
+  cc-maxage0-tag  [anthropic-claude-sonnet-5]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — max-age=0: reuse for 0s, then check
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 79.7 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-maxage0-tag  [or:openai-gpt-5-mini]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — max-age=0: reuse for 0s, then check
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 20.0 min
+    copy lifetime (min): min 39.8  median 39.8  max 39.8  mean 39.8  (n=1 re-fetched)
+
+  cc-maxage0-tag  [or:x-ai-grok-4.3]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — max-age=0: reuse for 0s, then check
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 79.6 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-nocache-notag  [anthropic-claude-sonnet-5]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — no-cache: must check with the site before every reuse
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 79.8 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-nocache-notag  [or:openai-gpt-5-mini]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — no-cache: must check with the site before every reuse
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 20.0 min
+    copy lifetime (min): min 39.9  median 39.9  max 39.9  mean 39.9  (n=1 re-fetched)
+
+  cc-nocache-notag  [or:x-ai-grok-4.3]
+    no page re-fetched inside the window (held=0, unjudgeable=1)
+
+  cc-nocache-tag  [anthropic-claude-sonnet-5]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — no-cache: must check with the site before every reuse
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 79.9 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-nocache-tag  [or:openai-gpt-5-mini]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — no-cache: must check with the site before every reuse
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 20.0 min
+    copy lifetime (min): min 39.9  median 39.9  max 39.9  mean 39.9  (n=1 re-fetched)
+
+  cc-nocache-tag  [or:x-ai-grok-4.3]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — no-cache: must check with the site before every reuse
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 79.8 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-none-notag  [anthropic-claude-sonnet-5]
+    spec limit for a shared cache: none stated (no explicit time and no last-changed date: the spec leaves it to the cache)
+    answered from its copy past that limit: 0 of 1 pages; longest reuse without checking 78.7 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-none-notag  [or:openai-gpt-5-mini]
+    spec limit for a shared cache: none stated (no explicit time and no last-changed date: the spec leaves it to the cache)
+    answered from its copy past that limit: 0 of 1 pages; longest reuse without checking 19.9 min
+    copy lifetime (min): min 39.2  median 39.2  max 39.2  mean 39.2  (n=1 re-fetched)
+
+  cc-none-notag  [or:x-ai-grok-4.3]
+    spec limit for a shared cache: none stated (no explicit time and no last-changed date: the spec leaves it to the cache)
+    answered from its copy past that limit: 0 of 1 pages; longest reuse without checking 78.7 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-none-recent  [anthropic-claude-sonnet-5]
+    spec limit for a shared cache (suggested): reuse unchecked for at most 3h43m17s — no explicit time: a tenth of the 37.2h since it last changed
+    answered from its copy past that limit: 0 of 1 pages; longest reuse without checking 39.2 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-none-recent  [or:openai-gpt-5-mini]
+    spec limit for a shared cache (suggested): reuse unchecked for at most 3h43m17s — no explicit time: a tenth of the 37.2h since it last changed
+    answered from its copy past that limit: 0 of 1 pages; longest reuse without checking 20.0 min
+    copy lifetime (min): min 39.2  median 39.2  max 39.2  mean 39.2  (n=1 re-fetched)
+
+  cc-none-recent  [or:x-ai-grok-4.3]
+    spec limit for a shared cache (suggested): reuse unchecked for at most 3h43m18s — no explicit time: a tenth of the 37.2h since it last changed
+    answered from its copy past that limit: 0 of 1 pages; longest reuse without checking 78.8 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-none-tag  [anthropic-claude-sonnet-5]
+    spec limit for a shared cache (suggested): reuse unchecked for at most 689h24m20s — no explicit time: a tenth of the 287.3d since it last changed
+    answered from its copy past that limit: 0 of 1 pages; longest reuse without checking 78.6 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-none-tag  [or:openai-gpt-5-mini]
+    spec limit for a shared cache (suggested): reuse unchecked for at most 689h24m20s — no explicit time: a tenth of the 287.3d since it last changed
+    answered from its copy past that limit: 0 of 1 pages; longest reuse without checking 19.9 min
+    copy lifetime (min): min 39.1  median 39.1  max 39.1  mean 39.1  (n=1 re-fetched)
+
+  cc-none-tag  [or:x-ai-grok-4.3]
+    spec limit for a shared cache (suggested): reuse unchecked for at most 689h24m21s — no explicit time: a tenth of the 287.3d since it last changed
+    answered from its copy past that limit: 0 of 1 pages; longest reuse without checking 78.7 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-nostore-notag  [anthropic-claude-sonnet-5]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — no-store: a cache must not store it at all
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 80.0 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-nostore-notag  [or:openai-gpt-5-mini]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — no-store: a cache must not store it at all
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 20.0 min
+    copy lifetime (min): min 40.0  median 40.0  max 40.0  mean 40.0  (n=1 re-fetched)
+
+  cc-nostore-notag  [or:x-ai-grok-4.3]
+    no page re-fetched inside the window (held=0, unjudgeable=1)
+
+  cc-nostore-tag  [anthropic-claude-sonnet-5]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — no-store: a cache must not store it at all
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 80.0 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-nostore-tag  [or:openai-gpt-5-mini]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — no-store: a cache must not store it at all
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 20.0 min
+    copy lifetime (min): min 40.0  median 40.0  max 40.0  mean 40.0  (n=1 re-fetched)
+
+  cc-nostore-tag  [or:x-ai-grok-4.3]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — no-store: a cache must not store it at all
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 80.0 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-private-notag  [anthropic-claude-sonnet-5]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — private: a shared cache must not store it
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 79.7 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-private-notag  [or:openai-gpt-5-mini]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — private: a shared cache must not store it
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 20.0 min
+    copy lifetime (min): min 39.9  median 39.9  max 39.9  mean 39.9  (n=1 re-fetched)
+
+  cc-private-notag  [or:x-ai-grok-4.3]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — private: a shared cache must not store it
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 79.8 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-private-tag  [anthropic-claude-sonnet-5]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — private: a shared cache must not store it
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 80.0 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-private-tag  [or:openai-gpt-5-mini]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — private: a shared cache must not store it
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 20.0 min
+    copy lifetime (min): min 40.0  median 40.0  max 40.0  mean 40.0  (n=1 re-fetched)
+
+  cc-private-tag  [or:x-ai-grok-4.3]
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — private: a shared cache must not store it
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 79.7 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-smax60-tag  [anthropic-claude-sonnet-5]
+    spec limit for a shared cache (must): reuse unchecked for at most 1m0s — s-maxage=60: reuse for 1m0s, then check
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 78.8 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-smax60-tag  [or:openai-gpt-5-mini]
+    spec limit for a shared cache (must): reuse unchecked for at most 1m0s — s-maxage=60: reuse for 1m0s, then check
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 20.1 min
+    copy lifetime (min): min 39.3  median 39.3  max 39.3  mean 39.3  (n=1 re-fetched)
+
+  cc-smax60-tag  [or:x-ai-grok-4.3]
+    spec limit for a shared cache (must): reuse unchecked for at most 1m0s — s-maxage=60: reuse for 1m0s, then check
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 78.8 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)

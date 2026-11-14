@@ -1,0 +1,105 @@
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+[ttlmap] run run20261018-151536-p2w7b: providers [anthropic-claude-sonnet-5], arms [cc-nostore-tag, cc-private-tag, cc-nocache-tag, cc-combo-tag, cc-none-tag], 5 pages (1 per arm/provider), cadence 3m0s, first poll 9m0s, window 45m0s (6 poll rounds)
+[ttlmap] about to make up to ~35 API calls (1 warm + up to 6 polls per page) — Ctrl-C within 5s to abort
+[ttlmap] warming all pages …
+WARN anomalous token cost: ttlmap warm cc-combo-tag [anthropic] in=59731 out=2433 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap warm cc-none-tag [anthropic] in=75092 out=2651 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap warm cc-nostore-tag [anthropic] in=91084 out=3175 (kept full answer for forensics)
+[ttlmap] poll round nominal gap 2m30s — 5 live page(s) …
+WARN anomalous token cost: ttlmap poll cc-nocache-tag [anthropic] gap=3m in=32311 out=618 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-private-tag [anthropic] gap=3m in=24660 out=781 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-none-tag [anthropic] gap=3m in=32119 out=933 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nostore-tag [anthropic] gap=3m in=69001 out=3204 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-combo-tag [anthropic] gap=3m in=120847 out=6189 (kept full answer for forensics)
+  cc-nostore-tag       r1  gap=  2.5m -> RE-FETCHED (marker=true)
+  cc-private-tag       r1  gap=  2.5m -> held (marker=true)
+  cc-nocache-tag       r1  gap=  2.5m -> held (marker=true)
+  cc-combo-tag         r1  gap=  2.5m -> RE-FETCHED (marker=true)
+  cc-none-tag          r1  gap=  2.5m -> held (marker=true)
+[ttlmap] poll round nominal gap 5m0s — 5 live page(s) …
+WARN anomalous token cost: ttlmap poll cc-combo-tag [anthropic] gap=5m in=24743 out=767 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-none-tag [anthropic] gap=5m in=85946 out=2788 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-private-tag [anthropic] gap=5m in=78864 out=3007 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nocache-tag [anthropic] gap=5m in=91857 out=4819 (kept full answer for forensics)
+  cc-nostore-tag       r1  gap=  5.0m -> RE-FETCHED (marker=true)
+  cc-private-tag       r1  gap=  5.0m -> held (marker=true)
+  cc-nocache-tag       r1  gap=  5.0m -> held (marker=true)
+  cc-combo-tag         r1  gap=  5.0m -> RE-FETCHED (marker=true)
+  cc-none-tag          r1  gap=  5.0m -> held (marker=true)
+[ttlmap] poll round nominal gap 10m0s — 5 live page(s) …
+WARN anomalous token cost: ttlmap poll cc-none-tag [anthropic] gap=10m in=24160 out=574 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-combo-tag [anthropic] gap=10m in=32198 out=876 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-private-tag [anthropic] gap=10m in=45693 out=977 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nocache-tag [anthropic] gap=10m in=48663 out=1280 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nostore-tag [anthropic] gap=10m in=143087 out=5569 (kept full answer for forensics)
+  cc-nostore-tag       r1  gap= 10.0m -> RE-FETCHED (marker=true)
+  cc-private-tag       r1  gap= 10.0m -> held (marker=true)
+  cc-nocache-tag       r1  gap= 10.0m -> held (marker=true)
+  cc-combo-tag         r1  gap= 10.0m -> RE-FETCHED (marker=true)
+  cc-none-tag          r1  gap= 10.0m -> held (marker=true)
+[ttlmap] poll round nominal gap 20m0s — 5 live page(s) …
+WARN anomalous token cost: ttlmap poll cc-combo-tag [anthropic] gap=20m in=24557 out=486 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nocache-tag [anthropic] gap=20m in=24585 out=770 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nostore-tag [anthropic] gap=20m in=37876 out=1228 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-private-tag [anthropic] gap=20m in=60615 out=2031 (kept full answer for forensics)
+  cc-nostore-tag       r1  gap= 20.0m -> RE-FETCHED (marker=true)
+  cc-private-tag       r1  gap= 20.0m -> held (marker=true)
+  cc-nocache-tag       r1  gap= 20.0m -> held (marker=true)
+  cc-combo-tag         r1  gap= 20.0m -> RE-FETCHED (marker=true)
+  cc-none-tag          r1  gap= 20.0m -> held (marker=true)
+[ttlmap] poll round nominal gap 40m0s — 5 live page(s) …
+WARN anomalous token cost: ttlmap poll cc-combo-tag [anthropic] gap=40m in=32421 out=816 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nostore-tag [anthropic] gap=40m in=33450 out=828 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nocache-tag [anthropic] gap=40m in=38526 out=1000 (kept full answer for forensics)
+  cc-nostore-tag       r1  gap= 40.0m -> RE-FETCHED (marker=true)
+  cc-private-tag       r1  gap= 40.0m -> held (marker=true)
+  cc-nocache-tag       r1  gap= 40.0m -> held (marker=true)
+  cc-combo-tag         r1  gap= 40.0m -> RE-FETCHED (marker=true)
+  cc-none-tag          r1  gap= 40.0m -> held (marker=true)
+[ttlmap] poll round nominal gap 1h20m0s — 5 live page(s) …
+WARN anomalous token cost: ttlmap poll cc-nocache-tag [anthropic] gap=80m in=24526 out=478 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-private-tag [anthropic] gap=80m in=24304 out=589 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-none-tag [anthropic] gap=80m in=31872 out=773 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-nostore-tag [anthropic] gap=80m in=31923 out=605 (kept full answer for forensics)
+WARN anomalous token cost: ttlmap poll cc-combo-tag [anthropic] gap=80m in=106228 out=4358 (kept full answer for forensics)
+  cc-nostore-tag       r1  gap= 80.0m -> RE-FETCHED (marker=true)
+  cc-private-tag       r1  gap= 80.0m -> held (marker=true)
+  cc-nocache-tag       r1  gap= 80.0m -> held (marker=true)
+  cc-combo-tag         r1  gap= 80.0m -> RE-FETCHED (marker=true)
+  cc-none-tag          r1  gap= 80.0m -> held (marker=true)
+
+==========================================================================
+  TTL MAP — how long each model's copy lives (gap of the first re-fetch)
+==========================================================================
+  (resolution = the poll cadence; a page whose warm never fetched is dropped)
+
+  cc-combo-tag  [anthropic-claude-sonnet-5]
+    fetched again on 6 of 6 re-asks
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — no-store: a cache must not store it at all
+    answered from its copy past that limit: 0 of 1 pages; longest reuse without checking 0.0 min
+    copy lifetime (min): min 2.5  median 2.5  max 2.5  mean 2.5  (n=1 re-fetched)
+
+  cc-nocache-tag  [anthropic-claude-sonnet-5]
+    fetched again on 0 of 6 re-asks
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — no-cache: must check with the site before every reuse
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 80.0 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-none-tag  [anthropic-claude-sonnet-5]
+    fetched again on 0 of 6 re-asks
+    spec limit for a shared cache (suggested): reuse unchecked for at most 697h31m35s — no explicit time: a tenth of the 290.6d since it last changed
+    answered from its copy past that limit: 0 of 1 pages; longest reuse without checking 80.0 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
+
+  cc-nostore-tag  [anthropic-claude-sonnet-5]
+    fetched again on 6 of 6 re-asks
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — no-store: a cache must not store it at all
+    answered from its copy past that limit: 0 of 1 pages; longest reuse without checking 0.0 min
+    copy lifetime (min): min 2.5  median 2.5  max 2.5  mean 2.5  (n=1 re-fetched)
+
+  cc-private-tag  [anthropic-claude-sonnet-5]
+    fetched again on 0 of 6 re-asks
+    spec limit for a shared cache (must): reuse unchecked for at most 0s — private: a shared cache must not store it
+    answered from its copy past that limit: 1 of 1 pages; longest reuse without checking 80.0 min
+    no page re-fetched inside the window (held=1, unjudgeable=0)
