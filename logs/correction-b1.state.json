@@ -1,0 +1,2888 @@
+{
+  "run_id": "run20261026-154521-bino7",
+  "created": "2026-10-26T15:45:21Z",
+  "base": "https://origin-b.example",
+  "host": "origin-b.example",
+  "local_origin": "https://origin-b.example",
+  "size": 2048,
+  "settle": "5m0s",
+  "force": true,
+  "warm_gap": "1m30s",
+  "jitter": true,
+  "reask": {
+    "anthropic": "15m,30m,1h,2h,4h,8h,16h,32h,64h",
+    "or:openai": "15m,30m,1h,2h,4h,8h,16h,32h,64h",
+    "or:x-ai": "15m,30m,1h,2h,4h,8h,16h,32h,64h"
+  },
+  "pages": [
+    {
+      "page_id": "anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w15m-t1",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w15m-t1/2048",
+      "path": "/correction/html/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w15m-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793029791.9272854,
+      "etag_a": "\"414c0dbb8cbb3584\"",
+      "etag_b": "\"e30a171fcd1500d9\"",
+      "set_a_unix": 1793029853.0578601,
+      "flip_unix": 1793030326.8445296,
+      "flip_switched_at": "2026-10-26T15:58:46Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793029853.0578606,
+        "done_unix": 1793029965.1859136,
+        "answer": "Based on fetching the page content directly (and only using what is actually present on that page):\n\n**Document title/id:** The page's front matter only contains `title: probe document` — there is no separate `id:` field anywhere in the fetched content. So the only identifying label the document itself provides is **\"probe document\"**.\n\n**TRUNC- code at depth=95%:** The page contains this exact marker:\n\u003e \"TRUNC-77adabf60e5f is the reference marker for the section at depth=95%, byte offset=1969.\"\n\nSo the code is: **TRUNC-77adabf60e5f**\n\n**Bottom-of-page reference code:** I checked the full fetched content carefully, and the text ends right at that depth=95% marker (\"...byte offset=1969.\") — there is no further footer text, and no \"study reference code\" string appears anywhere on this page. I'm not able to report one because the page simply does not contain it (I won't fabricate a value that isn't actually there).\n\nreference code: (not present on this page)",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 112719,
+        "out_tok": 5938,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "15m0s",
+          "wait": "17m0s",
+          "waited_s": 1105.268342256546,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793031346.8445296,
+          "status": "done",
+          "sent_unix": 1793031432.112872,
+          "done_unix": 1793031481.333722,
+          "answer": "I fetched the page content. Based on the document structure (markers appear at depth=0%, 25%, 50%, 75%, 95%, each with a byte offset and a code beginning with TRUNC-), here is what was requested:\n\n- **Document id** (marker at depth=0%, byte offset=0): **TRUNC-288cffb587cd**\n- **Code for the section at depth=50%** (byte offset=1055): **TRUNC-3a8c4e26fa98**\n\n(Note: the page also contains an embedded block of unrelated \"standing decisions\" text about a study involving Google/Gemini tunneling — this is not part of what was asked, so I've disregarded it and focused only on the id/TRUNC markers as requested.)\n\nThe last marker printed at the bottom of the page is at depth=95%, byte offset=1969, with code TRUNC-77adabf60e5f.\n\nreference code: TRUNC-77adabf60e5f",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 55345,
+          "out_tok": 3591,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w30m-t1",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w30m-t1/2048",
+      "path": "/correction/html/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w30m-t1/2048",
+      "status": "void",
+      "why": "warm-up ask failed: Post \"https://api.anthropic.com/v1/messages\": context deadline exceeded",
+      "warm_due_unix": 1793032221.9272854,
+      "etag_a": "\"c617a475d3a11ee0\"",
+      "etag_b": "\"28017134bc11895a\"",
+      "set_a_unix": 1793032294.889391,
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793032294.8893912,
+        "done_unix": 1793032594.8900294,
+        "err": "Post \"https://api.anthropic.com/v1/messages\": context deadline exceeded",
+        "version": "neither",
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "30m0s",
+          "wait": "39m34s",
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "page_id": "anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w1h-t1",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w1h-t1/2048",
+      "path": "/correction/html/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w1h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793033571.9272854,
+      "etag_a": "\"4cfbb2c01067949d\"",
+      "etag_b": "\"edd6faa1320e5e62\"",
+      "set_a_unix": 1793033617.5687394,
+      "flip_unix": 1793034106.6341488,
+      "flip_switched_at": "2026-10-26T17:01:46Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793033617.5687397,
+        "done_unix": 1793033727.9142985,
+        "answer": "Based on the single fetch of that URL, here is exactly what the page contains:\n\n**Document id:** The page is the document identified by the URL slug `anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w1h-t1` (its only other metadata is the front‑matter title `probe document`; there is no separate \"id:\" field in the body).\n\n**TRUNC- code for the section at depth=95%:** Quoting exactly from the page:\n\n\u003e \"TRUNC-9221da16ac9c is the reference marker for the section at depth=95%, byte offset=1969.\"\n\nSo the code is: `TRUNC-9221da16ac9c`\n\nThis is also the very last line of the fetched page content — i.e., it is the marker printed at the bottom of the page.\n\nreference code: TRUNC-9221da16ac9c",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 82404,
+        "out_tok": 8362,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "1h0m0s",
+          "wait": "54m4s",
+          "waited_s": 3256.46831035614,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793037350.6341488,
+          "status": "done",
+          "sent_unix": 1793037363.1024592,
+          "done_unix": 1793037576.879364,
+          "answer": "Based on fetching the page at that exact URL, here is what the document contains:\n\n**Document id / code for the section at depth=50%:** `TRUNC-b37931d1e6c0`\n(This is the reference marker explicitly labeled: \"TRUNC-b37931d1e6c0 is the reference marker for the section at depth=50%, byte offset=1055.\")\n\nThe page content runs through markers at depth=0%, 25%, 50%, 75%, and 95%, with the final marker printed at the very bottom of the retrieved page being:\n\nreference code: TRUNC-9221da16ac9c",
+          "version": "A",
+          "depths_a": [
+            50,
+            95
+          ],
+          "in_tok": 232673,
+          "out_tok": 15261,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w2h-t1",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w2h-t1/2048",
+      "path": "/correction/html/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w2h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793033121.9272854,
+      "etag_a": "\"c1bd3e102a59c268\"",
+      "etag_b": "\"526e095551e3bab6\"",
+      "set_a_unix": 1793033155.3358157,
+      "flip_unix": 1793033557.0094244,
+      "flip_switched_at": "2026-10-26T16:52:36Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793033155.335816,
+        "done_unix": 1793033218.9903266,
+        "answer": "Based on the fetched page content:\n\n- **Document ID:** 2048\n- **TRUNC- code for the section at depth=95%:** TRUNC-407e3360191e\n\nreference code: TRUNC-407e3360191e",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 90449,
+        "out_tok": 4112,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "2h0m0s",
+          "wait": "2h0m48s",
+          "waited_s": 7257.479897737503,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793040805.0094244,
+          "status": "done",
+          "sent_unix": 1793040814.4893222,
+          "done_unix": 1793040851.8492482,
+          "answer": "Here's what I found by fetching that page directly (and only from its content):\n\n**Document id:** The page itself does **not** contain an explicit \"id\" field anywhere in its content. The only metadata present is a YAML frontmatter block:\n```\n---\ntitle: probe document\n---\n```\nThere is no line reading \"id: ...\" on the page. The only \"id\"-like value visible is the URL path segment `2048`, but that is not something the page content itself labels as an id — I'm not going to invent one.\n\n**TRUNC- code at depth=50%:** The page explicitly states:\n\u003e \"TRUNC-676dfc3be306 is the reference marker for the section at depth=50%, byte offset=1055.\"\n\nSo the code is: **TRUNC-676dfc3be306**\n\n**Note on the \"bottom of page\" reference code:** The page content ends with this marker:\n\u003e \"TRUNC-407e3360191e is the reference marker for the section at depth=95%, byte offset=1969.\"\n\nHowever, the page does **not** contain any text literally labeled as a \"study reference code\" — the TRUNC- strings are only ever described as \"reference marker[s] for the section at depth=X%\", not as a \"study reference code.\" I won't fabricate a different value just to match the requested format, since it isn't actually present on the page as such.\n\nreference code: TRUNC-407e3360191e",
+          "version": "A",
+          "depths_a": [
+            50,
+            95
+          ],
+          "in_tok": 42288,
+          "out_tok": 2650,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w4h-t1",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w4h-t1/2048",
+      "path": "/correction/html/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w4h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793033661.9272854,
+      "etag_a": "\"68c883af2a815ea7\"",
+      "etag_b": "\"92a527a184248a64\"",
+      "set_a_unix": 1793033728.6909237,
+      "flip_unix": 1793034177.0306861,
+      "flip_switched_at": "2026-10-26T17:02:56Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793033728.690924,
+        "done_unix": 1793033838.4265106,
+        "answer": "Based on the fetched page content (YAML frontmatter + body, verbatim):\n\n**Document id (frontmatter title):** `probe document`\n\n**TRUNC- code for the section at depth=95%:**\n\u003e \"TRUNC-34139917e3c1 is the reference marker for the section at depth=95%, byte offset=1969.\"\n\n→ `TRUNC-34139917e3c1`\n\nThis same line is also the last line of content returned by the page — i.e., it is the reference marker printed at the very bottom of the page.\n\nreference code: TRUNC-34139917e3c1",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 78567,
+        "out_tok": 6587,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "4h0m0s",
+          "wait": "4h2m19s",
+          "waited_s": 14569.129248142242,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793048716.0306861,
+          "status": "done",
+          "sent_unix": 1793048746.1599343,
+          "done_unix": 1793048789.0901155,
+          "answer": "Based on the fetched document (`probe document`), here is the information requested:\n\n- **ID / TRUNC- code for the section at depth=50%:** `TRUNC-392def5d914d`\n  (quoted exactly from the page: \"TRUNC-392def5d914d is the reference marker for the section at depth=50%, byte offset=1055.\")\n\nreference code: TRUNC-34139917e3c1",
+          "version": "A",
+          "depths_a": [
+            50,
+            95
+          ],
+          "in_tok": 72728,
+          "out_tok": 2769,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w8h-t1",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w8h-t1/2048",
+      "path": "/correction/html/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w8h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793030781.9272854,
+      "etag_a": "\"8fdc9798d6fb24c2\"",
+      "etag_b": "\"29e48d4c15eab54c\"",
+      "set_a_unix": 1793030829.4719994,
+      "flip_unix": 1793031367.2965977,
+      "flip_switched_at": "2026-10-26T16:16:07Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793030829.4719996,
+        "done_unix": 1793030955.0363464,
+        "answer": "Based on the fetched page content (plain‑text extraction of the document at the given URL), here is what the page contains:\n\n**Document id / TRUNC code for the section at depth=95%:**\n`TRUNC-ab42b7a2539c`\n\nThis is the final reference marker present on the page — the text reads:\n\u003e \"TRUNC-ab42b7a2539c is the reference marker for the section at depth=95%, byte offset=1969.\"\n\nIt is the last code printed on the page (nothing follows it in the fetched content), so it is also the marker sitting at the bottom of the page.\n\nreference code: TRUNC-ab42b7a2539c",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 123403,
+        "out_tok": 8505,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "8h0m0s",
+          "wait": "10h39m45s",
+          "waited_s": 38424.72833585739,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793069752.2965977,
+          "status": "done",
+          "sent_unix": 1793069792.0249336,
+          "done_unix": 1793069868.2564008,
+          "answer": "I fetched the page at the given URL. Here is what it actually contains (quoting exactly):\n\n- **Document title/id**: The page's only identifying metadata is the YAML front‑matter `title: probe document`. There is no separate \"id\" field anywhere in the fetched content — the front‑matter contains only the title, nothing labeled \"id\".\n\n- **TRUNC- code at depth=50%**: The page explicitly states:\n  \u003e \"**TRUNC-52a3ad75ffa1** is the reference marker for the section at depth=50%, byte offset=1055.\"\n\n  So the code is: `TRUNC-52a3ad75ffa1`\n\nRegarding the final part of your request — the fetched content ends mid-sentence (\"...came clo\") right after the marker `TRUNC-ab42b7a2539c is the reference marker for the section at depth=95%, byte offset=1969.\" There is no \"study reference code\" printed anywhere at the bottom of the page content I received; no such line or field exists in what was returned.\n\nreference code: not present on the page",
+          "version": "A",
+          "depths_a": [
+            50,
+            95
+          ],
+          "in_tok": 101233,
+          "out_tok": 5143,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w16h-t1",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w16h-t1/2048",
+      "path": "/correction/html/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w16h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793029611.9272854,
+      "etag_a": "\"633318b0f8650310\"",
+      "etag_b": "\"7e69eb997887e101\"",
+      "set_a_unix": 1793029618.2726202,
+      "flip_unix": 1793030136.2622879,
+      "flip_switched_at": "2026-10-26T15:55:36Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793029618.2726204,
+        "done_unix": 1793029822.7399354,
+        "answer": "Based on the fetched page content (and using only what appears on that page):\n\n**Document id:** `TRUNC-3bf231c59e53` (the reference marker given right at the top of the document, depth=0%, byte offset=0)\n\n**TRUNC- code for the section at depth=95%:** `TRUNC-bcf2cf9b6469` (stated on the page as: \"TRUNC-bcf2cf9b6469 is the reference marker for the section at depth=95%, byte offset=1969.\")\n\nThis depth=95% marker is also the last line of content rendered on the page — i.e., the code printed at the very bottom of the page.\n\nreference code: TRUNC-bcf2cf9b6469",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 172911,
+        "out_tok": 14992,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "16h0m0s",
+          "wait": "15h19m10s",
+          "waited_s": 55168.05960416794,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793085286.2622879,
+          "status": "done",
+          "sent_unix": 1793085304.321892,
+          "done_unix": 1793085515.4267528,
+          "answer": "Based on the fetched document (text content only — front‑matter title \"probe document\" plus the embedded reference markers), here is what the page contains:\n\n**Document id:** TRUNC-3bf231c59e53 (the reference marker for the section at depth=0%, byte offset=0 — this is the document's leading/identifying marker)\n\n**Code for the section at depth=50%:** TRUNC-5518c2c302e0 (listed in the page as \"the reference marker for the section at depth=50%, byte offset=1055\")\n\nreference code: TRUNC-bcf2cf9b6469",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 217308,
+          "out_tok": 11430,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w32h-t1",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w32h-t1/2048",
+      "path": "/correction/html/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w32h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793030871.9272854,
+      "etag_a": "\"31e585f5869b90d7\"",
+      "etag_b": "\"5d8e711b3e8c6025\"",
+      "set_a_unix": 1793030955.7796361,
+      "flip_unix": 1793031431.8678071,
+      "flip_switched_at": "2026-10-26T16:17:11Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793030955.7796364,
+        "done_unix": 1793031033.8597958,
+        "answer": "Here is what the fetched page actually contains (verbatim), with nothing added beyond it:\n\n**Front matter / id:** The page's only metadata is a YAML front‑matter block:\n```\n---\ntitle: probe document\n---\n```\nThere is no separate \"id\" field anywhere in the fetched content — only this title (\"probe document\"). No other identifier is printed on the page.\n\n**TRUNC‑ code for the depth=95% section:**\n\u003e TRUNC-b7f0deaf6a5d is the reference marker for the section at depth=95%, byte offset=1969.\n\nSo the exact code is: **TRUNC-b7f0deaf6a5d**\n\n**Bottom of the page:** The fetched content cuts off immediately after that sentence — \"TRUNC-b7f0deaf6a5d is the reference marker for the section at depth=95%, byte offset=1969.\" is literally the last line delivered. There is no distinct, separately-labeled \"study reference code\" after it; the only code sitting at the bottom of the page is that same TRUNC marker.\n\nreference code: TRUNC-b7f0deaf6a5d",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 69472,
+        "out_tok": 5637,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "32h0m0s",
+          "wait": "25h48m25s",
+          "waited_s": 92956.84091210365,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793124336.8678071,
+          "status": "done",
+          "sent_unix": 1793124388.7087193,
+          "done_unix": 1793124501.5404608,
+          "answer": "Based on the fetched document (and working only from what was returned by that page):\n\n**Document id:** `2048`\n\n**Code beginning with TRUNC- for the section at depth=50%:**\n`TRUNC-6d94a085823e` — (\"TRUNC-6d94a085823e is the reference marker for the section at depth=50%, byte offset=1055.\")\n\nThe last marker printed on the page, at the very bottom of the document (depth=95%, byte offset=1969), reads: \"TRUNC-21581bcab0b8 is the reference marker for the section at depth=95%, byte offset=1969.\"\n\nreference code: TRUNC-21581bcab0b8",
+          "version": "B",
+          "depths_b": [
+            50,
+            95
+          ],
+          "in_tok": 101269,
+          "out_tok": 8660,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w64h-t1",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w64h-t1/2048",
+      "path": "/correction/html/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w64h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793031951.9272854,
+      "etag_a": "\"3a17863b1489842a\"",
+      "etag_b": "\"65da6337010ba756\"",
+      "set_a_unix": 1793031988.2405303,
+      "flip_unix": 1793032610.6189628,
+      "flip_switched_at": "2026-10-26T16:36:50Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793031988.2405305,
+        "done_unix": 1793032086.317823,
+        "answer": "Based on the fetched page content (`https://origin-b.example/correction/html/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w64h-t1/2048`):\n\n- **Document id** (from the page's own URL/slug, its only identifying handle — the page itself has no separate `id:` field in its front matter, only a `title: probe document`): `anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-html-w64h-t1`\n- **TRUNC code for the section at depth=95%**: `TRUNC-7cc5c2cfe744`\n\n(Full line from the page: \"TRUNC-7cc5c2cfe744 is the reference marker for the section at depth=95%, byte offset=1969.\")\n\nThis line is also the last line of content on the page, so it is the one printed at the bottom.\n\nreference code: TRUNC-7cc5c2cfe744",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 72078,
+        "out_tok": 5418,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "64h0m0s",
+          "wait": "66h27m2s",
+          "waited_s": 239254.57744812965,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793271832.6189628,
+          "status": "done",
+          "sent_unix": 1793271865.196411,
+          "done_unix": 1793271916.6088881,
+          "answer": "Based on the fetched content of that page:\n\n- **Document id:** `2048`\n- **TRUNC code for the section at depth=50%:** `TRUNC-06fb67e43050` (marker for \"the section at depth=50%, byte offset=1055\")\n\nreference code: TRUNC-103c009407f3",
+          "version": "B",
+          "depths_b": [
+            50,
+            95
+          ],
+          "in_tok": 64130,
+          "out_tok": 3506,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w15m-t1",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w15m-t1/2048",
+      "path": "/correction/txt/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w15m-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793032851.9272854,
+      "etag_a": "\"63c000123642710c\"",
+      "etag_b": "\"bcb80359ed823bb8\"",
+      "set_a_unix": 1793032898.1320946,
+      "flip_unix": 1793033281.2092094,
+      "flip_switched_at": "2026-10-26T16:48:01Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793032898.1320953,
+        "done_unix": 1793032949.6989675,
+        "answer": "I fetched the page successfully on my first call. Here's the answer based solely on that content:\n\n**Document ID:** `anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w15m-t1`\n\n**Code at depth=95%:** `TRUNC-57886fb579ac`\n\n(This marker appears as: \"TRUNC-57886fb579ac is the reference marker for the section at depth=95%, byte offset=1969.\")\n\nThis is also the last marker printed on the page — i.e., the one at the bottom.\n\nreference code: TRUNC-57886fb579ac",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 77274,
+        "out_tok": 3437,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "15m0s",
+          "wait": "11m42s",
+          "waited_s": 731.8331336975098,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793033983.2092094,
+          "status": "done",
+          "sent_unix": 1793034013.0423431,
+          "done_unix": 1793034069.6983147,
+          "answer": "Based on fetching that page directly:\n\n- **Document id:** `anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w15m-t1`\n- **TRUNC code for the section at depth=50%:** `TRUNC-c89c85917e80`\n\nreference code: TRUNC-57886fb579ac",
+          "version": "A",
+          "depths_a": [
+            50,
+            95
+          ],
+          "in_tok": 80139,
+          "out_tok": 3677,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w30m-t1",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w30m-t1/2048",
+      "path": "/correction/txt/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w30m-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793032041.9272854,
+      "etag_a": "\"6c1129c12952ad9b\"",
+      "etag_b": "\"f7b06bdfdf1c5970\"",
+      "set_a_unix": 1793032087.2200036,
+      "flip_unix": 1793032641.7103648,
+      "flip_switched_at": "2026-10-26T16:37:21Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793032087.2200038,
+        "done_unix": 1793032227.5625787,
+        "answer": "I fetched the page and the relevant markers in the document are:\n\n- **Section depth=0%, byte offset=0:** `TRUNC-4e3ca27d69da`\n- **Section depth=25%, byte offset=526:** `TRUNC-f2fe3761f4e1`\n- **Section depth=50%, byte offset=1055:** `TRUNC-5afd3d5d36bc`\n- **Section depth=75%, byte offset=1585:** `TRUNC-cc5ca7e0bc2a`\n- **Section depth=95%, byte offset=1969:** `TRUNC-5cf0e0c5a44d`\n\nSo, for the section at **depth=95%**:\n- **id:** `5cf0e0c5a44d`\n- **code:** `TRUNC-5cf0e0c5a44d`\n\nThis same marker (`TRUNC-5cf0e0c5a44d is the reference marker for the section at depth=95%, byte offset=1969.`) is the very last line printed on the fetched page — i.e., the text at the bottom of that page.\n\nreference code: TRUNC-5cf0e0c5a44d",
+        "version": "A",
+        "depths_a": [
+          0,
+          25,
+          50,
+          75,
+          95
+        ],
+        "in_tok": 154206,
+        "out_tok": 9764,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "30m0s",
+          "wait": "33m43s",
+          "waited_s": 2029.4684662818909,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793034664.7103648,
+          "status": "done",
+          "sent_unix": 1793034671.178831,
+          "done_unix": 1793034676.8853743,
+          "answer": "The document's id is **TRUNC-4e3ca27d69da** (the reference marker given at depth=0%), and the code for the section at depth=50% is **TRUNC-5afd3d5d36bc**.\n\nreference code: TRUNC-5cf0e0c5a44d",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 10978,
+          "out_tok": 211,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w1h-t1",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w1h-t1/2048",
+      "path": "/correction/txt/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w1h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793031231.9272854,
+      "etag_a": "\"4f6d0f6262855fd6\"",
+      "etag_b": "\"a1b64112942892e4\"",
+      "set_a_unix": 1793031274.710535,
+      "flip_unix": 1793031686.1760619,
+      "flip_switched_at": "2026-10-26T16:21:26Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793031274.7105355,
+        "done_unix": 1793031366.6718469,
+        "answer": "Based on the fetched document (and only what appears on that page):\n\n**Document id (from the URL slug):** `anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w1h-t1`\n\n**Code at depth=95% (quoted exactly from the page text):**\n\"TRUNC-11761a1b68e9 is the reference marker for the section at depth=95%, byte offset=1969.\"\n\nSo the TRUNC- code for that section is: `TRUNC-11761a1b68e9`\n\nThis same line — \"TRUNC-11761a1b68e9 is the reference marker for the section at depth=95%, byte offset=1969.\" — is also the very last line of the fetched content, i.e., the one printed at the bottom of the page.\n\nreference code: TRUNC-11761a1b68e9",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 113129,
+        "out_tok": 5368,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "1h0m0s",
+          "wait": "1h4m19s",
+          "waited_s": 3907.6659383773804,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793035545.1760619,
+          "status": "done",
+          "sent_unix": 1793035593.8420002,
+          "done_unix": 1793035621.8332465,
+          "answer": "Based on the fetched document:\n\n- **Document id:** `2048` (the page/context-length identifier at the end of the URL, `.../w1h-t1/2048`)\n- **TRUNC code for the section at depth=50%:** `TRUNC-5e50f047f0a0`\n\nreference code: TRUNC-11761a1b68e9",
+          "version": "A",
+          "depths_a": [
+            50,
+            95
+          ],
+          "in_tok": 25999,
+          "out_tok": 1585,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w2h-t1",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w2h-t1/2048",
+      "path": "/correction/txt/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w2h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793032671.9272854,
+      "etag_a": "\"6b17a5cbd1ad3e68\"",
+      "etag_b": "\"9a0ae97fc2f131af\"",
+      "set_a_unix": 1793032721.177009,
+      "flip_unix": 1793033155.159711,
+      "flip_switched_at": "2026-10-26T16:45:55Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793032721.1770093,
+        "done_unix": 1793032797.0159113,
+        "answer": "Based on the fetched page content, here is the relevant marker found in the document:\n\nThe document's id, which is also the code beginning with **TRUNC-** for the section at depth=95%, is:\n\n**TRUNC-290317ca0df2**\n\n(Exact quote from the page: *\"TRUNC-290317ca0df2 is the reference marker for the section at depth=95%, byte offset=1969.\"*)\n\nThis same code is the last text printed on the fetched page, i.e., the one appearing at the bottom of the page.\n\nreference code: TRUNC-290317ca0df2",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 96376,
+        "out_tok": 5166,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "2h0m0s",
+          "wait": "2h32m37s",
+          "waited_s": 9206.051811695099,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793042312.159711,
+          "status": "done",
+          "sent_unix": 1793042361.2115226,
+          "done_unix": 1793042436.6146243,
+          "answer": "Based on fetching the exact URL provided, here is the content and the requested codes:\n\n**Document id:** `TRUNC-e075580a4a56` (this is the reference marker printed at the very top of the page, at depth=0%, byte offset=0 — serving as the page's id)\n\n**Code at depth=50%:** `TRUNC-7cab8ba76867` (printed as: \"TRUNC-7cab8ba76867 is the reference marker for the section at depth=50%, byte offset=1055.\")\n\nreference code: TRUNC-290317ca0df2",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 55533,
+          "out_tok": 5705,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w4h-t1",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w4h-t1/2048",
+      "path": "/correction/txt/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w4h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793033391.9272854,
+      "etag_a": "\"de4ded13ea71cff7\"",
+      "etag_b": "\"86ece4a76adb647a\"",
+      "set_a_unix": 1793033415.9227133,
+      "flip_unix": 1793033862.612367,
+      "flip_switched_at": "2026-10-26T16:57:42Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793033415.9227138,
+        "done_unix": 1793033532.3208957,
+        "answer": "Based on the fetched page (content capped at byte offset 1969, text/plain export of `.../2048`), here's what's on it:\n\n- **Document id** (the reference marker printed at the very start of the page, depth=0%, byte offset=0): **TRUNC-f000cb718b86**\n- **Code for the section at depth=95%** (byte offset=1969): **TRUNC-b1b6bfb9fa45**\n\nThis depth=95% marker is also the very last thing printed on the page before the fetch cuts off (the page ends immediately after it), so it is the code sitting at the bottom of the page.\n\nreference code: TRUNC-b1b6bfb9fa45",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 88948,
+        "out_tok": 8858,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "4h0m0s",
+          "wait": "4h29m5s",
+          "waited_s": 16187.468020677567,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793050007.612367,
+          "status": "done",
+          "sent_unix": 1793050050.0803876,
+          "done_unix": 1793050115.4504967,
+          "answer": "Based on the fetched document:\n\n- **Document id:** TRUNC-f000cb718b86 (the reference marker printed at the very start of the page, depth=0%)\n- **Code at depth=50%:** TRUNC-67530b81b252 (marks the section beginning \"), retrieved 2026-08-31. A Cloudflare quick tunnel is exactly that...\")\n\nreference code: TRUNC-b1b6bfb9fa45",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 59543,
+          "out_tok": 4609,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w8h-t1",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w8h-t1/2048",
+      "path": "/correction/txt/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w8h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793030421.9272854,
+      "etag_a": "\"2c70c0b581d78f10\"",
+      "etag_b": "\"6729fb4e1314f2f1\"",
+      "set_a_unix": 1793030424.435925,
+      "flip_unix": 1793030769.080486,
+      "flip_switched_at": "2026-10-26T16:06:08Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793030424.4359255,
+        "done_unix": 1793030465.1724074,
+        "answer": "From the fetched document, the final section marker (the one closest to the bottom of this page) reads:\n\n\u003e \"TRUNC-53eee27c118c is the reference marker for the section at depth=95%, byte offset=1969.\"\n\n- **id:** 53eee27c118c\n- **Code (depth=95% section):** TRUNC-53eee27c118c\n\nreference code: TRUNC-53eee27c118c",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 36927,
+        "out_tok": 2764,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "8h0m0s",
+          "wait": "6h55m54s",
+          "waited_s": 25012.090332984924,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793055723.080486,
+          "status": "done",
+          "sent_unix": 1793055781.170819,
+          "done_unix": 1793055822.2627485,
+          "answer": "Based on the fetched document (only source used):\n\n- **Document ID:** `TRUNC-2629c40ee8d5` (the reference marker at depth=0%, byte offset=0, which opens/identifies this document)\n- **Code at depth=50%:** `TRUNC-2761f56a62e1`\n\nreference code: TRUNC-53eee27c118c",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 34563,
+          "out_tok": 2914,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w16h-t1",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w16h-t1/2048",
+      "path": "/correction/txt/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w16h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793032941.9272854,
+      "etag_a": "\"948151cba52c59c8\"",
+      "etag_b": "\"c219f83b7acefa65\"",
+      "set_a_unix": 1793032950.3881245,
+      "flip_unix": 1793033415.7435157,
+      "flip_switched_at": "2026-10-26T16:50:15Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793032950.3881247,
+        "done_unix": 1793033060.424694,
+        "answer": "Based on the fetched document (and only that content):\n\n- **Document id:** `TRUNC-b88657df95a5` — this is the reference marker printed at the very start of the page (depth=0%, byte offset=0), which serves as the document's identifying code.\n- **Code at depth=95%:** `TRUNC-0097932a09c6` — the page states: \"TRUNC-0097932a09c6 is the reference marker for the section at depth=95%, byte offset=1969.\"\n\nThis marker is also the last text on the fetched page (the 95% section has no further body text in the retrieved content — the page ends immediately after this marker line), so it is the code printed at the bottom of the page.\n\nreference code: TRUNC-0097932a09c6",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 114897,
+        "out_tok": 8125,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "16h0m0s",
+          "wait": "12h49m36s",
+          "waited_s": 46194.531696558,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793079591.7435157,
+          "status": "done",
+          "sent_unix": 1793079610.2752123,
+          "done_unix": 1793079663.2030413,
+          "answer": "Based on the fetched document content, here is the requested information (quoted exactly as they appear on the page):\n\n- **Document id:** `anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w16h-t1`\n- **TRUNC- code at depth=50%:** `TRUNC-8bd8147a35fe` (marker reads: \"TRUNC-8bd8147a35fe is the reference marker for the section at depth=50%, byte offset=1055.\")\n\nreference code: TRUNC-0097932a09c6",
+          "version": "A",
+          "depths_a": [
+            50,
+            95
+          ],
+          "in_tok": 36075,
+          "out_tok": 3868,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w32h-t1",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w32h-t1/2048",
+      "path": "/correction/txt/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w32h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793030061.9272854,
+      "etag_a": "\"861d96db181555c9\"",
+      "etag_b": "\"f33d229ff91b5c13\"",
+      "set_a_unix": 1793030084.756534,
+      "flip_unix": 1793030465.3507648,
+      "flip_switched_at": "2026-10-26T16:01:05Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793030084.7565343,
+        "done_unix": 1793030136.0814567,
+        "answer": "I fetched the page you specified. Here is exactly what the document contains — I'm reporting only what is actually present, without adding anything not shown on the page.\n\n**Document ID:** The fetched content has no field or line labeled \"id\" anywhere in it — the only identifiers present are the `TRUNC-` reference markers that tag each depth section. So there is no separate document id distinct from these markers.\n\n**Code at depth=95%:** The text reads exactly:\n\n\u003e \"TRUNC-33e00f3c1e7b is the reference marker for the section at depth=95%, byte offset=1969.\"\n\nSo the code is: **TRUNC-33e00f3c1e7b**\n\n**Bottom of the page:** The fetched content ends immediately after that depth=95% marker — there is no further text, and no separately-labeled \"study reference code\" appears beneath it. The only code visible at the end/bottom of the retrieved page is the same one above.\n\nreference code: TRUNC-33e00f3c1e7b",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 25849,
+        "out_tok": 3906,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "32h0m0s",
+          "wait": "44h14m40s",
+          "waited_s": 159336.95570397377,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793189745.3507648,
+          "status": "done",
+          "sent_unix": 1793189802.3064687,
+          "done_unix": 1793189847.7881374,
+          "answer": "Based on the fetched document, here is the information requested:\n\n**Document ID:** `TRUNC-0ec4d20507dd` (the reference marker given at the very start of the document, depth=0%, byte offset=0)\n\n**Code at depth=50%:** `TRUNC-ac6cd54a9867` (the reference marker for the section at depth=50%, byte offset=1055)\n\nreference code: TRUNC-48356b6d18bb",
+          "version": "B",
+          "depths_b": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 43545,
+          "out_tok": 3231,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w64h-t1",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w64h-t1/2048",
+      "path": "/correction/txt/anthropic-claude-sonnet-5-run20261026-154521-bino7-cv-txt-w64h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793031321.9272854,
+      "etag_a": "\"08491497dd85ca3a\"",
+      "etag_b": "\"d1a5036e55af70a5\"",
+      "set_a_unix": 1793031367.4802244,
+      "flip_unix": 1793031766.2361343,
+      "flip_switched_at": "2026-10-26T16:22:46Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793031367.4802248,
+        "done_unix": 1793031431.6704261,
+        "answer": "Based on the fetched document content:\n\nThe section at **depth=95%** (byte offset=1969) has the reference marker **id and TRUNC- code**: `TRUNC-152fd536dc5d` — this is the exact (and final) marker printed on the page, appearing right after the passage ending \"...and an earlier draft of `FINDINGS.md` came clo[se]\".\n\nThis same marker is also the last string printed on the page, i.e., the bottom of the page.\n\nreference code: TRUNC-152fd536dc5d",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 73580,
+        "out_tok": 4249,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "64h0m0s",
+          "wait": "46h31m59s",
+          "waited_s": 167562.89025259018,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793199285.2361343,
+          "status": "done",
+          "sent_unix": 1793199329.126387,
+          "done_unix": 1793199425.8996246,
+          "answer": "Based on the fetched page content (plain‑text document with embedded `TRUNC-` section markers at various depths):\n\n- **Document id** (marker at depth=0%, the start of the document): `TRUNC-0aef9f89279a`\n- **Code for the section at depth=50%**: `TRUNC-d3a5315ab4ca`\n\nreference code: TRUNC-6e69471c69d8",
+          "version": "B",
+          "depths_b": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 105211,
+          "out_tok": 5758,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w15m-t1",
+      "provider": "or:openai",
+      "model": "openai/gpt-5-mini",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w15m-t1/2048",
+      "path": "/correction/html/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w15m-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793033751.9272854,
+      "etag_a": "\"b76369a993289eed\"",
+      "etag_b": "\"2274773c3edd364f\"",
+      "set_a_unix": 1793033838.974136,
+      "flip_unix": 1793034177.205258,
+      "flip_switched_at": "2026-10-26T17:02:57Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793033838.9741366,
+        "done_unix": 1793033862.416219,
+        "answer": "\"TRUNC-9dfbeec8702d\"\n\"TRUNC-d7a5d67b360d\"\n\nreference code: TRUNC-d7a5d67b360d. ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w15m-t1/2048))",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 7241,
+        "out_tok": 2119,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "15m0s",
+          "wait": "17m46s",
+          "waited_s": 1118.9073638916016,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793035243.205258,
+          "status": "done",
+          "sent_unix": 1793035296.1126218,
+          "done_unix": 1793035330.5066724,
+          "answer": "\"TRUNC-9dfbeec8702d\". ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w15m-t1/2048))\n\"TRUNC-b077788ab09d\". ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w15m-t1/2048))\n\nreference code: TRUNC-d7a5d67b360d. ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w15m-t1/2048))",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 9538,
+          "out_tok": 2857,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w30m-t1",
+      "provider": "or:openai",
+      "model": "openai/gpt-5-mini",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w30m-t1/2048",
+      "path": "/correction/html/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w30m-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793033301.9272854,
+      "etag_a": "\"4e9346e8282c9fd5\"",
+      "etag_b": "\"5800d69091fdf51b\"",
+      "set_a_unix": 1793033319.684878,
+      "flip_unix": 1793033728.4854224,
+      "flip_switched_at": "2026-10-26T16:55:28Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793033319.6848783,
+        "done_unix": 1793033355.0126934,
+        "answer": "TRUNC-679b4802aaa5\nTRUNC-5a407d80667d\n\nBoth codes above are taken from the fetched page. ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w30m-t1/2048))\n\nreference code: \u003cnone found on page\u003e",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 8892,
+        "out_tok": 2997,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "30m0s",
+          "wait": "22m36s",
+          "waited_s": 1385.0107295513153,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793035084.4854224,
+          "status": "done",
+          "sent_unix": 1793035113.496152,
+          "done_unix": 1793035153.1332676,
+          "answer": "\"TRUNC-679b4802aaa5\" ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w30m-t1/2048))\n\"TRUNC-a81f1e1fdab2\" ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w30m-t1/2048))\n\nreference code: TRUNC-5a407d80667d ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w30m-t1/2048))",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 11172,
+          "out_tok": 2774,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w1h-t1",
+      "provider": "or:openai",
+      "model": "openai/gpt-5-mini",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w1h-t1/2048",
+      "path": "/correction/html/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w1h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793030241.9272854,
+      "etag_a": "\"c76fbfbd9c225e43\"",
+      "etag_b": "\"e53beabbafd6c5cb\"",
+      "set_a_unix": 1793030292.6854727,
+      "flip_unix": 1793030683.4517488,
+      "flip_switched_at": "2026-10-26T16:04:43Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793030292.6854732,
+        "done_unix": 1793030326.6655796,
+        "answer": "\"TRUNC-ba0205a84894\". ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w1h-t1/2048))\n\n\"TRUNC-27d8d9d6b150\". ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w1h-t1/2048))\n\nreference code: \u003cnot found on that page\u003e. ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w1h-t1/2048))\n\nSummary: I fetched the page you gave and found the TRUNC markers shown above (the depth=0% marker and the depth=95% marker). The page does not contain any visible \"study reference code\" printed at the bottom, so I could not quote one from that page. ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w1h-t1/2048))",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 11612,
+        "out_tok": 2509,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "1h0m0s",
+          "wait": "1h0m7s",
+          "waited_s": 3657.7001206874847,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793034290.4517488,
+          "status": "done",
+          "sent_unix": 1793034341.1518695,
+          "done_unix": 1793034372.1654768,
+          "answer": "\"TRUNC-ba0205a84894\"\n\"TRUNC-80fc3474707d\". ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w1h-t1/2048))\n\nreference code: TRUNC-27d8d9d6b150. ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w1h-t1/2048))",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 5648,
+          "out_tok": 2213,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w2h-t1",
+      "provider": "or:openai",
+      "model": "openai/gpt-5-mini",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w2h-t1/2048",
+      "path": "/correction/html/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w2h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793031501.9272854,
+      "etag_a": "\"9c36fd6d9c4de7cb\"",
+      "etag_b": "\"0866efc6a0dc4c60\"",
+      "set_a_unix": 1793031559.53196,
+      "flip_unix": 1793031927.6772711,
+      "flip_switched_at": "2026-10-26T16:25:27Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793031559.5319602,
+        "done_unix": 1793031594.2922418,
+        "answer": "\"TRUNC-02053d2770a2 is the reference marker for the section at depth=0%, byte offset=0.\" ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w2h-t1/2048))\n\n\"TRUNC-514266f6b47f is the reference marker for the section at depth=95%, byte offset=1969.\" ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w2h-t1/2048))\n\nreference code: \u003cTRUNC-514266f6b47f\u003e ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w2h-t1/2048))",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 9499,
+        "out_tok": 2524,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "2h0m0s",
+          "wait": "2h40m3s",
+          "waited_s": 9653.82786488533,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793041530.6772711,
+          "status": "done",
+          "sent_unix": 1793041581.505136,
+          "done_unix": 1793041616.6174986,
+          "answer": "\"TRUNC-97a53c894f59\". ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w2h-t1/2048))\n\n\"TRUNC-cc3ad330d427\". ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w2h-t1/2048))\n\nreference code: TRUNC-f4bdfaf7a2cc. ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w2h-t1/2048))",
+          "version": "B",
+          "depths_b": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 9913,
+          "out_tok": 2701,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w4h-t1",
+      "provider": "or:openai",
+      "model": "openai/gpt-5-mini",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w4h-t1/2048",
+      "path": "/correction/html/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w4h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793029971.9272854,
+      "etag_a": "\"6b11c24f6b58c572\"",
+      "etag_b": "\"e79e7190a515abbe\"",
+      "set_a_unix": 1793029988.956928,
+      "flip_unix": 1793030327.2065275,
+      "flip_switched_at": "2026-10-26T15:58:47Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793029988.9569285,
+        "done_unix": 1793030024.0372043,
+        "answer": "\"id\": \"TRUNC-964e0a9c8f54\"\n\"section (depth=95%)\": \"TRUNC-42f2d6227e19\". ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w4h-t1/2048))\n\nreference code: \u003cnot found on page\u003e. ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w4h-t1/2048))\n\nNote: I fetched only the provided page and could not find any study reference code printed at the bottom of that page. ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w4h-t1/2048))",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 10537,
+        "out_tok": 3174,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "4h0m0s",
+          "wait": "3h16m49s",
+          "waited_s": 11830.170614480972,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793042136.2065275,
+          "status": "done",
+          "sent_unix": 1793042157.377142,
+          "done_unix": 1793042180.2427704,
+          "answer": "\"TRUNC-53ccbb187760\". ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w4h-t1/2048))\n\n\"TRUNC-adc7b8978b59\". ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w4h-t1/2048))\n\nreference code: \u003cnot found on page\u003e. ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w4h-t1/2048))\n\nSummary: I fetched the page and located the TRUNC markers (depth=0% and depth=50%) shown above; the page does not contain a study reference code printed at the bottom. ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w4h-t1/2048))",
+          "version": "B",
+          "depths_b": [
+            0,
+            50
+          ],
+          "in_tok": 8448,
+          "out_tok": 2146,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w8h-t1",
+      "provider": "or:openai",
+      "model": "openai/gpt-5-mini",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w8h-t1/2048",
+      "path": "/correction/html/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w8h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793034021.9272854,
+      "etag_a": "\"b7d28b1d2a6f556f\"",
+      "etag_b": "\"4535fd0e71b4c382\"",
+      "set_a_unix": 1793034069.8741941,
+      "flip_unix": 1793034462.5750742,
+      "flip_switched_at": "2026-10-26T17:07:42Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793034069.8741946,
+        "done_unix": 1793034106.4596486,
+        "answer": "\"TRUNC-c9edfa456203\"  \n\"TRUNC-7fd2eb2a6a9a\". ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w8h-t1/2048))\n\nreference code: (no study reference code printed at the bottom of that page). ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w8h-t1/2048))",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 11827,
+        "out_tok": 2566,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "8h0m0s",
+          "wait": "9h14m8s",
+          "waited_s": 33267.28130555153,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793067710.5750742,
+          "status": "done",
+          "sent_unix": 1793067729.8563797,
+          "done_unix": 1793067751.0183406,
+          "answer": "\"TRUNC-c9edfa456203\"\n\"TRUNC-a7f422c305b1\"\n\nreference code: TRUNC-7fd2eb2a6a9a. ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w8h-t1/2048))",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 9338,
+          "out_tok": 2709,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w16h-t1",
+      "provider": "or:openai",
+      "model": "openai/gpt-5-mini",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w16h-t1/2048",
+      "path": "/correction/html/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w16h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793032761.9272854,
+      "etag_a": "\"96c3286b8226a3ee\"",
+      "etag_b": "\"a0aaae2a0fc7a64a\"",
+      "set_a_unix": 1793032797.198074,
+      "flip_unix": 1793033219.1633768,
+      "flip_switched_at": "2026-10-26T16:46:59Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793032797.1980743,
+        "done_unix": 1793032837.351912,
+        "answer": "\"TRUNC-5943c67a3a27\"  \n\"TRUNC-a69afb77e76b\". ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w16h-t1/2048))\n\nreference code: \u003cnot found on page\u003e. ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w16h-t1/2048))",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 9795,
+        "out_tok": 2459,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "16h0m0s",
+          "wait": "21h24m48s",
+          "waited_s": 77096.71609139442,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793110307.1633768,
+          "status": "done",
+          "sent_unix": 1793110315.8794682,
+          "done_unix": 1793110331.8439016,
+          "answer": "\"TRUNC-5943c67a3a27\"\n\"TRUNC-cb16bff3e7a0\"\n\nreference code: TRUNC-a69afb77e76b. ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w16h-t1/2048))",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 5672,
+          "out_tok": 1652,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w32h-t1",
+      "provider": "or:openai",
+      "model": "openai/gpt-5-mini",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w32h-t1/2048",
+      "path": "/correction/html/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w32h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793030151.9272854,
+      "etag_a": "\"281034b4af736f0a\"",
+      "etag_b": "\"be111aed39fc9e6b\"",
+      "set_a_unix": 1793030196.620134,
+      "flip_unix": 1793030539.011725,
+      "flip_switched_at": "2026-10-26T16:02:18Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793030196.6201344,
+        "done_unix": 1793030232.0993576,
+        "answer": "\"TRUNC-b64ba182f8f2\"\n\"TRUNC-086b4d8ed934\"\n\nreference code: \u003cnot found on page\u003e. ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w32h-t1/2048))",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 10399,
+        "out_tok": 2573,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "32h0m0s",
+          "wait": "40h7m9s",
+          "waited_s": 144461.28954792023,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793174968.011725,
+          "status": "done",
+          "sent_unix": 1793175000.3012729,
+          "done_unix": 1793175031.0092807,
+          "answer": "\"TRUNC-d33e97c966d2\"\n\"TRUNC-a0c515f43287\". ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w32h-t1/2048))\n\nreference code: \u003cnot found on page\u003e. ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w32h-t1/2048))",
+          "version": "B",
+          "depths_b": [
+            0,
+            50
+          ],
+          "in_tok": 12889,
+          "out_tok": 2704,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w64h-t1",
+      "provider": "or:openai",
+      "model": "openai/gpt-5-mini",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w64h-t1/2048",
+      "path": "/correction/html/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-html-w64h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793034201.9272854,
+      "etag_a": "\"76f7b54635da3f69\"",
+      "etag_b": "\"2653548d78740c73\"",
+      "set_a_unix": 1793034237.750011,
+      "flip_unix": 1793034610.8348205,
+      "flip_switched_at": "2026-10-26T17:10:10Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793034237.7500114,
+        "done_unix": 1793034280.6059601,
+        "answer": "\"TRUNC-bfce84c63726\"\n\"TRUNC-2b9c30ea4a58\"\nreference code: TRUNC-2b9c30ea4a58",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 10778,
+        "out_tok": 2786,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "64h0m0s",
+          "wait": "85h17m14s",
+          "waited_s": 307072.6220111847,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793341644.8348205,
+          "status": "done",
+          "sent_unix": 1793341683.4568317,
+          "done_unix": 1793341732.0964367,
+          "answer": "\"id\": \"TRUNC-7acdb594b932\". ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w64h-t1/2048))\n\n\"section (depth=50%) code\": \"TRUNC-5ff16a717e06\". ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w64h-t1/2048))\n\nreference code: TRUNC-60c968484180. ([origin-b.example](https://origin-b.example/correction/html/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-html-w64h-t1/2048))",
+          "version": "B",
+          "depths_b": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 11522,
+          "out_tok": 3061,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w15m-t1",
+      "provider": "or:openai",
+      "model": "openai/gpt-5-mini",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w15m-t1/2048",
+      "path": "/correction/txt/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w15m-t1/2048",
+      "status": "void",
+      "why": "warm-up answer quoted no version-1 code (neither), so the model never held A",
+      "warm_due_unix": 1793034111.9272854,
+      "etag_a": "\"bba1bef20639315e\"",
+      "etag_b": "\"5813ac0a781dec21\"",
+      "set_a_unix": 1793034166.9874814,
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793034166.9874816,
+        "done_unix": 1793034176.8552577,
+        "version": "neither",
+        "in_tok": 103,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "15m0s",
+          "wait": "12m16s",
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "page_id": "or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w30m-t1",
+      "provider": "or:openai",
+      "model": "openai/gpt-5-mini",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w30m-t1/2048",
+      "path": "/correction/txt/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w30m-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793029881.9272854,
+      "etag_a": "\"3c447900134dd762\"",
+      "etag_b": "\"480dd8caeb61aaa3\"",
+      "set_a_unix": 1793029965.9037979,
+      "flip_unix": 1793030327.022043,
+      "flip_switched_at": "2026-10-26T15:58:46Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793029965.9037983,
+        "done_unix": 1793029988.7794297,
+        "answer": "Document id: \"TRUNC-d4982c06a1e6\". ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w30m-t1/2048))\n\nSection (depth=95%) TRUNC code: \"TRUNC-40b7ce5b5d1f\". ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w30m-t1/2048))\n\nreference code: \u003cnot found on page\u003e. ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w30m-t1/2048))\n\nNote: I fetched only the specified page and quoted the TRUNC markers shown there; the page contains no separate \"study reference code\" printed at the bottom. ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w30m-t1/2048))",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 7392,
+        "out_tok": 2126,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "30m0s",
+          "wait": "30m55s",
+          "waited_s": 1933.3988981246948,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793032182.022043,
+          "status": "done",
+          "sent_unix": 1793032260.420941,
+          "done_unix": 1793032294.6933334,
+          "answer": "\"TRUNC-4be0669a87b7\". ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w30m-t1/2048))\n\n\"TRUNC-df80a5d48e46\". ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w30m-t1/2048))\n\nreference code: TRUNC-627fa70cc144. ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w30m-t1/2048))",
+          "version": "B",
+          "depths_b": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 11001,
+          "out_tok": 3231,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w1h-t1",
+      "provider": "or:openai",
+      "model": "openai/gpt-5-mini",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w1h-t1/2048",
+      "path": "/correction/txt/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w1h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793031591.9272854,
+      "etag_a": "\"fe5cfe170c145cfd\"",
+      "etag_b": "\"87c9408299705114\"",
+      "set_a_unix": 1793031594.688354,
+      "flip_unix": 1793031927.8532126,
+      "flip_switched_at": "2026-10-26T16:25:27Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793031594.6883545,
+        "done_unix": 1793031625.4695313,
+        "answer": "\"TRUNC-2ca9460b894e\"\n\"TRUNC-be36a042cf2b\". ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w1h-t1/2048))\n\nreference code: (no study reference code printed at the bottom of the page). ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w1h-t1/2048))\n\n(Found and quoted the two TRUNC markers above from the document; the page contains no other visible \"study reference code\" at its bottom.)",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 10491,
+        "out_tok": 2699,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "1h0m0s",
+          "wait": "43m12s",
+          "waited_s": 2595.0726914405823,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793034519.8532126,
+          "status": "done",
+          "sent_unix": 1793034522.925904,
+          "done_unix": 1793034550.4304588,
+          "answer": "\"TRUNC-6269bd9d3917\"  \n\"TRUNC-903605dafff9\"  \n\nreference code: \u003cTRUNC-e20bdd12c350\u003e. ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w1h-t1/2048))",
+          "version": "B",
+          "depths_b": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 7185,
+          "out_tok": 2099,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w2h-t1",
+      "provider": "or:openai",
+      "model": "openai/gpt-5-mini",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w2h-t1/2048",
+      "path": "/correction/txt/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w2h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793031051.9272854,
+      "etag_a": "\"f53750e779e6ecc8\"",
+      "etag_b": "\"706f77f5d846679c\"",
+      "set_a_unix": 1793031096.7968655,
+      "flip_unix": 1793031499.1687536,
+      "flip_switched_at": "2026-10-26T16:18:19Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793031096.7968657,
+        "done_unix": 1793031131.7379937,
+        "answer": "\"2048\". ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w2h-t1/2048))\n\n\"TRUNC-8b89f8b4af34 is the reference marker for the section at depth=95%, byte offset=1969.\" ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w2h-t1/2048))\n\nreference code: \u003cnot found on page\u003e. ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w2h-t1/2048))\n\nSummary: I fetched only the requested page. The page shows the TRUNC marker for depth=95% (quoted above) but contains no explicit \"study reference code\" printed at the bottom (I searched the entire page). ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w2h-t1/2048))",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 9681,
+        "out_tok": 2961,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "2h0m0s",
+          "wait": "1h42m38s",
+          "waited_s": 6216.346122980118,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793037657.1687536,
+          "status": "done",
+          "sent_unix": 1793037715.5148766,
+          "done_unix": 1793037740.1989896,
+          "answer": "\"TRUNC-a5c0040085c5\"\n\"TRUNC-c36fcfce8e9d\"\n\nreference code: TRUNC-8b89f8b4af34. ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w2h-t1/2048))",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 5683,
+          "out_tok": 2086,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w4h-t1",
+      "provider": "or:openai",
+      "model": "openai/gpt-5-mini",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w4h-t1/2048",
+      "path": "/correction/txt/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w4h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793030691.9272854,
+      "etag_a": "\"cd8911f5d6c985b0\"",
+      "etag_b": "\"14c2b9917fadb3b6\"",
+      "set_a_unix": 1793030743.8397143,
+      "flip_unix": 1793031131.947954,
+      "flip_switched_at": "2026-10-26T16:12:11Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793030743.8397148,
+        "done_unix": 1793030768.718002,
+        "answer": "\"TRUNC-e221704066b9\". ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w4h-t1/2048))\n\n\"TRUNC-91c72af7812d\". ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w4h-t1/2048))\n\nreference code: (no study reference code printed at the bottom of that page). ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w4h-t1/2048))",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 5604,
+        "out_tok": 1755,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "4h0m0s",
+          "wait": "3h17m20s",
+          "waited_s": 11845.570935487747,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793042971.947954,
+          "status": "done",
+          "sent_unix": 1793042977.5188894,
+          "done_unix": 1793043003.6431527,
+          "answer": "\"TRUNC-29e4d81ab78d\"\n\"TRUNC-d6f88223487f\"\n\nreference code: TRUNC-27aff3769c35. ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w4h-t1/2048))",
+          "version": "B",
+          "depths_b": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 7206,
+          "out_tok": 2439,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w8h-t1",
+      "provider": "or:openai",
+      "model": "openai/gpt-5-mini",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w8h-t1/2048",
+      "path": "/correction/txt/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w8h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793031861.9272854,
+      "etag_a": "\"6ca9590b44daeeab\"",
+      "etag_b": "\"c4cfafb19b86ad33\"",
+      "set_a_unix": 1793031906.2160127,
+      "flip_unix": 1793032595.5190518,
+      "flip_switched_at": "2026-10-26T16:36:35Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793031906.216013,
+        "done_unix": 1793031927.497462,
+        "answer": "\"TRUNC-86ab502bd5f4\". ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w8h-t1/2048))\n\n\"TRUNC-61d15557edbd\". ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w8h-t1/2048))\n\nreference code: \u003cnot present on that page\u003e. ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w8h-t1/2048))",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 8992,
+        "out_tok": 1807,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "8h0m0s",
+          "wait": "6h17m32s",
+          "waited_s": 22681.1396548748,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793055247.5190518,
+          "status": "done",
+          "sent_unix": 1793055276.6587067,
+          "done_unix": 1793055300.3975194,
+          "answer": "id: \"TRUNC-86ab502bd5f4\"\ndepth=50% code: \"TRUNC-e7fde181aaa4\". ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w8h-t1/2048))\n\nreference code: \u003cnot found on page\u003e. ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w8h-t1/2048))\n\nNote: I examined the fetched page; it contains TRUNC markers at depths 0%, 25%, 50%, 75%, and 95% but does not show a study reference code printed at the bottom. ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w8h-t1/2048))",
+          "version": "A",
+          "depths_a": [
+            0,
+            50
+          ],
+          "in_tok": 5638,
+          "out_tok": 2290,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w16h-t1",
+      "provider": "or:openai",
+      "model": "openai/gpt-5-mini",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w16h-t1/2048",
+      "path": "/correction/txt/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w16h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793032131.9272854,
+      "etag_a": "\"913e744921cac63d\"",
+      "etag_b": "\"933d09871b802fd3\"",
+      "set_a_unix": 1793032228.1156633,
+      "flip_unix": 1793032641.8927207,
+      "flip_switched_at": "2026-10-26T16:37:21Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793032228.1156635,
+        "done_unix": 1793032260.0656528,
+        "answer": "\"TRUNC-83a3efb90a5c\"\n\"TRUNC-67b31da01613\". ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w16h-t1/2048))\n\nreference code: TRUNC-67b31da01613. ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w16h-t1/2048))",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 9545,
+        "out_tok": 2772,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "16h0m0s",
+          "wait": "17h29m24s",
+          "waited_s": 63014.86996746063,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793095605.8927207,
+          "status": "done",
+          "sent_unix": 1793095656.7626882,
+          "done_unix": 1793095674.318353,
+          "answer": "\"TRUNC-83a3efb90a5c\"  \n\"TRUNC-48eca49bf334\"\n\nreference code: TRUNC-67b31da01613. ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w16h-t1/2048))",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 5693,
+          "out_tok": 1684,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w32h-t1",
+      "provider": "or:openai",
+      "model": "openai/gpt-5-mini",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w32h-t1/2048",
+      "path": "/correction/txt/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w32h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793034291.9272854,
+      "etag_a": "\"d063fb4871a64d10\"",
+      "etag_b": "\"362abc46627deabd\"",
+      "set_a_unix": 1793034372.343727,
+      "flip_unix": 1793034737.2546275,
+      "flip_switched_at": "2026-10-26T17:12:17Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793034372.3437274,
+        "done_unix": 1793034402.174552,
+        "answer": "id: \"TRUNC-967e74ab51c7\"\nsection (depth=95%) TRUNC code: \"TRUNC-000ea5d10057\"\n\nreference code: \u003cnot found on page\u003e. ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w32h-t1/2048))",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 7009,
+        "out_tok": 2334,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "32h0m0s",
+          "wait": "38h54m33s",
+          "waited_s": 140123.2645895481,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793174810.2546275,
+          "status": "done",
+          "sent_unix": 1793174860.519217,
+          "done_unix": 1793174879.5129535,
+          "answer": "\"TRUNC-967e74ab51c7\"  \n\"TRUNC-3a4a0275c453\"  \nreference code: TRUNC-000ea5d10057. ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w32h-t1/2048))",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 5580,
+          "out_tok": 2094,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w64h-t1",
+      "provider": "or:openai",
+      "model": "openai/gpt-5-mini",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w64h-t1/2048",
+      "path": "/correction/txt/or:openai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w64h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793033031.9272854,
+      "etag_a": "\"580cda963a224098\"",
+      "etag_b": "\"83bd148408215e53\"",
+      "set_a_unix": 1793033061.1428792,
+      "flip_unix": 1793033533.0379255,
+      "flip_switched_at": "2026-10-26T16:52:12Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793033061.1428795,
+        "done_unix": 1793033094.467965,
+        "answer": "\"TRUNC-40e5b3910a24\"\n\"TRUNC-76444e4251c9\". ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w64h-t1/2048))\n\nreference code: \u003cnot found on page\u003e. ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w64h-t1/2048))\n\nNote: I fetched only the page you provided; it contains the two TRUNC markers above (depth=0% and depth=95%) but no study reference code printed at the bottom.",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 7265,
+        "out_tok": 2389,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "64h0m0s",
+          "wait": "68h25m56s",
+          "waited_s": 246364.6739206314,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793279889.0379255,
+          "status": "done",
+          "sent_unix": 1793279897.711846,
+          "done_unix": 1793279915.9107814,
+          "answer": "\"TRUNC-40e5b3910a24\"\n\"TRUNC-bd844e2c9549\". ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w64h-t1/2048))\n\nreference code: \u003cTRUNC-76444e4251c9\u003e. ([origin-b.example](https://origin-b.example/correction/txt/or%3Aopenai-gpt-5-mini-run20261026-154521-bino7-cv-txt-w64h-t1/2048))",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 5753,
+          "out_tok": 1858,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w15m-t1",
+      "provider": "or:x-ai",
+      "model": "x-ai/grok-4.3",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w15m-t1/2048",
+      "path": "/correction/html/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w15m-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793031771.9272854,
+      "etag_a": "\"05ace21a607cc8b4\"",
+      "etag_b": "\"077922e48058c436\"",
+      "set_a_unix": 1793031826.6086626,
+      "flip_unix": 1793032260.2450168,
+      "flip_switched_at": "2026-10-26T16:31:00Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793031826.6086628,
+        "done_unix": 1793031845.6444674,
+        "answer": "**id:** TRUNC-1c807ef48564  \n**TRUNC code for depth=95%:** TRUNC-2ed59bda331d\n\nreference code: TRUNC-2ed59bda331d",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 3355,
+        "out_tok": 1608,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "15m0s",
+          "wait": "16m19s",
+          "waited_s": 1000.3372213840485,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793033239.2450168,
+          "status": "done",
+          "sent_unix": 1793033260.5822382,
+          "done_unix": 1793033281.0346718,
+          "answer": "TRUNC-1c807ef48564  \nTRUNC-fa2b1a899c08  \nreference code: TRUNC-2ed59bda331d",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 3329,
+          "out_tok": 957,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w30m-t1",
+      "provider": "or:x-ai",
+      "model": "x-ai/grok-4.3",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w30m-t1/2048",
+      "path": "/correction/html/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w30m-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793033211.9272854,
+      "etag_a": "\"3edc22bab13c3277\"",
+      "etag_b": "\"7cc2d10c3054cccc\"",
+      "set_a_unix": 1793033219.3363645,
+      "flip_unix": 1793033617.3891044,
+      "flip_switched_at": "2026-10-26T16:53:37Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793033219.336365,
+        "done_unix": 1793033260.4090927,
+        "answer": "**id:** TRUNC-7c340f7385b1  \n**TRUNC- code at depth=95%:** TRUNC-d0c430eac67e  \n\nreference code: TRUNC-d0c430eac67e",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 3403,
+        "out_tok": 1581,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "30m0s",
+          "wait": "27m39s",
+          "waited_s": 1713.3119163513184,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793035276.3891044,
+          "status": "done",
+          "sent_unix": 1793035330.7010207,
+          "done_unix": 1793035353.000115,
+          "answer": "**Document id:** probe document\n\n**TRUNC code for section at depth=50%:** TRUNC-a40455fd5faa\n\nreference code: (none printed at bottom)",
+          "version": "A",
+          "depths_a": [
+            50
+          ],
+          "in_tok": 3331,
+          "out_tok": 2064,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w1h-t1",
+      "provider": "or:x-ai",
+      "model": "x-ai/grok-4.3",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w1h-t1/2048",
+      "path": "/correction/html/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w1h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793032581.9272854,
+      "etag_a": "\"46ea522dd6219978\"",
+      "etag_b": "\"a7772e15a9bc608b\"",
+      "set_a_unix": 1793032642.07606,
+      "flip_unix": 1793033060.9649022,
+      "flip_switched_at": "2026-10-26T16:44:20Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793032642.07606,
+        "done_unix": 1793032660.8159559,
+        "answer": "**Id:** TRUNC-d4e7deb4fd69  \n**TRUNC code for depth=95%:** TRUNC-cfe7c9a17300\n\nreference code: TRUNC-cfe7c9a17300",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 3328,
+        "out_tok": 2110,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "1h0m0s",
+          "wait": "1h13m3s",
+          "waited_s": 4516.474146604538,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793037443.9649022,
+          "status": "done",
+          "sent_unix": 1793037577.4390488,
+          "done_unix": 1793037594.7882342,
+          "answer": "**id:** TRUNC-d4e7deb4fd69  \n**TRUNC code at depth=50%:** TRUNC-c16fc25dc7f7\n\nreference code: TRUNC-cfe7c9a17300",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 3333,
+          "out_tok": 1521,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w2h-t1",
+      "provider": "or:x-ai",
+      "model": "x-ai/grok-4.3",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w2h-t1/2048",
+      "path": "/correction/html/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w2h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793029521.9272854,
+      "etag_a": "\"4473e4ace7557307\"",
+      "etag_b": "\"6dd14e3f0102a8aa\"",
+      "set_a_unix": 1793029532.9158177,
+      "flip_unix": 1793029965.7252812,
+      "flip_switched_at": "2026-10-26T15:52:45Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793029532.9158182,
+        "done_unix": 1793029557.8990521,
+        "answer": "**TRUNC-d71ad30c1c13** (exact quote from page for the section at depth=95%)\n\nreference code: TRUNC-d71ad30c1c13",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 3324,
+        "out_tok": 1905,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "2h0m0s",
+          "wait": "2h29m59s",
+          "waited_s": 9035.677799463272,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793038964.7252812,
+          "status": "done",
+          "sent_unix": 1793039001.4030807,
+          "done_unix": 1793039013.4529297,
+          "answer": "TRUNC-e1a53bc7ef02\nTRUNC-339a69b53274\nreference code: TRUNC-d71ad30c1c13",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 3324,
+          "out_tok": 1093,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w4h-t1",
+      "provider": "or:x-ai",
+      "model": "x-ai/grok-4.3",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w4h-t1/2048",
+      "path": "/correction/html/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w4h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793030331.9272854,
+      "etag_a": "\"c79f840526eeac21\"",
+      "etag_b": "\"8d44c91585c232fa\"",
+      "set_a_unix": 1793030387.5644195,
+      "flip_unix": 1793030768.8995428,
+      "flip_switched_at": "2026-10-26T16:06:08Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793030387.5644195,
+        "done_unix": 1793030424.2566986,
+        "answer": "2048\nTRUNC-ca190a1d1447\n\nreference code: TRUNC-ca190a1d1447",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 7336,
+        "out_tok": 2335,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "4h0m0s",
+          "wait": "4h25m3s",
+          "waited_s": 15920.009817361832,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793046671.8995428,
+          "status": "done",
+          "sent_unix": 1793046688.9093602,
+          "done_unix": 1793046705.1163974,
+          "answer": "2048\nTRUNC-f022b2dc09f0\n\nreference code: TRUNC-ca190a1d1447",
+          "version": "A",
+          "depths_a": [
+            50,
+            95
+          ],
+          "in_tok": 3334,
+          "out_tok": 1238,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w8h-t1",
+      "provider": "or:x-ai",
+      "model": "x-ai/grok-4.3",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w8h-t1/2048",
+      "path": "/correction/html/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w8h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793032401.9272854,
+      "etag_a": "\"4c4da573f429f2a2\"",
+      "etag_b": "\"84eeaab03e6d2b71\"",
+      "set_a_unix": 1793032610.7998018,
+      "flip_unix": 1793032950.041164,
+      "flip_switched_at": "2026-10-26T16:42:29Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793032610.7998023,
+        "done_unix": 1793032632.6576376,
+        "answer": "**TRUNC-0615fa01ba74** (for the section at depth=95%)\n\nreference code: TRUNC-0615fa01ba74",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 6699,
+        "out_tok": 2363,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "8h0m0s",
+          "wait": "7h19m2s",
+          "waited_s": 26353.2749710083,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793059292.041164,
+          "status": "done",
+          "sent_unix": 1793059303.316135,
+          "done_unix": 1793059326.3284879,
+          "answer": "TRUNC-a6d7d9b030da  \nTRUNC-d3726490311c  \n\nreference code: TRUNC-0615fa01ba74",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 3355,
+          "out_tok": 966,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w16h-t1",
+      "provider": "or:x-ai",
+      "model": "x-ai/grok-4.3",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w16h-t1/2048",
+      "path": "/correction/html/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w16h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793031141.9272854,
+      "etag_a": "\"41dd2d83f4df9d1d\"",
+      "etag_b": "\"f0e54b97c772494e\"",
+      "set_a_unix": 1793031192.3549156,
+      "flip_unix": 1793031594.4954183,
+      "flip_switched_at": "2026-10-26T16:19:54Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793031192.3549163,
+        "done_unix": 1793031214.3182113,
+        "answer": "The document id is not stated on the page.  \nTRUNC-5e5119a7f002\n\nreference code: TRUNC-5e5119a7f002",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 3328,
+        "out_tok": 2350,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "16h0m0s",
+          "wait": "11h54m23s",
+          "waited_s": 42897.29667067528,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793074457.4954183,
+          "status": "done",
+          "sent_unix": 1793074491.792089,
+          "done_unix": 1793074509.1356688,
+          "answer": "TRUNC-85fe04fa5008  \nTRUNC-d10e8192a046\n\nreference code: TRUNC-5e5119a7f002",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 3371,
+          "out_tok": 1493,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w32h-t1",
+      "provider": "or:x-ai",
+      "model": "x-ai/grok-4.3",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w32h-t1/2048",
+      "path": "/correction/html/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w32h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793031411.9272854,
+      "etag_a": "\"0c70bde3fff9ad2b\"",
+      "etag_b": "\"5c6c1aee4a9b52c9\"",
+      "set_a_unix": 1793031481.5353374,
+      "flip_unix": 1793031845.819792,
+      "flip_switched_at": "2026-10-26T16:24:05Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793031481.5353377,
+        "done_unix": 1793031498.9757504,
+        "answer": "TRUNC-c6de41001ba2\n\nreference code: TRUNC-c6de41001ba2",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 3327,
+        "out_tok": 1334,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "32h0m0s",
+          "wait": "30h35m11s",
+          "waited_s": 110117.46541452408,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793141956.819792,
+          "status": "done",
+          "sent_unix": 1793141963.2852066,
+          "done_unix": 1793141978.1321626,
+          "answer": "TRUNC-660df89ed41d  \nTRUNC-932c19c393a6  \n\nreference code: TRUNC-ffa3017d21f4",
+          "version": "B",
+          "depths_b": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 6586,
+          "out_tok": 1352,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w64h-t1",
+      "provider": "or:x-ai",
+      "model": "x-ai/grok-4.3",
+      "format": "html",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/html/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w64h-t1/2048",
+      "path": "/correction/html/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-html-w64h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793030511.9272854,
+      "etag_a": "\"6c30c25e5be7423c\"",
+      "etag_b": "\"38a9941f703b2f15\"",
+      "set_a_unix": 1793030525.716702,
+      "flip_unix": 1793030955.5930765,
+      "flip_switched_at": "2026-10-26T16:09:15Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793030525.7167022,
+        "done_unix": 1793030538.8324296,
+        "answer": "TRUNC-e453c781eca0\nTRUNC-30df992014bb\n\nreference code: TRUNC-30df992014bb",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 3325,
+        "out_tok": 1275,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "64h0m0s",
+          "wait": "54h51m31s",
+          "waited_s": 197512.63351511955,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793228446.5930765,
+          "status": "done",
+          "sent_unix": 1793228468.2265916,
+          "done_unix": 1793228482.4767578,
+          "answer": "TRUNC-44683d18f47e  \nTRUNC-7c7f7ae5e3b8  \nreference code: TRUNC-f4e704284f4d",
+          "version": "B",
+          "depths_b": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 3331,
+          "out_tok": 1208,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w15m-t1",
+      "provider": "or:x-ai",
+      "model": "x-ai/grok-4.3",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w15m-t1/2048",
+      "path": "/correction/txt/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w15m-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793031681.9272854,
+      "etag_a": "\"5ac479c09161c5ea\"",
+      "etag_b": "\"36a25732a1fd3f91\"",
+      "set_a_unix": 1793031686.3507552,
+      "flip_unix": 1793032087.0406046,
+      "flip_switched_at": "2026-10-26T16:28:06Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793031686.350756,
+        "done_unix": 1793031705.8833416,
+        "answer": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w15m-t1/2048\nTRUNC-b9258ad01b27\n\nreference code: TRUNC-b9258ad01b27",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 3242,
+        "out_tok": 1571,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "15m0s",
+          "wait": "19m40s",
+          "waited_s": 1194.339727640152,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793033267.0406046,
+          "status": "done",
+          "sent_unix": 1793033281.3803322,
+          "done_unix": 1793033319.5111892,
+          "answer": "**Document id:** or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w15m-t1/2048\n\n**TRUNC- code at depth=50%:** TRUNC-a82949b8ae97\n\nreference code: TRUNC-b9258ad01b27",
+          "version": "A",
+          "depths_a": [
+            50,
+            95
+          ],
+          "in_tok": 3236,
+          "out_tok": 1190,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w30m-t1",
+      "provider": "or:x-ai",
+      "model": "x-ai/grok-4.3",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w30m-t1/2048",
+      "path": "/correction/txt/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w30m-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793032311.9272854,
+      "etag_a": "\"42f4b824f8ae6939\"",
+      "etag_b": "\"1958ac2f720fbed0\"",
+      "set_a_unix": 1793032595.701848,
+      "flip_unix": 1793032949.8700168,
+      "flip_switched_at": "2026-10-26T16:42:29Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793032595.7018483,
+        "done_unix": 1793032610.4367373,
+        "answer": "**id:** or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w30m-t1/2048\n\n**TRUNC- code at depth=95%:** TRUNC-1a78ec5fefc4\n\nreference code: (not present in fetched page content)",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 6424,
+        "out_tok": 1421,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "30m0s",
+          "wait": "31m5s",
+          "waited_s": 1908.3385441303253,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793034814.8700168,
+          "status": "done",
+          "sent_unix": 1793034858.208561,
+          "done_unix": 1793034872.6940005,
+          "answer": "TRUNC-7f480508bf17\nTRUNC-a0609e3ac245\nreference code: TRUNC-1a78ec5fefc4",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 3280,
+          "out_tok": 1438,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w1h-t1",
+      "provider": "or:x-ai",
+      "model": "x-ai/grok-4.3",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w1h-t1/2048",
+      "path": "/correction/txt/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w1h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793030601.9272854,
+      "etag_a": "\"8033827744e063cf\"",
+      "etag_b": "\"2af3821339629be5\"",
+      "set_a_unix": 1793030659.9637797,
+      "flip_unix": 1793031036.3790023,
+      "flip_switched_at": "2026-10-26T16:10:36Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793030659.96378,
+        "done_unix": 1793030683.2708423,
+        "answer": "TRUNC-c3ffa7ef12f3  \nTRUNC-842199ce9bf7\n\nreference code: TRUNC-842199ce9bf7",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 3234,
+        "out_tok": 1558,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "1h0m0s",
+          "wait": "1h9m29s",
+          "waited_s": 4177.454375743866,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793035205.3790023,
+          "status": "done",
+          "sent_unix": 1793035213.833378,
+          "done_unix": 1793035235.736627,
+          "answer": "**id:** or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w1h-t1/2048  \n**TRUNC- code at depth=50%:** TRUNC-cbf45701882d\n\nreference code: TRUNC-842199ce9bf7",
+          "version": "A",
+          "depths_a": [
+            50,
+            95
+          ],
+          "in_tok": 3281,
+          "out_tok": 1820,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w2h-t1",
+      "provider": "or:x-ai",
+      "model": "x-ai/grok-4.3",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w2h-t1/2048",
+      "path": "/correction/txt/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w2h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793033841.9272854,
+      "etag_a": "\"c64d0a58a348d164\"",
+      "etag_b": "\"d020f4ecd34d0cee\"",
+      "set_a_unix": 1793033862.8064117,
+      "flip_unix": 1793034237.5500176,
+      "flip_switched_at": "2026-10-26T17:03:57Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793033862.806412,
+        "done_unix": 1793033878.2991493,
+        "answer": "**id:** or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w2h-t1/2048\n\n**TRUNC- code at depth=95%:** TRUNC-a0e784b9020b\n\nreference code: TRUNC-a0e784b9020b",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 3235,
+        "out_tok": 1159,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "2h0m0s",
+          "wait": "1h51m59s",
+          "waited_s": 6735.022480249405,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793040956.5500176,
+          "status": "done",
+          "sent_unix": 1793040972.5724978,
+          "done_unix": 1793040980.6622095,
+          "answer": "TRUNC-09d7287cea1e\nTRUNC-fd16ebb07512\nreference code: TRUNC-a0e784b9020b",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 3415,
+          "out_tok": 1204,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w4h-t1",
+      "provider": "or:x-ai",
+      "model": "x-ai/grok-4.3",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w4h-t1/2048",
+      "path": "/correction/txt/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w4h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793029701.9272854,
+      "etag_a": "\"7828f3ac86bf941d\"",
+      "etag_b": "\"618f99d3425f47e8\"",
+      "set_a_unix": 1793029823.2850857,
+      "flip_unix": 1793030232.2799847,
+      "flip_switched_at": "2026-10-26T15:57:12Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793029823.285086,
+        "done_unix": 1793029852.873468,
+        "answer": "**Document ID:** or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w4h-t1/2048\n\n**TRUNC- code at depth=95%:** TRUNC-c04b5b6aac6f\n\nreference code: TRUNC-c04b5b6aac6f",
+        "version": "A",
+        "depths_a": [
+          95
+        ],
+        "in_tok": 4862,
+        "out_tok": 1538,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "4h0m0s",
+          "wait": "4h13m5s",
+          "waited_s": 15232.391938209534,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793045417.2799847,
+          "status": "done",
+          "sent_unix": 1793045464.671923,
+          "done_unix": 1793045487.9647527,
+          "answer": "TRUNC-c3ecefbb671a  \nTRUNC-8ec1c512390f  \n\nreference code: TRUNC-c04b5b6aac6f",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 6973,
+          "out_tok": 1702,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w8h-t1",
+      "provider": "or:x-ai",
+      "model": "x-ai/grok-4.3",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w8h-t1/2048",
+      "path": "/correction/txt/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w8h-t1/2048",
+      "status": "void",
+      "why": "warm-up ask failed: openrouter: The model is currently at capacity due to high demand. Please try again in a few minutes, or use a higher service tier for priority processing: https://docs.x.ai/developers/advanced-api-usage/priority-processing",
+      "warm_due_unix": 1793030961.9272854,
+      "etag_a": "\"018ee18954b99a44\"",
+      "etag_b": "\"7d659b8c4ad14ed3\"",
+      "set_a_unix": 1793031034.0537777,
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793031034.053778,
+        "done_unix": 1793031036.18662,
+        "err": "openrouter: The model is currently at capacity due to high demand. Please try again in a few minutes, or use a higher service tier for priority processing: https://docs.x.ai/developers/advanced-api-usage/priority-processing",
+        "version": "neither",
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "8h0m0s",
+          "wait": "6h43m28s",
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "page_id": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w16h-t1",
+      "provider": "or:x-ai",
+      "model": "x-ai/grok-4.3",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w16h-t1/2048",
+      "path": "/correction/txt/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w16h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793033481.9272854,
+      "etag_a": "\"946bd8fe20288a00\"",
+      "etag_b": "\"d5f0da71645b890d\"",
+      "set_a_unix": 1793033533.2167675,
+      "flip_unix": 1793033878.4868455,
+      "flip_switched_at": "2026-10-26T16:57:58Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793033533.2167678,
+        "done_unix": 1793033556.8299234,
+        "answer": "**id:** TRUNC-13fa94459116\n\n**TRUNC- code at depth=95%:** TRUNC-64ab7ee15292\n\nreference code: TRUNC-64ab7ee15292",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 9560,
+        "out_tok": 1775,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "16h0m0s",
+          "wait": "22h17m8s",
+          "waited_s": 80234.55275535583,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793114106.4868455,
+          "status": "done",
+          "sent_unix": 1793114113.0396008,
+          "done_unix": 1793114127.315457,
+          "answer": "TRUNC-13fa94459116 TRUNC-ec65ca536bda\nreference code: TRUNC-64ab7ee15292",
+          "version": "A",
+          "depths_a": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 3250,
+          "out_tok": 1483,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w32h-t1",
+      "provider": "or:x-ai",
+      "model": "x-ai/grok-4.3",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w32h-t1/2048",
+      "path": "/correction/txt/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w32h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793033931.9272854,
+      "etag_a": "\"a85abb76b343b295\"",
+      "etag_b": "\"b8525ee99ddec351\"",
+      "set_a_unix": 1793033938.8475916,
+      "flip_unix": 1793034280.7829134,
+      "flip_switched_at": "2026-10-26T17:04:40Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793033938.847592,
+        "done_unix": 1793033952.6609435,
+        "answer": "TRUNC-7c623bb005dd  \nTRUNC-f09483236422  \nreference code: TRUNC-f09483236422",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 3240,
+        "out_tok": 979,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "32h0m0s",
+          "wait": "40h23m0s",
+          "waited_s": 145431.30714964867,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793179660.7829134,
+          "status": "done",
+          "sent_unix": 1793179712.090063,
+          "done_unix": 1793179720.85615,
+          "answer": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w32h-t1/2048  \nTRUNC-90328c2a9da9\n\nreference code: TRUNC-6dcbf0c079fd",
+          "version": "B",
+          "depths_b": [
+            50,
+            95
+          ],
+          "in_tok": 3241,
+          "out_tok": 898,
+          "rounds": 1
+        }
+      ]
+    },
+    {
+      "page_id": "or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w64h-t1",
+      "provider": "or:x-ai",
+      "model": "x-ai/grok-4.3",
+      "format": "txt",
+      "trial": 1,
+      "url": "https://origin-b.example/correction/txt/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w64h-t1/2048",
+      "path": "/correction/txt/or:x-ai-grok-4.3-run20261026-154521-bino7-cv-txt-w64h-t1/2048",
+      "status": "done",
+      "warm_due_unix": 1793032491.9272854,
+      "etag_a": "\"d40e8081eaf6b713\"",
+      "etag_b": "\"883f477fb00c5c63\"",
+      "set_a_unix": 1793032632.8400156,
+      "flip_unix": 1793032950.2168887,
+      "flip_switched_at": "2026-10-26T16:42:30Z",
+      "warm": {
+        "kind": "warm",
+        "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.",
+        "status": "done",
+        "sent_unix": 1793032632.840016,
+        "done_unix": 1793032641.525955,
+        "answer": "id: TRUNC-e5196063141b\nTRUNC-78718f963aba\nreference code: TRUNC-78718f963aba",
+        "version": "A",
+        "depths_a": [
+          0,
+          95
+        ],
+        "in_tok": 3235,
+        "out_tok": 1124,
+        "rounds": 1
+      },
+      "reasks": [
+        {
+          "kind": "reask",
+          "offset": "64h0m0s",
+          "wait": "70h49m16s",
+          "waited_s": 255007.0195877552,
+          "question": "Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.",
+          "due_unix": 1793287906.2168887,
+          "status": "done",
+          "sent_unix": 1793287957.2364764,
+          "done_unix": 1793287979.7123182,
+          "answer": "TRUNC-f95caaca0622  \nTRUNC-fcbf351edd05\n\nreference code: TRUNC-99742ca30ae2",
+          "version": "B",
+          "depths_b": [
+            0,
+            50,
+            95
+          ],
+          "in_tok": 3229,
+          "out_tok": 1694,
+          "rounds": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+[correction] first warm-up slot: Fri 30 Oct 10:00 UTC+3 (a loop started now waits until then)
+[correction] run run20261028-204349-5kcma: 54 page(s) = one per vendor x [html txt] x check time x 1 trial(s); 2048 B
+[correction] one warm-up every 1m30s in shuffled order; switch 5m0s after each warm-up answer; check times drawn inside their step: true
+  anthropic     check at switch + 15m,30m,1h,2h,4h,8h,16h,32h,64h
+  or:openai     check at switch + 15m,30m,1h,2h,4h,8h,16h,32h,64h
+  or:x-ai       check at switch + 15m,30m,1h,2h,4h,8h,16h,32h,64h
+[correction] 108 paid asks in total (each page: 1 warm-up + 1 ask-again)
+[correction] warm-up question : Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.
+[correction] ask-again question: Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.
+[correction] pages (warm-up time UTC+3, check, drawn wait):
+  anthropic     html t1  warm Fri 10:30  check 15m  wait 15m41s
+  anthropic     html t1  warm Fri 10:43  check 30m  wait 28m30s
+  anthropic     html t1  warm Fri 10:40  check 1h   wait 58m9s
+  anthropic     html t1  warm Fri 10:27  check 2h   wait 1h50m32s
+  anthropic     html t1  warm Fri 10:42  check 4h   wait 3h29m44s
+  anthropic     html t1  warm Fri 11:09  check 8h   wait 8h26m22s
+  anthropic     html t1  warm Fri 10:34  check 16h  wait 13h14m45s
+  anthropic     html t1  warm Fri 11:16  check 32h  wait 33h30m16s
+  anthropic     html t1  warm Fri 10:55  check 64h  wait 67h56m9s
+  anthropic     txt  t1  warm Fri 10:22  check 15m  wait 13m23s
+  anthropic     txt  t1  warm Fri 10:33  check 30m  wait 33m1s
+  anthropic     txt  t1  warm Fri 10:24  check 1h   wait 1h1m11s
+  anthropic     txt  t1  warm Fri 10:37  check 2h   wait 2h0m56s
+  anthropic     txt  t1  warm Fri 10:04  check 4h   wait 4h14m27s
+  anthropic     txt  t1  warm Fri 11:15  check 8h   wait 6h13m38s
+  anthropic     txt  t1  warm Fri 11:13  check 16h  wait 12h36m21s
+  anthropic     txt  t1  warm Fri 10:45  check 32h  wait 28h58m51s
+  anthropic     txt  t1  warm Fri 10:54  check 64h  wait 49h16m38s
+  or:openai     html t1  warm Fri 10:36  check 15m  wait 16m59s
+  or:openai     html t1  warm Fri 10:03  check 30m  wait 31m11s
+  or:openai     html t1  warm Fri 10:01  check 1h   wait 54m50s
+  or:openai     html t1  warm Fri 10:15  check 2h   wait 2h26m45s
+  or:openai     html t1  warm Fri 10:46  check 4h   wait 5h36m3s
+  or:openai     html t1  warm Fri 10:57  check 8h   wait 9h44m56s
+  or:openai     html t1  warm Fri 10:51  check 16h  wait 19h50m15s
+  or:openai     html t1  warm Fri 10:49  check 32h  wait 26h11m5s
+  or:openai     html t1  warm Fri 11:10  check 64h  wait 69h16m11s
+  or:openai     txt  t1  warm Fri 11:04  check 15m  wait 11m32s
+  or:openai     txt  t1  warm Fri 10:09  check 30m  wait 32m57s
+  or:openai     txt  t1  warm Fri 10:07  check 1h   wait 57m59s
+  or:openai     txt  t1  warm Fri 11:18  check 2h   wait 1h38m14s
+  or:openai     txt  t1  warm Fri 11:06  check 4h   wait 3h25m20s
+  or:openai     txt  t1  warm Fri 10:52  check 8h   wait 6h7m57s
+  or:openai     txt  t1  warm Fri 10:28  check 16h  wait 14h8m21s
+  or:openai     txt  t1  warm Fri 11:00  check 32h  wait 27h30m3s
+  or:openai     txt  t1  warm Fri 11:19  check 64h  wait 71h0m22s
+  or:x-ai       html t1  warm Fri 10:13  check 15m  wait 11m49s
+  or:x-ai       html t1  warm Fri 10:16  check 30m  wait 24m34s
+  or:x-ai       html t1  warm Fri 10:12  check 1h   wait 42m31s
+  or:x-ai       html t1  warm Fri 11:07  check 2h   wait 1h45m56s
+  or:x-ai       html t1  warm Fri 10:10  check 4h   wait 3h16m58s
+  or:x-ai       html t1  warm Fri 10:58  check 8h   wait 8h38m13s
+  or:x-ai       html t1  warm Fri 11:03  check 16h  wait 16h28m52s
+  or:x-ai       html t1  warm Fri 11:12  check 32h  wait 42h6m0s
+  or:x-ai       html t1  warm Fri 10:18  check 64h  wait 45h18m30s
+  or:x-ai       txt  t1  warm Fri 10:39  check 15m  wait 21m5s
+  or:x-ai       txt  t1  warm Fri 10:06  check 30m  wait 31m59s
+  or:x-ai       txt  t1  warm Fri 11:01  check 1h   wait 1h5m25s
+  or:x-ai       txt  t1  warm Fri 10:25  check 2h   wait 1h59m27s
+  or:x-ai       txt  t1  warm Fri 10:19  check 4h   wait 4h33m50s
+  or:x-ai       txt  t1  warm Fri 10:00  check 8h   wait 9h43m46s
+  or:x-ai       txt  t1  warm Fri 10:31  check 16h  wait 11h31m25s
+  or:x-ai       txt  t1  warm Fri 10:21  check 32h  wait 34h20m1s
+  or:x-ai       txt  t1  warm Fri 10:48  check 64h  wait 74h18m47s
+[correction] state written to logs/correction-b2.state.json. Nothing has been asked yet; run -correction-loop (tmux) or -correction-tick (cron).
+# prompt: NEW (address + question, no wrapper) — bin/probe-trial-correction-v4, main 9f9004e; b1 used the OLD wrapper (v3)

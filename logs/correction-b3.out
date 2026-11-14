@@ -1,0 +1,165 @@
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+  warm-up  anthropic     html t1  answer=A       -> warmed
+  warm-up  anthropic     txt  t1  answer=A       -> warmed
+  warm-up  or:openai     html t1  answer=A       -> warmed
+  warm-up  or:x-ai       txt  t1  answer=A       -> warmed
+  SWITCH   anthropic     html t1  -> version 2 at 18:05:40
+  warm-up  or:x-ai       txt  t1  answer=A       -> warmed
+  SWITCH   anthropic     txt  t1  -> version 2 at 18:07:50
+  warm-up  or:x-ai       html t1  answer=A       -> warmed
+  SWITCH   or:openai     html t1  -> version 2 at 18:09:04
+  warm-up  or:x-ai       txt  t1  answer=A       -> warmed
+  warm-up  or:openai     html t1  answer=A       -> warmed
+  SWITCH   or:x-ai       txt  t1  -> version 2 at 18:11:34
+  SWITCH   or:x-ai       txt  t1  -> version 2 at 18:12:34
+  warm-up  or:x-ai       txt  t1  answer=A       -> warmed
+  SWITCH   or:x-ai       html t1  -> version 2 at 18:13:53
+  warm-up  or:openai     txt  t1  answer=A       -> warmed
+  SWITCH   or:x-ai       txt  t1  -> version 2 at 18:15:08
+  warm-up  anthropic     txt  t1  answer=A       -> warmed
+  warm-up  or:x-ai       html t1  answer=A       -> warmed
+  SWITCH   or:openai     html t1  -> version 2 at 18:17:29
+  SWITCH   or:x-ai       txt  t1  -> version 2 at 18:18:30
+  warm-up  anthropic     txt  t1  answer=A       -> warmed
+  SWITCH   or:openai     txt  t1  -> version 2 at 18:19:38
+  warm-up  or:openai     txt  t1  answer=A       -> warmed
+  SWITCH   anthropic     txt  t1  -> version 2 at 18:20:55
+  warm-up  or:openai     txt  t1  answer=A       -> warmed
+  SWITCH   or:x-ai       html t1  -> version 2 at 18:23:19
+  warm-up  anthropic     txt  t1  answer=A       -> warmed
+  SWITCH   anthropic     txt  t1  -> version 2 at 18:24:28
+  warm-up  or:x-ai       txt  t1  answer=A       -> warmed
+  SWITCH   or:openai     txt  t1  -> version 2 at 18:25:37
+  warm-up  anthropic     html t1  answer=A       -> warmed
+  warm-up  or:openai     html t1  answer=A       -> warmed
+  SWITCH   or:openai     txt  t1  -> version 2 at 18:28:04
+  SWITCH   anthropic     txt  t1  -> version 2 at 18:29:04
+  warm-up  or:openai     html t1  answer=A       -> warmed
+  SWITCH   or:x-ai       txt  t1  -> version 2 at 18:30:31
+  warm-up  anthropic     html t1  answer=A       -> warmed
+  SWITCH   anthropic     html t1  -> version 2 at 18:31:37
+  warm-up  or:x-ai       html t1  answer=A       -> warmed
+  warm-up  or:openai     html t1  answer=A       -> warmed
+  SWITCH   or:openai     html t1  -> version 2 at 18:34:06
+  ask again (check 15m, asked at switch + 16m37s)  or:openai     html t1  answer=A
+  warm-up  or:x-ai       html t1  answer=A       -> warmed
+  SWITCH   or:openai     html t1  -> version 2 at 18:35:31
+  SWITCH   anthropic     html t1  -> version 2 at 18:36:32
+  warm-up  or:x-ai       txt  t1  answer=A       -> warmed
+  SWITCH   or:x-ai       html t1  -> version 2 at 18:37:40
+  warm-up  or:openai     txt  t1  answer=A       -> warmed
+  warm-up  or:openai     html t1  answer=A       -> warmed
+  SWITCH   or:openai     html t1  -> version 2 at 18:40:07
+  warm-up  or:x-ai       html t1  answer=A       -> warmed
+  SWITCH   or:x-ai       html t1  -> version 2 at 18:41:24
+  SWITCH   or:x-ai       txt  t1  -> version 2 at 18:42:24
+  warm-up  or:x-ai       html t1  answer=A       -> warmed
+  SWITCH   or:openai     txt  t1  -> version 2 at 18:43:38
+  warm-up  or:x-ai       html t1  answer=A       -> warmed
+  warm-up  or:openai     html t1  answer=A       -> warmed
+  SWITCH   or:openai     html t1  -> version 2 at 18:46:07
+  SWITCH   or:x-ai       html t1  -> version 2 at 18:47:07
+  warm-up  or:openai     txt  t1  answer=A       -> warmed
+  SWITCH   or:x-ai       html t1  -> version 2 at 18:48:21
+  warm-up  or:openai     txt  t1  answer=A       -> warmed
+  SWITCH   or:x-ai       html t1  -> version 2 at 18:49:36
+  warm-up  or:openai     txt  t1  answer=A       -> warmed
+  warm-up  anthropic     txt  t1  answer=A       -> warmed
+  SWITCH   or:openai     html t1  -> version 2 at 18:52:00
+  SWITCH   or:openai     txt  t1  -> version 2 at 18:53:00
+  warm-up  anthropic     html t1  answer=A       -> warmed
+  SWITCH   or:openai     txt  t1  -> version 2 at 18:54:07
+  warm-up  or:x-ai       txt  t1  answer=A       -> warmed
+  SWITCH   or:openai     txt  t1  -> version 2 at 18:55:18
+  warm-up  or:x-ai       html t1  answer=A       -> warmed
+  warm-up  or:openai     html t1  answer=A       -> warmed
+  SWITCH   anthropic     txt  t1  -> version 2 at 18:57:55
+  ask again (check 30m, asked at switch + 27m24s)  or:x-ai       txt  t1  answer=A
+  SWITCH   anthropic     html t1  -> version 2 at 18:59:06
+  warm-up  anthropic     html t1  answer=A       -> warmed
+  SWITCH   or:x-ai       txt  t1  -> version 2 at 19:00:15
+  warm-up  or:openai     txt  t1  answer=A       -> warmed
+  warm-up  anthropic     html t1  answer=A       -> warmed
+  SWITCH   or:x-ai       html t1  -> version 2 at 19:01:45
+  SWITCH   or:openai     html t1  -> version 2 at 19:03:46
+  ask again (check 15m, asked at switch + 16m39s)  or:x-ai       html t1  answer=A
+  warm-up  anthropic     txt  t1  answer=A       -> warmed
+  SWITCH   anthropic     html t1  -> version 2 at 19:05:03
+  warm-up  or:openai     txt  t1  answer=A       -> warmed
+  SWITCH   or:openai     txt  t1  -> version 2 at 19:06:26
+  ask again (check 30m, asked at switch + 30m55s)  or:openai     html t1  answer=A
+  warm-up  anthropic     html t1  answer=A       -> warmed
+  SWITCH   anthropic     html t1  -> version 2 at 19:06:56
+  warm-up  or:x-ai       txt  t1  answer=A       -> warmed
+  warm-up  anthropic     txt  t1  answer=A       -> warmed
+  SWITCH   anthropic     txt  t1  -> version 2 at 19:09:13
+  SWITCH   or:openai     txt  t1  -> version 2 at 19:11:14
+  warm-up  anthropic     html t1  answer=A       -> warmed
+  SWITCH   anthropic     html t1  -> version 2 at 19:12:22
+  warm-up  anthropic     html t1  answer=A       -> warmed
+  SWITCH   or:x-ai       txt  t1  -> version 2 at 19:13:31
+  ask again (check 15m, asked at switch + 19m24s)  or:openai     txt  t1  answer=A
+  warm-up  or:x-ai       html t1  answer=A       -> warmed
+  SWITCH   anthropic     txt  t1  -> version 2 at 19:14:52
+  warm-up  or:openai     html t1  answer=A       -> warmed
+  SWITCH   anthropic     html t1  -> version 2 at 19:16:23
+  warm-up  anthropic     txt  t1  answer=A       -> warmed
+  SWITCH   anthropic     html t1  -> version 2 at 19:17:31
+  warm-up  anthropic     txt  t1  answer=A       -> warmed
+  ask again (check 15m, asked at switch + 13m45s)  anthropic     html t1  answer=A
+  SWITCH   or:x-ai       html t1  -> version 2 at 19:18:55
+  warm-up  or:x-ai       txt  t1  answer=A       -> warmed
+  SWITCH   or:openai     html t1  -> version 2 at 19:22:03
+  SWITCH   anthropic     txt  t1  -> version 2 at 19:23:03
+  SWITCH   anthropic     txt  t1  -> version 2 at 19:24:04
+  SWITCH   or:x-ai       txt  t1  -> version 2 at 19:25:04
+  ask again (check 1h, asked at switch + 1h5m27s)  or:openai     txt  t1  answer=A
+  ask again (check 15m, asked at switch + 18m27s)  anthropic     txt  t1  answer=A
+  ask again (check 30m, asked at switch + 24m33s)  or:x-ai       html t1  answer=A
+  ask again (check 15m, asked at switch + 19m36s)  or:x-ai       txt  t1  answer=A
+  ask again (check 1h, asked at switch + 52m54s)  or:openai     html t1  answer=A
+  ask again (check 30m, asked at switch + 33m59s)  or:openai     txt  t1  answer=A
+  ask again (check 1h, asked at switch + 48m13s)  or:x-ai       txt  t1  answer=A
+  ask again (check 30m, asked at switch + 35m7s)  anthropic     html t1  answer=A
+  ask again (check 1h, asked at switch + 1h22m7s)  anthropic     html t1  answer=A
+  ask again (check 30m, asked at switch + 42m48s)  anthropic     txt  t1  answer=A
+  ask again (check 1h, asked at switch + 1h24m23s)  or:x-ai       html t1  answer=A
+  ask again (check 1h, asked at switch + 1h17m4s)  anthropic     txt  t1  answer=A
+  ask again (check 2h, asked at switch + 1h46m20s)  or:openai     html t1  answer=A
+  ask again (check 2h, asked at switch + 1h42m27s)  or:openai     txt  t1  answer=A
+  ask again (check 2h, asked at switch + 2h32m7s)  anthropic     txt  t1  answer=A
+  ask again (check 2h, asked at switch + 1h55m20s)  or:x-ai       html t1  answer=A
+  ask again (check 4h, asked at switch + 2h53m45s)  or:x-ai       txt  t1  answer=A
+  ask again (check 2h, asked at switch + 1h54m15s)  anthropic     html t1  answer=A
+  ask again (check 4h, asked at switch + 3h14m14s)  anthropic     html t1  answer=A
+  ask again (check 2h, asked at switch + 2h46m22s)  or:x-ai       txt  t1  answer=A
+  ask again (check 4h, asked at switch + 3h13m5s)  or:openai     txt  t1  answer=B
+  ask again (check 4h, asked at switch + 3h25m20s)  or:openai     html t1  answer=A
+  ask again (check 4h, asked at switch + 5h34m19s)  anthropic     txt  t1  answer=A
+  ask again (check 4h, asked at switch + 5h13m34s)  or:x-ai       html t1  answer=neither
+  ask again (check 8h, asked at switch + 5h44m1s)  or:openai     html t1  answer=B
+  ask again (check 8h, asked at switch + 6h12m12s)  or:x-ai       txt  t1  answer=A
+  ask again (check 8h, asked at switch + 6h26m21s)  anthropic     html t1  answer=A
+  ask again (check 8h, asked at switch + 8h27m27s)  or:openai     txt  t1  answer=A
+  ask again (check 8h, asked at switch + 9h2m5s)  anthropic     txt  t1  answer=A
+  ask again (check 8h, asked at switch + 11h16m57s)  or:x-ai       html t1  answer=A
+  ask again (check 16h, asked at switch + 12h58m22s)  or:x-ai       txt  t1  answer=A
+  ask again (check 16h, asked at switch + 16h16m46s)  or:x-ai       html t1  answer=A
+  ask again (check 16h, asked at switch + 16h56m42s)  or:openai     html t1  answer=neither
+  ask again (check 16h, asked at switch + 18h47m56s)  anthropic     txt  t1  answer=A
+  ask again (check 16h, asked at switch + 20h53m21s)  or:openai     txt  t1  answer=A
+  ask again (check 16h, asked at switch + 20h43m28s)  anthropic     html t1  answer=A
+  ask again (check 32h, asked at switch + 23h22m48s)  anthropic     txt  t1  answer=A
+  ask again (check 32h, asked at switch + 25h2m11s)  anthropic     html t1  answer=B
+  ask again (check 32h, asked at switch + 28h25m21s)  or:x-ai       html t1  answer=neither
+  ask again (check 32h, asked at switch + 29h59m45s)  or:x-ai       txt  t1  answer=B
+  ask again (check 32h, asked at switch + 38h36m18s)  or:openai     txt  t1  answer=A
+  ask again (check 32h, asked at switch + 40h17m51s)  or:openai     html t1  answer=A
+  ask again (check 64h, asked at switch + 60h30m16s)  or:x-ai       txt  t1  answer=B
+  ask again (check 64h, asked at switch + 62h26m56s)  or:openai     html t1  answer=A
+  ask again (check 64h, asked at switch + 64h35m16s)  anthropic     txt  t1  answer=B
+  ask again (check 64h, asked at switch + 67h58m8s)  or:x-ai       html t1  answer=B
+  ask again (check 64h, asked at switch + 78h3m22s)  or:openai     txt  t1  answer=B
+  ask again (check 64h, asked at switch + 87h41m15s)  anthropic     html t1  answer=B
+[correction] every page is done or void. Report: -correction-report
