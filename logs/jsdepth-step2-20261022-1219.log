@@ -1,0 +1,73 @@
+===== route /depth/html/  2026-10-22T12:19:25Z
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+[truncprobe] run run20261022-121925-kq25z: providers [anthropic-claude-sonnet-5], 1 sizes, gap 3m0s
+[truncprobe] about to make ~1 API calls across 1 provider(s) — Ctrl-C within 5s to abort
+[truncprobe] Part A — locating the cut (scan each size) …
+WARN anomalous token cost: truncprobe A [anthropic] 4096B in=127000 out=6967 (kept full answer for forensics)
+  4k       anthropic     deepest marker: 95%
+
+==========================================================================
+  TRUNCATION-DEPTH PROBE — how far down the page does each fetcher read?
+==========================================================================
+  Part A: deepest marker quoted = the cut for a live fetch.
+  Part B: is that cut baked into the STORED copy (bottom blank + no re-fetch)?
+
+  Part A — cut per size:
+    4k       anthropic     deepest=95% (fetches=1)
+  Part B — stored-copy read (bottom marker on the reask):
+===== route /depth/jsInline/  2026-10-22T12:21:55Z
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+[truncprobe] run run20261022-122155-gxaeb: providers [anthropic-claude-sonnet-5], 1 sizes, gap 3m0s
+[truncprobe] about to make ~1 API calls across 1 provider(s) — Ctrl-C within 5s to abort
+[truncprobe] Part A — locating the cut (scan each size) …
+WARN anomalous token cost: truncprobe A [anthropic] 4096B in=22170 out=979 (kept full answer for forensics)
+  4k       anthropic     deepest marker: 0%
+
+==========================================================================
+  TRUNCATION-DEPTH PROBE — how far down the page does each fetcher read?
+==========================================================================
+  Part A: deepest marker quoted = the cut for a live fetch.
+  Part B: is that cut baked into the STORED copy (bottom blank + no re-fetch)?
+
+  Part A — cut per size:
+    4k       anthropic     deepest=0% (fetches=1)
+  Part B — stored-copy read (bottom marker on the reask):
+===== route /depth/jsExternal/  2026-10-22T12:22:42Z
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+[truncprobe] run run20261022-122242-tgi68: providers [anthropic-claude-sonnet-5], 1 sizes, gap 3m0s
+[truncprobe] about to make ~1 API calls across 1 provider(s) — Ctrl-C within 5s to abort
+[truncprobe] Part A — locating the cut (scan each size) …
+WARN anomalous token cost: truncprobe A [anthropic] 4096B in=42960 out=1247 (kept full answer for forensics)
+  4k       anthropic     deepest marker: 0%
+
+==========================================================================
+  TRUNCATION-DEPTH PROBE — how far down the page does each fetcher read?
+==========================================================================
+  Part A: deepest marker quoted = the cut for a live fetch.
+  Part B: is that cut baked into the STORED copy (bottom blank + no re-fetch)?
+
+  Part A — cut per size:
+    4k       anthropic     deepest=0% (fetches=1)
+  Part B — stored-copy read (bottom marker on the reask):
+===== route /depth/jsData/  2026-10-22T12:23:34Z
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+[truncprobe] run run20261022-122335-3d6u2: providers [anthropic-claude-sonnet-5], 1 sizes, gap 3m0s
+[truncprobe] about to make ~1 API calls across 1 provider(s) — Ctrl-C within 5s to abort
+[truncprobe] Part A — locating the cut (scan each size) …
+WARN anomalous token cost: truncprobe A [anthropic] 4096B in=35376 out=889 (kept full answer for forensics)
+  4k       anthropic     deepest marker: 0%
+
+==========================================================================
+  TRUNCATION-DEPTH PROBE — how far down the page does each fetcher read?
+==========================================================================
+  Part A: deepest marker quoted = the cut for a live fetch.
+  Part B: is that cut baked into the STORED copy (bottom blank + no re-fetch)?
+
+  Part A — cut per size:
+    4k       anthropic     deepest=0% (fetches=1)
+  Part B — stored-copy read (bottom marker on the reask):
+===== step 2 done 2026-10-22T12:24:26Z

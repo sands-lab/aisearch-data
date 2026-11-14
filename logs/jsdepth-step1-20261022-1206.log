@@ -1,0 +1,89 @@
+===== route /depth/html/  2026-10-22T12:06:49Z
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+[truncprobe] run run20261022-120649-p94xf: providers [anthropic-claude-sonnet-5, or:openai-gpt-5-mini, or:x-ai-grok-4.3], 1 sizes, gap 3m0s
+[truncprobe] about to make ~3 API calls across 3 provider(s) — Ctrl-C within 5s to abort
+[truncprobe] Part A — locating the cut (scan each size) …
+  4k       anthropic     deepest marker: 95%
+  4k       or:openai     deepest marker: 95%
+  [watch] or:x-ai-grok-4.3-run20261022-120649-p94xf-a-4k-r1 logged 7 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  4k       or:x-ai       deepest marker: 95%
+
+==========================================================================
+  TRUNCATION-DEPTH PROBE — how far down the page does each fetcher read?
+==========================================================================
+  Part A: deepest marker quoted = the cut for a live fetch.
+  Part B: is that cut baked into the STORED copy (bottom blank + no re-fetch)?
+
+  Part A — cut per size:
+    4k       anthropic     deepest=95% (fetches=1)
+    4k       or:openai     deepest=95% (fetches=1)
+    4k       or:x-ai       deepest=95% (fetches=7)
+  Part B — stored-copy read (bottom marker on the reask):
+===== route /depth/jsInline/  2026-10-22T12:08:46Z
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+[truncprobe] run run20261022-120846-6m6hw: providers [anthropic-claude-sonnet-5, or:openai-gpt-5-mini, or:x-ai-grok-4.3], 1 sizes, gap 3m0s
+[truncprobe] about to make ~3 API calls across 3 provider(s) — Ctrl-C within 5s to abort
+[truncprobe] Part A — locating the cut (scan each size) …
+  4k       anthropic     deepest marker: 0%
+  4k       or:openai     deepest marker: 0%
+  [watch] or:x-ai-grok-4.3-run20261022-120846-6m6hw-a-4k-r1 logged 7 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  4k       or:x-ai       deepest marker: 0%
+
+==========================================================================
+  TRUNCATION-DEPTH PROBE — how far down the page does each fetcher read?
+==========================================================================
+  Part A: deepest marker quoted = the cut for a live fetch.
+  Part B: is that cut baked into the STORED copy (bottom blank + no re-fetch)?
+
+  Part A — cut per size:
+    4k       anthropic     deepest=0% (fetches=1)
+    4k       or:openai     deepest=0% (fetches=1)
+    4k       or:x-ai       deepest=0% (fetches=7)
+  Part B — stored-copy read (bottom marker on the reask):
+===== route /depth/jsExternal/  2026-10-22T12:10:30Z
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+[truncprobe] run run20261022-121030-bhc9a: providers [anthropic-claude-sonnet-5, or:openai-gpt-5-mini, or:x-ai-grok-4.3], 1 sizes, gap 3m0s
+[truncprobe] about to make ~3 API calls across 3 provider(s) — Ctrl-C within 5s to abort
+[truncprobe] Part A — locating the cut (scan each size) …
+  4k       anthropic     deepest marker: 0%
+  4k       or:openai     deepest marker: 0%
+  [watch] or:x-ai-grok-4.3-run20261022-121030-bhc9a-a-4k-r1 logged 6 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  4k       or:x-ai       deepest marker: 0%
+
+==========================================================================
+  TRUNCATION-DEPTH PROBE — how far down the page does each fetcher read?
+==========================================================================
+  Part A: deepest marker quoted = the cut for a live fetch.
+  Part B: is that cut baked into the STORED copy (bottom blank + no re-fetch)?
+
+  Part A — cut per size:
+    4k       anthropic     deepest=0% (fetches=1)
+    4k       or:openai     deepest=0% (fetches=1)
+    4k       or:x-ai       deepest=0% (fetches=6)
+  Part B — stored-copy read (bottom marker on the reask):
+===== route /depth/jsData/  2026-10-22T12:12:07Z
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+[truncprobe] run run20261022-121207-uklyf: providers [anthropic-claude-sonnet-5, or:openai-gpt-5-mini, or:x-ai-grok-4.3], 1 sizes, gap 3m0s
+[truncprobe] about to make ~3 API calls across 3 provider(s) — Ctrl-C within 5s to abort
+[truncprobe] Part A — locating the cut (scan each size) …
+  4k       anthropic     deepest marker: 0%
+  4k       or:openai     deepest marker: 0%
+  [watch] or:x-ai-grok-4.3-run20261022-121207-uklyf-a-4k-r1 logged 7 fetches (want 1) — a resumed turn may have re-fetched; not a cache reading
+  4k       or:x-ai       deepest marker: 0%
+
+==========================================================================
+  TRUNCATION-DEPTH PROBE — how far down the page does each fetcher read?
+==========================================================================
+  Part A: deepest marker quoted = the cut for a live fetch.
+  Part B: is that cut baked into the STORED copy (bottom blank + no re-fetch)?
+
+  Part A — cut per size:
+    4k       anthropic     deepest=0% (fetches=1)
+    4k       or:openai     deepest=0% (fetches=1)
+    4k       or:x-ai       deepest=0% (fetches=7)
+  Part B — stored-copy read (bottom marker on the reask):
+===== step 1 done 2026-10-22T12:13:50Z
