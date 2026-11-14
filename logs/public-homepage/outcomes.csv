@@ -1,0 +1,361 @@
+site_id,vendor,sitting,compared_without_spaces,status,outcome,strict_stale,download_in_reference,anthropic_copy_age_min
+site-001,anthropic,main,False,ok,both match,False,True,19.983333333333334
+site-001,google,main,False,ok,stale,True,True,
+site-001,openai,main,False,ok,both match,False,True,
+site-001,xai,main,False,ok,both match,False,True,
+site-002,anthropic,main,False,ok,both match,False,True,26.35
+site-002,google,main,False,ok,neither matches,False,True,
+site-002,openai,main,False,ok,both match,False,True,
+site-002,xai,main,False,ok,neither matches,False,True,
+site-003,anthropic,main,False,ok,stale,True,True,20.05
+site-003,google,main,False,ok,stale,True,True,
+site-003,openai,main,False,ok,chance mismatch,False,True,
+site-003,xai,main,False,ok,neither matches,False,True,
+site-004,anthropic,main,False,ok,neither matches,False,True,-0.016666666666666666
+site-004,google,main,False,ok,neither matches,False,True,
+site-004,openai,main,False,ok,neither matches,False,True,
+site-004,xai,main,False,ok,both match,False,True,
+site-005,anthropic,main,False,ok,both match,False,True,424.9166666666667
+site-005,google,main,False,not usable,,False,False,
+site-005,openai,main,False,ok,both match,False,True,
+site-005,xai,main,False,ok,both match,False,True,
+site-006,anthropic,main,False,ok,both match,False,True,-0.03333333333333333
+site-006,google,main,False,ok,neither matches,False,True,
+site-006,openai,main,False,ok,stale,False,True,
+site-006,xai,main,False,ok,chance mismatch,False,True,
+site-007,anthropic,main,False,ok,stale,True,True,426.3
+site-007,google,main,False,ok,stale,True,True,
+site-007,openai,redo,False,ok,both match,False,True,
+site-007,xai,redo,False,ok,neither matches,False,True,
+site-008,anthropic,main,False,ok,neither matches,False,True,1027.4833333333333
+site-008,google,main,False,ok,stale,True,True,
+site-008,openai,redo,False,ok,both match,False,True,
+site-008,xai,redo,False,ok,stale,True,True,
+site-009,anthropic,main,False,ok,neither matches,False,True,1144.25
+site-009,google,main,False,ok,chance mismatch,False,True,
+site-009,openai,main,False,ok,neither matches,False,True,
+site-009,xai,main,False,ok,neither matches,False,True,
+site-010,anthropic,main,False,ok,both match,False,True,8356.016666666666
+site-010,google,main,False,ok,neither matches,False,True,
+site-010,openai,main,False,ok,both match,False,True,
+site-010,xai,main,False,ok,neither matches,False,True,
+site-011,anthropic,main,False,ok,neither matches,False,True,1321.0833333333333
+site-011,google,main,False,ok,neither matches,False,True,
+site-011,openai,redo,False,ok,neither matches,False,True,
+site-011,xai,redo,False,ok,neither matches,False,True,
+site-012,anthropic,main,False,ok,stale,True,True,1297.6833333333334
+site-012,google,main,False,ok,stale,True,True,
+site-012,openai,main,False,ok,both match,False,True,
+site-012,xai,main,False,ok,both match,False,True,
+site-013,anthropic,main,False,ok,both match,False,True,245.96666666666667
+site-013,google,main,False,ok,neither matches,False,True,
+site-013,openai,main,False,ok,both match,False,True,
+site-013,xai,main,False,ok,both match,False,True,
+site-014,anthropic,main,False,ok,neither matches,False,True,
+site-014,google,main,False,ok,neither matches,False,True,
+site-014,openai,main,False,ok,both match,False,True,
+site-014,xai,main,False,ok,neither matches,False,True,
+site-015,anthropic,main,False,ok,stale,True,True,504.3833333333333
+site-015,google,main,False,ok,stale,True,True,
+site-015,openai,main,False,ok,both match,False,True,
+site-015,xai,main,False,ok,both match,False,True,
+site-016,anthropic,main,False,ok,neither matches,False,True,
+site-016,google,main,False,ok,neither matches,False,True,
+site-016,openai,main,False,ok,both match,False,True,
+site-016,xai,main,False,ok,neither matches,False,True,
+site-017,anthropic,main,False,ok,neither matches,False,True,
+site-017,google,main,False,ok,chance mismatch,False,True,
+site-017,openai,main,False,ok,both match,False,True,
+site-017,xai,main,False,ok,neither matches,False,True,
+site-018,anthropic,main,False,ok,neither matches,False,True,
+site-018,google,main,False,ok,neither matches,False,True,
+site-018,openai,main,False,ok,stale,True,True,
+site-018,xai,main,False,ok,neither matches,False,True,
+site-019,anthropic,main,False,ok,both match,False,True,-0.03333333333333333
+site-019,google,main,False,ok,neither matches,False,True,
+site-019,openai,main,False,ok,stale,True,True,
+site-019,xai,main,False,ok,neither matches,False,True,
+site-020,anthropic,main,False,ok,stale,True,True,865.4333333333333
+site-020,google,main,False,not usable,,False,False,
+site-020,openai,main,False,ok,both match,False,True,
+site-020,xai,main,False,ok,neither matches,False,True,
+site-021,anthropic,main,False,ok,both match,False,True,264.71666666666664
+site-021,google,main,False,ok,neither matches,False,True,
+site-021,openai,main,False,ok,neither matches,False,True,
+site-021,xai,main,False,ok,neither matches,False,True,
+site-022,anthropic,main,True,ok,neither matches,False,True,8473.083333333334
+site-022,google,main,True,ok,neither matches,False,True,
+site-022,openai,main,True,ok,neither matches,False,True,
+site-022,xai,main,True,ok,neither matches,False,True,
+site-023,anthropic,main,True,not usable,,False,False,9034.883333333333
+site-023,google,main,True,ok,stale,True,True,
+site-023,openai,main,True,ok,neither matches,False,True,
+site-023,xai,main,True,ok,neither matches,False,True,
+site-024,anthropic,main,True,ok,neither matches,False,True,498.1666666666667
+site-024,google,main,True,ok,neither matches,False,True,
+site-024,openai,main,True,ok,neither matches,False,True,
+site-024,xai,main,True,ok,neither matches,False,True,
+site-025,anthropic,main,False,ok,neither matches,False,True,19.95
+site-025,google,main,False,ok,neither matches,False,True,
+site-025,openai,main,False,ok,neither matches,False,True,
+site-025,xai,main,False,ok,neither matches,False,True,
+site-026,anthropic,main,False,ok,neither matches,False,True,547785.9666666667
+site-026,google,main,False,not usable,,False,False,
+site-026,openai,main,False,ok,chance mismatch,False,True,
+site-026,xai,main,False,ok,neither matches,False,True,
+site-027,anthropic,main,False,ok,neither matches,False,True,7871.366666666667
+site-027,google,main,False,ok,both match,False,True,
+site-027,openai,main,False,ok,neither matches,False,True,
+site-027,xai,main,False,ok,stale,False,True,
+site-028,anthropic,main,False,ok,neither matches,False,True,63.0
+site-028,google,main,False,ok,neither matches,False,True,
+site-028,openai,main,False,ok,chance mismatch,False,True,
+site-028,xai,main,False,ok,neither matches,False,True,
+site-029,anthropic,main,True,ok,neither matches,False,True,
+site-029,google,main,True,ok,neither matches,False,True,
+site-029,openai,main,True,ok,neither matches,False,True,
+site-029,xai,main,True,ok,neither matches,False,True,
+site-030,anthropic,main,False,ok,stale,True,True,1255.35
+site-030,google,main,False,ok,neither matches,False,True,
+site-030,openai,main,False,ok,both match,False,True,
+site-030,xai,main,False,ok,neither matches,False,True,
+site-031,anthropic,main,False,ok,stale,True,True,8659.583333333334
+site-031,google,main,False,ok,stale,True,True,
+site-031,openai,main,False,ok,neither matches,False,True,
+site-031,xai,main,False,ok,neither matches,False,True,
+site-032,anthropic,main,False,ok,neither matches,False,True,
+site-032,google,main,False,ok,neither matches,False,True,
+site-032,openai,main,False,ok,both match,False,True,
+site-032,xai,main,False,ok,both match,False,True,
+site-033,anthropic,main,False,ok,neither matches,False,True,
+site-033,google,main,False,ok,neither matches,False,True,
+site-033,openai,main,False,ok,both match,False,True,
+site-033,xai,main,False,ok,both match,False,True,
+site-034,anthropic,main,False,ok,neither matches,False,True,
+site-034,google,main,False,ok,stale,False,True,
+site-034,openai,main,False,ok,both match,False,True,
+site-034,xai,main,False,ok,both match,False,True,
+site-035,anthropic,main,False,ok,stale,True,True,-0.03333333333333333
+site-035,google,main,False,ok,neither matches,False,True,
+site-035,openai,main,False,ok,chance mismatch,False,True,
+site-035,xai,main,False,ok,neither matches,False,True,
+site-036,anthropic,main,False,ok,chance mismatch,False,True,-0.03333333333333333
+site-036,google,main,False,ok,neither matches,False,True,
+site-036,openai,main,False,ok,neither matches,False,True,
+site-036,xai,main,False,ok,both match,False,True,
+site-037,anthropic,main,False,ok,stale,True,True,101.55
+site-037,google,main,False,ok,chance mismatch,False,True,
+site-037,openai,main,False,ok,chance mismatch,False,True,
+site-037,xai,main,False,ok,stale,True,True,
+site-038,anthropic,main,False,ok,neither matches,False,True,4.65
+site-038,google,main,False,ok,neither matches,False,True,
+site-038,openai,main,False,ok,both match,False,True,
+site-038,xai,main,False,ok,neither matches,False,True,
+site-039,anthropic,main,False,ok,neither matches,False,True,49.416666666666664
+site-039,google,main,False,ok,neither matches,False,True,
+site-039,openai,main,False,ok,neither matches,False,True,
+site-039,xai,main,False,ok,neither matches,False,True,
+site-040,anthropic,main,False,ok,neither matches,False,True,
+site-040,google,main,False,ok,neither matches,False,True,
+site-040,openai,main,False,ok,both match,False,True,
+site-040,xai,main,False,ok,both match,False,True,
+site-041,anthropic,main,False,ok,neither matches,False,True,1104.6166666666666
+site-041,google,main,False,ok,chance mismatch,False,True,
+site-041,openai,main,False,ok,both match,False,True,
+site-041,xai,main,False,ok,neither matches,False,True,
+site-042,anthropic,main,True,ok,stale,True,True,2842.1
+site-042,google,main,True,ok,neither matches,False,True,
+site-042,openai,main,True,ok,stale,True,True,
+site-042,xai,main,True,ok,stale,True,True,
+site-043,anthropic,main,False,ok,neither matches,False,True,
+site-043,google,main,False,ok,neither matches,False,True,
+site-043,openai,main,False,ok,both match,False,True,
+site-043,xai,main,False,ok,stale,False,True,
+site-044,anthropic,main,False,ok,both match,False,True,8364.816666666668
+site-044,google,main,False,ok,chance mismatch,False,True,
+site-044,openai,main,False,ok,neither matches,False,True,
+site-044,xai,main,False,ok,neither matches,False,True,
+site-045,anthropic,main,False,ok,neither matches,False,True,104.66666666666667
+site-045,google,main,False,ok,neither matches,False,True,
+site-045,openai,main,False,ok,neither matches,False,True,
+site-045,xai,main,False,ok,neither matches,False,True,
+site-046,anthropic,main,False,ok,stale,True,True,19.966666666666665
+site-046,google,main,False,ok,chance mismatch,False,True,
+site-046,openai,main,False,ok,both match,False,True,
+site-046,xai,main,False,ok,neither matches,False,True,
+site-047,anthropic,main,False,ok,stale,True,True,10438.366666666667
+site-047,google,main,False,ok,stale,True,True,
+site-047,openai,main,False,ok,neither matches,False,True,
+site-047,xai,main,False,ok,stale,True,True,
+site-048,anthropic,main,True,ok,neither matches,False,True,
+site-048,google,main,True,ok,both match,False,True,
+site-048,openai,main,True,ok,neither matches,False,True,
+site-048,xai,main,True,ok,stale,True,True,
+site-049,anthropic,main,False,ok,both match,False,True,-0.03333333333333333
+site-049,google,main,False,ok,chance mismatch,False,True,
+site-049,openai,main,False,ok,both match,False,True,
+site-049,xai,main,False,ok,neither matches,False,True,
+site-050,anthropic,main,False,ok,neither matches,False,True,1028.4333333333334
+site-050,google,main,False,ok,neither matches,False,True,
+site-050,openai,main,False,ok,both match,False,True,
+site-050,xai,main,False,ok,neither matches,False,True,
+site-051,anthropic,main,False,ok,neither matches,False,True,
+site-051,google,main,False,ok,neither matches,False,True,
+site-051,openai,main,False,ok,both match,False,True,
+site-051,xai,main,False,ok,chance mismatch,False,True,
+site-052,anthropic,main,False,ok,neither matches,False,True,
+site-052,google,main,False,ok,stale,True,True,
+site-052,openai,main,False,ok,stale,True,True,
+site-052,xai,main,False,ok,both match,False,True,
+site-053,anthropic,main,False,ok,neither matches,False,True,
+site-053,google,main,False,ok,both match,False,True,
+site-053,openai,main,False,ok,both match,False,True,
+site-053,xai,main,False,ok,chance mismatch,False,True,
+site-054,anthropic,main,False,ok,both match,False,True,205.4
+site-054,google,main,False,ok,chance mismatch,False,True,
+site-054,openai,main,False,ok,both match,False,True,
+site-054,xai,main,False,ok,neither matches,False,True,
+site-055,anthropic,main,False,ok,stale,True,True,1256.55
+site-055,google,main,False,ok,both match,False,True,
+site-055,openai,main,False,ok,both match,False,True,
+site-055,xai,main,False,ok,both match,False,True,
+site-056,anthropic,main,True,ok,neither matches,False,True,-0.03333333333333333
+site-056,google,main,True,ok,neither matches,False,True,
+site-056,openai,main,True,ok,chance mismatch,False,True,
+site-056,xai,main,True,ok,chance mismatch,False,True,
+site-057,anthropic,main,False,ok,neither matches,False,True,1247.5666666666666
+site-057,google,main,False,ok,neither matches,False,True,
+site-057,openai,main,False,ok,both match,False,True,
+site-057,xai,main,False,ok,neither matches,False,True,
+site-058,anthropic,main,False,ok,stale,True,True,-0.05
+site-058,google,main,False,ok,chance mismatch,False,True,
+site-058,openai,redo,False,ok,stale,False,True,
+site-058,xai,redo,False,ok,neither matches,False,True,
+site-059,anthropic,main,False,ok,stale,True,True,10485.183333333332
+site-059,google,main,False,ok,stale,False,True,
+site-059,openai,main,False,ok,neither matches,False,True,
+site-059,xai,main,False,ok,neither matches,False,True,
+site-060,anthropic,main,True,not usable,,False,False,859.75
+site-060,google,main,True,ok,neither matches,False,True,
+site-060,openai,main,True,ok,neither matches,False,True,
+site-060,xai,main,True,ok,neither matches,False,True,
+site-061,anthropic,main,False,ok,stale,False,True,19414.8
+site-061,google,main,False,not usable,,False,False,
+site-061,openai,main,False,ok,both match,False,True,
+site-061,xai,main,False,ok,neither matches,False,True,
+site-062,anthropic,main,False,ok,both match,False,True,576.2833333333333
+site-062,google,main,False,ok,neither matches,False,True,
+site-062,openai,main,False,ok,both match,False,True,
+site-062,xai,main,False,ok,neither matches,False,True,
+site-063,anthropic,main,False,ok,neither matches,False,True,1228.1166666666666
+site-063,google,main,False,ok,neither matches,False,True,
+site-063,openai,main,False,ok,neither matches,False,True,
+site-063,xai,main,False,ok,neither matches,False,True,
+site-064,anthropic,main,False,ok,stale,True,True,
+site-064,google,main,False,ok,stale,False,True,
+site-064,openai,main,False,ok,neither matches,False,True,
+site-064,xai,main,False,ok,both match,False,True,
+site-065,anthropic,main,False,ok,neither matches,False,True,
+site-065,google,main,False,ok,neither matches,False,True,
+site-065,openai,redo,False,ok,stale,False,True,
+site-065,xai,redo,False,ok,neither matches,False,True,
+site-066,anthropic,main,True,ok,chance mismatch,False,True,8883.0
+site-066,google,main,True,ok,neither matches,False,True,
+site-066,openai,redo,True,ok,neither matches,False,True,
+site-066,xai,redo,True,ok,neither matches,False,True,
+site-067,anthropic,main,False,ok,both match,False,True,19.95
+site-067,google,main,False,ok,stale,True,True,
+site-067,openai,main,False,ok,both match,False,True,
+site-067,xai,main,False,ok,stale,False,True,
+site-068,anthropic,main,False,ok,neither matches,False,True,-0.016666666666666666
+site-068,google,main,False,ok,neither matches,False,True,
+site-068,openai,main,False,ok,neither matches,False,True,
+site-068,xai,main,False,ok,neither matches,False,True,
+site-069,anthropic,main,False,ok,stale,True,True,1440.2166666666667
+site-069,google,main,False,ok,both match,False,True,
+site-069,openai,main,False,ok,both match,False,True,
+site-069,xai,main,False,ok,both match,False,True,
+site-070,anthropic,main,False,ok,both match,False,True,151.03333333333333
+site-070,google,main,False,ok,neither matches,False,True,
+site-070,openai,main,False,ok,both match,False,True,
+site-070,xai,main,False,ok,stale,False,True,
+site-071,anthropic,main,True,ok,neither matches,False,True,-0.03333333333333333
+site-071,google,main,True,ok,neither matches,False,True,
+site-071,openai,main,True,ok,both match,False,True,
+site-071,xai,main,True,ok,both match,False,True,
+site-072,anthropic,main,False,ok,stale,True,True,461.5
+site-072,google,main,False,ok,stale,True,True,
+site-072,openai,main,False,ok,stale,True,True,
+site-072,xai,main,False,ok,both match,False,True,
+site-073,anthropic,main,False,ok,neither matches,False,True,70.33333333333333
+site-073,google,main,False,ok,neither matches,False,True,
+site-073,openai,main,False,ok,both match,False,True,
+site-073,xai,main,False,ok,both match,False,True,
+site-074,anthropic,main,False,ok,both match,False,True,-0.03333333333333333
+site-074,google,main,False,ok,stale,False,True,
+site-074,openai,main,False,ok,chance mismatch,False,True,
+site-074,xai,main,False,ok,neither matches,False,True,
+site-075,anthropic,main,False,ok,both match,False,True,19.9
+site-075,google,main,False,ok,chance mismatch,False,True,
+site-075,openai,main,False,ok,chance mismatch,False,True,
+site-075,xai,main,False,ok,both match,False,True,
+site-076,anthropic,main,False,ok,both match,False,True,19.966666666666665
+site-076,google,main,False,ok,stale,True,True,
+site-076,openai,main,False,ok,both match,False,True,
+site-076,xai,main,False,ok,stale,True,True,
+site-077,anthropic,main,False,ok,neither matches,False,True,289.7
+site-077,google,main,False,ok,neither matches,False,True,
+site-077,openai,main,False,ok,both match,False,True,
+site-077,xai,main,False,ok,neither matches,False,True,
+site-078,anthropic,main,False,ok,both match,False,True,-0.03333333333333333
+site-078,google,main,False,ok,chance mismatch,False,True,
+site-078,openai,redo,False,ok,both match,False,True,
+site-078,xai,redo,False,ok,stale,True,True,
+site-079,anthropic,main,False,ok,both match,False,True,-0.03333333333333333
+site-079,google,main,False,not usable,,False,False,
+site-079,openai,main,False,ok,neither matches,False,True,
+site-079,xai,main,False,ok,both match,False,True,
+site-080,anthropic,main,False,ok,both match,False,True,4.083333333333333
+site-080,google,main,False,ok,neither matches,False,True,
+site-080,openai,main,False,ok,stale,False,True,
+site-080,xai,main,False,ok,neither matches,False,True,
+site-081,anthropic,main,False,ok,chance mismatch,False,True,590.0833333333334
+site-081,google,main,False,ok,both match,False,True,
+site-081,openai,main,False,ok,neither matches,False,True,
+site-081,xai,main,False,ok,neither matches,False,True,
+site-082,anthropic,main,False,ok,neither matches,False,True,
+site-082,google,main,False,ok,neither matches,False,True,
+site-082,openai,main,False,ok,stale,True,True,
+site-082,xai,main,False,ok,neither matches,False,True,
+site-083,anthropic,main,False,ok,neither matches,False,True,124732.56666666667
+site-083,google,main,False,ok,both match,False,True,
+site-083,openai,main,False,ok,both match,False,True,
+site-083,xai,main,False,ok,both match,False,True,
+site-084,anthropic,main,False,ok,both match,False,True,-0.03333333333333333
+site-084,google,main,False,ok,chance mismatch,False,True,
+site-084,openai,main,False,ok,both match,False,True,
+site-084,xai,main,False,ok,both match,False,True,
+site-085,anthropic,main,False,ok,neither matches,False,True,
+site-085,google,main,False,ok,neither matches,False,True,
+site-085,openai,main,False,ok,neither matches,False,True,
+site-085,xai,main,False,ok,stale,True,True,
+site-086,anthropic,main,False,ok,neither matches,False,True,139.61666666666667
+site-086,google,main,False,ok,neither matches,False,True,
+site-086,openai,main,False,ok,chance mismatch,False,True,
+site-086,xai,main,False,ok,neither matches,False,True,
+site-087,anthropic,main,False,ok,neither matches,False,True,
+site-087,google,main,False,ok,neither matches,False,True,
+site-087,openai,main,False,ok,both match,False,True,
+site-087,xai,main,False,ok,both match,False,True,
+site-088,anthropic,main,False,ok,stale,True,True,482.2
+site-088,google,main,False,ok,neither matches,False,True,
+site-088,openai,redo,False,ok,both match,False,True,
+site-088,xai,redo,False,ok,neither matches,False,True,
+site-089,anthropic,main,False,ok,neither matches,False,True,9716.733333333334
+site-089,google,main,False,ok,neither matches,False,True,
+site-089,openai,main,False,ok,neither matches,False,True,
+site-089,xai,main,False,ok,neither matches,False,True,
+site-090,anthropic,main,True,ok,neither matches,False,True,1072.2
+site-090,google,main,True,ok,chance mismatch,False,True,
+site-090,openai,main,True,ok,neither matches,False,True,
+site-090,xai,main,True,ok,neither matches,False,True,
