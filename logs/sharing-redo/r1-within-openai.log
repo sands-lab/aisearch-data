@@ -1,0 +1,70 @@
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+
+[1;33m!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!![0m
+[1;33m  SHARED-ADDRESS MODE — both callers are given the IDENTICAL address.[0m
+[1;33m  This is deliberate and it is the experiment. It must NEVER be used for a[0m
+[1;33m  retention measurement: one caller's download would satisfy the other's[0m
+[1;33m  question and the result would read as the provider keeping a copy.[0m
+[1;33m!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+  freshness: neither page has been fetched on this address — good
+
+  both pages are live and carry their own codes
+
+
+[1m--- step 1: first caller warms the shared page[0m
+  caller  : or:openai-gpt-5-mini
+  address : https://origin-a.example/depth/html/sh-run20261011-130142-inoga/2048
+  question: Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.
+  downloaded: [33mYES[0m — 13:01:46 openai-query 200 2357B
+  this page's depth=95% code in the answer: true
+  answer  : "TRUNC-5fdf50463913" "TRUNC-9b738a2a14a4". ([origin-a.example](https://origin-a.example/depth/html/sh-run20261011-130142-inoga/2048))  reference code: <not present on page>. ([origin-a.example](https://probe.attentionhu…
+  waiting 5m0s…
+
+[1m--- step 2: second caller asks the shared page — THE MEASUREMENT[0m
+  caller  : or:openai-gpt-5-mini
+  address : https://origin-a.example/depth/html/sh-run20261011-130142-inoga/2048
+  question: Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.
+  downloaded: [32mNOTHING REACHED US[0m
+  this page's depth=50% code in the answer: true
+  answer  : "TRUNC-dbd1605b223d is the reference marker for the section at depth=50%, byte offset=1055." ([origin-a.example](https://origin-a.example/depth/html/sh-run20261011-130142-inoga/2048))  reference code: TRUNC-9b738a2a14a4. ([pr…
+
+[1m--- step 3: second caller asks a fresh page — the control[0m
+  caller  : or:openai-gpt-5-mini
+  address : https://origin-a.example/depth/html/sh-run20261011-130142-inoga-ctl/2048
+  question: Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.
+  downloaded: [33mYES[0m — 13:08:01 openai-query 200 2357B
+  this page's depth=50% code in the answer: true
+  answer  : "2048". ([origin-a.example](https://origin-a.example/depth/html/sh-run20261011-130142-inoga-ctl/2048))  "TRUNC-0c127cb3004f". ([origin-a.example](https://origin-a.example/depth/html/sh-run20261011-130142-inoga-…
+  waiting 10m0s…
+
+[1m--- step 4: second caller asks the shared page again, after the long gap[0m
+  caller  : or:openai-gpt-5-mini
+  address : https://origin-a.example/depth/html/sh-run20261011-130142-inoga/2048
+  question: Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=75% in it. Quote them exactly.
+  downloaded: [32mNOTHING REACHED US[0m
+  this page's depth=75% code in the answer: true
+  answer  : "TRUNC-5fdf50463913". ([origin-a.example](https://origin-a.example/depth/html/sh-run20261011-130142-inoga/2048)) "TRUNC-b3af8946d009". ([origin-a.example](https://origin-a.example/depth/html/sh-run20261011-1301…
+
+[sharing] steps written to logs/sharing-redo/r1-within-openai.jsonl
+
+==========================================================================
+  WHAT WAS OBSERVED
+==========================================================================
+  1. first caller asks the shared page                 [33mdownloaded[0m
+  2. second caller asks the shared page (the measurement) [32mnothing[0m
+  3. second caller asks a fresh page (the control)     [33mdownloaded[0m
+  4. second caller asks the shared page after the long gap [32mnothing[0m
+  input tokens billed — step 2 (shared page): 10499 · step 3 (fresh page): 11441
+
+==========================================================================
+  THE READING
+==========================================================================
+  SHARED — the second caller quoted this page's own code without ever
+  downloading it, for a question nobody had asked, and the code is unique
+  to this page: the copy can only have come from the first caller's download.
+
+  AND IT IS A REAL STORE, not a warm machine: still shared after the
+  long gap, which is too long for the second request to have landed on
+  the same process by chance.

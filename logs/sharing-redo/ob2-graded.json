@@ -1,0 +1,675 @@
+{
+ "account-anthropic": {
+  "verdict": "SHARED",
+  "note": "still shared at the late step",
+  "steps": [
+   {
+    "step": 1,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-hdl2a/2048",
+    "sent_at": "2026-10-28T18:57:36.721456911Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "18:57:40 anthropic-query 200"
+    ]
+   },
+   {
+    "step": 2,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-hdl2a/2048",
+    "sent_at": "2026-10-28T19:02:59.388550525Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   },
+   {
+    "step": 3,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-hdl2a-ctl/2048",
+    "sent_at": "2026-10-28T19:03:17.694894783Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "19:03:19 anthropic-query 200"
+    ]
+   },
+   {
+    "step": 4,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-hdl2a/2048",
+    "sent_at": "2026-10-28T19:13:36.039796347Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   }
+  ]
+ },
+ "account-openai": {
+  "verdict": "SHARED",
+  "note": "still shared at the late step",
+  "steps": [
+   {
+    "step": 1,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-w5koj/2048",
+    "sent_at": "2026-10-28T18:57:36.697743939Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "18:57:40 openai-query 200"
+    ]
+   },
+   {
+    "step": 2,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-w5koj/2048",
+    "sent_at": "2026-10-28T19:03:06.938240488Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   },
+   {
+    "step": 3,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-w5koj-ctl/2048",
+    "sent_at": "2026-10-28T19:03:32.975097944Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "19:03:35 openai-query 200"
+    ]
+   },
+   {
+    "step": 4,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-w5koj/2048",
+    "sent_at": "2026-10-28T19:14:03.184146067Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   }
+  ]
+ },
+ "account-xai": {
+  "verdict": "SHARED",
+  "note": "still shared at the late step",
+  "steps": [
+   {
+    "step": 1,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-8w6nh/2048",
+    "sent_at": "2026-10-28T18:57:36.844342489Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "18:57:40 unknown 200",
+     "18:57:41 unknown 200",
+     "18:57:41 unknown 200",
+     "18:57:41 unknown 200",
+     "18:57:41 unknown 200",
+     "18:57:42 unknown 200",
+     "18:57:46 unknown 200"
+    ]
+   },
+   {
+    "step": 2,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-8w6nh/2048",
+    "sent_at": "2026-10-28T19:03:07.157499215Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   },
+   {
+    "step": 3,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-8w6nh-ctl/2048",
+    "sent_at": "2026-10-28T19:03:42.631029665Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "19:03:44 unknown 200",
+     "19:03:44 unknown 200",
+     "19:03:44 unknown 200",
+     "19:03:44 unknown 200",
+     "19:03:44 unknown 200",
+     "19:03:44 unknown 200",
+     "19:03:45 unknown 200"
+    ]
+   },
+   {
+    "step": 4,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-8w6nh/2048",
+    "sent_at": "2026-10-28T19:14:05.500881226Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   }
+  ]
+ },
+ "model-anthropic": {
+  "verdict": "SHARED",
+  "note": "still shared at the late step",
+  "steps": [
+   {
+    "step": 1,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-ptx2d/2048",
+    "sent_at": "2026-10-28T18:57:36.746182721Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "18:57:38 anthropic-query 200"
+    ]
+   },
+   {
+    "step": 2,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-ptx2d/2048",
+    "sent_at": "2026-10-28T19:02:55.24885343Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   },
+   {
+    "step": 3,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-ptx2d-ctl/2048",
+    "sent_at": "2026-10-28T19:03:13.546343312Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "19:03:15 anthropic-query 200"
+    ]
+   },
+   {
+    "step": 4,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-ptx2d/2048",
+    "sent_at": "2026-10-28T19:13:31.685226875Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   }
+  ]
+ },
+ "model-openai": {
+  "verdict": "SHARED",
+  "note": "still shared at the late step",
+  "steps": [
+   {
+    "step": 1,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-updd3/2048",
+    "sent_at": "2026-10-28T18:57:36.835747148Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "18:57:38 openai-query 200"
+    ]
+   },
+   {
+    "step": 2,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-updd3/2048",
+    "sent_at": "2026-10-28T19:02:56.059733527Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   },
+   {
+    "step": 3,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-updd3-ctl/2048",
+    "sent_at": "2026-10-28T19:03:24.915647663Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "19:03:27 openai-query 200"
+    ]
+   },
+   {
+    "step": 4,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-updd3/2048",
+    "sent_at": "2026-10-28T19:13:50.39175105Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   }
+  ]
+ },
+ "model-xai": {
+  "verdict": "SHARED",
+  "note": "still shared at the late step",
+  "steps": [
+   {
+    "step": 1,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-yjdpj/2048",
+    "sent_at": "2026-10-28T18:57:36.766092706Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "18:57:42 unknown 200",
+     "18:57:42 unknown 200",
+     "18:57:43 unknown 200",
+     "18:57:43 unknown 200",
+     "18:57:43 unknown 200",
+     "18:57:43 unknown 200"
+    ]
+   },
+   {
+    "step": 2,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-yjdpj/2048",
+    "sent_at": "2026-10-28T19:03:11.449161966Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   },
+   {
+    "step": 3,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-yjdpj-ctl/2048",
+    "sent_at": "2026-10-28T19:03:34.866012758Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "19:03:37 unknown 200",
+     "19:03:37 unknown 200",
+     "19:03:37 unknown 200",
+     "19:03:37 unknown 200",
+     "19:03:38 unknown 200",
+     "19:03:46 unknown 200"
+    ]
+   },
+   {
+    "step": 4,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-yjdpj/2048",
+    "sent_at": "2026-10-28T19:13:57.246340339Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   }
+  ]
+ },
+ "user-anthropic": {
+  "verdict": "SHARED",
+  "note": "still shared at the late step",
+  "steps": [
+   {
+    "step": 1,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-vasbq/2048",
+    "sent_at": "2026-10-28T18:57:36.827992403Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "18:57:39 anthropic-query 200"
+    ]
+   },
+   {
+    "step": 2,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-vasbq/2048",
+    "sent_at": "2026-10-28T19:02:55.557497382Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   },
+   {
+    "step": 3,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-vasbq-ctl/2048",
+    "sent_at": "2026-10-28T19:03:13.98059734Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "19:03:15 anthropic-query 200"
+    ]
+   },
+   {
+    "step": 4,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-vasbq/2048",
+    "sent_at": "2026-10-28T19:13:32.219386217Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   }
+  ]
+ },
+ "user-openai": {
+  "verdict": "SHARED",
+  "note": "re-downloaded by the late step",
+  "steps": [
+   {
+    "step": 1,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-uog5e/2048",
+    "sent_at": "2026-10-28T18:57:36.718301501Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "18:57:41 openai-query 200"
+    ]
+   },
+   {
+    "step": 2,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-uog5e/2048",
+    "sent_at": "2026-10-28T19:03:07.868127193Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   },
+   {
+    "step": 3,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-uog5e-ctl/2048",
+    "sent_at": "2026-10-28T19:03:38.984277584Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "19:03:41 openai-query 200"
+    ]
+   },
+   {
+    "step": 4,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-uog5e/2048",
+    "sent_at": "2026-10-28T19:14:09.88245649Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "19:14:12 openai-query 200"
+    ]
+   }
+  ]
+ },
+ "user-xai": {
+  "verdict": "SHARED",
+  "note": "still shared at the late step",
+  "steps": [
+   {
+    "step": 1,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-huzdk/2048",
+    "sent_at": "2026-10-28T18:57:36.733408972Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "18:57:54 unknown 200",
+     "18:57:54 unknown 200",
+     "18:57:54 unknown 200",
+     "18:57:54 unknown 200",
+     "18:57:55 unknown 200",
+     "18:57:55 unknown 200",
+     "18:57:55 unknown 200",
+     "18:57:55 unknown 200",
+     "18:57:56 unknown 200",
+     "18:57:56 unknown 200",
+     "18:57:56 unknown 200",
+     "18:57:57 unknown 200",
+     "18:57:57 unknown 200",
+     "18:58:09 unknown 200",
+     "18:58:09 unknown 200",
+     "18:58:09 unknown 200",
+     "18:58:09 unknown 200",
+     "18:58:10 unknown 200",
+     "18:58:10 unknown 200",
+     "18:58:14 unknown 200"
+    ]
+   },
+   {
+    "step": 2,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-huzdk/2048",
+    "sent_at": "2026-10-28T19:03:23.714387375Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   },
+   {
+    "step": 3,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-huzdk-ctl/2048",
+    "sent_at": "2026-10-28T19:03:46.269643423Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "19:03:48 unknown 200",
+     "19:03:48 unknown 200",
+     "19:03:48 unknown 200",
+     "19:03:48 unknown 200",
+     "19:03:48 unknown 200",
+     "19:03:49 unknown 200",
+     "19:03:49 unknown 200"
+    ]
+   },
+   {
+    "step": 4,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-huzdk/2048",
+    "sent_at": "2026-10-28T19:14:16.096587651Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   }
+  ]
+ },
+ "within-anthropic": {
+  "verdict": "SHARED",
+  "note": "still shared at the late step",
+  "steps": [
+   {
+    "step": 1,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-of3nb/2048",
+    "sent_at": "2026-10-28T18:57:36.779738571Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "18:57:39 anthropic-query 200"
+    ]
+   },
+   {
+    "step": 2,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-of3nb/2048",
+    "sent_at": "2026-10-28T19:02:56.106232824Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   },
+   {
+    "step": 3,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-of3nb-ctl/2048",
+    "sent_at": "2026-10-28T19:03:14.542691596Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "19:03:16 anthropic-query 200"
+    ]
+   },
+   {
+    "step": 4,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-of3nb/2048",
+    "sent_at": "2026-10-28T19:13:32.684070047Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   }
+  ]
+ },
+ "within-openai": {
+  "verdict": "SHARED",
+  "note": "still shared at the late step",
+  "steps": [
+   {
+    "step": 1,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-wuh7q/2048",
+    "sent_at": "2026-10-28T18:57:36.765021889Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "18:57:39 openai-query 200"
+    ]
+   },
+   {
+    "step": 2,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-wuh7q/2048",
+    "sent_at": "2026-10-28T19:03:05.054380778Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   },
+   {
+    "step": 3,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-wuh7q-ctl/2048",
+    "sent_at": "2026-10-28T19:03:32.374265176Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "19:03:34 openai-query 200"
+    ]
+   },
+   {
+    "step": 4,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-wuh7q/2048",
+    "sent_at": "2026-10-28T19:14:02.096584956Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   }
+  ]
+ },
+ "within-xai": {
+  "verdict": "VOID",
+  "note": "no download and no page code",
+  "steps": [
+   {
+    "step": 1,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-gr8nf/2048",
+    "sent_at": "2026-10-28T18:57:36.773606731Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "18:57:39 unknown 200",
+     "18:57:39 unknown 200",
+     "18:57:39 unknown 200",
+     "18:57:39 unknown 200",
+     "18:57:40 unknown 200",
+     "18:57:41 unknown 200"
+    ]
+   },
+   {
+    "step": 2,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-gr8nf/2048",
+    "sent_at": "2026-10-28T19:02:59.87847772Z",
+    "marker": false,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   },
+   {
+    "step": 3,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-gr8nf-ctl/2048",
+    "sent_at": "2026-10-28T19:03:21.652474794Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "19:03:36 unknown 200",
+     "19:03:36 unknown 200",
+     "19:03:36 unknown 200",
+     "19:03:36 unknown 200",
+     "19:03:37 unknown 200",
+     "19:03:37 unknown 200",
+     "19:03:37 unknown 200",
+     "19:03:39 unknown 200",
+     "19:03:39 unknown 200",
+     "19:03:40 unknown 200",
+     "19:03:40 unknown 200",
+     "19:03:40 unknown 200",
+     "19:03:40 unknown 200",
+     "19:03:40 unknown 200",
+     "19:03:54 unknown 200",
+     "19:03:54 unknown 200",
+     "19:03:54 unknown 200",
+     "19:03:54 unknown 200",
+     "19:03:55 unknown 200",
+     "19:03:56 unknown 200"
+    ]
+   },
+   {
+    "step": 4,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-185735-gr8nf/2048",
+    "sent_at": "2026-10-28T19:13:56.771830991Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   }
+  ]
+ }
+}

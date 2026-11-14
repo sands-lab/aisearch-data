@@ -1,0 +1,60 @@
+{
+ "within-gemini": {
+  "verdict": "VOID",
+  "note": "a call failed",
+  "steps": [
+   {
+    "step": 1,
+    "url": "https://origin-b.example/depth/html/sh-run20261031-180002-ebnvn/2048",
+    "sent_at": "2026-10-31T18:00:03.551759821Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "18:00:05 google-urlcontext 200"
+    ],
+    "fetch_status": "URL_RETRIEVAL_STATUS_SUCCESS https://origin-b.example/depth/html/sh-run20261031-180002-ebnvn/2048"
+   },
+   {
+    "step": 2,
+    "url": "https://origin-b.example/depth/html/sh-run20261031-180002-ebnvn/2048",
+    "sent_at": "2026-10-31T18:05:21.93494764Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "18:05:24 google-urlcontext 200"
+    ],
+    "fetch_status": "URL_RETRIEVAL_STATUS_SUCCESS https://origin-b.example/depth/html/sh-run20261031-180002-ebnvn/2048"
+   },
+   {
+    "step": 3,
+    "url": "https://origin-b.example/depth/html/sh-run20261031-180002-ebnvn-ctl/2048",
+    "sent_at": "2026-10-31T18:05:41.832804106Z",
+    "marker": false,
+    "leaked": null,
+    "error": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent returned 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "fetched": true,
+    "regraded_fetches": [
+     "18:05:43 google-urlcontext 200"
+    ],
+    "fetch_status": null
+   },
+   {
+    "step": 4,
+    "url": "https://origin-b.example/depth/html/sh-run20261031-180002-ebnvn/2048",
+    "sent_at": "2026-10-31T18:15:45.846194358Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "18:15:48 google-urlcontext 200"
+    ],
+    "fetch_status": "URL_RETRIEVAL_STATUS_SUCCESS https://origin-b.example/depth/html/sh-run20261031-180002-ebnvn/2048"
+   }
+  ]
+ }
+}

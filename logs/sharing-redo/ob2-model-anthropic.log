@@ -1,0 +1,66 @@
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+
+[1m!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!![0m
+[1m  SHARED-ADDRESS MODE — both callers are given the IDENTICAL address.[0m
+[1m  This is deliberate and it is the experiment. It must NEVER be used for a[0m
+[1m  retention measurement: one caller's download would satisfy the other's[0m
+[1m  question and the result would read as the provider keeping a copy.[0m
+[1m!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+  freshness: neither page has been fetched on this address — good
+
+  both pages are live and carry their own codes
+
+
+[1m--- step 1: first caller warms the shared page[0m
+  caller  : or:anthropic-claude-opus-4.8
+  address : https://origin-b.example/depth/html/sh-run20261028-185735-ptx2d/2048
+  question: Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.
+  downloaded: [1mYES[0m — 18:57:38 anthropic-query 200 2357B
+  this page's depth=95% code in the answer: true
+  answer  : Here is the information you requested:  - **Document id (title):** "probe document" - **Code for the section at depth=95%:** "TRUNC-2ac3a265e8df"
+  waiting 5m0s…
+
+[1m--- step 2: second caller asks the shared page — THE MEASUREMENT[0m
+  caller  : or:anthropic-claude-sonnet-5
+  address : https://origin-b.example/depth/html/sh-run20261028-185735-ptx2d/2048
+  question: Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.
+  downloaded: [1mNOTHING REACHED US[0m
+  this page's depth=50% code in the answer: true
+  answer  : The document's id is **sh-run20261028-185735-ptx2d** (from the URL path), and the code for the section at depth=50% is:  **TRUNC-82708b49bcce**
+
+[1m--- step 3: second caller asks a fresh page — the control[0m
+  caller  : or:anthropic-claude-sonnet-5
+  address : https://origin-b.example/depth/html/sh-run20261028-185735-ptx2d-ctl/2048
+  question: Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.
+  downloaded: [1mNOTHING REACHED US[0m
+  this page's depth=50% code in the answer: true
+  answer  : The document's id is **"probe document"** (from the title field), and the code beginning with TRUNC- for the section at depth=50% is:  **TRUNC-341003400c82**
+  waiting 10m0s…
+
+[1m--- step 4: second caller asks the shared page again, after the long gap[0m
+  caller  : or:anthropic-claude-sonnet-5
+  address : https://origin-b.example/depth/html/sh-run20261028-185735-ptx2d/2048
+  question: Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=75% in it. Quote them exactly.
+  downloaded: [1mNOTHING REACHED US[0m
+  this page's depth=75% code in the answer: true
+  answer  : The document's id is **sh-run20261028-185735-ptx2d** (as given in the URL path), and the TRUNC- code for the section at depth=75% is:  **TRUNC-b170511c7880**
+
+[sharing] steps written to logs/sharing-redo/ob2-model-anthropic.jsonl
+
+==========================================================================
+  WHAT WAS OBSERVED
+==========================================================================
+  1. first caller asks the shared page                 [1mdownloaded[0m
+  2. second caller asks the shared page (the measurement) [1mnothing[0m
+  3. second caller asks a fresh page (the control)     [1mnothing[0m
+  4. second caller asks the shared page after the long gap [1mnothing[0m
+  input tokens billed — step 2 (shared page): 3601 · step 3 (fresh page): 3611
+
+==========================================================================
+  THE READING
+==========================================================================
+  VOID — the control failed. The second caller did not download a page
+  nobody had touched, so its silence in step 2 says nothing about sharing;
+  it may simply not have been fetching at all.

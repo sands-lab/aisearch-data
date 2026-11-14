@@ -1,0 +1,60 @@
+{
+ "within-gemini": {
+  "verdict": "VOID",
+  "note": "a call failed",
+  "steps": [
+   {
+    "step": 1,
+    "url": "https://origin-b.example/depth/html/sh-run20261029-125418-bcsvg/2048",
+    "sent_at": "2026-10-29T12:54:20.102087773Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "12:54:22 google-urlcontext 200"
+    ],
+    "fetch_status": "URL_RETRIEVAL_STATUS_SUCCESS https://origin-b.example/depth/html/sh-run20261029-125418-bcsvg/2048"
+   },
+   {
+    "step": 2,
+    "url": "https://origin-b.example/depth/html/sh-run20261029-125418-bcsvg/2048",
+    "sent_at": "2026-10-29T12:59:40.931748259Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "12:59:43 google-urlcontext 200"
+    ],
+    "fetch_status": "URL_RETRIEVAL_STATUS_SUCCESS https://origin-b.example/depth/html/sh-run20261029-125418-bcsvg/2048"
+   },
+   {
+    "step": 3,
+    "url": "https://origin-b.example/depth/html/sh-run20261029-125418-bcsvg-ctl/2048",
+    "sent_at": "2026-10-29T13:00:00.975346758Z",
+    "marker": false,
+    "leaked": null,
+    "error": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent returned 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "fetched": true,
+    "regraded_fetches": [
+     "13:00:03 google-urlcontext 200"
+    ],
+    "fetch_status": null
+   },
+   {
+    "step": 4,
+    "url": "https://origin-b.example/depth/html/sh-run20261029-125418-bcsvg/2048",
+    "sent_at": "2026-10-29T13:10:03.783967901Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "13:10:06 google-urlcontext 200"
+    ],
+    "fetch_status": "URL_RETRIEVAL_STATUS_SUCCESS https://origin-b.example/depth/html/sh-run20261029-125418-bcsvg/2048"
+   }
+  ]
+ }
+}

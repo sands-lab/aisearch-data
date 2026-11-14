@@ -1,0 +1,70 @@
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+
+[1m!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!![0m
+[1m  SHARED-ADDRESS MODE — both callers are given the IDENTICAL address.[0m
+[1m  This is deliberate and it is the experiment. It must NEVER be used for a[0m
+[1m  retention measurement: one caller's download would satisfy the other's[0m
+[1m  question and the result would read as the provider keeping a copy.[0m
+[1m!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+  freshness: neither page has been fetched on this address — good
+
+  both pages are live and carry their own codes
+
+
+[1m--- step 1: first caller warms the shared page[0m
+  caller  : or:openai-gpt-5-mini
+  address : https://origin-b.example/depth/html/sh-run20261028-185735-wuh7q/2048
+  question: Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.
+  downloaded: [1mYES[0m — 18:57:39 openai-query 200 2357B
+  this page's depth=95% code in the answer: true
+  answer  : "2048"  "TRUNC-caf0ea3bb5d8". ([origin-b.example](https://origin-b.example/depth/html/sh-run20261028-185735-wuh7q/2048))
+  waiting 5m0s…
+
+[1m--- step 2: second caller asks the shared page — THE MEASUREMENT[0m
+  caller  : or:openai-gpt-5-mini
+  address : https://origin-b.example/depth/html/sh-run20261028-185735-wuh7q/2048
+  question: Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.
+  downloaded: [1mNOTHING REACHED US[0m
+  this page's depth=50% code in the answer: true
+  answer  : Document id: "2048". ([origin-b.example](https://origin-b.example/depth/html/sh-run20261028-185735-wuh7q/2048))  Code (section at depth=50%): "TRUNC-dda4ee079d55". ([origin-b.example](https://origin-b.example/depth/html/sh-run2026…
+
+[1m--- step 3: second caller asks a fresh page — the control[0m
+  caller  : or:openai-gpt-5-mini
+  address : https://origin-b.example/depth/html/sh-run20261028-185735-wuh7q-ctl/2048
+  question: Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.
+  downloaded: [1mYES[0m — 19:03:34 openai-query 200 2357B
+  this page's depth=50% code in the answer: true
+  answer  : "2048" "TRUNC-1acc0bfe9c3f". ([origin-b.example](https://origin-b.example/depth/html/sh-run20261028-185735-wuh7q-ctl/2048))
+  waiting 10m0s…
+
+[1m--- step 4: second caller asks the shared page again, after the long gap[0m
+  caller  : or:openai-gpt-5-mini
+  address : https://origin-b.example/depth/html/sh-run20261028-185735-wuh7q/2048
+  question: Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=75% in it. Quote them exactly.
+  downloaded: [1mNOTHING REACHED US[0m
+  this page's depth=75% code in the answer: true
+  answer  : "2048" "TRUNC-46d88f1aec69". ([origin-b.example](https://origin-b.example/depth/html/sh-run20261028-185735-wuh7q/2048))
+
+[sharing] steps written to logs/sharing-redo/ob2-within-openai.jsonl
+
+==========================================================================
+  WHAT WAS OBSERVED
+==========================================================================
+  1. first caller asks the shared page                 [1mdownloaded[0m
+  2. second caller asks the shared page (the measurement) [1mnothing[0m
+  3. second caller asks a fresh page (the control)     [1mdownloaded[0m
+  4. second caller asks the shared page after the long gap [1mnothing[0m
+  input tokens billed — step 2 (shared page): 5558 · step 3 (fresh page): 8025
+
+==========================================================================
+  THE READING
+==========================================================================
+  SHARED — the second caller quoted this page's own code without ever
+  downloading it, for a question nobody had asked, and the code is unique
+  to this page: the copy can only have come from the first caller's download.
+
+  AND IT IS A REAL STORE, not a warm machine: still shared after the
+  long gap, which is too long for the second request to have landed on
+  the same process by chance.

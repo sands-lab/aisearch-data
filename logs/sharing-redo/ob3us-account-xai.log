@@ -1,0 +1,70 @@
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+
+[1m!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!![0m
+[1m  SHARED-ADDRESS MODE — both callers are given the IDENTICAL address.[0m
+[1m  This is deliberate and it is the experiment. It must NEVER be used for a[0m
+[1m  retention measurement: one caller's download would satisfy the other's[0m
+[1m  question and the result would read as the provider keeping a copy.[0m
+[1m!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+  freshness: neither page has been fetched on this address — good
+
+  both pages are live and carry their own codes
+
+
+[1m--- step 1: first caller warms the shared page[0m
+  caller  : x-ai-grok-4.3
+  address : https://origin-b.example/depth/html/sh-run20261028-191542-joau9/2048
+  question: Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=95% in it. Quote them exactly.
+  downloaded: [1mYES[0m — 19:15:46 unknown 200 2357B; 19:15:46 unknown 200 2357B; 19:15:46 unknown 200 2357B; 19:15:46 unknown 200 2357B; 19:15:47 unknown 200 2357B; 19:15:47 unknown 200 2357B; 19:15:47 unknown 200 2357B
+  this page's depth=95% code in the answer: true
+  answer  : **Document id:** sh-run20261028-191542-joau9/2048  **TRUNC- code for depth=95% section:** TRUNC-90a3f4bcc1b1
+  waiting 5m0s…
+
+[1m--- step 2: second caller asks the shared page — THE MEASUREMENT[0m
+  caller  : or:x-ai-grok-4.3
+  address : https://origin-b.example/depth/html/sh-run20261028-191542-joau9/2048
+  question: Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.
+  downloaded: [1mNOTHING REACHED US[0m
+  this page's depth=50% code in the answer: true
+  answer  : **Document ID:** 2048 (from the URL path `/depth/html/sh-run20261028-191542-joau9/2048`).  **TRUNC- code for the section at depth=50%:** `TRUNC-f0808e3451b9` (quoted exactly from the page: "TRUNC-f0808e3451b9 is the reference marker for …
+
+[1m--- step 3: second caller asks a fresh page — the control[0m
+  caller  : or:x-ai-grok-4.3
+  address : https://origin-b.example/depth/html/sh-run20261028-191542-joau9-ctl/2048
+  question: Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=50% in it. Quote them exactly.
+  downloaded: [1mYES[0m — 19:21:36 unknown 200 2357B; 19:21:36 unknown 200 2357B; 19:21:36 unknown 200 2357B; 19:21:36 unknown 200 2357B; 19:21:36 unknown 200 2357B; 19:21:36 unknown 200 2357B; 19:21:36 unknown 200 2357B
+  this page's depth=50% code in the answer: true
+  answer  : **Document ID:** sh-run20261028-191542-joau9-ctl/2048  **TRUNC- code for depth=50% section:** TRUNC-87cf22bf103e  (Quoted exactly from the fetched document content.)
+  waiting 10m0s…
+
+[1m--- step 4: second caller asks the shared page again, after the long gap[0m
+  caller  : or:x-ai-grok-4.3
+  address : https://origin-b.example/depth/html/sh-run20261028-191542-joau9/2048
+  question: Fetch this document and tell me its id and the code beginning with TRUNC- for the section at depth=75% in it. Quote them exactly.
+  downloaded: [1mNOTHING REACHED US[0m
+  this page's depth=75% code in the answer: true
+  answer  : **Document ID:** sh-run20261028-191542-joau9/2048  **TRUNC- code at depth=75%:** TRUNC-e1d7d20d5c94
+
+[sharing] steps written to logs/sharing-redo/ob3us-account-xai.jsonl
+
+==========================================================================
+  WHAT WAS OBSERVED
+==========================================================================
+  1. first caller asks the shared page                 [1mdownloaded[0m
+  2. second caller asks the shared page (the measurement) [1mnothing[0m
+  3. second caller asks a fresh page (the control)     [1mdownloaded[0m
+  4. second caller asks the shared page after the long gap [1mnothing[0m
+  input tokens billed — step 2 (shared page): 3201 · step 3 (fresh page): 3160
+
+==========================================================================
+  THE READING
+==========================================================================
+  SHARED — the second caller quoted this page's own code without ever
+  downloading it, for a question nobody had asked, and the code is unique
+  to this page: the copy can only have come from the first caller's download.
+
+  AND IT IS A REAL STORE, not a warm machine: still shared after the
+  long gap, which is too long for the second request to have landed on
+  the same process by chance.

@@ -1,0 +1,164 @@
+{
+ "account-anthropic": {
+  "verdict": "SHARED",
+  "note": "still shared at the late step",
+  "steps": [
+   {
+    "step": 1,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-191542-agv8c/2048",
+    "sent_at": "2026-10-28T19:15:43.527489798Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "19:15:47 anthropic-query 200"
+    ]
+   },
+   {
+    "step": 2,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-191542-agv8c/2048",
+    "sent_at": "2026-10-28T19:21:06.626850601Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   },
+   {
+    "step": 3,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-191542-agv8c-ctl/2048",
+    "sent_at": "2026-10-28T19:21:32.056798294Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "19:21:35 anthropic-query 200"
+    ]
+   },
+   {
+    "step": 4,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-191542-agv8c/2048",
+    "sent_at": "2026-10-28T19:31:52.125154828Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   }
+  ]
+ },
+ "account-openai": {
+  "verdict": "SHARED",
+  "note": "still shared at the late step",
+  "steps": [
+   {
+    "step": 1,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-191542-jcbct/2048",
+    "sent_at": "2026-10-28T19:15:43.543395194Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "19:15:47 openai-query 200"
+    ]
+   },
+   {
+    "step": 2,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-191542-jcbct/2048",
+    "sent_at": "2026-10-28T19:21:20.821352881Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   },
+   {
+    "step": 3,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-191542-jcbct-ctl/2048",
+    "sent_at": "2026-10-28T19:21:45.881198772Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "19:21:47 openai-query 200"
+    ]
+   },
+   {
+    "step": 4,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-191542-jcbct/2048",
+    "sent_at": "2026-10-28T19:32:15.598581177Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   }
+  ]
+ },
+ "account-xai": {
+  "verdict": "SHARED",
+  "note": "still shared at the late step",
+  "steps": [
+   {
+    "step": 1,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-191542-joau9/2048",
+    "sent_at": "2026-10-28T19:15:43.574245809Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "19:15:46 unknown 200",
+     "19:15:46 unknown 200",
+     "19:15:46 unknown 200",
+     "19:15:46 unknown 200",
+     "19:15:47 unknown 200",
+     "19:15:47 unknown 200",
+     "19:15:47 unknown 200"
+    ]
+   },
+   {
+    "step": 2,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-191542-joau9/2048",
+    "sent_at": "2026-10-28T19:21:08.897882687Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   },
+   {
+    "step": 3,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-191542-joau9-ctl/2048",
+    "sent_at": "2026-10-28T19:21:33.901467287Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "19:21:36 unknown 200",
+     "19:21:36 unknown 200",
+     "19:21:36 unknown 200",
+     "19:21:36 unknown 200",
+     "19:21:36 unknown 200",
+     "19:21:36 unknown 200",
+     "19:21:36 unknown 200"
+    ]
+   },
+   {
+    "step": 4,
+    "url": "https://origin-b.example/depth/html/sh-run20261028-191542-joau9/2048",
+    "sent_at": "2026-10-28T19:31:55.472513297Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": false,
+    "regraded_fetches": []
+   }
+  ]
+ }
+}

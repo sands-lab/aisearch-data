@@ -1,0 +1,22 @@
+2026-10-11T13:38:50Z scheduler started (pid 2836242): group all, rounds: r2@2026-10-11 22:00 +03:00 r3@2026-10-12 04:00 +03:00 r4@2026-10-12 10:00 +03:00 r5@2026-10-12 16:00 +03:00 r6@2026-10-12 22:00 +03:00
+2026-10-11T13:38:50Z waiting for r2 at 2026-10-11 22:00 +03:00
+2026-10-11T19:00:00Z starting r2 (code at 2cb81f3)
+started tmux session sharing-r2 with 12 comparisons; output in logs/sharing-redo/r2-*.log
+2026-10-11T19:00:04Z r2 launched
+2026-10-11T19:00:04Z waiting for r3 at 2026-10-12 04:00 +03:00
+2026-10-12T01:00:00Z starting r3 (code at 2cb81f3)
+started tmux session sharing-r3 with 12 comparisons; output in logs/sharing-redo/r3-*.log
+2026-10-12T01:00:03Z r3 launched
+2026-10-12T01:00:03Z waiting for r4 at 2026-10-12 10:00 +03:00
+2026-10-12T07:00:00Z starting r4 (code at 2cb81f3)
+started tmux session sharing-r4 with 12 comparisons; output in logs/sharing-redo/r4-*.log
+2026-10-12T07:00:03Z r4 launched
+2026-10-12T07:00:03Z waiting for r5 at 2026-10-12 16:00 +03:00
+2026-10-12T13:00:00Z starting r5 (code at 2524f2c)
+started tmux session sharing-r5 with 12 comparisons; output in logs/sharing-redo/r5-*.log
+2026-10-12T13:00:05Z r5 launched
+2026-10-12T13:00:05Z waiting for r6 at 2026-10-12 22:00 +03:00
+2026-10-12T19:00:00Z starting r6 (code at 173f9b1)
+started tmux session sharing-r6 with 12 comparisons; output in logs/sharing-redo/r6-*.log
+2026-10-12T19:00:03Z r6 launched
+2026-10-12T19:00:03Z all rounds launched

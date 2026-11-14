@@ -1,0 +1,60 @@
+{
+ "within-gemini": {
+  "verdict": "NOT SHARED",
+  "note": "",
+  "steps": [
+   {
+    "step": 1,
+    "url": "https://origin-b.example/depth/html/sh-run20261102-083001-54fuq/2048",
+    "sent_at": "2026-11-02T08:30:03.585808362Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "08:30:05 google-urlcontext 200"
+    ],
+    "fetch_status": "URL_RETRIEVAL_STATUS_SUCCESS https://origin-b.example/depth/html/sh-run20261102-083001-54fuq/2048"
+   },
+   {
+    "step": 2,
+    "url": "https://origin-b.example/depth/html/sh-run20261102-083001-54fuq/2048",
+    "sent_at": "2026-11-02T08:35:21.943293565Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "08:35:24 google-urlcontext 200"
+    ],
+    "fetch_status": "URL_RETRIEVAL_STATUS_SUCCESS https://origin-b.example/depth/html/sh-run20261102-083001-54fuq/2048"
+   },
+   {
+    "step": 3,
+    "url": "https://origin-b.example/depth/html/sh-run20261102-083001-54fuq-ctl/2048",
+    "sent_at": "2026-11-02T08:35:42.871772766Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "08:35:44 google-urlcontext 200"
+    ],
+    "fetch_status": "URL_RETRIEVAL_STATUS_SUCCESS https://origin-b.example/depth/html/sh-run20261102-083001-54fuq-ctl/2048"
+   },
+   {
+    "step": 4,
+    "url": "https://origin-b.example/depth/html/sh-run20261102-083001-54fuq/2048",
+    "sent_at": "2026-11-02T08:46:00.928624786Z",
+    "marker": true,
+    "leaked": null,
+    "error": null,
+    "fetched": true,
+    "regraded_fetches": [
+     "08:46:03 google-urlcontext 200"
+    ],
+    "fetch_status": "URL_RETRIEVAL_STATUS_SUCCESS https://origin-b.example/depth/html/sh-run20261102-083001-54fuq/2048"
+   }
+  ]
+ }
+}
