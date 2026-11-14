@@ -1,0 +1,162 @@
+=== baseline run 1
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+[faults] run id: run20261101-122858-g2ip9 (each provider's URLs carry it, so a repeat run is clean)
+[faults] preflight ok — the origin serves depth-bodied faults under our secret
+
+[1m=== anthropic (claude-sonnet-5)[0m
+
+  [1mflaky/0[0m — should retry past 0 failure(s) and get the page
+    address : https://origin-b.example/fault/flaky/0?probe=anthropic-claude-sonnet-5-run20261101-122858-g2ip9
+    fetches reaching us: 1
+      12:29:01 anthropic-query 200 2454B /fault/flaky/0
+    [1m→[0m recovered after 1 fetches — retried past the failures
+
+[1m=== or:openai (openai/gpt-5-mini)[0m
+
+  [1mflaky/0[0m — should retry past 0 failure(s) and get the page
+    address : https://origin-b.example/fault/flaky/0?probe=or-openai-gpt-5-mini-run20261101-122858-g2ip9
+    fetches reaching us: 1
+      12:30:39 openai-query 200 2454B /fault/flaky/0
+    [1m→[0m recovered after 1 fetches — retried past the failures
+
+[1m=== or:x-ai (x-ai/grok-4.3)[0m
+
+  [1mflaky/0[0m — should retry past 0 failure(s) and get the page
+    address : https://origin-b.example/fault/flaky/0?probe=or-x-ai-grok-4-3-run20261101-122858-g2ip9
+    fetches reaching us: 7
+      12:32:21 unknown 200 2454B /fault/flaky/0
+      12:32:21 unknown 200 2454B /fault/flaky/0
+      12:32:21 unknown 200 2454B /fault/flaky/0
+      12:32:21 unknown 200 2454B /fault/flaky/0
+      12:32:21 unknown 200 2454B /fault/flaky/0
+      12:32:22 unknown 200 2454B /fault/flaky/0
+      12:32:22 unknown 200 2454B /fault/flaky/0
+    [1m→[0m recovered after 7 fetches — retried past the failures
+
+[faults] results written to logs/faults-originb-baseline.jsonl
+
+==============================================================================
+  FETCHES REACHING OUR SERVER — how many times each fault was fetched
+==============================================================================
+  provider                   flaky/0 
+  anthropic                  1       
+  or:openai                  1       
+  or:x-ai                    7       
+
+  (a cell of 1 = fetched once, no retry; N = N arrivals; +M = M off-path)
+
+==============================================================================
+  THE READING
+==============================================================================
+
+  No provider retried a permanent failure or fetched an unnamed page.
+EXIT=0
+=== baseline run 2
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+[faults] run id: run20261101-123408-6egg4 (each provider's URLs carry it, so a repeat run is clean)
+[faults] preflight ok — the origin serves depth-bodied faults under our secret
+
+[1m=== anthropic (claude-sonnet-5)[0m
+
+  [1mflaky/0[0m — should retry past 0 failure(s) and get the page
+    address : https://origin-b.example/fault/flaky/0?probe=anthropic-claude-sonnet-5-run20261101-123408-6egg4
+    fetches reaching us: 1
+      12:34:10 anthropic-query 200 2454B /fault/flaky/0
+    [1m→[0m recovered after 1 fetches — retried past the failures
+
+[1m=== or:openai (openai/gpt-5-mini)[0m
+
+  [1mflaky/0[0m — should retry past 0 failure(s) and get the page
+    address : https://origin-b.example/fault/flaky/0?probe=or-openai-gpt-5-mini-run20261101-123408-6egg4
+    fetches reaching us: 1
+      12:35:47 openai-query 200 2454B /fault/flaky/0
+    [1m→[0m recovered after 1 fetches — retried past the failures
+
+[1m=== or:x-ai (x-ai/grok-4.3)[0m
+
+  [1mflaky/0[0m — should retry past 0 failure(s) and get the page
+    address : https://origin-b.example/fault/flaky/0?probe=or-x-ai-grok-4-3-run20261101-123408-6egg4
+    fetches reaching us: 7
+      12:37:32 unknown 200 2454B /fault/flaky/0
+      12:37:32 unknown 200 2454B /fault/flaky/0
+      12:37:33 unknown 200 2454B /fault/flaky/0
+      12:37:33 unknown 200 2454B /fault/flaky/0
+      12:37:33 unknown 200 2454B /fault/flaky/0
+      12:37:34 unknown 200 2454B /fault/flaky/0
+      12:37:35 unknown 200 2454B /fault/flaky/0
+    [1m→[0m recovered after 7 fetches — retried past the failures
+
+[faults] results written to logs/faults-originb-baseline.jsonl
+
+==============================================================================
+  FETCHES REACHING OUR SERVER — how many times each fault was fetched
+==============================================================================
+  provider                   flaky/0 
+  anthropic                  1       
+  or:openai                  1       
+  or:x-ai                    7       
+
+  (a cell of 1 = fetched once, no retry; N = N arrivals; +M = M off-path)
+
+==============================================================================
+  THE READING
+==============================================================================
+
+  No provider retried a permanent failure or fetched an unnamed page.
+EXIT=0
+=== baseline run 3
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+[faults] run id: run20261101-123913-3dmen (each provider's URLs carry it, so a repeat run is clean)
+[faults] preflight ok — the origin serves depth-bodied faults under our secret
+
+[1m=== anthropic (claude-sonnet-5)[0m
+
+  [1mflaky/0[0m — should retry past 0 failure(s) and get the page
+    address : https://origin-b.example/fault/flaky/0?probe=anthropic-claude-sonnet-5-run20261101-123913-3dmen
+    fetches reaching us: 1
+      12:39:15 anthropic-query 200 2454B /fault/flaky/0
+    [1m→[0m recovered after 1 fetches — retried past the failures
+
+[1m=== or:openai (openai/gpt-5-mini)[0m
+
+  [1mflaky/0[0m — should retry past 0 failure(s) and get the page
+    address : https://origin-b.example/fault/flaky/0?probe=or-openai-gpt-5-mini-run20261101-123913-3dmen
+    fetches reaching us: 1
+      12:40:53 openai-query 200 2454B /fault/flaky/0
+    [1m→[0m recovered after 1 fetches — retried past the failures
+
+[1m=== or:x-ai (x-ai/grok-4.3)[0m
+
+  [1mflaky/0[0m — should retry past 0 failure(s) and get the page
+    address : https://origin-b.example/fault/flaky/0?probe=or-x-ai-grok-4-3-run20261101-123913-3dmen
+    fetches reaching us: 7
+      12:42:34 unknown 200 2454B /fault/flaky/0
+      12:42:34 unknown 200 2454B /fault/flaky/0
+      12:42:34 unknown 200 2454B /fault/flaky/0
+      12:42:35 unknown 200 2454B /fault/flaky/0
+      12:42:35 unknown 200 2454B /fault/flaky/0
+      12:42:35 unknown 200 2454B /fault/flaky/0
+      12:42:36 unknown 200 2454B /fault/flaky/0
+    [1m→[0m recovered after 7 fetches — retried past the failures
+
+[faults] results written to logs/faults-originb-baseline.jsonl
+
+==============================================================================
+  FETCHES REACHING OUR SERVER — how many times each fault was fetched
+==============================================================================
+  provider                   flaky/0 
+  anthropic                  1       
+  or:openai                  1       
+  or:x-ai                    7       
+
+  (a cell of 1 = fetched once, no retry; N = N arrivals; +M = M off-path)
+
+==============================================================================
+  THE READING
+==============================================================================
+
+  No provider retried a permanent failure or fetched an unnamed page.
+EXIT=0

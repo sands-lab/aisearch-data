@@ -1,0 +1,419 @@
+[trial] skipping google-vertex — GOOGLE_APPLICATION_CREDENTIALS is not set (it should hold the path to a service-account JSON file)
+[trial] skipping perplexity — PERPLEXITY_API_KEY is not set
+[faults] run id: run20261008-205249-kqsuv (each provider's URLs carry it, so a repeat run is clean)
+[faults] preflight ok — the origin serves depth-bodied faults under our secret
+
+[1m=== or:openai (openai/gpt-5-mini)[0m
+
+  [1m404[0m — should NOT retry — the page is gone
+    address : https://origin-a.example/fault/404?probe=or-openai-gpt-5-mini-run20261008-205249-kqsuv
+    fetches reaching us: 1
+      20:52:52 openai-query 404 17B /fault/404
+    [1m→[0m fetched once, did not retry
+
+  [1m500[0m — may retry a few times, then give up
+    address : https://origin-a.example/fault/500?probe=or-openai-gpt-5-mini-run20261008-205249-kqsuv
+    fetches reaching us: 3
+      20:54:35 openai-query 500 29B /fault/500
+      20:54:36 openai-query 500 29B /fault/500
+      20:54:37 openai-query 500 29B /fault/500
+    [1m→[0m retried 3 times over 1s
+
+  [1m503[0m — should retry, and wait the Retry-After: 10 it was given
+    address : https://origin-a.example/fault/503?probe=or-openai-gpt-5-mini-run20261008-205249-kqsuv
+    fetches reaching us: 3
+      20:56:18 openai-query 503 27B /fault/503
+      20:56:18 openai-query 503 27B /fault/503
+      20:56:19 openai-query 503 27B /fault/503
+    [1m→[0m retried 3 times over 1s
+
+  [1mslow[0m — should wait for the slow 200, not refetch
+    address : https://origin-a.example/fault/slow?probe=or-openai-gpt-5-mini-run20261008-205249-kqsuv
+    fetches reaching us: 1
+      20:58:01 openai-query 200 0B /fault/slow
+    [1m→[0m fetched once, did not retry
+
+  [1mempty[0m — should accept the empty 200 as success, not retry
+    address : https://origin-a.example/fault/empty?probe=or-openai-gpt-5-mini-run20261008-205249-kqsuv
+    fetches reaching us: 1
+      20:59:41 openai-query 200 0B /fault/empty
+    [1m→[0m fetched once, did not retry
+
+  [1mreset[0m — may retry a dropped connection
+    address : https://origin-a.example/fault/reset?probe=or-openai-gpt-5-mini-run20261008-205249-kqsuv
+    fetches reaching us: 3
+      21:01:23 openai-query 200 0B /fault/reset
+      21:01:23 openai-query 200 0B /fault/reset
+      21:01:24 openai-query 200 0B /fault/reset
+    [1m→[0m retried 3 times over 1s
+
+  [1m429[0m — should retry, and wait the Retry-After: 10 it was given
+    address : https://origin-a.example/fault/429?probe=or-openai-gpt-5-mini-run20261008-205249-kqsuv
+    fetches reaching us: 1
+      21:03:04 openai-query 429 25B /fault/429
+    [1m→[0m fetched once, did not retry
+
+  [1m429date[0m — should retry, and wait the Retry-After given as an HTTP-date (~10s)
+    address : https://origin-a.example/fault/429date?probe=or-openai-gpt-5-mini-run20261008-205249-kqsuv
+    fetches reaching us: 1
+      21:04:46 openai-query 429 25B /fault/429date
+    [1m→[0m fetched once, did not retry
+
+  [1m403[0m — should NOT retry — and should not come back as someone else
+    address : https://origin-a.example/fault/403?probe=or-openai-gpt-5-mini-run20261008-205249-kqsuv
+    fetches reaching us: 1
+      21:06:28 openai-query 403 17B /fault/403
+    [1m→[0m fetched once, did not retry
+
+  [1mloop/a[0m — should follow a few hops of the a↔b loop, then give up
+    address : https://origin-a.example/fault/loop/a?probe=or-openai-gpt-5-mini-run20261008-205249-kqsuv
+    fetches reaching us: 2
+      21:08:10 openai-query 302 0B /fault/loop/a
+      21:08:11 openai-query 302 0B /fault/loop/b
+    [1m→[0m followed 2 hops, then stopped
+
+  [1mcut[0m — should notice the body is shorter than promised: retry or report failure
+    address : https://origin-a.example/fault/cut?probe=or-openai-gpt-5-mini-run20261008-205249-kqsuv
+    fetches reaching us: 2
+      21:09:54 openai-query 200 964B /fault/cut
+      21:09:55 openai-query 200 964B /fault/cut
+    [1m→[0m model quoted no depth marker after 2 fetch(es)
+
+  [1mflaky/2[0m — should retry past 2 failures and get the page
+    address : https://origin-a.example/fault/flaky/2?probe=or-openai-gpt-5-mini-run20261008-205249-kqsuv
+    fetches reaching us: 3
+      21:11:39 openai-query 503 51B /fault/flaky/2
+      21:11:40 openai-query 503 51B /fault/flaky/2
+      21:11:40 openai-query 200 2454B /fault/flaky/2
+    [1m→[0m recovered after 3 fetches — retried past the failures
+
+[1m=== or:anthropic (anthropic/claude-sonnet-5)[0m
+
+  [1m404[0m — should NOT retry — the page is gone
+    address : https://origin-a.example/fault/404?probe=or-anthropic-claude-sonnet-5-run20261008-205249-kqsuv
+    fetches reaching us: 1
+      21:13:25 anthropic-query 404 17B /fault/404
+    [1m→[0m fetched once, did not retry
+
+  [1m500[0m — may retry a few times, then give up
+    address : https://origin-a.example/fault/500?probe=or-anthropic-claude-sonnet-5-run20261008-205249-kqsuv
+    fetches reaching us: 1
+      21:15:01 anthropic-query 500 29B /fault/500
+    [1m→[0m fetched once, did not retry
+
+  [1m503[0m — should retry, and wait the Retry-After: 10 it was given
+    address : https://origin-a.example/fault/503?probe=or-anthropic-claude-sonnet-5-run20261008-205249-kqsuv
+    fetches reaching us: 1
+      21:16:38 anthropic-query 503 27B /fault/503
+    [1m→[0m fetched once, did not retry
+
+  [1mslow[0m — should wait for the slow 200, not refetch
+    address : https://origin-a.example/fault/slow?probe=or-anthropic-claude-sonnet-5-run20261008-205249-kqsuv
+    fetches reaching us: 3
+      21:18:14 anthropic-query 200 0B /fault/slow
+      21:18:20 anthropic-query 200 0B /fault/slow
+      21:18:27 anthropic-query 200 0B /fault/slow
+    [1m→[0m retried 3 times a failure it SHOULD NOT have (timing)
+
+  [1mempty[0m — should accept the empty 200 as success, not retry
+    address : https://origin-a.example/fault/empty?probe=or-anthropic-claude-sonnet-5-run20261008-205249-kqsuv
+    fetches reaching us: 1
+      21:20:09 anthropic-query 200 0B /fault/empty
+    [1m→[0m fetched once, did not retry
+
+  [1mreset[0m — may retry a dropped connection
+    address : https://origin-a.example/fault/reset?probe=or-anthropic-claude-sonnet-5-run20261008-205249-kqsuv
+    fetches reaching us: 1
+      21:21:45 anthropic-query 200 0B /fault/reset
+    [1m→[0m fetched once, did not retry
+
+  [1m429[0m — should retry, and wait the Retry-After: 10 it was given
+    address : https://origin-a.example/fault/429?probe=or-anthropic-claude-sonnet-5-run20261008-205249-kqsuv
+    fetches reaching us: 1
+      21:23:24 anthropic-query 429 25B /fault/429
+    [1m→[0m fetched once, did not retry
+
+  [1m429date[0m — should retry, and wait the Retry-After given as an HTTP-date (~10s)
+    address : https://origin-a.example/fault/429date?probe=or-anthropic-claude-sonnet-5-run20261008-205249-kqsuv
+    fetches reaching us: 1
+      21:25:02 anthropic-query 429 25B /fault/429date
+    [1m→[0m fetched once, did not retry
+
+  [1m403[0m — should NOT retry — and should not come back as someone else
+    address : https://origin-a.example/fault/403?probe=or-anthropic-claude-sonnet-5-run20261008-205249-kqsuv
+    fetches reaching us: 1
+      21:26:38 anthropic-query 403 17B /fault/403
+    [1m→[0m fetched once, did not retry
+
+  [1mloop/a[0m — should follow a few hops of the a↔b loop, then give up
+    address : https://origin-a.example/fault/loop/a?probe=or-anthropic-claude-sonnet-5-run20261008-205249-kqsuv
+    fetches reaching us: 10
+      21:28:14 anthropic-query 302 0B /fault/loop/a
+      21:28:15 anthropic-query 302 0B /fault/loop/b
+      21:28:15 anthropic-query 302 0B /fault/loop/a
+      21:28:16 anthropic-query 302 0B /fault/loop/b
+      21:28:16 anthropic-query 302 0B /fault/loop/a
+      21:28:17 anthropic-query 302 0B /fault/loop/b
+      21:28:17 anthropic-query 302 0B /fault/loop/a
+      21:28:18 anthropic-query 302 0B /fault/loop/b
+      21:28:18 anthropic-query 302 0B /fault/loop/a
+      21:28:18 anthropic-query 302 0B /fault/loop/b
+    [1m→[0m followed 10 hops, then stopped
+
+  [1mcut[0m — should notice the body is shorter than promised: retry or report failure
+    address : https://origin-a.example/fault/cut?probe=or-anthropic-claude-sonnet-5-run20261008-205249-kqsuv
+    fetches reaching us: 4
+      21:29:54 anthropic-query 200 964B /fault/cut
+      21:29:55 anthropic-query 200 964B /fault/cut
+      21:29:56 anthropic-query 200 964B /fault/cut
+      21:29:57 anthropic-query 200 964B /fault/cut
+    [1m→[0m model quoted no depth marker after 4 fetch(es)
+
+  [1mflaky/2[0m — should retry past 2 failures and get the page
+    address : https://origin-a.example/fault/flaky/2?probe=or-anthropic-claude-sonnet-5-run20261008-205249-kqsuv
+    fetches reaching us: 1
+      21:31:36 anthropic-query 503 51B /fault/flaky/2
+    [1m→[0m gave up after 1 fetch(es); did not retry enough to recover
+
+[1m=== or:x-ai (x-ai/grok-4.3)[0m
+
+  [1m404[0m — should NOT retry — the page is gone
+    address : https://origin-a.example/fault/404?probe=or-x-ai-grok-4-3-run20261008-205249-kqsuv
+    fetches reaching us: 6
+      21:33:11 unknown 404 17B /fault/404
+      21:33:11 unknown 404 17B /fault/404
+      21:33:11 unknown 404 17B /fault/404
+      21:33:11 unknown 404 17B /fault/404
+      21:33:12 unknown 404 17B /fault/404
+      21:33:12 unknown 404 17B /fault/404
+    [1m→[0m retried 6 times a failure it SHOULD NOT have (permanent); came back under a different user agent (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Safari/605.1.15 | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36)
+
+  [1m500[0m — may retry a few times, then give up
+    address : https://origin-a.example/fault/500?probe=or-x-ai-grok-4-3-run20261008-205249-kqsuv
+    fetches reaching us: 6
+      21:34:48 unknown 500 29B /fault/500
+      21:34:49 unknown 500 29B /fault/500
+      21:34:49 unknown 500 29B /fault/500
+      21:34:49 unknown 500 29B /fault/500
+      21:34:51 unknown 500 29B /fault/500
+      21:34:52 unknown 500 29B /fault/500
+    [1m→[0m retried 6 times over 3s
+
+  [1m503[0m — should retry, and wait the Retry-After: 10 it was given
+    address : https://origin-a.example/fault/503?probe=or-x-ai-grok-4-3-run20261008-205249-kqsuv
+    fetches reaching us: 5
+      21:36:39 unknown 503 27B /fault/503
+      21:36:40 unknown 503 27B /fault/503
+      21:36:40 unknown 503 27B /fault/503
+      21:36:40 unknown 503 27B /fault/503
+      21:36:40 unknown 503 27B /fault/503
+    [1m→[0m retried 5 times over 1s
+
+  [1mslow[0m — should wait for the slow 200, not refetch
+    address : https://origin-a.example/fault/slow?probe=or-x-ai-grok-4-3-run20261008-205249-kqsuv
+    fetches reaching us: 7
+      21:38:29 unknown 200 0B /fault/slow
+      21:38:29 unknown 200 0B /fault/slow
+      21:38:29 unknown 200 0B /fault/slow
+      21:38:29 unknown 200 0B /fault/slow
+      21:38:29 unknown 200 0B /fault/slow
+      21:38:30 unknown 200 0B /fault/slow
+      21:38:30 unknown 200 0B /fault/slow
+    [1m→[0m retried 7 times a failure it SHOULD NOT have (timing)
+
+  [1mempty[0m — should accept the empty 200 as success, not retry
+    address : https://origin-a.example/fault/empty?probe=or-x-ai-grok-4-3-run20261008-205249-kqsuv
+    fetches reaching us: 5
+      21:40:16 unknown 200 0B /fault/empty
+      21:40:16 unknown 200 0B /fault/empty
+      21:40:17 unknown 200 0B /fault/empty
+      21:40:17 unknown 200 0B /fault/empty
+      21:40:17 unknown 200 0B /fault/empty
+    [1m→[0m retried 5 times a failure it SHOULD NOT have (body)
+
+  [1mreset[0m — may retry a dropped connection
+    address : https://origin-a.example/fault/reset?probe=or-x-ai-grok-4-3-run20261008-205249-kqsuv
+    fetches reaching us: 6
+      21:41:52 unknown 200 0B /fault/reset
+      21:41:52 unknown 200 0B /fault/reset
+      21:41:53 unknown 200 0B /fault/reset
+      21:41:53 unknown 200 0B /fault/reset
+      21:41:53 unknown 200 0B /fault/reset
+      21:41:54 unknown 200 0B /fault/reset
+    [1m→[0m retried 6 times over 1s
+
+  [1m429[0m — should retry, and wait the Retry-After: 10 it was given
+    address : https://origin-a.example/fault/429?probe=or-x-ai-grok-4-3-run20261008-205249-kqsuv
+    fetches reaching us: 7
+      21:43:40 unknown 429 25B /fault/429
+      21:43:40 unknown 429 25B /fault/429
+      21:43:40 unknown 429 25B /fault/429
+      21:43:41 unknown 429 25B /fault/429
+      21:43:41 unknown 429 25B /fault/429
+      21:43:41 unknown 429 25B /fault/429
+      21:43:44 unknown 429 25B /fault/429
+    [1m→[0m retried 7 times over 5s
+
+  [1m429date[0m — should retry, and wait the Retry-After given as an HTTP-date (~10s)
+    address : https://origin-a.example/fault/429date?probe=or-x-ai-grok-4-3-run20261008-205249-kqsuv
+    fetches reaching us: 7
+      21:45:25 unknown 429 25B /fault/429date
+      21:45:25 unknown 429 25B /fault/429date
+      21:45:25 unknown 429 25B /fault/429date
+      21:45:25 unknown 429 25B /fault/429date
+      21:45:25 unknown 429 25B /fault/429date
+      21:45:25 unknown 429 25B /fault/429date
+      21:45:25 unknown 429 25B /fault/429date
+    [1m→[0m retried 7 times over 1s
+
+  [1m403[0m — should NOT retry — and should not come back as someone else
+    address : https://origin-a.example/fault/403?probe=or-x-ai-grok-4-3-run20261008-205249-kqsuv
+    fetches reaching us: 5
+      21:47:05 unknown 403 17B /fault/403
+      21:47:06 unknown 403 17B /fault/403
+      21:47:06 unknown 403 17B /fault/403
+      21:47:06 unknown 403 17B /fault/403
+      21:47:07 unknown 403 17B /fault/403
+    [1m→[0m retried 5 times a failure it SHOULD NOT have (permanent); came back under a different user agent (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Safari/605.1.15 | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36)
+
+  [1mloop/a[0m — should follow a few hops of the a↔b loop, then give up
+    address : https://origin-a.example/fault/loop/a?probe=or-x-ai-grok-4-3-run20261008-205249-kqsuv
+    fetches reaching us: 66
+      21:48:51 unknown 302 0B /fault/loop/a
+      21:48:51 unknown 302 0B /fault/loop/a
+      21:48:51 unknown 302 0B /fault/loop/b
+      21:48:51 unknown 302 0B /fault/loop/b
+      21:48:51 unknown 302 0B /fault/loop/a
+      21:48:51 unknown 302 0B /fault/loop/a
+      21:48:51 unknown 302 0B /fault/loop/a
+      21:48:51 unknown 302 0B /fault/loop/a
+      21:48:51 unknown 302 0B /fault/loop/b
+      21:48:51 unknown 302 0B /fault/loop/b
+      21:48:51 unknown 302 0B /fault/loop/b
+      21:48:51 unknown 302 0B /fault/loop/b
+      21:48:51 unknown 302 0B /fault/loop/a
+      21:48:51 unknown 302 0B /fault/loop/a
+      21:48:51 unknown 302 0B /fault/loop/a
+      21:48:52 unknown 302 0B /fault/loop/a
+      21:48:52 unknown 302 0B /fault/loop/b
+      21:48:52 unknown 302 0B /fault/loop/b
+      21:48:52 unknown 302 0B /fault/loop/a
+      21:48:52 unknown 302 0B /fault/loop/a
+      21:48:52 unknown 302 0B /fault/loop/a
+      21:48:52 unknown 302 0B /fault/loop/a
+      21:48:52 unknown 302 0B /fault/loop/b
+      21:48:52 unknown 302 0B /fault/loop/b
+      21:48:52 unknown 302 0B /fault/loop/b
+      21:48:52 unknown 302 0B /fault/loop/b
+      21:48:52 unknown 302 0B /fault/loop/b
+      21:48:52 unknown 302 0B /fault/loop/b
+      21:48:52 unknown 302 0B /fault/loop/a
+      21:48:52 unknown 302 0B /fault/loop/a
+      21:48:52 unknown 302 0B /fault/loop/a
+      21:48:52 unknown 302 0B /fault/loop/a
+      21:48:52 unknown 302 0B /fault/loop/b
+      21:48:52 unknown 302 0B /fault/loop/b
+      21:48:52 unknown 302 0B /fault/loop/a
+      21:48:52 unknown 302 0B /fault/loop/a
+      21:48:52 unknown 302 0B /fault/loop/a
+      21:48:53 unknown 302 0B /fault/loop/b
+      21:48:53 unknown 302 0B /fault/loop/b
+      21:48:53 unknown 302 0B /fault/loop/b
+      21:48:53 unknown 302 0B /fault/loop/a
+      21:48:53 unknown 302 0B /fault/loop/a
+      21:48:53 unknown 302 0B /fault/loop/a
+      21:48:53 unknown 302 0B /fault/loop/b
+      21:48:53 unknown 302 0B /fault/loop/a
+      21:48:53 unknown 302 0B /fault/loop/b
+      21:48:53 unknown 302 0B /fault/loop/b
+      21:48:53 unknown 302 0B /fault/loop/a
+      21:48:53 unknown 302 0B /fault/loop/a
+      21:48:53 unknown 302 0B /fault/loop/b
+      21:48:54 unknown 302 0B /fault/loop/b
+      21:48:54 unknown 302 0B /fault/loop/b
+      21:48:54 unknown 302 0B /fault/loop/a
+      21:48:54 unknown 302 0B /fault/loop/a
+      21:48:54 unknown 302 0B /fault/loop/a
+      21:48:54 unknown 302 0B /fault/loop/a
+      21:48:54 unknown 302 0B /fault/loop/b
+      21:48:54 unknown 302 0B /fault/loop/b
+      21:48:55 unknown 302 0B /fault/loop/a
+      21:48:55 unknown 302 0B /fault/loop/a
+      21:48:55 unknown 302 0B /fault/loop/b
+      21:48:56 unknown 302 0B /fault/loop/a
+      21:48:56 unknown 302 0B /fault/loop/b
+      21:48:56 unknown 302 0B /fault/loop/b
+      21:48:56 unknown 302 0B /fault/loop/a
+      21:48:56 unknown 302 0B /fault/loop/a
+    [1m→[0m followed 66 hops, then stopped
+
+  [1mcut[0m — should notice the body is shorter than promised: retry or report failure
+    address : https://origin-a.example/fault/cut?probe=or-x-ai-grok-4-3-run20261008-205249-kqsuv
+    fetches reaching us: 28
+      21:50:36 unknown 200 964B /fault/cut
+      21:50:37 unknown 200 964B /fault/cut
+      21:50:37 unknown 200 964B /fault/cut
+      21:50:37 unknown 200 964B /fault/cut
+      21:50:37 unknown 200 964B /fault/cut
+      21:50:37 unknown 200 964B /fault/cut
+      21:50:38 unknown 200 964B /fault/cut
+      21:50:38 unknown 200 964B /fault/cut
+      21:50:38 unknown 200 964B /fault/cut
+      21:50:38 unknown 200 964B /fault/cut
+      21:50:38 unknown 200 964B /fault/cut
+      21:50:38 unknown 200 964B /fault/cut
+      21:50:38 unknown 200 964B /fault/cut
+      21:50:39 unknown 200 964B /fault/cut
+      21:50:39 unknown 200 964B /fault/cut
+      21:50:39 unknown 200 964B /fault/cut
+      21:50:39 unknown 200 964B /fault/cut
+      21:50:39 unknown 200 964B /fault/cut
+      21:50:39 unknown 200 964B /fault/cut
+      21:50:40 unknown 200 964B /fault/cut
+      21:50:40 unknown 200 964B /fault/cut
+      21:50:40 unknown 200 964B /fault/cut
+      21:50:40 unknown 200 964B /fault/cut
+      21:50:40 unknown 200 964B /fault/cut
+      21:50:40 unknown 200 964B /fault/cut
+      21:50:40 unknown 200 964B /fault/cut
+      21:50:41 unknown 200 964B /fault/cut
+      21:50:41 unknown 200 964B /fault/cut
+    [1m→[0m model quoted no depth marker after 28 fetch(es)
+
+  [1mflaky/2[0m — should retry past 2 failures and get the page
+    address : https://origin-a.example/fault/flaky/2?probe=or-x-ai-grok-4-3-run20261008-205249-kqsuv
+    fetches reaching us: 6
+      21:52:22 unknown 503 51B /fault/flaky/2
+      21:52:22 unknown 503 51B /fault/flaky/2
+      21:52:22 unknown 200 2454B /fault/flaky/2
+      21:52:22 unknown 200 2454B /fault/flaky/2
+      21:52:23 unknown 200 2454B /fault/flaky/2
+      21:52:23 unknown 200 2454B /fault/flaky/2
+    [1m→[0m recovered after 6 fetches — retried past the failures
+
+[faults] results written to logs/faults-redo-20261008.jsonl
+
+==============================================================================
+  FETCHES REACHING OUR SERVER — how many times each fault was fetched
+==============================================================================
+  provider                   404      500      503      slow     empty    reset    429      429date  403      loop/a   cut      flaky/2 
+  or:anthropic               1        1        1        3        1        1        1        1        1        10       4        1       
+  or:openai                  1        3        3        1        1        3        1        1        1        2        2        3       
+  or:x-ai                    6        6        5        7        5        6        7        7        5        66       28       6       
+
+  (a cell of 1 = fetched once, no retry; N = N arrivals; +M = M off-path)
+
+==============================================================================
+  THE READING
+==============================================================================
+
+  RETRIED A FAILURE IT SHOULD HAVE LEFT ALONE:
+    or:openai — /fault/loop/a (redirect), 2 fetches
+    or:anthropic — /fault/slow (timing), 3 fetches
+    or:anthropic — /fault/loop/a (redirect), 10 fetches
+    or:x-ai — /fault/404 (permanent), 6 fetches
+    or:x-ai — /fault/slow (timing), 7 fetches
+    or:x-ai — /fault/empty (body), 5 fetches
+    or:x-ai — /fault/403 (permanent), 5 fetches
+    or:x-ai — /fault/loop/a (redirect), 66 fetches
+EXIT=0
