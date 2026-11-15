@@ -1,38 +1,50 @@
 # Real homepages: how old are the answers?
 
-One run on 2 Nov 2026. 90 real, often-changing homepages, four vendors, three questions each: a
-warm-up (`warmup`), then 20 minutes later the normal address (`plain`) and a tagged address
-(`tagged`) at the same moment. Each answer is compared with our own download of the page.
+One run on 2 Nov 2026. We picked 90 real homepages that change often. We asked four vendors three
+questions about each page:
 
-The sites are not named. Each site is a random ID (`site-001` … `site-090`) with a rough category.
-There is no page text, no answer text and no address. The real site list stays private.
+- `warmup`: the normal address, asked first.
+- `plain`: the normal address again, 20 minutes later.
+- `tagged`: the address with an extra tag added, asked at the same moment as `plain`. No vendor
+  can have a saved copy of the tagged address, so it must download the page fresh.
+
+We downloaded the page ourselves just before and just after, and compared each answer with those
+downloads.
+
+The sites are not named. Each site is a random ID (`site-001` to `site-090`) with a rough category.
+There is no address, no page text and no answer text.
 
 ## Files
 
-| File | What it holds |
-|---|---|
-| `logs/public-homepage/sites.csv` | Per site: category, and its Cache-Control group on the last watch visit (and whether it changed during the 24 h watch) |
-| `logs/public-homepage/questions.csv` | Per site × vendor × question: when it was sent. OpenAI and xAI on 8 pages were asked again later (`sitting` = `redo`) after OpenRouter credit ran out; only the re-run is kept for those |
-| `logs/public-homepage/outcomes.csv` | Per site × vendor: the outcome when the answer is compared with our own downloads only: `stale`, `chance mismatch`, `both match`, `neither matches`, or `not usable` (in `status`). `compared_without_spaces` is true for pages compared with spaces ignored |
-| `logs/public-homepage/anthropic-copies.csv` | Per site × Anthropic question: Anthropic's own fetch time (`retrieved_at`), the copy's age, its fetch result or error code, and how much of its copy was found in our download |
-| `logs/public-homepage/selection-counts.csv` | How 776 watched sites became 90 asked pages |
+| File | One row is | What it holds |
+|---|---|---|
+| `logs/public-homepage/sites.csv` | A site | Its category. Its caching-header group (`Cache-Control`) on our last visit, and whether that changed during our 24-hour watch |
+| `logs/public-homepage/questions.csv` | A site, vendor and question | When the question was sent. For 8 pages, OpenAI and xAI were asked again later (`sitting` = `redo`), after our OpenRouter credit ran out. Only the later sitting is listed for those |
+| `logs/public-homepage/outcomes.csv` | A site and vendor | The outcome. Each of the `plain` and `tagged` answers either matches our downloads or does not. `stale`: only the tagged answer matches, so the plain answer came from an old copy. `chance mismatch`: only the plain answer matches. `both match` and `neither matches` mean what they say. If either answer was an error or empty, `status` says so and `outcome` is blank. `compared_without_spaces` is true where spaces were ignored in the comparison |
+| `logs/public-homepage/anthropic-copies.csv` | A site and Anthropic question | When Anthropic fetched its copy (`retrieved_at`), how old the copy was, Anthropic's fetch result or error code, and how much of its copy appears in our download |
+| `logs/public-homepage/selection-counts.csv` | A selection step | How 776 watched sites became the 90 asked pages |
 
-**Category:** from Cloudflare URL Scanner labels for the exact address asked, put into one group:
-news (News & Media); entertainment (Entertainment, Video Streaming, Sports, Gaming, Cartoons &
-Anime, Comic Books, Hobbies & Interests); shopping (Shopping & Auctions, Ecommerce, Auctions &
-Marketplaces, Shopping); technology (Technology, Shareware/Freeware, Artificial Intelligence);
-other (any other label). A site with several labels takes the first group in that order. A site
-with no label is `unknown`.
+**Category** comes from Cloudflare URL Scanner's labels for the exact address asked, grouped as:
 
-## Which file feeds what
+- news: News & Media
+- entertainment: Entertainment, Video Streaming, Sports, Gaming, Cartoons & Anime, Comic Books,
+  Hobbies & Interests
+- shopping: Shopping & Auctions, Ecommerce, Auctions & Marketplaces, Shopping
+- technology: Technology, Shareware/Freeware, Artificial Intelligence
+- other: any other label
+- unknown: no label
+
+A site with several labels takes the first group in this list.
+
+## Which file gives which paper result
 
 | Paper result | Files |
 |---|---|
-| Main table: stale against chance mismatch per vendor | `outcomes.csv` |
-| Anthropic's copy age, reuse and share tables | `anthropic-copies.csv` |
-| The Cache-Control split | `sites.csv` with `outcomes.csv` |
-| The selection funnel | `selection-counts.csv` |
+| Main table: old copies against chance mismatches, per vendor | `outcomes.csv` |
+| Anthropic's copy age, reuse and sharing tables | `anthropic-copies.csv` |
+| Results split by caching header | `sites.csv` with `outcomes.csv` |
+| How the sites were chosen | `selection-counts.csv` |
 
-The scripts that made these tables (`publicPageHomepage_score_table.py`,
-`publicPageHomepage_score_anthropicCopies.py`) need the private answers and page downloads, so they
-cannot be rerun on this data. The tables here are their output.
+These tables are the output of `publicPageHomepage_score_table.py` and
+`publicPageHomepage_score_anthropicCopies.py`. Those scripts need the answers and page text, which
+are not shared, so they cannot be rerun on this data.
