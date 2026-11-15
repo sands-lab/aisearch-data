@@ -2,7 +2,7 @@
 
 Data for the paper: what AI search tools (OpenAI, Anthropic, Google, xAI and others) fetched from
 our test pages, and what they answered. The code that collected it and draws the figures is in the
-companion code repo.
+companion code repo: <https://anonymous.4open.science/r/aisearch-probe-B0BD/>.
 
 Licence: CC-BY 4.0 (see `LICENSE`).
 
