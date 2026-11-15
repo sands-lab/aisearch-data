@@ -6,13 +6,16 @@ to fetch the address and return only the number. We compare it with the true num
 read by us every 5 minutes. The gap shows how old the vendor's copy was. None of our own servers
 are involved.
 
+The files hold numbers, times and addresses only. The vendors' copies of each response and their
+quoted snippets are removed, because that text belongs to the sites.
+
 ## Files
 
 | File | What it holds |
 |---|---|
-| `logs/results/anchor-probe-lifetime.jsonl` | Main run, 3–6 Nov 2026. 4 vendors, up to 9 addresses, 80 rounds, one round every 45 minutes |
-| `logs/results/anchor-truth-lifetime.jsonl` | The true number at each of the 9 addresses, read every 5 minutes. We use it to date the OpenAI, xAI and Google answers. It also gives the table's "Updates" column: how often each number changes |
-| `logs/results/anchor-probe-anthfill.jsonl` | Anthropic only, 7–10 Nov. The 6 addresses it did not answer in the main run, plus a re-test of the NIST address. Anthropic's replies give the time it fetched its copy (`retrieved_at`) |
+| `logs/results/anchor-probe-lifetime.jsonl` | Main run, 3–6 Nov 2026. 4 vendors, up to 8 addresses, 80 rounds, one round every 45 minutes |
+| `logs/results/anchor-truth-lifetime.jsonl` | The true number at each of the 8 addresses, read every 5 minutes. We use it to date the OpenAI, xAI and Google answers. It also gives the table's "Updates" column: how often each number changes |
+| `logs/results/anchor-probe-anthfill.jsonl` | Anthropic only, 7–10 Nov. The addresses it was not asked in the main run, plus a re-test of the NIST address. Anthropic's replies give the time it fetched its copy (`retrieved_at`) |
 | `logs/results/nist-usecache.jsonl` | Anthropic, 8 Nov, 20 rounds, with `use_cache:false` (tells Anthropic not to use its saved copy) |
 
 The NIST address sends a `no-store` header, which forbids reusing a copy. Anthropic still answers
