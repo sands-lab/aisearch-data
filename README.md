@@ -37,13 +37,14 @@ Each guide says which file feeds which figure or table.
 | Public pages whose numbers only go up: how old are the answers? | [public-endpoints](experiments/public-endpoints.md) |
 | Real homepages: how old are the answers? | [public-homepages](experiments/public-homepages.md) |
 | Real XML files, feeds and llms.txt: which does each tool read? | [public-xml-files](experiments/public-xml-files.md) |
+| Which networks do each vendor's fetches come from? | [source-networks](experiments/source-networks.md) |
 
 ## Shared files
 
 | File | One line is |
 |---|---|
-| `logs/probe.jsonl` | A request a tool made to test server A |
-| `logs/probe-vps.jsonl` | A request a tool made to test server B |
+| `logs/probe.jsonl` | A request a tool made to test server A. `source_id` stands in for the sender's network address (see below) |
+| `logs/probe-vps.jsonl` | A request a tool made to test server B, in the same form |
 | `logs/results/*.jsonl` | A question we sent a tool, and its answer |
 | `logs/raw-replies.jsonl` | A tool's whole API reply |
 
@@ -71,7 +72,15 @@ Times are UTC.
 ## Left out
 
 - Our server names. They appear as `origin-a.example` and `origin-b.example`.
-- Our own visits to the test servers.
+- Our own visits to the test servers, and requests without a run id.
+- Network addresses (IP addresses). Each sender's address is replaced by a random ID such as
+  `src-3f9a01c2`, the same ID everywhere it appears, so you can still count distinct senders.
+  Next to it are the network that owns the address: its number (`source_asn`), owner and
+  country, from the free iptoasn.com table. The table of these IDs to real addresses is not kept.
 - Encrypted parts of replies. They cannot be read and no result uses them.
 - Real site names in the homepage and XML file tests. Each site is an ID such as `site-017`. Some
   of those tables cannot be rebuilt from this data. Their guides say which.
+
+## More data
+
+If you need data that is not here, contact the authors. We are happy to discuss a collaboration.

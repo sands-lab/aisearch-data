@@ -1,187 +1,187 @@
-run,comparison,step,caller,time_utc,fetcher,fetcher_ip,country,region,network
-ob1,account-anthropic,1,anthropic,2026-10-28T18:37:58,anthropic-query,160.79.106.131,US,Ohio,AS396982 Google LLC
-ob1,account-anthropic,3,or:anthropic,2026-10-28T18:45:19,anthropic-query,160.79.106.142,US,Ohio,AS396982 Google LLC
-ob1,account-openai,1,openai,2026-10-28T18:37:58,openai-query,9.129.49.2,US,Virginia,AS8075 Microsoft Corporation
-ob1,account-openai,3,or:openai,2026-10-28T18:44:41,openai-query,52.173.221.26,US,Iowa,AS8075 Microsoft Corporation
-ob1,account-xai,1,x-ai,2026-10-28T18:37:55,unknown,85.254.180.219,US,New York,"AS210906 UAB ""Bite Lietuva"""
-ob1,account-xai,1,x-ai,2026-10-28T18:37:55,unknown,167.160.56.158,US,Virginia,AS3257 GTT Communications Inc.
-ob1,account-xai,1,x-ai,2026-10-28T18:37:55,unknown,84.37.194.254,US,Colorado,AS212238 Datacamp Limited
-ob1,account-xai,1,x-ai,2026-10-28T18:37:56,unknown,38.154.23.245,US,California,AS55286 B2 Net Solutions Inc.
-ob1,account-xai,1,x-ai,2026-10-28T18:37:56,unknown,138.226.109.135,US,California,AS46635 AviationAI
-ob1,account-xai,1,x-ai,2026-10-28T18:37:56,unknown,191.5.152.130,BR,Santa Catarina,AS53085 VERO S.A
-ob1,account-xai,1,x-ai,2026-10-28T18:37:59,unknown,108.165.249.15,US,Utah,"AS11798 Ace Data Centers, Inc."
-ob1,account-xai,3,or:x-ai,2026-10-28T18:43:48,unknown,85.254.140.202,US,Illinois,"AS210906 UAB ""Bite Lietuva"""
-ob1,account-xai,3,or:x-ai,2026-10-28T18:43:48,unknown,69.91.190.87,US,Massachusetts,"AS7015 Comcast Cable Communications, LLC"
-ob1,account-xai,3,or:x-ai,2026-10-28T18:43:48,unknown,92.71.66.19,US,Colorado,AS212238 Datacamp Limited
-ob1,account-xai,3,or:x-ai,2026-10-28T18:43:49,unknown,138.226.22.164,US,California,AS46635 AviationAI
-ob1,account-xai,3,or:x-ai,2026-10-28T18:43:49,unknown,177.33.136.224,BR,São Paulo,AS28573 Claro NXT Telecomunicacoes Ltda
-ob1,account-xai,3,or:x-ai,2026-10-28T18:43:49,unknown,92.124.163.153,RU,Omsk Oblast,AS12389 PJSC Rostelecom
-ob1,account-xai,3,or:x-ai,2026-10-28T18:43:50,unknown,186.204.86.5,BR,São Paulo,AS28573 Claro NXT Telecomunicacoes Ltda
-ob1,model-anthropic,1,or:anthropic,2026-10-28T18:37:56,anthropic-query,160.79.106.135,US,Ohio,AS396982 Google LLC
-ob1,model-anthropic,3,or:anthropic,2026-10-28T18:43:34,anthropic-query,160.79.106.140,US,Ohio,AS396982 Google LLC
-ob1,model-openai,1,or:openai,2026-10-28T18:37:56,openai-query,132.196.82.53,US,Iowa,AS8075 Microsoft Corporation
-ob1,model-openai,1,or:openai,2026-10-28T18:38:14,openai-query,132.196.82.58,US,Iowa,AS8075 Microsoft Corporation
-ob1,model-openai,1,or:openai,2026-10-28T18:38:16,openai-query,132.196.82.58,US,Iowa,AS8075 Microsoft Corporation
-ob1,model-openai,3,or:openai,2026-10-28T18:44:47,openai-query,52.173.234.94,US,Iowa,AS8075 Microsoft Corporation
-ob1,model-xai,1,or:x-ai,2026-10-28T18:37:59,unknown,45.61.115.189,US,Virginia,AS3257 GTT Communications Inc.
-ob1,model-xai,1,or:x-ai,2026-10-28T18:37:59,unknown,85.254.40.241,US,California,"AS210906 UAB ""Bite Lietuva"""
-ob1,model-xai,1,or:x-ai,2026-10-28T18:37:59,unknown,85.254.42.126,US,California,"AS210906 UAB ""Bite Lietuva"""
-ob1,model-xai,1,or:x-ai,2026-10-28T18:38:00,unknown,217.196.164.34,UA,Ternopil,"AS16223 MAXNET TELECOM, LTD"
-ob1,model-xai,1,or:x-ai,2026-10-28T18:38:00,unknown,23.230.234.173,US,Texas,AS3257 GTT Communications Inc.
-ob1,model-xai,1,or:x-ai,2026-10-28T18:38:00,unknown,168.181.72.175,AR,Buenos Aires,AS52432 Cooperativa de Usuarios de Electricidad y de Consumo de Castelli Ltda.
-ob1,model-xai,1,or:x-ai,2026-10-28T18:38:00,unknown,154.30.70.26,US,New York,AS9009 M247 Europe SRL
-ob1,model-xai,3,or:x-ai,2026-10-28T18:44:53,unknown,104.238.32.200,US,Virginia,AS3257 GTT Communications Inc.
-ob1,model-xai,3,or:x-ai,2026-10-28T18:44:54,unknown,159.148.130.232,US,Florida,"AS210906 UAB ""Bite Lietuva"""
-ob1,model-xai,3,or:x-ai,2026-10-28T18:44:54,unknown,170.23.5.103,US,Texas,"AS7979 Servers.com, Inc."
-ob1,model-xai,3,or:x-ai,2026-10-28T18:44:54,unknown,138.226.21.86,US,California,AS46635 AviationAI
-ob1,model-xai,3,or:x-ai,2026-10-28T18:44:54,unknown,45.170.229.16,BR,São Paulo,AS268710 YES FIBRA TELECOMUNICACOES LTDA
-ob1,model-xai,3,or:x-ai,2026-10-28T18:44:55,unknown,186.237.243.252,BR,Espírito Santo,AS61583 WDS TELECOM LTDA. ME
-ob1,user-anthropic,1,or:anthropic,2026-10-28T18:37:56,anthropic-query,160.79.106.130,US,Ohio,AS396982 Google LLC
-ob1,user-anthropic,3,or:anthropic,2026-10-28T18:44:17,anthropic-query,160.79.106.140,US,Ohio,AS396982 Google LLC
-ob1,user-openai,1,or:openai,2026-10-28T18:37:56,openai-query,52.173.234.84,US,Iowa,AS8075 Microsoft Corporation
-ob1,user-openai,3,or:openai,2026-10-28T18:44:32,openai-query,52.173.234.25,US,Iowa,AS8075 Microsoft Corporation
-ob1,user-xai,1,or:x-ai,2026-10-28T18:37:57,unknown,167.160.63.31,US,Virginia,AS3257 GTT Communications Inc.
-ob1,user-xai,1,or:x-ai,2026-10-28T18:37:57,unknown,142.147.214.0,US,Virginia,AS3257 GTT Communications Inc.
-ob1,user-xai,1,or:x-ai,2026-10-28T18:37:57,unknown,159.148.126.252,US,Georgia,"AS210906 UAB ""Bite Lietuva"""
-ob1,user-xai,1,or:x-ai,2026-10-28T18:37:57,unknown,85.254.7.204,US,California,"AS210906 UAB ""Bite Lietuva"""
-ob1,user-xai,1,or:x-ai,2026-10-28T18:37:57,unknown,84.37.220.188,US,Virginia,AS212238 Datacamp Limited
-ob1,user-xai,1,or:x-ai,2026-10-28T18:37:58,unknown,45.38.129.157,PL,Mazovia,AS212238 Datacamp Limited
-ob1,user-xai,1,or:x-ai,2026-10-28T18:37:58,unknown,186.227.22.250,BR,São Paulo,AS53182 lazernet.com.br ltda me
-ob1,user-xai,3,or:x-ai,2026-10-28T18:43:53,unknown,92.50.34.185,US,New York,AS9009 M247 Europe SRL
-ob1,user-xai,3,or:x-ai,2026-10-28T18:43:53,unknown,45.61.65.88,US,Virginia,AS3257 GTT Communications Inc.
-ob1,user-xai,3,or:x-ai,2026-10-28T18:43:53,unknown,92.71.124.211,US,Colorado,AS212238 Datacamp Limited
-ob1,user-xai,3,or:x-ai,2026-10-28T18:43:53,unknown,85.254.7.243,US,California,"AS210906 UAB ""Bite Lietuva"""
-ob1,user-xai,3,or:x-ai,2026-10-28T18:43:53,unknown,140.99.218.93,MX,Querétaro,AS396356 Latitude.sh
-ob1,user-xai,3,or:x-ai,2026-10-28T18:43:54,unknown,189.203.174.177,MX,Mexico City,"AS17072 TOTAL PLAY TELECOMUNICACIONES, S.A.P.I. DE C.V."
-ob1,user-xai,3,or:x-ai,2026-10-28T18:43:54,unknown,45.176.128.40,AR,La Pampa,AS267852 Cooperativa de Obras y Servicios Publicos Miguel Riglos Ltda
-ob1,within-anthropic,1,or:anthropic,2026-10-28T18:37:56,anthropic-query,160.79.106.129,US,Ohio,AS396982 Google LLC
-ob1,within-anthropic,3,or:anthropic,2026-10-28T18:44:05,anthropic-query,160.79.106.143,US,Ohio,AS396982 Google LLC
-ob1,within-openai,1,or:openai,2026-10-28T18:37:57,openai-query,52.242.132.227,US,Iowa,AS8075 Microsoft Corporation
-ob1,within-openai,3,or:openai,2026-10-28T18:44:59,openai-query,132.196.82.56,US,Iowa,AS8075 Microsoft Corporation
-ob1,within-xai,1,or:x-ai,2026-10-28T18:37:57,unknown,142.147.198.95,US,Virginia,AS3257 GTT Communications Inc.
-ob1,within-xai,1,or:x-ai,2026-10-28T18:37:57,unknown,195.172.118.148,US,Virginia,AS396356 Latitude.sh
-ob1,within-xai,1,or:x-ai,2026-10-28T18:37:57,unknown,207.32.143.66,US,Massachusetts,AS64249 Charles River Operation
-ob1,within-xai,1,or:x-ai,2026-10-28T18:37:57,unknown,159.148.218.243,US,Washington,"AS210906 UAB ""Bite Lietuva"""
-ob1,within-xai,1,or:x-ai,2026-10-28T18:37:58,unknown,189.28.223.226,BR,Rio Grande do Sul,AS28343 UNIFIQUE TELECOMUNICACOES S/A
-ob1,within-xai,1,or:x-ai,2026-10-28T18:37:58,unknown,191.101.221.116,SG,Singapore,AS212238 Datacamp Limited
-ob1,within-xai,3,or:x-ai,2026-10-28T18:44:01,unknown,85.254.2.83,US,Georgia,"AS210906 UAB ""Bite Lietuva"""
-ob1,within-xai,3,or:x-ai,2026-10-28T18:44:01,unknown,85.254.115.73,US,New York,"AS210906 UAB ""Bite Lietuva"""
-ob1,within-xai,3,or:x-ai,2026-10-28T18:44:01,unknown,92.50.39.234,US,New York,AS9009 M247 Europe SRL
-ob1,within-xai,3,or:x-ai,2026-10-28T18:44:02,unknown,103.75.223.235,NL,North Holland,AS132817 DZCRD Networks Ltd
-ob1,within-xai,3,or:x-ai,2026-10-28T18:44:02,unknown,79.115.34.98,RO,Botoșani County,AS8708 DIGI ROMANIA S.A.
-ob1,within-xai,3,or:x-ai,2026-10-28T18:44:02,unknown,206.84.41.162,BR,Pará,AS265175 AS SISTEMAS LTDA
-ob1,within-xai,3,or:x-ai,2026-10-28T18:44:02,unknown,91.150.195.205,PL,Silesia,AS9141 P4 Sp. z o.o.
-ob2,account-anthropic,1,anthropic,2026-10-28T18:57:40,anthropic-query,160.79.106.139,US,Ohio,AS396982 Google LLC
-ob2,account-anthropic,3,or:anthropic,2026-10-28T19:03:19,anthropic-query,160.79.106.139,US,Ohio,AS396982 Google LLC
-ob2,account-openai,1,openai,2026-10-28T18:57:40,openai-query,51.8.155.117,US,Virginia,AS8075 Microsoft Corporation
-ob2,account-openai,3,or:openai,2026-10-28T19:03:35,openai-query,52.173.234.81,US,Iowa,AS8075 Microsoft Corporation
-ob2,account-xai,1,x-ai,2026-10-28T18:57:40,unknown,142.147.217.147,US,Virginia,AS3257 GTT Communications Inc.
-ob2,account-xai,1,x-ai,2026-10-28T18:57:41,unknown,138.226.104.40,US,California,AS46635 AviationAI
-ob2,account-xai,1,x-ai,2026-10-28T18:57:41,unknown,177.242.159.244,MX,Zacatecas,"AS13999 Mega Cable, S.A. de C.V."
-ob2,account-xai,1,x-ai,2026-10-28T18:57:41,unknown,45.134.70.245,ES,Madrid,AS203020 HostRoyale Technologies Pvt Ltd
-ob2,account-xai,1,x-ai,2026-10-28T18:57:41,unknown,177.52.214.108,BR,São Paulo,AS52800 OS CONNECT INFORMATICA EIRELI - EPP
-ob2,account-xai,1,x-ai,2026-10-28T18:57:42,unknown,200.168.234.234,BR,São Paulo,AS10429 TELEFÔNICA BRASIL S.A
-ob2,account-xai,1,x-ai,2026-10-28T18:57:46,unknown,84.37.233.15,US,Virginia,AS22773 Cox Communications Inc.
-ob2,account-xai,3,or:x-ai,2026-10-28T19:03:44,unknown,45.61.66.99,US,District of Columbia,AS3257 GTT Communications Inc.
-ob2,account-xai,3,or:x-ai,2026-10-28T19:03:44,unknown,85.254.128.56,US,Georgia,"AS210906 UAB ""Bite Lietuva"""
-ob2,account-xai,3,or:x-ai,2026-10-28T19:03:44,unknown,154.30.68.63,US,New York,AS9009 M247 Europe SRL
-ob2,account-xai,3,or:x-ai,2026-10-28T19:03:44,unknown,92.50.34.185,US,New York,AS9009 M247 Europe SRL
-ob2,account-xai,3,or:x-ai,2026-10-28T19:03:44,unknown,92.50.39.219,US,New York,AS9009 M247 Europe SRL
-ob2,account-xai,3,or:x-ai,2026-10-28T19:03:44,unknown,45.148.190.225,ES,Madrid,AS203020 HostRoyale Technologies Pvt Ltd
-ob2,account-xai,3,or:x-ai,2026-10-28T19:03:45,unknown,181.124.89.165,PY,Central Department,AS23201 Telecel S.A.
-ob2,model-anthropic,1,or:anthropic,2026-10-28T18:57:38,anthropic-query,160.79.106.129,US,Ohio,AS396982 Google LLC
-ob2,model-anthropic,3,or:anthropic,2026-10-28T19:03:15,anthropic-query,160.79.106.136,US,Ohio,AS396982 Google LLC
-ob2,model-openai,1,or:openai,2026-10-28T18:57:38,openai-query,52.165.212.61,US,Iowa,AS8075 Microsoft Corporation
-ob2,model-openai,3,or:openai,2026-10-28T19:03:27,openai-query,52.242.132.226,US,Iowa,AS8075 Microsoft Corporation
-ob2,model-xai,1,or:x-ai,2026-10-28T18:57:42,unknown,85.254.84.240,US,Illinois,"AS210906 UAB ""Bite Lietuva"""
-ob2,model-xai,1,or:x-ai,2026-10-28T18:57:42,unknown,85.254.64.191,US,Colorado,"AS210906 UAB ""Bite Lietuva"""
-ob2,model-xai,1,or:x-ai,2026-10-28T18:57:43,unknown,185.47.94.111,US,California,"AS210906 UAB ""Bite Lietuva"""
-ob2,model-xai,1,or:x-ai,2026-10-28T18:57:43,unknown,138.226.108.53,US,California,AS46635 AviationAI
-ob2,model-xai,1,or:x-ai,2026-10-28T18:57:43,unknown,193.0.234.37,PT,Lisbon,AS203020 HostRoyale Technologies Pvt Ltd
-ob2,model-xai,1,or:x-ai,2026-10-28T18:57:43,unknown,81.242.208.52,BE,Wallonia,AS5432 Proximus NV
-ob2,model-xai,3,or:x-ai,2026-10-28T19:03:37,unknown,103.74.179.24,US,New York,AS132817 DZCRD Networks Ltd
-ob2,model-xai,3,or:x-ai,2026-10-28T19:03:37,unknown,84.37.149.26,US,New York,AS9009 M247 Europe SRL
-ob2,model-xai,3,or:x-ai,2026-10-28T19:03:37,unknown,101.58.154.233,IT,Lombardy,AS210278 Sky Italia srl
-ob2,model-xai,3,or:x-ai,2026-10-28T19:03:37,unknown,193.106.209.169,PL,Silesia,AS50467 Beskid Media Sp. z o.o.
-ob2,model-xai,3,or:x-ai,2026-10-28T19:03:38,unknown,94.162.134.246,IT,Veneto,AS1267 WIND TRE S.P.A.
-ob2,model-xai,3,or:x-ai,2026-10-28T19:03:46,unknown,84.37.239.239,US,Virginia,AS22773 Cox Communications Inc.
-ob2,user-anthropic,1,or:anthropic,2026-10-28T18:57:39,anthropic-query,160.79.106.24,US,Ohio,AS396982 Google LLC
-ob2,user-anthropic,3,or:anthropic,2026-10-28T19:03:15,anthropic-query,160.79.106.128,US,Ohio,AS396982 Google LLC
-ob2,user-openai,1,or:openai,2026-10-28T18:57:41,openai-query,52.173.234.95,US,Iowa,AS8075 Microsoft Corporation
-ob2,user-openai,3,or:openai,2026-10-28T19:03:41,openai-query,52.173.234.16,US,Iowa,AS8075 Microsoft Corporation
-ob2,user-openai,4,or:openai,2026-10-28T19:14:12,openai-query,52.173.221.29,US,Iowa,AS8075 Microsoft Corporation
-ob2,user-xai,1,or:x-ai,2026-10-28T18:57:54,unknown,45.41.181.139,US,Virginia,AS3257 GTT Communications Inc.
-ob2,user-xai,1,or:x-ai,2026-10-28T18:57:54,unknown,142.147.184.126,US,Texas,AS62874 Web2Objects LLC
-ob2,user-xai,1,or:x-ai,2026-10-28T18:57:54,unknown,104.232.219.47,US,Virginia,AS3257 GTT Communications Inc.
-ob2,user-xai,1,or:x-ai,2026-10-28T18:57:54,unknown,167.160.60.206,US,Virginia,AS3257 GTT Communications Inc.
-ob2,user-xai,1,or:x-ai,2026-10-28T18:57:55,unknown,87.236.144.157,BR,São Paulo,AS203020 HostRoyale Technologies Pvt Ltd
-ob2,user-xai,1,or:x-ai,2026-10-28T18:57:55,unknown,187.108.125.37,BR,Minas Gerais,AS53125 GIGA MAIS FIBRA TELECOMUNICACOES S.A.
-ob2,user-xai,1,or:x-ai,2026-10-28T18:57:55,unknown,179.125.215.121,BR,São Paulo,AS28649 Desktop Sigmanet Comunicação Multimídia SA
-ob2,user-xai,1,or:x-ai,2026-10-28T18:57:55,unknown,24.152.70.55,BR,Alagoas,AS270485 MEGABYTE TELECOM LTDA
-ob2,user-xai,1,or:x-ai,2026-10-28T18:57:56,unknown,181.126.36.183,PY,Asuncion,AS23201 Telecel S.A.
-ob2,user-xai,1,or:x-ai,2026-10-28T18:57:56,unknown,186.14.0.67,VE,Monagas,AS21826 Corporación Telemic C.A.
-ob2,user-xai,1,or:x-ai,2026-10-28T18:57:56,unknown,186.57.96.32,AR,Buenos Aires,AS22927 Telefonica de Argentina
-ob2,user-xai,1,or:x-ai,2026-10-28T18:57:57,unknown,94.165.209.4,IT,Lombardy,AS1267 WIND TRE S.P.A.
-ob2,user-xai,1,or:x-ai,2026-10-28T18:57:57,unknown,181.160.143.215,CL,Maule Region,AS7418 TELEFÓNICA CHILE S.A.
-ob2,user-xai,1,or:x-ai,2026-10-28T18:58:09,unknown,85.254.131.153,US,Georgia,"AS210906 UAB ""Bite Lietuva"""
-ob2,user-xai,1,or:x-ai,2026-10-28T18:58:09,unknown,88.216.102.191,US,New York,AS9009 M247 Europe SRL
-ob2,user-xai,1,or:x-ai,2026-10-28T18:58:09,unknown,170.23.6.162,US,Texas,"AS7979 Servers.com, Inc."
-ob2,user-xai,1,or:x-ai,2026-10-28T18:58:09,unknown,138.226.97.244,US,California,AS46635 AviationAI
-ob2,user-xai,1,or:x-ai,2026-10-28T18:58:10,unknown,45.169.118.172,BR,Espírito Santo,AS268107 GERENSIS TELECOM E SERVICOS LTDA - ME
-ob2,user-xai,1,or:x-ai,2026-10-28T18:58:10,unknown,170.239.114.164,BR,Rio Grande do Sul,AS266364 RABELO FLORES SERVIÇOS DE MULTIMIDIA LTDA-IGBWEB
-ob2,user-xai,1,or:x-ai,2026-10-28T18:58:14,unknown,166.0.136.37,US,Utah,"AS11798 Ace Data Centers, Inc."
-ob2,user-xai,3,or:x-ai,2026-10-28T19:03:48,unknown,170.23.18.180,US,Texas,"AS7979 Servers.com, Inc."
-ob2,user-xai,3,or:x-ai,2026-10-28T19:03:48,unknown,138.226.19.146,US,California,AS46635 AviationAI
-ob2,user-xai,3,or:x-ai,2026-10-28T19:03:48,unknown,38.154.161.29,US,California,AS55286 B2 Net Solutions Inc.
-ob2,user-xai,3,or:x-ai,2026-10-28T19:03:48,unknown,166.88.56.77,PL,Mazovia,AS212238 Datacamp Limited
-ob2,user-xai,3,or:x-ai,2026-10-28T19:03:48,unknown,45.180.211.46,BR,São Paulo,AS269155 BS News Informática SCM Ltda ME
-ob2,user-xai,3,or:x-ai,2026-10-28T19:03:49,unknown,187.12.159.35,BR,Minas Gerais,AS7738 V tal
-ob2,user-xai,3,or:x-ai,2026-10-28T19:03:49,unknown,191.101.245.102,SG,Singapore,AS212238 Datacamp Limited
-ob2,within-anthropic,1,or:anthropic,2026-10-28T18:57:39,anthropic-query,160.79.106.142,US,Ohio,AS396982 Google LLC
-ob2,within-anthropic,3,or:anthropic,2026-10-28T19:03:16,anthropic-query,160.79.106.28,US,Ohio,AS396982 Google LLC
-ob2,within-openai,1,or:openai,2026-10-28T18:57:39,openai-query,132.196.82.57,US,Iowa,AS8075 Microsoft Corporation
-ob2,within-openai,3,or:openai,2026-10-28T19:03:34,openai-query,132.196.82.50,US,Iowa,AS8075 Microsoft Corporation
-ob2,within-xai,1,or:x-ai,2026-10-28T18:57:39,unknown,45.41.175.163,US,Virginia,AS3257 GTT Communications Inc.
-ob2,within-xai,1,or:x-ai,2026-10-28T18:57:39,unknown,170.23.13.254,US,Texas,"AS7979 Servers.com, Inc."
-ob2,within-xai,1,or:x-ai,2026-10-28T18:57:39,unknown,92.71.67.125,US,Colorado,AS212238 Datacamp Limited
-ob2,within-xai,1,or:x-ai,2026-10-28T18:57:39,unknown,138.226.108.106,US,California,AS46635 AviationAI
-ob2,within-xai,1,or:x-ai,2026-10-28T18:57:40,unknown,45.166.9.193,BR,São Paulo,AS268698 CONNECTCEU TELECOM EIRELI
-ob2,within-xai,1,or:x-ai,2026-10-28T18:57:41,unknown,154.7.224.71,ZA,Gauteng,AS212238 Datacamp Limited
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:36,unknown,167.160.62.77,US,Virginia,AS3257 GTT Communications Inc.
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:36,unknown,185.47.94.191,US,California,"AS210906 UAB ""Bite Lietuva"""
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:36,unknown,159.148.218.121,US,Washington,"AS210906 UAB ""Bite Lietuva"""
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:36,unknown,149.143.156.128,US,California,AS46635 AviationAI
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:37,unknown,181.44.130.214,AR,Buenos Aires,AS27747 Telecentro S.A.
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:37,unknown,200.222.113.201,BR,Rio de Janeiro,AS7738 V tal
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:37,unknown,45.172.72.68,BR,Federal District,AS268760 LIVENET SERVICOS DE COMUNICACAO MULTMIDIA LTDA ME
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:39,unknown,159.148.126.54,US,Georgia,"AS210906 UAB ""Bite Lietuva"""
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:39,unknown,84.37.149.109,US,New York,AS9009 M247 Europe SRL
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:40,unknown,38.154.143.31,US,California,AS55286 B2 Net Solutions Inc.
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:40,unknown,104.222.169.207,SE,Stockholm,AS9009 M247 Europe SRL
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:40,unknown,201.131.185.116,BR,Paraná,AS52912 VIEIRA E RETECHESKI LTDA
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:40,unknown,187.16.187.64,BR,Minas Gerais,AS28258 VERO S.A
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:40,unknown,143.255.3.5,BR,Rio Grande do Sul,AS265140 DUPONT & SCHWANKE LTDA
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:54,unknown,167.160.59.135,US,Virginia,AS3257 GTT Communications Inc.
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:54,unknown,85.254.51.142,US,California,"AS210906 UAB ""Bite Lietuva"""
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:54,unknown,185.211.98.42,US,California,"AS210906 UAB ""Bite Lietuva"""
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:54,unknown,82.153.221.24,MX,Querétaro,AS396356 Latitude.sh
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:55,unknown,177.92.55.91,BR,Paraná,AS14868 LIGGA SERVICOS EM TELECOM S.A.
-ob2,within-xai,3,or:x-ai,2026-10-28T19:03:56,unknown,108.165.204.104,US,Utah,"AS401152 Ace Data Centers II, L.L.C."
-ob3us,account-anthropic,1,anthropic,2026-10-28T19:15:47,anthropic-query,160.79.106.143,US,Ohio,AS396982 Google LLC
-ob3us,account-anthropic,3,or:anthropic,2026-10-28T19:21:35,anthropic-query,160.79.106.143,US,Ohio,AS396982 Google LLC
-ob3us,account-openai,1,openai,2026-10-28T19:15:47,openai-query,20.55.229.148,US,Virginia,AS8075 Microsoft Corporation
-ob3us,account-openai,3,or:openai,2026-10-28T19:21:47,openai-query,52.165.212.59,US,Iowa,AS8075 Microsoft Corporation
-ob3us,account-xai,1,x-ai,2026-10-28T19:15:46,unknown,84.32.65.251,US,New York,AS9009 M247 Europe SRL
-ob3us,account-xai,1,x-ai,2026-10-28T19:15:46,unknown,85.254.76.106,US,Virginia,"AS210906 UAB ""Bite Lietuva"""
-ob3us,account-xai,1,x-ai,2026-10-28T19:15:46,unknown,45.41.146.137,US,Virginia,AS3257 GTT Communications Inc.
-ob3us,account-xai,1,x-ai,2026-10-28T19:15:46,unknown,167.160.59.189,US,Virginia,AS3257 GTT Communications Inc.
-ob3us,account-xai,1,x-ai,2026-10-28T19:15:47,unknown,85.208.189.133,ES,Madrid,AS203020 HostRoyale Technologies Pvt Ltd
-ob3us,account-xai,1,x-ai,2026-10-28T19:15:47,unknown,45.184.112.217,BR,Bahia,AS269396 UNIR TELECOM
-ob3us,account-xai,1,x-ai,2026-10-28T19:15:47,unknown,89.152.227.37,PT,Porto,"AS2860 NOS COMUNICACOES, S.A."
-ob3us,account-xai,3,or:x-ai,2026-10-28T19:21:36,unknown,45.157.184.95,ES,Madrid,AS203020 HostRoyale Technologies Pvt Ltd
-ob3us,account-xai,3,or:x-ai,2026-10-28T19:21:36,unknown,177.86.22.235,BR,São Paulo,AS262620 Pox Network Telecomunicações Ltda-ME
-ob3us,account-xai,3,or:x-ai,2026-10-28T19:21:36,unknown,189.28.223.243,BR,Rio Grande do Sul,AS28343 UNIFIQUE TELECOMUNICACOES S/A
-ob3us,account-xai,3,or:x-ai,2026-10-28T19:21:36,unknown,181.42.178.169,CL,Santiago Metropolitan,AS27651 ENTEL CHILE S.A.
-ob3us,account-xai,3,or:x-ai,2026-10-28T19:21:36,unknown,192.95.92.105,IN,Maharashtra,AS40676 Psychz Networks
-ob3us,account-xai,3,or:x-ai,2026-10-28T19:21:36,unknown,189.28.70.46,BO,Santa Cruz Department,AS27882 Telefónica Celular de Bolivia S.A.
-ob3us,account-xai,3,or:x-ai,2026-10-28T19:21:36,unknown,190.106.180.243,ZA,Gauteng,AS212238 Datacamp Limited
+run,comparison,step,caller,time_utc,fetcher,fetcher_id,asn,network,country
+ob1,account-anthropic,1,anthropic,2026-10-28T18:37:58,anthropic-query,src-1f9ae80f,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US
+ob1,account-anthropic,3,or:anthropic,2026-10-28T18:45:19,anthropic-query,src-086c5b1c,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US
+ob1,account-openai,1,openai,2026-10-28T18:37:58,openai-query,src-9ac063c6,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob1,account-openai,3,or:openai,2026-10-28T18:44:41,openai-query,src-37813a22,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob1,account-xai,1,x-ai,2026-10-28T18:37:55,unknown,src-66e751de,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob1,account-xai,1,x-ai,2026-10-28T18:37:55,unknown,src-1f075eaa,3257,GTT-BACKBONE GTT Communications Inc.,US
+ob1,account-xai,1,x-ai,2026-10-28T18:37:55,unknown,src-18941779,212238,CDNEXT Datacamp Limited,GB
+ob1,account-xai,1,x-ai,2026-10-28T18:37:56,unknown,src-e11dd26d,55286,SERVER-MANIA - B2 Net Solutions Inc.,CA
+ob1,account-xai,1,x-ai,2026-10-28T18:37:56,unknown,src-ccf5ad59,46635,NET3-AI - Contact Consumers,US
+ob1,account-xai,1,x-ai,2026-10-28T18:37:56,unknown,src-8f3be020,53085,AS53085 - VERO S.A,BR
+ob1,account-xai,1,x-ai,2026-10-28T18:37:59,unknown,src-c41fea84,11798,"ACEDATACENTERS-AS-1 - Ace Data Centers, Inc.",US
+ob1,account-xai,3,or:x-ai,2026-10-28T18:43:48,unknown,src-2ecb017c,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob1,account-xai,3,or:x-ai,2026-10-28T18:43:48,unknown,src-c91800c0,7015,"COMCAST-7015 - Comcast Cable Communications, LLC",US
+ob1,account-xai,3,or:x-ai,2026-10-28T18:43:48,unknown,src-716ca049,212238,CDNEXT Datacamp Limited,GB
+ob1,account-xai,3,or:x-ai,2026-10-28T18:43:49,unknown,src-ce6dd584,46635,NET3-AI - Contact Consumers,US
+ob1,account-xai,3,or:x-ai,2026-10-28T18:43:49,unknown,src-72738601,28573,AS28573 - Claro NXT Telecomunicacoes Ltda,BR
+ob1,account-xai,3,or:x-ai,2026-10-28T18:43:49,unknown,src-109180b8,12389,ROSTELECOM-AS PJSC Rostelecom,RU
+ob1,account-xai,3,or:x-ai,2026-10-28T18:43:50,unknown,src-ab3463c9,28573,AS28573 - Claro NXT Telecomunicacoes Ltda,BR
+ob1,model-anthropic,1,or:anthropic,2026-10-28T18:37:56,anthropic-query,src-e4de3d0d,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US
+ob1,model-anthropic,3,or:anthropic,2026-10-28T18:43:34,anthropic-query,src-e67faa4b,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US
+ob1,model-openai,1,or:openai,2026-10-28T18:37:56,openai-query,src-6ad9f615,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob1,model-openai,1,or:openai,2026-10-28T18:38:14,openai-query,src-5053df50,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob1,model-openai,1,or:openai,2026-10-28T18:38:16,openai-query,src-5053df50,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob1,model-openai,3,or:openai,2026-10-28T18:44:47,openai-query,src-afad58d3,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob1,model-xai,1,or:x-ai,2026-10-28T18:37:59,unknown,src-ebaca9e8,3257,GTT-BACKBONE GTT Communications Inc.,US
+ob1,model-xai,1,or:x-ai,2026-10-28T18:37:59,unknown,src-6bf59f8e,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob1,model-xai,1,or:x-ai,2026-10-28T18:37:59,unknown,src-a5ec0e7d,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob1,model-xai,1,or:x-ai,2026-10-28T18:38:00,unknown,src-9c5462bb,16223,"COLUMBUS-PE-TE MAXNET TELECOM, LTD",UA
+ob1,model-xai,1,or:x-ai,2026-10-28T18:38:00,unknown,src-32eef6d2,3257,GTT-BACKBONE GTT Communications Inc.,US
+ob1,model-xai,1,or:x-ai,2026-10-28T18:38:00,unknown,src-614f5de1,52432,AS52432 - Cooperativa de Usuarios de Electricidad y de Consumo de Castelli Ltda.,AR
+ob1,model-xai,1,or:x-ai,2026-10-28T18:38:00,unknown,src-a732fd00,9009,M247 M247 Europe SRL,RO
+ob1,model-xai,3,or:x-ai,2026-10-28T18:44:53,unknown,src-40da91b0,3257,GTT-BACKBONE GTT Communications Inc.,US
+ob1,model-xai,3,or:x-ai,2026-10-28T18:44:54,unknown,src-f8a3fc58,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob1,model-xai,3,or:x-ai,2026-10-28T18:44:54,unknown,src-2cfbb271,7979,"SERVERS-COM - Servers.com, Inc.",US
+ob1,model-xai,3,or:x-ai,2026-10-28T18:44:54,unknown,src-c2c6f491,46635,NET3-AI - Contact Consumers,US
+ob1,model-xai,3,or:x-ai,2026-10-28T18:44:54,unknown,src-29dc0e0b,268710,AS268710 - YES FIBRA TELECOMUNICACOES LTDA,BR
+ob1,model-xai,3,or:x-ai,2026-10-28T18:44:55,unknown,src-04c38f65,61583,AS61583 - WDS TELECOM LTDA. ME,BR
+ob1,user-anthropic,1,or:anthropic,2026-10-28T18:37:56,anthropic-query,src-78ad7d69,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US
+ob1,user-anthropic,3,or:anthropic,2026-10-28T18:44:17,anthropic-query,src-e67faa4b,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US
+ob1,user-openai,1,or:openai,2026-10-28T18:37:56,openai-query,src-f2ad4629,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob1,user-openai,3,or:openai,2026-10-28T18:44:32,openai-query,src-b13c12e4,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob1,user-xai,1,or:x-ai,2026-10-28T18:37:57,unknown,src-477750d7,3257,GTT-BACKBONE GTT Communications Inc.,US
+ob1,user-xai,1,or:x-ai,2026-10-28T18:37:57,unknown,src-9cdab2f6,3257,GTT-BACKBONE GTT Communications Inc.,US
+ob1,user-xai,1,or:x-ai,2026-10-28T18:37:57,unknown,src-9d7db65b,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob1,user-xai,1,or:x-ai,2026-10-28T18:37:57,unknown,src-236eb6df,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob1,user-xai,1,or:x-ai,2026-10-28T18:37:57,unknown,src-5b24884a,212238,CDNEXT Datacamp Limited,GB
+ob1,user-xai,1,or:x-ai,2026-10-28T18:37:58,unknown,src-f5c0a01c,212238,CDNEXT Datacamp Limited,GB
+ob1,user-xai,1,or:x-ai,2026-10-28T18:37:58,unknown,src-aa11ec6c,53182,AS53182 - lazernet.com.br ltda me,BR
+ob1,user-xai,3,or:x-ai,2026-10-28T18:43:53,unknown,src-6aac8934,9009,M247 M247 Europe SRL,RO
+ob1,user-xai,3,or:x-ai,2026-10-28T18:43:53,unknown,src-34e34ddd,3257,GTT-BACKBONE GTT Communications Inc.,US
+ob1,user-xai,3,or:x-ai,2026-10-28T18:43:53,unknown,src-daf9349d,212238,CDNEXT Datacamp Limited,GB
+ob1,user-xai,3,or:x-ai,2026-10-28T18:43:53,unknown,src-9f52c3d4,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob1,user-xai,3,or:x-ai,2026-10-28T18:43:53,unknown,src-185c86a3,396356,LATITUDE-SH - Latitude.sh,US
+ob1,user-xai,3,or:x-ai,2026-10-28T18:43:54,unknown,src-a388a67e,17072,"AS17072 - TOTAL PLAY TELECOMUNICACIONES, S.A.P.I. DE C.V.",MX
+ob1,user-xai,3,or:x-ai,2026-10-28T18:43:54,unknown,src-8f9191d9,267852,AS267852 - Cooperativa de Obras y Servicios Publicos Miguel Riglos Ltda,AR
+ob1,within-anthropic,1,or:anthropic,2026-10-28T18:37:56,anthropic-query,src-21eba008,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US
+ob1,within-anthropic,3,or:anthropic,2026-10-28T18:44:05,anthropic-query,src-e68269b3,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US
+ob1,within-openai,1,or:openai,2026-10-28T18:37:57,openai-query,src-a7e66eee,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob1,within-openai,3,or:openai,2026-10-28T18:44:59,openai-query,src-2b7989ef,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob1,within-xai,1,or:x-ai,2026-10-28T18:37:57,unknown,src-c866be67,3257,GTT-BACKBONE GTT Communications Inc.,US
+ob1,within-xai,1,or:x-ai,2026-10-28T18:37:57,unknown,src-47ee0cf1,396356,LATITUDE-SH - Latitude.sh,US
+ob1,within-xai,1,or:x-ai,2026-10-28T18:37:57,unknown,src-bf7a7882,64249,ENDOFFICE - Charles River Operation,US
+ob1,within-xai,1,or:x-ai,2026-10-28T18:37:57,unknown,src-d5b01ab7,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob1,within-xai,1,or:x-ai,2026-10-28T18:37:58,unknown,src-7164097f,28343,AS28343 - UNIFIQUE TELECOMUNICACOES S/A,BR
+ob1,within-xai,1,or:x-ai,2026-10-28T18:37:58,unknown,src-61185cae,212238,CDNEXT Datacamp Limited,GB
+ob1,within-xai,3,or:x-ai,2026-10-28T18:44:01,unknown,src-cc7f900f,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob1,within-xai,3,or:x-ai,2026-10-28T18:44:01,unknown,src-2a8b1599,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob1,within-xai,3,or:x-ai,2026-10-28T18:44:01,unknown,src-71050019,9009,M247 M247 Europe SRL,RO
+ob1,within-xai,3,or:x-ai,2026-10-28T18:44:02,unknown,src-54e3520b,132817,DZCRD-AS-AP - DZCRD Networks Ltd,BD
+ob1,within-xai,3,or:x-ai,2026-10-28T18:44:02,unknown,src-23cbe766,8708,DIGI-RO DIGI ROMANIA S.A.,RO
+ob1,within-xai,3,or:x-ai,2026-10-28T18:44:02,unknown,src-d466d9cc,265175,AS265175 - AS SISTEMAS LTDA,BR
+ob1,within-xai,3,or:x-ai,2026-10-28T18:44:02,unknown,src-159a39db,9141,AS9141 P4 Sp. z o.o.,PL
+ob2,account-anthropic,1,anthropic,2026-10-28T18:57:40,anthropic-query,src-4816aca2,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US
+ob2,account-anthropic,3,or:anthropic,2026-10-28T19:03:19,anthropic-query,src-4816aca2,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US
+ob2,account-openai,1,openai,2026-10-28T18:57:40,openai-query,src-a4673a0b,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob2,account-openai,3,or:openai,2026-10-28T19:03:35,openai-query,src-21e4a232,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob2,account-xai,1,x-ai,2026-10-28T18:57:40,unknown,src-c0915d91,3257,GTT-BACKBONE GTT Communications Inc.,US
+ob2,account-xai,1,x-ai,2026-10-28T18:57:41,unknown,src-f35cca28,46635,NET3-AI - Contact Consumers,US
+ob2,account-xai,1,x-ai,2026-10-28T18:57:41,unknown,src-5f0b4cd0,13999,"AS13999 - Mega Cable, S.A. de C.V.",MX
+ob2,account-xai,1,x-ai,2026-10-28T18:57:41,unknown,src-f481cc4e,203020,HostRoyale HostRoyale Technologies Pvt Ltd,IN
+ob2,account-xai,1,x-ai,2026-10-28T18:57:41,unknown,src-adbe5deb,52800,AS52800 - OS CONNECT INFORMATICA EIRELI - EPP,BR
+ob2,account-xai,1,x-ai,2026-10-28T18:57:42,unknown,src-c13bafd0,10429,AS10429 - TELEFONICA BRASIL S.A,BR
+ob2,account-xai,1,x-ai,2026-10-28T18:57:46,unknown,src-0c3c7816,22773,ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc.,US
+ob2,account-xai,3,or:x-ai,2026-10-28T19:03:44,unknown,src-6f1866d9,3257,GTT-BACKBONE GTT Communications Inc.,US
+ob2,account-xai,3,or:x-ai,2026-10-28T19:03:44,unknown,src-f2bd30cc,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob2,account-xai,3,or:x-ai,2026-10-28T19:03:44,unknown,src-ebf4ac1a,9009,M247 M247 Europe SRL,RO
+ob2,account-xai,3,or:x-ai,2026-10-28T19:03:44,unknown,src-6aac8934,9009,M247 M247 Europe SRL,RO
+ob2,account-xai,3,or:x-ai,2026-10-28T19:03:44,unknown,src-2076be5d,9009,M247 M247 Europe SRL,RO
+ob2,account-xai,3,or:x-ai,2026-10-28T19:03:44,unknown,src-2fcebaf7,203020,HostRoyale HostRoyale Technologies Pvt Ltd,IN
+ob2,account-xai,3,or:x-ai,2026-10-28T19:03:45,unknown,src-9c50990a,23201,AS23201 - Telecel S.A.,PY
+ob2,model-anthropic,1,or:anthropic,2026-10-28T18:57:38,anthropic-query,src-21eba008,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US
+ob2,model-anthropic,3,or:anthropic,2026-10-28T19:03:15,anthropic-query,src-d61d4c1c,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US
+ob2,model-openai,1,or:openai,2026-10-28T18:57:38,openai-query,src-e21a24ba,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob2,model-openai,3,or:openai,2026-10-28T19:03:27,openai-query,src-ed915c82,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob2,model-xai,1,or:x-ai,2026-10-28T18:57:42,unknown,src-0da05f8b,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob2,model-xai,1,or:x-ai,2026-10-28T18:57:42,unknown,src-3202da8b,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob2,model-xai,1,or:x-ai,2026-10-28T18:57:43,unknown,src-e29a4f72,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob2,model-xai,1,or:x-ai,2026-10-28T18:57:43,unknown,src-db2e66c5,46635,NET3-AI - Contact Consumers,US
+ob2,model-xai,1,or:x-ai,2026-10-28T18:57:43,unknown,src-a90a7e85,203020,HostRoyale HostRoyale Technologies Pvt Ltd,IN
+ob2,model-xai,1,or:x-ai,2026-10-28T18:57:43,unknown,src-e2224d46,5432,PROXIMUS-ISP-AS Proximus NV,BE
+ob2,model-xai,3,or:x-ai,2026-10-28T19:03:37,unknown,src-645d640f,132817,DZCRD-AS-AP - DZCRD Networks Ltd,BD
+ob2,model-xai,3,or:x-ai,2026-10-28T19:03:37,unknown,src-b97d4e71,9009,M247 M247 Europe SRL,RO
+ob2,model-xai,3,or:x-ai,2026-10-28T19:03:37,unknown,src-653ee61a,210278,SKYIT-BB Sky Italia srl,IT
+ob2,model-xai,3,or:x-ai,2026-10-28T19:03:37,unknown,src-9c52a0a5,50467,BESKID-MEDIA-AS Beskid Media Sp. z o.o.,PL
+ob2,model-xai,3,or:x-ai,2026-10-28T19:03:38,unknown,src-60505002,1267,ASN-WINDTRE WIND TRE S.P.A.,IT
+ob2,model-xai,3,or:x-ai,2026-10-28T19:03:46,unknown,src-ff95ea9e,22773,ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc.,US
+ob2,user-anthropic,1,or:anthropic,2026-10-28T18:57:39,anthropic-query,src-7f8236fa,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US
+ob2,user-anthropic,3,or:anthropic,2026-10-28T19:03:15,anthropic-query,src-06fe36f6,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US
+ob2,user-openai,1,or:openai,2026-10-28T18:57:41,openai-query,src-caf17688,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob2,user-openai,3,or:openai,2026-10-28T19:03:41,openai-query,src-3e80ebe8,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob2,user-openai,4,or:openai,2026-10-28T19:14:12,openai-query,src-48ea07ee,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob2,user-xai,1,or:x-ai,2026-10-28T18:57:54,unknown,src-491dc5d7,3257,GTT-BACKBONE GTT Communications Inc.,US
+ob2,user-xai,1,or:x-ai,2026-10-28T18:57:54,unknown,src-38b47424,62874,WEB2OBJECTS - Web2Objects LLC,US
+ob2,user-xai,1,or:x-ai,2026-10-28T18:57:54,unknown,src-f8652e1f,3257,GTT-BACKBONE GTT Communications Inc.,US
+ob2,user-xai,1,or:x-ai,2026-10-28T18:57:54,unknown,src-b0b37d34,3257,GTT-BACKBONE GTT Communications Inc.,US
+ob2,user-xai,1,or:x-ai,2026-10-28T18:57:55,unknown,src-2b05b89b,203020,HostRoyale HostRoyale Technologies Pvt Ltd,IN
+ob2,user-xai,1,or:x-ai,2026-10-28T18:57:55,unknown,src-564e831c,53125,AS53125 - GIGA MAIS FIBRA TELECOMUNICACOES S.A.,BR
+ob2,user-xai,1,or:x-ai,2026-10-28T18:57:55,unknown,src-c4d0e824,28649,AS28649 - Desktop Sigmanet Comunicacao Multimidia SA,BR
+ob2,user-xai,1,or:x-ai,2026-10-28T18:57:55,unknown,src-6e4a4521,270485,AS270485 - MEGABYTE TELECOM LTDA,BR
+ob2,user-xai,1,or:x-ai,2026-10-28T18:57:56,unknown,src-d7831410,23201,AS23201 - Telecel S.A.,PY
+ob2,user-xai,1,or:x-ai,2026-10-28T18:57:56,unknown,src-7bf1148d,21826,AS21826 - Corporacion Telemic C.A.,VE
+ob2,user-xai,1,or:x-ai,2026-10-28T18:57:56,unknown,src-621cf659,22927,AS22927 - Telefonica de Argentina,AR
+ob2,user-xai,1,or:x-ai,2026-10-28T18:57:57,unknown,src-7c05e6cf,1267,ASN-WINDTRE WIND TRE S.P.A.,IT
+ob2,user-xai,1,or:x-ai,2026-10-28T18:57:57,unknown,src-af6c422a,7418,AS7418 - TELEFONICA CHILE S.A.,CL
+ob2,user-xai,1,or:x-ai,2026-10-28T18:58:09,unknown,src-9512b30f,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob2,user-xai,1,or:x-ai,2026-10-28T18:58:09,unknown,src-ec3968a8,9009,M247 M247 Europe SRL,RO
+ob2,user-xai,1,or:x-ai,2026-10-28T18:58:09,unknown,src-42465f5e,7979,"SERVERS-COM - Servers.com, Inc.",US
+ob2,user-xai,1,or:x-ai,2026-10-28T18:58:09,unknown,src-dafd8e0c,46635,NET3-AI - Contact Consumers,US
+ob2,user-xai,1,or:x-ai,2026-10-28T18:58:10,unknown,src-6ca7fadb,268107,AS268107 - GERENSIS TELECOM E SERVICOS LTDA - ME,BR
+ob2,user-xai,1,or:x-ai,2026-10-28T18:58:10,unknown,src-537b0952,266364,AS266364 - RABELO FLORES SERVICOS DE MULTIMIDIA LTDA-IGBWEB,BR
+ob2,user-xai,1,or:x-ai,2026-10-28T18:58:14,unknown,src-f86454dc,11798,"ACEDATACENTERS-AS-1 - Ace Data Centers, Inc.",US
+ob2,user-xai,3,or:x-ai,2026-10-28T19:03:48,unknown,src-d85172ae,7979,"SERVERS-COM - Servers.com, Inc.",US
+ob2,user-xai,3,or:x-ai,2026-10-28T19:03:48,unknown,src-6a750645,46635,NET3-AI - Contact Consumers,US
+ob2,user-xai,3,or:x-ai,2026-10-28T19:03:48,unknown,src-3de1289a,55286,SERVER-MANIA - B2 Net Solutions Inc.,CA
+ob2,user-xai,3,or:x-ai,2026-10-28T19:03:48,unknown,src-5fa60697,212238,CDNEXT Datacamp Limited,GB
+ob2,user-xai,3,or:x-ai,2026-10-28T19:03:48,unknown,src-e4d4dfe0,269155,AS269155 - BS News Informatica SCM Ltda ME,BR
+ob2,user-xai,3,or:x-ai,2026-10-28T19:03:49,unknown,src-9c2b0a1d,7738,AS7738 - V tal,BR
+ob2,user-xai,3,or:x-ai,2026-10-28T19:03:49,unknown,src-df530a08,212238,CDNEXT Datacamp Limited,GB
+ob2,within-anthropic,1,or:anthropic,2026-10-28T18:57:39,anthropic-query,src-086c5b1c,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US
+ob2,within-anthropic,3,or:anthropic,2026-10-28T19:03:16,anthropic-query,src-28f455f8,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US
+ob2,within-openai,1,or:openai,2026-10-28T18:57:39,openai-query,src-1d58e621,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob2,within-openai,3,or:openai,2026-10-28T19:03:34,openai-query,src-16441589,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob2,within-xai,1,or:x-ai,2026-10-28T18:57:39,unknown,src-493c872f,3257,GTT-BACKBONE GTT Communications Inc.,US
+ob2,within-xai,1,or:x-ai,2026-10-28T18:57:39,unknown,src-6f26b0c9,7979,"SERVERS-COM - Servers.com, Inc.",US
+ob2,within-xai,1,or:x-ai,2026-10-28T18:57:39,unknown,src-f3121663,212238,CDNEXT Datacamp Limited,GB
+ob2,within-xai,1,or:x-ai,2026-10-28T18:57:39,unknown,src-f8449768,46635,NET3-AI - Contact Consumers,US
+ob2,within-xai,1,or:x-ai,2026-10-28T18:57:40,unknown,src-6f1658ad,268698,AS268698 - CONNECTCEU TELECOM EIRELI,BR
+ob2,within-xai,1,or:x-ai,2026-10-28T18:57:41,unknown,src-b84866b2,212238,CDNEXT Datacamp Limited,GB
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:36,unknown,src-e1464788,3257,GTT-BACKBONE GTT Communications Inc.,US
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:36,unknown,src-6d215753,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:36,unknown,src-a7160742,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:36,unknown,src-b6a6b053,46635,NET3-AI - Contact Consumers,US
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:37,unknown,src-49b12ee2,27747,AS27747 - Telecentro S.A.,AR
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:37,unknown,src-62bd7ca2,7738,AS7738 - V tal,BR
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:37,unknown,src-93e7e9a0,268760,AS268760 - LIVENET SERVICOS DE COMUNICACAO MULTMIDIA LTDA ME,BR
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:39,unknown,src-0bbcab8a,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:39,unknown,src-db14bf54,9009,M247 M247 Europe SRL,RO
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:40,unknown,src-38f8f73d,55286,SERVER-MANIA - B2 Net Solutions Inc.,CA
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:40,unknown,src-f803e333,9009,M247 M247 Europe SRL,RO
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:40,unknown,src-e85b1951,52912,AS52912 - VIEIRA E RETECHESKI LTDA,BR
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:40,unknown,src-bcfe3cfc,28258,AS28258 - VERO S.A,BR
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:40,unknown,src-6c852c70,265140,AS265140 - DUPONT & SCHWANKE LTDA,BR
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:54,unknown,src-1eed8208,3257,GTT-BACKBONE GTT Communications Inc.,US
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:54,unknown,src-10fd5188,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:54,unknown,src-a1b933ac,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:54,unknown,src-b97b31c0,396356,LATITUDE-SH - Latitude.sh,US
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:55,unknown,src-3c8bd753,14868,AS14868 - Ligga Telecomunicacoes S.A.,BR
+ob2,within-xai,3,or:x-ai,2026-10-28T19:03:56,unknown,src-4080aae0,401152,"ADCIL-ASN-01 - Ace Data Centers II, L.L.C.",US
+ob3us,account-anthropic,1,anthropic,2026-10-28T19:15:47,anthropic-query,src-e68269b3,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US
+ob3us,account-anthropic,3,or:anthropic,2026-10-28T19:21:35,anthropic-query,src-e68269b3,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US
+ob3us,account-openai,1,openai,2026-10-28T19:15:47,openai-query,src-8525f811,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob3us,account-openai,3,or:openai,2026-10-28T19:21:47,openai-query,src-92a4fa55,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US
+ob3us,account-xai,1,x-ai,2026-10-28T19:15:46,unknown,src-e529ff66,9009,M247 M247 Europe SRL,RO
+ob3us,account-xai,1,x-ai,2026-10-28T19:15:46,unknown,src-f3a0f4e4,210906,"BITE-US UAB ""Bite Lietuva""",LT
+ob3us,account-xai,1,x-ai,2026-10-28T19:15:46,unknown,src-cb412d48,3257,GTT-BACKBONE GTT Communications Inc.,US
+ob3us,account-xai,1,x-ai,2026-10-28T19:15:46,unknown,src-5867bcbf,3257,GTT-BACKBONE GTT Communications Inc.,US
+ob3us,account-xai,1,x-ai,2026-10-28T19:15:47,unknown,src-924c651e,203020,HostRoyale HostRoyale Technologies Pvt Ltd,IN
+ob3us,account-xai,1,x-ai,2026-10-28T19:15:47,unknown,src-767d0111,269396,AS269396 - UNIR TELECOM,BR
+ob3us,account-xai,1,x-ai,2026-10-28T19:15:47,unknown,src-fde26130,2860,"NOS_COMUNICACOES NOS COMUNICACOES, S.A.",PT
+ob3us,account-xai,3,or:x-ai,2026-10-28T19:21:36,unknown,src-663c71a7,203020,HostRoyale HostRoyale Technologies Pvt Ltd,IN
+ob3us,account-xai,3,or:x-ai,2026-10-28T19:21:36,unknown,src-adfe0832,262620,AS262620 - Pox Network Telecomunicacoes Ltda-ME,BR
+ob3us,account-xai,3,or:x-ai,2026-10-28T19:21:36,unknown,src-233b5136,28343,AS28343 - UNIFIQUE TELECOMUNICACOES S/A,BR
+ob3us,account-xai,3,or:x-ai,2026-10-28T19:21:36,unknown,src-e3766691,27651,AS27651 - ENTEL CHILE S.A.,CL
+ob3us,account-xai,3,or:x-ai,2026-10-28T19:21:36,unknown,src-e3132aae,40676,AS40676 - Psychz Networks,US
+ob3us,account-xai,3,or:x-ai,2026-10-28T19:21:36,unknown,src-f12b52af,27882,AS27882 - Telefonica Celular de Bolivia S.A.,BO
+ob3us,account-xai,3,or:x-ai,2026-10-28T19:21:36,unknown,src-ba6d5415,212238,CDNEXT Datacamp Limited,GB

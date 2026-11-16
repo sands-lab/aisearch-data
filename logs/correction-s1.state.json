@@ -2249,7 +2249,7 @@
           "status": "done",
           "sent_unix": 1791945998.6273196,
           "done_unix": 1791946008.63378,
-          "err": "Post \"https://openrouter.ai/api/v1/chat/completions\": dial tcp: lookup openrouter.ai on 127.0.0.53:53: read udp 127.0.0.1:52014-\u003e127.0.0.53:53: i/o timeout",
+          "err": "Post \"https://openrouter.ai/api/v1/chat/completions\": dial tcp: lookup openrouter.ai on src-4e85a2c5:53: read udp src-053dbd46:52014-\u003e127.0.0.53:53: i/o timeout",
           "version": "neither",
           "rounds": 1
         }

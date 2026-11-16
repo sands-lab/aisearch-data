@@ -27,6 +27,6 @@ All runs are on origin A. The person pasted the address and the standard questio
 | `logs/sharing-redo/web-<run id>.jsonl` | The steps: downloads before and after each answer, and what each verdict was based on. The paper's chat-app table (per app, out of 3 sittings: did the same login reuse a copy, and did a different login get it) was made by hand from these |
 | `logs/web-trials/raw/<run id>.jsonl` | The replies as pasted from each app. From sitting 2 on, also the time each reply was pasted (`answered_unix`) |
 | `logs/results/sharing-<run id>.jsonl` | The same calls in the standard per-call format |
-| `logs/probe.jsonl`, lines on `/depth/html/sh-<run id>-<app>…` and the icon requests that came from them | Every download. Some pages were visited days later, so match lines by page id, not by time |
+| `logs/probe.jsonl`, lines on `/depth/html/sh-<run id>-<app>…` | Every download. Some pages were visited days later, so match lines by page id, not by time |
 
 There is no figure for this experiment.

@@ -32,7 +32,7 @@ Gemini check are repeats and are not in the paper.
 | `logs/sharing-redo/r<N>-*.log` | Each try's printed output, with its verdict. The paper's sharing table was made by hand from these |
 | `logs/sharing-redo/*.jsonl` | The steps of each try. Each page id is `sh-<run id>` |
 | `logs/sharing-redo/<round>-graded.json` | Grading of the origin B rounds and the Gemini check, made from the full server log. On origin B, use these, not the printed verdicts |
-| `logs/sharing-redo/originB-fetcher-ips.csv` | The country, region and network owner of every address that downloaded a page on origin B. Rows with `run` = `ob3us` are the tries sent through the US address |
+| `logs/sharing-redo/originB-fetcher-ips.csv` | Every download of a page on origin B: the sender's ID (`fetcher_id`), and the number, owner and country of the network it came from. Rows with `run` = `ob3us` are the tries sent through the US address |
 | `logs/sharing-redo/schedule.log` | When each round on origin A started. Its times are UTC+3 |
 | `logs/results/sharing-<run id>.jsonl` | Every call, with its tokens |
 | `logs/raw-replies.jsonl`, the 4 lines for the Gemini runs | Google's fetch status (`urlRetrievalStatus`) |
