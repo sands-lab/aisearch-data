@@ -47,6 +47,7 @@ Each guide says which file feeds which figure or table.
 | `logs/probe-vps.jsonl` | A request a tool made to test server B, in the same form |
 | `logs/results/*.jsonl` | A question we sent a tool, and its answer |
 | `logs/raw-replies.jsonl` | A tool's whole API reply |
+| `logs/page-codes.csv` | Every test page and the five codes it showed. The tools read codes from here (`-pageCodeFile`, `--codes`) instead of our secret, which is not released |
 
 Times are UTC.
 

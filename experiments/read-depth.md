@@ -38,5 +38,9 @@ This draws input tokens against page size for each vendor. Without the file list
 every `truncprobe` file, which mixes in other experiments.
 
 The second figure, `read-depth-grid` (`readDepth_plot_markers.py`), shows which of the five codes
-each vendor quoted. It cannot be redrawn from this data. The script gets each page's codes by
-downloading the page again, and the test pages are no longer online.
+each vendor quoted. It reads each page's codes from `logs/page-codes.csv`, so it needs no network:
+
+```sh
+python3 scripts/readDepth_plot_markers.py --codes logs/page-codes.csv figures/read-depth-grid \
+  logs/results/truncprobe-run2026100[567]-*.jsonl
+```

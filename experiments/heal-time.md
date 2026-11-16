@@ -34,6 +34,18 @@ python3 scripts/heal_plot.py --out figures logs/heal-s*.results.json logs/heal-b
 
 This writes `heal-timeline`. It leaves out 4 pages and prints which ones.
 
+To check the results files against the raw logs, rebuild one from its state file and the server
+log. The codes come from `logs/page-codes.csv`, so no secret and no API key is needed:
+
+```sh
+./bin/probe-trial -heal-report -heal-stateFile logs/heal-b1.state.json \
+  -serverLog logs/probe-vps.jsonl -pageCodeFile logs/page-codes.csv \
+  -heal-reportFile heal-b1.check.json
+```
+
+Sittings `s1`–`s5` ran on origin A (`logs/probe.jsonl`), `b1`–`b3` on origin B
+(`logs/probe-vps.jsonl`).
+
 The appendix numbers on OpenAI (it downloads the fixed page but still answers with the failure)
 come from:
 
