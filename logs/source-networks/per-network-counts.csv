@@ -1,26 +1,26 @@
 vendor,asn,network,country,type,type_decided_by,peeringdb_type,requests,distinct_addresses
-Anthropic,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US,hosting,"name word ""GOOGLE""",,1477,45
+Anthropic,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US,hosting,"name word ""GOOGLE""",,1471,45
 Anthropic,16509,"AMAZON-02 - Amazon.com, Inc.",US,hosting,"name word ""AMAZON""",Enterprise,18,2
-OpenAI,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US,hosting,"name word ""MICROSOFT""",Content,2299,238
-xAI,212238,CDNEXT Datacamp Limited,GB,hosting,"name word ""CDN""",,1039,971
-xAI,3257,GTT-BACKBONE GTT Communications Inc.,US,hosting,"name word ""GTT-BACKBONE""",NSP,807,766
-xAI,210906,"BITE-US UAB ""Bite Lietuva""",LT,home/mobile provider,"name word ""BITE""",,642,568
-xAI,9009,M247 M247 Europe SRL,RO,hosting,"name word ""M247""",NSP,507,488
-xAI,11798,"ACEDATACENTERS-AS-1 - Ace Data Centers, Inc.",US,hosting,"name word ""DATACENT""",Enterprise,363,340
-xAI,46635,NET3-AI - Contact Consumers,US,unclassified,"no name word, no PeeringDB type",,279,263
-xAI,203020,HostRoyale HostRoyale Technologies Pvt Ltd,IN,hosting,"name word ""Host""",,274,250
-xAI,22773,ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc.,US,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,271,253
-xAI,212286,LONCONNECT LonConnect Ltd,GB,hosting,"name word ""LONCONNECT""",,208,190
-xAI,7979,"SERVERS-COM - Servers.com, Inc.",US,hosting,"name word ""SERVER""",Enterprise,199,184
+OpenAI,8075,MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation,US,hosting,"name word ""MICROSOFT""",Content,2296,235
+xAI,212238,CDNEXT Datacamp Limited,GB,hosting,"name word ""CDN""",,1028,961
+xAI,3257,GTT-BACKBONE GTT Communications Inc.,US,hosting,"name word ""GTT-BACKBONE""",NSP,803,762
+xAI,210906,"BITE-US UAB ""Bite Lietuva""",LT,home/mobile provider,"name word ""BITE""",,633,559
+xAI,9009,M247 M247 Europe SRL,RO,hosting,"name word ""M247""",NSP,499,480
+xAI,11798,"ACEDATACENTERS-AS-1 - Ace Data Centers, Inc.",US,hosting,"name word ""DATACENT""",Enterprise,362,339
+xAI,46635,NET3-AI - Contact Consumers,US,unclassified,"no name word, no PeeringDB type",,278,262
+xAI,203020,HostRoyale HostRoyale Technologies Pvt Ltd,IN,hosting,"name word ""Host""",,273,249
+xAI,22773,ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc.,US,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,264,246
+xAI,212286,LONCONNECT LonConnect Ltd,GB,hosting,"name word ""LONCONNECT""",,207,189
+xAI,7979,"SERVERS-COM - Servers.com, Inc.",US,hosting,"name word ""SERVER""",Enterprise,194,180
 xAI,62874,WEB2OBJECTS - Web2Objects LLC,US,hosting,"name word ""WEB2OBJECTS""",NSP,164,142
-xAI,28573,AS28573 - Claro NXT Telecomunicacoes Ltda,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,144,124
-xAI,396356,LATITUDE-SH - Latitude.sh,US,hosting,"name word ""LATITUDE""",Content,140,138
+xAI,28573,AS28573 - Claro NXT Telecomunicacoes Ltda,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,143,123
+xAI,396356,LATITUDE-SH - Latitude.sh,US,hosting,"name word ""LATITUDE""",Content,139,137
 xAI,401152,"ADCIL-ASN-01 - Ace Data Centers II, L.L.C.",US,hosting,"name word ""Data Cent""",Enterprise,107,107
 xAI,55286,SERVER-MANIA - B2 Net Solutions Inc.,CA,hosting,"name word ""SERVER""",Content,97,86
 xAI,132817,DZCRD-AS-AP - DZCRD Networks Ltd,BD,unclassified,"no name word, no PeeringDB type",,86,84
 xAI,27699,AS27699 - TELEFONICA BRASIL S.A,BR,home/mobile provider,"name word ""TELEFON""",,53,53
 xAI,7015,"COMCAST-7015 - Comcast Cable Communications, LLC",US,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,50,49
-xAI,8151,AS8151 - UNINET,MX,home/mobile provider,"name word ""UNINET""",Network Services,48,48
+xAI,8151,AS8151 - UNINET,MX,home/mobile provider,"name word ""UNINET""",Network Services,47,47
 xAI,26599,AS26599 - TELEFONICA BRASIL S.A,BR,home/mobile provider,"name word ""TELEFON""",,46,36
 xAI,7303,AS7303 - Telecom Argentina S.A.,AR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,44,44
 xAI,134450,HOSTROYALETECHNOLOGIES-AS-AP - HostRoyale Technologies Pvt Ltd,IN,hosting,"name word ""HOST""",,41,41
@@ -28,33 +28,33 @@ xAI,7029,WINDSTREAM - Windstream Communications LLC,US,home/mobile provider,Peer
 xAI,8167,AS8167 - V tal,BR,home/mobile provider,PeeringDB: NSP,NSP,36,33
 xAI,11664,AS11664 - Techtel LMDS Comunicaciones Interactivas S.A.,AR,home/mobile provider,"name word ""Comunica""",Content,36,33
 xAI,18881,AS18881 - TELEFONICA BRASIL S.A,BR,home/mobile provider,"name word ""TELEFON""",,31,31
-xAI,3269,ASN-IBSNAZ Telecom Italia S.p.A.,IT,home/mobile provider,"name word ""Telecom""",,30,30
 xAI,22927,AS22927 - Telefonica de Argentina,AR,home/mobile provider,"name word ""Telefon""",Enterprise,30,30
+xAI,3269,ASN-IBSNAZ Telecom Italia S.p.A.,IT,home/mobile provider,"name word ""Telecom""",,28,28
 xAI,6057,AS6057 - Administracion Nacional de Telecomunicaciones,UY,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,25,15
 xAI,13999,"AS13999 - Mega Cable, S.A. de C.V.",MX,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,25,25
 xAI,17072,"AS17072 - TOTAL PLAY TELECOMUNICACIONES, S.A.P.I. DE C.V.",MX,home/mobile provider,PeeringDB: NSP,NSP,25,25
 xAI,27747,AS27747 - Telecentro S.A.,AR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,25,25
 xAI,209709,code200-ISP1 UAB code200,LT,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,25,25
-xAI,7738,AS7738 - V tal,BR,home/mobile provider,PeeringDB: NSP,NSP,24,24
 xAI,27901,AS27901 - Pacifico Cable SPA.,CL,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,24,24
-xAI,14593,SPACEX-STARLINK - Space Exploration Technologies Corporation,US,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,21,21
+xAI,7738,AS7738 - V tal,BR,home/mobile provider,PeeringDB: NSP,NSP,23,23
 xAI,23201,AS23201 - Telecel S.A.,PY,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,21,21
 xAI,8708,DIGI-RO DIGI ROMANIA S.A.,RO,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,20,20
+xAI,14593,SPACEX-STARLINK - Space Exploration Technologies Corporation,US,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,20,20
 xAI,22047,AS22047 - VTR BANDA ANCHA S.A.,CL,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,20,20
 xAI,28649,AS28649 - Desktop Sigmanet Comunicacao Multimidia SA,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,20,20
 xAI,1267,ASN-WINDTRE WIND TRE S.P.A.,IT,home/mobile provider,PeeringDB: NSP,NSP,19,19
 xAI,27947,AS27947 - Telconet S.A,EC,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,19,19
 xAI,28343,AS28343 - UNIFIQUE TELECOMUNICACOES S/A,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,19,16
 xAI,7418,AS7418 - TELEFONICA CHILE S.A.,CL,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,17,17
-xAI,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US,hosting,"name word ""GOOGLE""",,17,3
 xAI,3243,MEO-RESIDENCIAL MEO - SERVICOS DE COMUNICACOES E MULTIMEDIA S.A.,PT,home/mobile provider,"name word ""COMUNICA""",,16,16
 xAI,40676,AS40676 - Psychz Networks,US,hosting,"name word ""Psychz""",Content,16,16
+xAI,396982,GOOGLE-CLOUD-PLATFORM - Google LLC,US,hosting,"name word ""GOOGLE""",,16,3
 xAI,2860,"NOS_COMUNICACOES NOS COMUNICACOES, S.A.",PT,home/mobile provider,"name word ""COMUNICA""",Network Services,15,15
-xAI,6079,RCN-AS - RCN,US,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,14,14
 xAI,27895,AS27895 - Nucleo S.A.,PY,home/mobile provider,PeeringDB: NSP,NSP,14,14
-xAI,12389,ROSTELECOM-AS PJSC Rostelecom,RU,home/mobile provider,PeeringDB: NSP,NSP,13,13
+xAI,6079,RCN-AS - RCN,US,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,13,13
 xAI,28210,AS28210 - GIGA MAIS FIBRA TELECOMUNICACOES S.A.,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,13,13
 xAI,6535,AS6535 - Telmex Servicios Empresariales S.A.,CL,home/mobile provider,"name word ""S.A.""",,12,2
+xAI,12389,ROSTELECOM-AS PJSC Rostelecom,RU,home/mobile provider,PeeringDB: NSP,NSP,12,12
 xAI,27651,AS27651 - ENTEL CHILE S.A.,CL,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,12,12
 xAI,6147,AS6147 - INTEGRATEL PERU S.A.A.,PE,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,11,11
 xAI,6697,BELPAK-AS Republican Unitary Telecommunication Enterprise Beltelecom,BY,home/mobile provider,PeeringDB: NSP,NSP,11,11
@@ -86,7 +86,6 @@ xAI,28198,AS28198 - SEMPRE TELECOMUNICACOES LTDA,BR,home/mobile provider,Peering
 xAI,30722,VODAFONE-IT-ASN Fastweb SpA,IT,home/mobile provider,PeeringDB: NSP,NSP,8,8
 xAI,52341,AS52341 - WOM SpA,CL,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,8,8
 xAI,52613,AS52613 - GIGA MAIS FIBRA TELECOMUNICACOES S.A.,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,8,8
-xAI,263569,AS263569 - DIRECT INTERNET LTDA,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,8,8
 xAI,273683,AS273683 - ALLREDE TELECOM LTDA,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,8,8
 xAI,1257,SWIPNET - Tele2 Sverige AB,EU,home/mobile provider,"name word ""Tele2""",Content,7,7
 xAI,6568,AS6568 - EMPRESA NACIONAL DE TELECOMUNICACIONES SOCIEDAD ANONIMA,BO,home/mobile provider,"name word ""TELECOM""",,7,7
@@ -99,6 +98,7 @@ xAI,27773,AS27773 - MILLICOM CABLE EL SALVADOR S.A. DE C.V.,SV,home/mobile provi
 xAI,28294,AS28294 - GIGA MAIS FIBRA TELECOMUNICACOES S.A.,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,7,7
 xAI,45609,BHARTI-MOBILITY-AS-AP - Bharti Airtel Ltd. AS for GPRS Service,IN,home/mobile provider,"name word ""Airtel""",,7,7
 xAI,262907,AS262907 - BRASIL TECPAR  AMIGO  AVATO,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,7,7
+xAI,263569,AS263569 - DIRECT INTERNET LTDA,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,7,7
 xAI,265691,AS265691 - WI-NET TELECOM S.A.C.,PE,home/mobile provider,"name word ""TELECOM""",,7,7
 xAI,5483,MAGYAR-TELEKOM-MAIN-AS Magyar Telekom Plc.,HU,home/mobile provider,PeeringDB: NSP,NSP,6,6
 xAI,8400,TELEKOM-AS TELEKOM SRBIJA a.d.,RS,home/mobile provider,PeeringDB: NSP,NSP,6,6
@@ -150,7 +150,6 @@ xAI,28634,AS28634 - Life Tecnologia Ltda.,BR,home/mobile provider,PeeringDB: Cab
 xAI,28668,AS28668 - Desktop Sigmanet Comunicacao Multimidia SA,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,4,4
 xAI,29447,TIF-AS Scaleway SAS,FR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,4,4
 xAI,41009,VIZITNETUA-AS Oleksandr Melnyk,UA,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,4,1
-xAI,52527,AS52527 - IWNET TELECOM LTDA ME,BR,home/mobile provider,"name word ""TELECOM""",Network Services,4,4
 xAI,52783,AS52783 - ALCANS TELECOM LTDA,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,4,4
 xAI,53230,AS53230 - Clean Net Telecom Ltda,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,4,4
 xAI,56665,TANGO-PROXIMUS_NXT Proximus Luxembourg S.A.,LU,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,4,4
@@ -186,7 +185,7 @@ xAI,28118,AS28118 - ALTICE DOMINICANA S.A.,DO,home/mobile provider,PeeringDB: Ca
 xAI,28260,AS28260 - ALTA REDE CORPORATE NETWORK TELECOM LTDA - EPP,BR,home/mobile provider,PeeringDB: NSP,NSP,3,3
 xAI,28590,AS28590 - Directnet Prestacao de Servicos Ltda.,BR,home/mobile provider,PeeringDB: NSP,NSP,3,3
 xAI,52361,AS52361 - ARSAT - Empresa Argentina de Soluciones Satelitales S.A.,AR,home/mobile provider,PeeringDB: NSP,NSP,3,3
-xAI,52765,AS52765 - MAXXNET TELECOM,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,3,3
+xAI,52527,AS52527 - IWNET TELECOM LTDA ME,BR,home/mobile provider,"name word ""TELECOM""",Network Services,3,3
 xAI,61461,AS61461 - Airtek Solutions C.A.,VE,home/mobile provider,PeeringDB: NSP,NSP,3,3
 xAI,202098,AS_ENELENERGIA_IT ENEL S.p.A,IT,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,3,3
 xAI,213155,YETTEL-HU Yettel Hungary Ltd.,HU,unclassified,"no name word, no PeeringDB type",,3,3
@@ -277,6 +276,7 @@ xAI,52573,AS52573 - Une Telecom Ltda,BR,home/mobile provider,PeeringDB: Cable/DS
 xAI,52630,AS52630 - MOTTANET TI - SERVICOS DE TECNOLOGIA DA INFO,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,2,2
 xAI,52685,AS52685 - Conectnet Telecomunicacoes Ltda.,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,2,2
 xAI,52722,AS52722 - Paranhananet Ltda.,BR,home/mobile provider,"name word ""Ltda""",Government,2,2
+xAI,52765,AS52765 - MAXXNET TELECOM,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,2,2
 xAI,52862,AS52862 - ISP PREMIUM TELECOM S/A,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,2,2
 xAI,52937,AS52937 - FHP TELECOMUNICACAO E COM VAREJISTA DE PRODUTOS DE,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,2,2
 xAI,53065,AS53065 - Opcao Telecom,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,2,2
@@ -349,7 +349,6 @@ xAI,267103,AS267103 - TIAGO CAIRES PEREIRA & CIA LTDA - ME,BR,home/mobile provid
 xAI,267120,AS267120 - BR NET LTDA,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,2,2
 xAI,267513,AS267513 - Seanet Telecom Carazinho Eireli,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,2,2
 xAI,267571,AS267571 - SUMITA TELECOMUNICACOES LTDA,BR,home/mobile provider,"name word ""TELECOM""",,2,2
-xAI,267578,AS267578 - WILLIAN MENDES DE OLIVEIRA  ME,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,2,2
 xAI,267832,AS267832 - VELONET SAS,CO,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,2,2
 xAI,267845,AS267845 - Exito Vision Cable S.A.S,DO,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,2,2
 xAI,267900,AS267900 - ESTABLECIMIENTO CASCADA BLANCA S.A,AR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,2,2
@@ -376,7 +375,6 @@ xAI,272102,AS272102 - BESSER SOLUTIONS C.A.,VE,home/mobile provider,PeeringDB: C
 xAI,272539,AS272539 - ENEVE TELECOMUNICACOES LTDA,BR,home/mobile provider,"name word ""TELECOM""",,2,2
 xAI,273019,AS273019 - DIRECTV CHILE TELEVISION LIMITADA,CL,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,2,2
 xAI,273095,AS273095 - NORTE NET E.A.S.,PY,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,2,2
-xAI,396319,US-INTERNET-396319 - Oxylabs,US,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,2,2
 xAI,399486,VIRTUO - 12651980 CANADA INC.,CA,hosting,PeeringDB: Content,Content,2,2
 xAI,174,"COGENT-174 - Cogent Communications, LLC",US,hosting,"name word ""COGENT""",NSP,1,1
 xAI,719,ELISA-AS Elisa Oyj,FI,home/mobile provider,PeeringDB: NSP,NSP,1,1
@@ -415,7 +413,6 @@ xAI,12426,SLOVANET-MADNET Slovanet a.s.,SK,unclassified,"no name word, no Peerin
 xAI,12578,APOLLO-AS SIA Tet,LV,home/mobile provider,PeeringDB: NSP,NSP,1,1
 xAI,12668,"MIRALOGIC-AS LLC ""KomTehCentr""",RU,home/mobile provider,PeeringDB: NSP,NSP,1,1
 xAI,12709,MELITACABLE Melita Limited,MT,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
-xAI,12714,MEGAFON-AS PJSC MegaFon,RU,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,12716,A1BG_MB A1 Bulgaria EAD,BG,unclassified,"no name word, no PeeringDB type",,1,1
 xAI,12810,VIPNET-AS A1 Hrvatska d.o.o.,HR,unclassified,"no name word, no PeeringDB type",,1,1
 xAI,13000,LEON-AS Leon Sp. z o.o.,PL,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
@@ -516,7 +513,6 @@ xAI,31200,NTK Novotelecom Ltd,RU,home/mobile provider,"name word ""telecom""",,1
 xAI,31252,STARNET-AS StarNet Solutii SRL,MD,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,31263,MYNET-AS MYNET S.R.L.,IT,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,31272,WILDPARK-AS WildPark Co,UA,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
-xAI,33363,"BHN-33363 - Charter Communications, Inc",US,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,33490,"COMCAST-33490 - Comcast Cable Communications, LLC",US,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,33779,Wataniya Telecom Algerie - Wataniya Telecom Algerie,DZ,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,34267,DEBRYANSK-AS-1 PJSC Rostelecom,RU,home/mobile provider,"name word ""telecom""",,1,1
@@ -686,7 +682,6 @@ xAI,200410,SHLPL-AS Krzysztof Skuneczny trading as Scoon Hardware Lab,PL,home/mo
 xAI,200539,INTELLYSPJ-AS INTELLY NISKI STYPULKOWSKI BLASZCZUK Sp. j.,PL,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,200736,INALAN MEDIANET INVEST AE,GR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,201019,P4NET_POZ P4 Sp. z o.o.,PL,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
-xAI,201341,"Centurion-Internet-services trafficforce, UAB",LT,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,201952,Atel-Rybinsk LTD AtelRybinsk,RU,unclassified,"no name word, no PeeringDB type",,1,1
 xAI,202087,AJSEGIB-AS GIBFIBRE LTD,GI,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,202914,adeodc Adeo Datacenter ApS,DK,hosting,"name word ""Datacent""",,1,1
@@ -798,7 +793,6 @@ xAI,263484,AS263484 - J E Provedor de Rede de Comunicacao Ltda,BR,home/mobile pr
 xAI,263492,AS263492 - VIPMAX INTERNET LTDA,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,263496,AS263496 - Netpeu Tecnologia e Internet Ltda,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,263513,AS263513 - SIGNAL PROVEDOR DE ACESSO A INTERNET LTDA,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
-xAI,263526,AS263526 - NEW TECNOLOGIA DA INFORMACAO LTDA,BR,home/mobile provider,"name word ""LTDA""",Network Services,1,1
 xAI,263539,AS263539 - NEW SYSTEM INTERNET,BR,home/mobile provider,"name word ""INTERNET""",Network Services,1,1
 xAI,263567,AS263567 - Loviz Entretenimento e Telecomunicacoes LTDA,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,263573,AS263573 - HYPER NET TELECOMUNICACOES LTDA ME,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
@@ -824,7 +818,6 @@ xAI,263801,AS263801 - LINKEAR SRL,AR,home/mobile provider,PeeringDB: Cable/DSL/I
 xAI,263847,AS263847 - BS CONECT TELECOMUNICACOES LTDA,BR,home/mobile provider,"name word ""TELECOM""",,1,1
 xAI,263858,AS263858 - RS NET EIRELI ME,BR,unclassified,"no name word, no PeeringDB type",,1,1
 xAI,263864,AS263864 - VERO S.A,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
-xAI,263879,AS263879 - NET FIBRA EMPRESAS LTDA,BR,home/mobile provider,"name word ""FIBRA""",,1,1
 xAI,263948,AS263948 - NEW LIFE TELECOM,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,263979,AS263979 - CYBERNETRS LTDA - ME,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,263980,AS263980 - G3 Telecom,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
@@ -859,7 +852,6 @@ xAI,264514,AS264514 - DESCALNET PROVEDOR LTDA - ME,BR,home/mobile provider,Peeri
 xAI,264524,AS264524 - GIGA MAIS FIBRA TELECOMUNICACOES S.A.,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,264527,AS264527 - LRF CONECTIONS SERVICOS LTDA ME,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,264544,AS264544 - SUPER NOVA TELECOM LTDA,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
-xAI,264550,AS264550 - M H SAT SERVICOS EM TELECOMUNICACOES,BR,home/mobile provider,"name word ""TELECOM""",Network Services,1,1
 xAI,264566,AS264566 - INTERNET O SUL TELECOM LTDA.,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,264570,AS264570 - RIOTEL TELECOMUNICACOES LESTE- RTL,BR,home/mobile provider,"name word ""TELECOM""",Enterprise,1,1
 xAI,264629,"AS264629 - COOP. DE PROVISION DE ELECTRICIDAD, SERVICIOS, VIVIENDA Y CREDITO DE MAR DEL PLATA LTDA",AR,home/mobile provider,"name word ""LTDA""",Non-Profit,1,1
@@ -1005,6 +997,7 @@ xAI,267462,AS267462 - Espaco Link Telecomunicacoes LTDA - ME,BR,home/mobile prov
 xAI,267463,AS267463 - ALL CONECTA INTERNET LTDA - ME,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,267484,AS267484 - CABONNET INTERNET LTDA,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,267490,AS267490 - C e B do Amaral Comunicacao - ME,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
+xAI,267578,AS267578 - WILLIAN MENDES DE OLIVEIRA  ME,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,267582,AS267582 - Simple Services Tecnologia Ltda - ME,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,267607,AS267607 - Giatech Telecomunicacoes LTDA - ME,BR,home/mobile provider,"name word ""Telecom""",,1,1
 xAI,267645,AS267645 - Vision On Line Telecom LTDA,BR,home/mobile provider,"name word ""Telecom""",,1,1
@@ -1059,7 +1052,6 @@ xAI,268637,AS268637 - Easy Connection Internet Ltda. - ME,BR,home/mobile provide
 xAI,268670,AS268670 - HENRIQUE CANGUSSU ALVES,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,268684,AS268684 - PONTO CERTO INTERNET,BR,home/mobile provider,PeeringDB: NSP,NSP,1,1
 xAI,268698,AS268698 - CONNECTCEU TELECOM EIRELI,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
-xAI,268705,AS268705 - TURBONET.NETWORK LTDA,BR,home/mobile provider,"name word ""LTDA""",,1,1
 xAI,268710,AS268710 - YES FIBRA TELECOMUNICACOES LTDA,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,268726,AS268726 - TOPNET SERVICOS DE TELECOMU E MULTIMIDIA EIRELI-ME,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,268812,AS268812 - BATISTA E SANTOS LTDA,BR,home/mobile provider,"name word ""LTDA""",,1,1
@@ -1179,7 +1171,6 @@ xAI,271126,AS271126 - ONDANET PE,BR,home/mobile provider,PeeringDB: Cable/DSL/IS
 xAI,271128,AS271128 - FAST WEB,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,271136,AS271136 - ACK TELECOM,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,271150,AS271150 - FOX LINK TELECOM LTDA,BR,home/mobile provider,"name word ""TELECOM""",,1,1
-xAI,271158,AS271158 - Link Dedicado Fibra Optica Tv e Telefonia Ip LTDA,BR,home/mobile provider,"name word ""Fibra""",,1,1
 xAI,271178,AS271178 - MCV SOUSA ME,BR,unclassified,"no name word, no PeeringDB type",,1,1
 xAI,271182,AS271182 - SEGNET TELECOMUNICACOES LTDA,BR,home/mobile provider,"name word ""TELECOM""",,1,1
 xAI,271258,AS271258 - ERICK TELECOM,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
@@ -1227,7 +1218,6 @@ xAI,272095,"AS272095 - AWD NETWORKS, S.R.L.",DO,home/mobile provider,PeeringDB: 
 xAI,272099,AS272099 - WIRSCHKE MONGES RICARDO DANIEL,PY,hosting,PeeringDB: Network Services,Network Services,1,1
 xAI,272114,AS272114 - NET ACEBAL S.A.,AR,home/mobile provider,"name word ""S.A.""",,1,1
 xAI,272122,"AS272122 - TELECOMUNICACIONES G-NETWORK, C.A.",VE,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
-xAI,272193,AS272193 - SPnetFibra Provedor Networking Ltda,BR,home/mobile provider,PeeringDB: NSP,NSP,1,1
 xAI,272263,AS272263 - IStark Tecnologia Ltda,BR,home/mobile provider,"name word ""Ltda""",,1,1
 xAI,272274,AS272274 - RB TELECOM,BR,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,272603,AS272603 - Global Services,BR,unclassified,"no name word, no PeeringDB type",,1,1
@@ -1270,3 +1260,4 @@ xAI,327901,Level 7 Wireless (Pty) Ltd - Level 7 Wireless (Pty) Ltd,ZA,home/mobil
 xAI,328471,HERO TELECOMS (PTY) LTD - HERO TELECOMS (PTY) LTD,ZA,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,329028,Rapid Networks (Pty) Ltd - Rapid Networks (Pty) Ltd,ZA,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1
 xAI,394684,AS-GOLD - GOLD DATA USA INC,US,home/mobile provider,PeeringDB: NSP,NSP,1,1
+xAI,396319,US-INTERNET-396319 - Oxylabs,US,home/mobile provider,PeeringDB: Cable/DSL/ISP,Cable/DSL/ISP,1,1

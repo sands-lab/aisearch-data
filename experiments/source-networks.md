@@ -9,13 +9,14 @@ PeeringDB, a public list where networks state their type.
 The counts cover every request for our tagged test pages on both origins, 31 Aug to 9 Nov 2026,
 not only the runs in this data. A request counts for OpenAI or Anthropic only if it also carried
 that vendor's own fetcher name. xAI's fetcher uses an ordinary browser name, so for xAI the tag in
-the address is the proof. Requests from our own network are left out.
+the address is the proof. Requests from our own network are left out, and so are the chat-app
+sharing runs, where a person typed the questions into the vendors' own chat apps.
 
 | Vendor | Requests | Distinct addresses | Networks |
 |---|---|---|---|
-| OpenAI | 2,299 | 238 | 1 |
-| Anthropic | 1,495 | 47 | 2 |
-| xAI | 8,358 | 7,843 | 1,268 |
+| OpenAI | 2,296 | 235 | 1 |
+| Anthropic | 1,489 | 47 | 2 |
+| xAI | 8,286 | 7,774 | 1,259 |
 
 ## Files
 
